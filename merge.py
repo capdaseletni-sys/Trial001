@@ -5,16 +5,14 @@ from datetime import datetime
 
 playlist_urls = [
     "https://raw.githubusercontent.com/Bainchiclo/nickiptv/refs/heads/main/PH.m3u",
-    "https://raw.githubusercontent.com/Bainchiclo/nickiptv/refs/heads/main/NBA%20HOMECOURT.m3u",
-    "https://mc-5dugfxm3jo.bunny.run/playlist.m3u8",
-    "https://mc-hda11sn95o.bunny.run/playlist.m3u8",
     "https://raw.githubusercontent.com/Bainchiclo/nickiptv/refs/heads/main/Roxiestreams.m3u8",
-    "http://tvpass.org/playlist/m3u",
-    "https://raw.githubusercontent.com/Bainchiclo/nickiptv/refs/heads/main/Pixelsports.m3u8"
+    "https://raw.githubusercontent.com/Bainchiclo/nickiptv/refs/heads/main/nbaglobe.m3u",
+    "https://raw.githubusercontent.com/Bainchiclo/nickiptv/refs/heads/main/Converge.m3u8",
+    "https://raw.githubusercontent.com/Bainchiclo/nickiptv/refs/heads/main/tvpassplaylist.m3u8",
 ] 
 
 EPG_URL = "https://github.com/Drewski2423/DrewLive/raw/refs/heads/main/DrewLive.xml.gz"
-OUTPUT_FILE = "kibz.m3u8"
+OUTPUT_FILE = "test.m3u8"
 
 def fetch_playlist(url, retries=3, timeout=30):
     headers = {"User-Agent": "Mozilla/5.0"}
