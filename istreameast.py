@@ -150,3 +150,24 @@ async def scrape() -> None:
         log.info("No new events found")
 
     CACHE_FILE.write(cached_urls)
+
+def create_m3u8_playlist(data: dict[str, dict], output_file: str) -> None:
+    lines = ["#EXTM3U"]
+
+    for name, info in data.items():
+        tvg_id = info.get("id", "")
+        logo = info.get("logo", "")
+        url = info.get("url", "")
+        group = name.split("]")[0].strip("[") if "]" in name else "Live"
+
+        lines.append(
+            f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{logo}" '
+            f'group-title="{group}",{name}'
+        )
+        lines.append(url)
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+ create_m3u8_playlist(cached_urls, f"{TAG.lower()}.m3u8")
+    log.info("M3U8 playlist generated")
