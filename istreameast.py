@@ -150,3 +150,48 @@ async def scrape() -> None:
         log.info("No new events found")
 
     CACHE_FILE.write(cached_urls)
+
+def main():
+    playlist_lines = ["#EXTM3U"]
+
+    sections = list(discover_sections(BASE_URL))
+    if not sections:
+        logging.error("No sections discovered.")
+        return
+
+    logging.info(f"Found {len(sections)} sections. Scraping for events...")
+
+    for section_url, section_title in sections:
+        logging.info(f"\n--- Processing Section: {section_title} ({section_url}) ---")
+
+        tv_id, logo, group_name = get_tv_info(section_url)
+        event_links = discover_event_links(section_url)
+
+        if not event_links:
+            logging.info(f"  No event sub-pages found. Scraping directly.")
+            event_links = {(section_url, section_title)}
+
+        valid_count = 0
+        for event_url, event_title in event_links:
+            logging.info(f"  Scraping: {event_title}")
+            m3u8_links = extract_m3u8_links(event_url)
+
+            for link in m3u8_links:
+                if check_stream_status(link):
+                    playlist_lines.append(
+                        f'#EXTINF:-1 tvg-logo="{logo}" tvg-id="{tv_id}" group-title="Roxiestreams - {group_name}",{event_title}'
+                    )
+                    playlist_lines.append(link)
+                    valid_count += 1
+
+        logging.info(f"  Added {valid_count} valid streams for {group_name} section.")
+
+    output_filename = "test.m3u8"
+    try:
+        with open(output_filename, "w", encoding="utf-8") as f:
+            f.write("\n".join(playlist_lines))
+        logging.info(f"\n--- SUCCESS ---")
+        logging.info(f"Playlist saved as {output_filename}")
+        logging.info(f"Total valid streams found: {(len(playlist_lines) - 1) // 2}")
+    except IOError as e:
+        logging.error(f"Failed to write file {output_filename}: {e}")
