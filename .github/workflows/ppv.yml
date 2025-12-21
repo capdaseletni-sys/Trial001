@@ -31,7 +31,7 @@ jobs:
           playwright install-deps
 
       - name: 🎯 Run scraping script
-        run: python ppv.py
+        run: python istreameast.py
 
       - name: 💾 Commit & Safely Push if Playlist Changed
         env:
