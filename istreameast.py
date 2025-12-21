@@ -186,7 +186,7 @@ def main():
 
         logging.info(f"  Added {valid_count} valid streams for {group_name} section.")
 
-    output_filename = "test.m3u8"
+    output_filename = "PPV.m3u8"
     try:
         with open(output_filename, "w", encoding="utf-8") as f:
             f.write("\n".join(playlist_lines))
