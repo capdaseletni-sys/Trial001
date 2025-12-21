@@ -7,43 +7,74 @@ from .utils import Cache, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
-urls: dict[str, dict[str, str | float]] = {}
+# =========================
+# Configuration
+# =========================
 
 TAG = "ISTRMEST"
+BASE_URL = "https://istreameast.app"
 
 CACHE_FILE = Cache(f"{TAG.lower()}.json", exp=3_600)
 
-BASE_URL = "https://istreameast.app"
+urls: dict[str, dict[str, str | float]] = {}
 
+# =========================
+# M3U8 Playlist Generator
+# =========================
+
+def create_m3u8_playlist(data: dict[str, dict], output_file: str) -> None:
+    lines = ["#EXTM3U"]
+
+    for name, info in data.items():
+        tvg_id = info.get("id", "")
+        logo = info.get("logo", "")
+        url = info.get("url", "")
+
+        if not url:
+            continue
+
+        group = name.split("]")[0].strip("[") if "]" in name else "Live"
+
+        lines.append(
+            f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{logo}" '
+            f'group-title="{group}",{name}'
+        )
+        lines.append(url)
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+
+# =========================
+# Event Stream Extraction
+# =========================
 
 async def process_event(url: str, url_num: int) -> str | None:
-    pattern = re.compile(r"source:\s*window\.atob\(\s*'([^']+)'\s*\)", re.IGNORECASE)
+    pattern = re.compile(
+        r"source:\s*window\.atob\(\s*'([^']+)'\s*\)",
+        re.IGNORECASE,
+    )
 
     if not (event_data := await network.request(url, log=log)):
         log.info(f"URL {url_num}) Failed to load url.")
-
         return
 
     soup = HTMLParser(event_data.content)
 
     if not (iframe := soup.css_first("iframe#wp_player")):
         log.warning(f"URL {url_num}) No iframe element found.")
-
         return
 
     if not (iframe_src := iframe.attributes.get("src")):
         log.warning(f"URL {url_num}) No iframe source found.")
-
         return
 
     if not (iframe_src_data := await network.request(iframe_src, log=log)):
         log.info(f"URL {url_num}) Failed to load iframe source.")
-
         return
 
     if not (match := pattern.search(iframe_src_data.text)):
         log.warning(f"URL {url_num}) No Clappr source found.")
-
         return
 
     log.info(f"URL {url_num}) Captured M3U8")
@@ -51,13 +82,20 @@ async def process_event(url: str, url_num: int) -> str | None:
     return base64.b64decode(match[1]).decode("utf-8")
 
 
+# =========================
+# Event Discovery
+# =========================
+
 async def get_events(cached_keys: list[str]) -> list[dict[str, str]]:
     events = []
 
     if not (html_data := await network.request(BASE_URL, log=log)):
         return events
 
-    pattern = re.compile(r"^(?:LIVE|(?:[1-9]|[12]\d|30)\s+minutes?\b)", re.IGNORECASE)
+    pattern = re.compile(
+        r"^(?:LIVE|(?:[1-9]|[12]\d|30)\s+minutes?\b)",
+        re.IGNORECASE,
+    )
 
     soup = HTMLParser(html_data.content)
 
@@ -85,7 +123,9 @@ async def get_events(cached_keys: list[str]) -> list[dict[str, str]]:
         if inner_span := driver_elem.css_first("span.d-md-inline"):
             event_name = inner_span.text(strip=True)
 
-        if f"[{sport}] {event_name} ({TAG})" in cached_keys:
+        key = f"[{sport}] {event_name} ({TAG})"
+
+        if key in cached_keys:
             continue
 
         if not (href := link.attributes.get("href")):
@@ -102,18 +142,20 @@ async def get_events(cached_keys: list[str]) -> list[dict[str, str]]:
     return events
 
 
+# =========================
+# Main Scraper
+# =========================
+
 async def scrape() -> None:
     cached_urls = CACHE_FILE.load()
-
     cached_count = len(cached_urls)
 
     urls.update(cached_urls)
 
     log.info(f"Loaded {cached_count} event(s) from cache")
-
     log.info(f'Scraping from "{BASE_URL}"')
 
-    events = await get_events(cached_urls.keys())
+    events = await get_events(list(cached_urls.keys()))
 
     log.info(f"Processing {len(events)} new URL(s)")
 
@@ -122,11 +164,9 @@ async def scrape() -> None:
 
         for i, ev in enumerate(events, start=1):
             if url := await process_event(ev["link"], i):
-                sport, event, link = (
-                    ev["sport"],
-                    ev["event"],
-                    ev["link"],
-                )
+                sport = ev["sport"]
+                event = ev["event"]
+                link = ev["link"]
 
                 key = f"[{sport}] {event} ({TAG})"
 
@@ -145,29 +185,11 @@ async def scrape() -> None:
 
     if new_count := len(cached_urls) - cached_count:
         log.info(f"Collected and cached {new_count} new event(s)")
-
     else:
         log.info("No new events found")
 
     CACHE_FILE.write(cached_urls)
 
-def create_m3u8_playlist(data: dict[str, dict], output_file: str) -> None:
-    lines = ["#EXTM3U"]
-
-    for name, info in data.items():
-        tvg_id = info.get("id", "")
-        logo = info.get("logo", "")
-        url = info.get("url", "")
-        group = name.split("]")[0].strip("[") if "]" in name else "Live"
-
-        lines.append(
-            f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{logo}" '
-            f'group-title="{group}",{name}'
-        )
-        lines.append(url)
-
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines))
-
- create_m3u8_playlist(cached_urls, f"{TAG.lower()}.m3u8")
+    # Generate M3U8 playlist
+    create_m3u8_playlist(cached_urls, f"{TAG.lower()}.m3u8")
     log.info("M3U8 playlist generated")
