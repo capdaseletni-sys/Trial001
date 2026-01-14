@@ -26,8 +26,11 @@ jobs:
       - name: 📦 Install required Python dependency
         run: pip3 install requests
 
+      - name: 📦 Install aiohttp
+        run: pip3 install aiohttp
+
       - name: 🎯 Run scraping script
-        run: curl -L -A "Mozilla/5.0" -o playlist.m3u8 "http://supersonictv.live:8080/get.php?username=611366&password=682256&type=m3"
+        run: curl -L -A "Mozilla/5.0" -o playlist.m3u8 "http://cord-cutter.net:8080/get.php?username=15564292&password=15564292&type=m3u_plus"
              
              cat playlist.m3u8
 
