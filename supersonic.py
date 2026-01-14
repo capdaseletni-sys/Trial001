@@ -132,7 +132,7 @@ def get_group_title_from_url(url):
     host = urlparse(url).netloc.lower()
     if host.startswith("www."):
         host = host[4:]
-    return host.split(".")[0]  # Take first part of domain as group title
+    return host.split(".")[0]  # take main domain as group title
 
 # ---------- WORKER ----------
 async def worker(queue, session, semaphore, results):
@@ -171,6 +171,7 @@ async def worker(queue, session, semaphore, results):
                 title = parts[1].strip() if len(parts) == 2 else ""
 
             group_title = get_group_title_from_url(url)
+            # overwrite any existing group-title
             results.append((title.lower(), group_title, extinf, vlcopts, url))
             print(f"✓ FAST: {title} ({url}) [Group: {group_title}]")
 
@@ -230,7 +231,7 @@ async def filter_fast_streams_multiple(input_paths, output_path):
 
     results.sort(key=lambda x: x[0])
 
-    # Write playlist with group-title from URL
+    # Write playlist with overwritten group-title from URL
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for _, group_title, extinf, vlcopts, url in results:
@@ -238,6 +239,7 @@ async def filter_fast_streams_multiple(input_paths, output_path):
                 parts = extinf[0].split(",", 1)
                 duration = parts[0][len("#EXTINF:"):]
                 name = parts[1] if len(parts) == 2 else url
+                # overwrite existing group-title
                 line = f'#EXTINF:{duration} tvg-name="{name}" group-title="{group_title}", {name}'
                 f.write(line + "\n")
             for line in vlcopts:
