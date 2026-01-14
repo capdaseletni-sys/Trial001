@@ -10,8 +10,7 @@ TIMEOUT = aiohttp.ClientTimeout(total=12)
 MAX_CONCURRENCY = 80
 MAX_HLS_DEPTH = 3
 
-# Adjusted thresholds to capture more streams
-MIN_SPEED_KBPS = 300
+MIN_SPEED_KBPS = 350
 MAX_TTFB = 5.0
 SAMPLE_BYTES = 384_000
 WARMUP_BYTES = 32_000
@@ -26,7 +25,6 @@ BLOCKED_DOMAINS = {
     "ssai2-ads.api.leiniao.com",
 }
 
-# Extensions to skip
 VIDEO_EXTENSIONS = (".mp4", ".mkv", ".avi")
 
 # ---------- SPEED TEST ----------
@@ -77,23 +75,19 @@ async def stream_is_fast(session, url, headers):
 
 # ---------- HLS / STREAM CHECK ----------
 async def is_stream_fast(session, url, headers, depth=0):
-    # Skip blocked domains
     for d in BLOCKED_DOMAINS:
         if d in url:
             return False
 
-    # Skip direct video files
     if url.lower().endswith(VIDEO_EXTENSIONS):
         return False
 
     if depth > MAX_HLS_DEPTH:
         return False
 
-    # Non-HLS streams
     if ".m3u8" not in url:
         return await stream_is_fast(session, url, headers)
 
-    # HLS playlist
     try:
         async with session.get(url, headers=headers) as r:
             if r.status >= 400:
@@ -107,14 +101,12 @@ async def is_stream_fast(session, url, headers, depth=0):
 
     lines = text.splitlines()
 
-    # Master playlist → check variants
     for i, line in enumerate(lines):
         if line.startswith("#EXT-X-STREAM-INF") and i + 1 < len(lines):
-            variant_url = urljoin(url, lines[i + 1].strip())
-            if await is_stream_fast(session, variant_url, headers, depth + 1):
+            variant_url = urljoin(url, lines[i+1].strip())
+            if await is_stream_fast(session, variant_url, headers, depth+1):
                 return True
 
-    # Media playlist → check first segment only
     segments = [l for l in lines if l and not l.startswith("#")]
     if not segments:
         return False
@@ -134,6 +126,14 @@ async def host_allowed(session, url, headers):
     async with host_lock:
         host_cache[host] = bool(fast)
     return fast
+
+# ---------- HELPER: Group title ----------
+def get_group_title(title):
+    # Take first 1-2 words or some prefix as group
+    if not title:
+        return "Unknown"
+    parts = title.split()
+    return " ".join(parts[:2])  # first two words as group
 
 # ---------- WORKER ----------
 async def worker(queue, session, semaphore, results):
@@ -162,7 +162,6 @@ async def worker(queue, session, semaphore, results):
                     print(f"⚠ SKIPPED (host slow/blocked or invalid): {url}")
                     continue
 
-            # Skip direct video files
             if url.lower().endswith(VIDEO_EXTENSIONS):
                 print(f"⚠ SKIPPED (direct video file): {url}")
                 continue
@@ -172,8 +171,9 @@ async def worker(queue, session, semaphore, results):
                 parts = extinf[0].split(",", 1)
                 title = parts[1].strip() if len(parts) == 2 else ""
 
-            results.append((title.lower(), extinf, vlcopts, url))
-            print(f"✓ FAST: {title} ({url})")
+            group_title = get_group_title(title)
+            results.append((title.lower(), group_title, extinf, vlcopts, url))
+            print(f"✓ FAST: {title} ({url}) [Group: {group_title}]")
 
         finally:
             queue.task_done()
@@ -204,7 +204,6 @@ async def filter_fast_streams_multiple(input_paths, output_path):
             for _ in range(MAX_CONCURRENCY)
         ]
 
-        # Process all input playlists
         for input_path in input_paths:
             if not Path(input_path).exists():
                 print(f"⚠ Input file does not exist: {input_path}")
@@ -223,23 +222,30 @@ async def filter_fast_streams_multiple(input_paths, output_path):
                         extinf.clear()
                         vlcopts.clear()
 
-        # Stop workers
         for _ in workers:
             await queue.put(None)
 
         await queue.join()
-
         for w in workers:
             await w
 
-    # Sort results and save
+    # Sort results by title
     results.sort(key=lambda x: x[0])
 
+    # Write playlist with group-title
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-        for _, extinf, vlcopts, url in results:
-            for line in extinf + vlcopts + [url]:
+        for _, group_title, extinf, vlcopts, url in results:
+            # Replace #EXTINF line to include group-title
+            if extinf:
+                parts = extinf[0].split(",", 1)
+                duration = parts[0][len("#EXTINF:"):]
+                name = parts[1] if len(parts) == 2 else url
+                line = f'#EXTINF:{duration} tvg-name="{name}" group-title="{group_title}", {name}'
                 f.write(line + "\n")
+            for line in vlcopts:
+                f.write(line + "\n")
+            f.write(url + "\n")
 
     print(f"\nSaved FAST playlist to: {output_path}")
 
