@@ -19,11 +19,6 @@ SAMPLE_BYTES = 768_000
 WARMUP_BYTES = 64_000
 RETRIES = 1
 
-# 1080p ENFORCEMENT
-MIN_WIDTH = 1920
-MIN_HEIGHT = 1080
-MIN_BANDWIDTH = 5_000_000   # fallback if RESOLUTION missing
-
 DEFAULT_HEADERS = {
     "User-Agent": "Mozilla/5.0"
 }
@@ -97,7 +92,7 @@ async def is_stream_fast(session, url, headers, depth=0):
         if d in url:
             return False
 
-    # Only HLS allowed (needed for 1080p verification)
+    # Only HLS streams are verified
     if ".m3u8" not in url:
         return False
 
@@ -114,43 +109,20 @@ async def is_stream_fast(session, url, headers, depth=0):
 
     lines = text.splitlines()
 
-    # ---------- MASTER PLAYLIST (1080p ENFORCED) ----------
+    # ---------- MASTER PLAYLIST ----------
     best_variant = None
-
     for i, line in enumerate(lines):
         if not line.startswith("#EXT-X-STREAM-INF"):
             continue
 
-        attrs = line.split(":", 1)[-1]
-        width = height = bandwidth = 0
-
-        for attr in attrs.split(","):
-            if attr.startswith("RESOLUTION="):
-                try:
-                    w, h = attr.split("=")[1].split("x")
-                    width, height = int(w), int(h)
-                except Exception:
-                    pass
-            elif attr.startswith("BANDWIDTH="):
-                try:
-                    bandwidth = int(attr.split("=")[1])
-                except Exception:
-                    pass
-
-        if (
-            (width >= MIN_WIDTH and height >= MIN_HEIGHT)
-            or bandwidth >= MIN_BANDWIDTH
-        ):
-            if i + 1 < len(lines):
-                uri = lines[i + 1].strip()
-                if not uri.startswith("#"):
-                    best_variant = urljoin(url, uri)
-                    break
+        if i + 1 < len(lines):
+            uri = lines[i + 1].strip()
+            if not uri.startswith("#"):
+                best_variant = urljoin(url, uri)
+                break
 
     if best_variant:
-        return await is_stream_fast(
-            session, best_variant, headers, depth + 1
-        )
+        return await is_stream_fast(session, best_variant, headers, depth + 1)
 
     # ---------- MEDIA PLAYLIST ----------
     segments = [l for l in lines if l and not l.startswith("#")]
@@ -158,9 +130,7 @@ async def is_stream_fast(session, url, headers, depth=0):
         return False
 
     for seg in segments[:2]:
-        if not await stream_is_fast(
-            session, urljoin(url, seg), headers
-        ):
+        if not await stream_is_fast(session, urljoin(url, seg), headers):
             return False
 
     return True
@@ -222,7 +192,7 @@ async def worker(queue, session, semaphore, results):
                 )
 
             results.append((title.lower(), extinf, vlcopts, url))
-            print(f"✓ FAST 1080p: {title}")
+            print(f"✓ FAST: {title}")
 
         finally:
             queue.task_done()
@@ -284,7 +254,7 @@ async def filter_fast_streams(input_path, output_path):
             for line in extinf + vlcopts + [url]:
                 f.write(line + "\n")
 
-    print(f"\nSaved FAST 1080p playlist to: {output_path}")
+    print(f"\nSaved FAST playlist to: {output_path}")
 
 # ---------- CLI ----------
 
