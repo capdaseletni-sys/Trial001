@@ -16,15 +16,9 @@ SAMPLE_BYTES = 384_000
 WARMUP_BYTES = 32_000
 RETRIES = 3
 
-DEFAULT_HEADERS = {
-    "User-Agent": "Mozilla/5.0"
-}
+DEFAULT_HEADERS = {"User-Agent": "Mozilla/5.0"}
 
-BLOCKED_DOMAINS = {
-    "amagi.tv",
-    "ssai2-ads.api.leiniao.com",
-}
-
+BLOCKED_DOMAINS = {"amagi.tv", "ssai2-ads.api.leiniao.com"}
 VIDEO_EXTENSIONS = (".mp4", ".mkv", ".avi")
 
 # ---------- SPEED TEST ----------
@@ -229,8 +223,8 @@ async def filter_fast_streams_multiple(input_paths, output_path):
         for w in workers:
             await w
 
-    # Sort playlist alphabetically by title (ALL CAPS)
-    results.sort(key=lambda x: x[0])
+    # Sort playlist by group-title first, then title
+    results.sort(key=lambda x: (x[1], x[0]))
 
     # Write playlist with uppercase title and uppercase group-title
     with open(output_path, "w", encoding="utf-8") as f:
