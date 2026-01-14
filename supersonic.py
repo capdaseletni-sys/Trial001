@@ -10,7 +10,7 @@ TIMEOUT = aiohttp.ClientTimeout(total=12)
 MAX_CONCURRENCY = 80
 MAX_HLS_DEPTH = 3
 
-MIN_SPEED_KBPS = 330
+MIN_SPEED_KBPS = 350
 MAX_TTFB = 5.0
 SAMPLE_BYTES = 384_000
 WARMUP_BYTES = 32_000
@@ -229,6 +229,7 @@ async def filter_fast_streams_multiple(input_paths, output_path):
         for w in workers:
             await w
 
+    # Sort playlist alphabetically by title (ALL CAPS)
     results.sort(key=lambda x: x[0])
 
     # Write playlist with uppercase title and uppercase group-title
