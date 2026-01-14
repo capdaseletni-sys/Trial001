@@ -170,10 +170,10 @@ async def worker(queue, session, semaphore, results):
                 parts = extinf[0].split(",", 1)
                 title = parts[1].strip() if len(parts) == 2 else ""
 
+            title_upper = title.upper()
             group_title = get_group_title_from_url(url)
-            # overwrite any existing group-title
-            results.append((title.lower(), group_title, extinf, vlcopts, url))
-            print(f"✓ FAST: {title} ({url}) [Group: {group_title}]")
+            results.append((title_upper, group_title, extinf, vlcopts, url))
+            print(f"✓ FAST: {title_upper} ({url}) [Group: {group_title}]")
 
         finally:
             queue.task_done()
@@ -231,16 +231,14 @@ async def filter_fast_streams_multiple(input_paths, output_path):
 
     results.sort(key=lambda x: x[0])
 
-    # Write playlist with overwritten group-title from URL
+    # Write playlist with uppercase title and URL-based group-title
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-        for _, group_title, extinf, vlcopts, url in results:
+        for title_upper, group_title, extinf, vlcopts, url in results:
             if extinf:
                 parts = extinf[0].split(",", 1)
                 duration = parts[0][len("#EXTINF:"):]
-                name = parts[1] if len(parts) == 2 else url
-                # overwrite existing group-title
-                line = f'#EXTINF:{duration} tvg-name="{name}" group-title="{group_title}", {name}'
+                line = f'#EXTINF:{duration} tvg-name="{title_upper}" group-title="{group_title}", {title_upper}'
                 f.write(line + "\n")
             for line in vlcopts:
                 f.write(line + "\n")
