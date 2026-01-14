@@ -38,7 +38,7 @@ jobs:
              
              cat playlist1.m3u8
 
-             curl -L -A "Mozilla/5.0" -o playlist2.m3u8 "http://cchelp.xyz:826/get.php?username=Chine611&password=DEht5fmfT2&&type=m3u_plus"
+             curl -L -A "Mozilla/5.0" -o playlist2.m3u8 "http://www.sansat.plus:88/get.php?username=02060789178359&password=02:00:00:00:00:00&type=m3u"
              
              cat playlist2.m3u8
 
