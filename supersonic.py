@@ -10,7 +10,7 @@ TIMEOUT = aiohttp.ClientTimeout(total=12)
 MAX_CONCURRENCY = 80
 MAX_HLS_DEPTH = 3
 
-MIN_SPEED_KBPS = 350
+MIN_SPEED_KBPS = 300
 MAX_TTFB = 5.0
 SAMPLE_BYTES = 384_000
 WARMUP_BYTES = 32_000
@@ -103,8 +103,8 @@ async def is_stream_fast(session, url, headers, depth=0):
 
     for i, line in enumerate(lines):
         if line.startswith("#EXT-X-STREAM-INF") and i + 1 < len(lines):
-            variant_url = urljoin(url, lines[i+1].strip())
-            if await is_stream_fast(session, variant_url, headers, depth+1):
+            variant_url = urljoin(url, lines[i + 1].strip())
+            if await is_stream_fast(session, variant_url, headers, depth + 1):
                 return True
 
     segments = [l for l in lines if l and not l.startswith("#")]
@@ -127,13 +127,12 @@ async def host_allowed(session, url, headers):
         host_cache[host] = bool(fast)
     return fast
 
-# ---------- HELPER: Group title ----------
-def get_group_title(title):
-    # Take first 1-2 words or some prefix as group
-    if not title:
-        return "Unknown"
-    parts = title.split()
-    return " ".join(parts[:2])  # first two words as group
+# ---------- HELPER: Group title from URL ----------
+def get_group_title_from_url(url):
+    host = urlparse(url).netloc.lower()
+    if host.startswith("www."):
+        host = host[4:]
+    return host.split(".")[0]  # Take first part of domain as group title
 
 # ---------- WORKER ----------
 async def worker(queue, session, semaphore, results):
@@ -171,7 +170,7 @@ async def worker(queue, session, semaphore, results):
                 parts = extinf[0].split(",", 1)
                 title = parts[1].strip() if len(parts) == 2 else ""
 
-            group_title = get_group_title(title)
+            group_title = get_group_title_from_url(url)
             results.append((title.lower(), group_title, extinf, vlcopts, url))
             print(f"✓ FAST: {title} ({url}) [Group: {group_title}]")
 
@@ -229,14 +228,12 @@ async def filter_fast_streams_multiple(input_paths, output_path):
         for w in workers:
             await w
 
-    # Sort results by title
     results.sort(key=lambda x: x[0])
 
-    # Write playlist with group-title
+    # Write playlist with group-title from URL
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for _, group_title, extinf, vlcopts, url in results:
-            # Replace #EXTINF line to include group-title
             if extinf:
                 parts = extinf[0].split(",", 1)
                 duration = parts[0][len("#EXTINF:"):]
