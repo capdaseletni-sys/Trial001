@@ -10,11 +10,11 @@ TIMEOUT = aiohttp.ClientTimeout(total=12)
 MAX_CONCURRENCY = 80
 MAX_HLS_DEPTH = 3
 
-# Speed check (realistic)
-MIN_SPEED_KBPS = 230       # ~250 KB/s
-MAX_TTFB = 4.0
-SAMPLE_BYTES = 384_000
-WARMUP_BYTES = 32_000
+# Realistic HD thresholds (avoids slow streams)
+MIN_SPEED_KBPS = 500       # ~500 KB/s, smooth 720p–1080p
+MAX_TTFB = 4.0             # seconds
+SAMPLE_BYTES = 384_000     # measure 384 KB
+WARMUP_BYTES = 32_000      # ignore first 32 KB
 RETRIES = 2
 
 DEFAULT_HEADERS = {
