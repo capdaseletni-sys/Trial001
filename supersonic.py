@@ -10,12 +10,12 @@ TIMEOUT = aiohttp.ClientTimeout(total=12)
 MAX_CONCURRENCY = 80
 MAX_HLS_DEPTH = 3
 
-# Adjusted for more streams
-MIN_SPEED_KBPS = 300       # lower threshold to include slower streams
-MAX_TTFB = 5.0             # allow slower first byte
+# Adjusted thresholds to capture more streams
+MIN_SPEED_KBPS = 150
+MAX_TTFB = 6.0
 SAMPLE_BYTES = 384_000
 WARMUP_BYTES = 32_000
-RETRIES = 3                # a few more retries
+RETRIES = 3
 
 DEFAULT_HEADERS = {
     "User-Agent": "Mozilla/5.0"
@@ -25,6 +25,9 @@ BLOCKED_DOMAINS = {
     "amagi.tv",
     "ssai2-ads.api.leiniao.com",
 }
+
+# Extensions to skip
+VIDEO_EXTENSIONS = (".mp4", ".mkv", ".avi")
 
 # ---------- SPEED TEST ----------
 async def stream_is_fast(session, url, headers):
@@ -80,7 +83,7 @@ async def is_stream_fast(session, url, headers, depth=0):
             return False
 
     # Skip direct video files
-    if url.lower().endswith((".mp4", ".mkv")):
+    if url.lower().endswith(VIDEO_EXTENSIONS):
         return False
 
     if depth > MAX_HLS_DEPTH:
@@ -107,8 +110,8 @@ async def is_stream_fast(session, url, headers, depth=0):
     # Master playlist → check variants
     for i, line in enumerate(lines):
         if line.startswith("#EXT-X-STREAM-INF") and i + 1 < len(lines):
-            variant_url = urljoin(url, lines[i+1].strip())
-            if await is_stream_fast(session, variant_url, headers, depth+1):
+            variant_url = urljoin(url, lines[i + 1].strip())
+            if await is_stream_fast(session, variant_url, headers, depth + 1):
                 return True
 
     # Media playlist → check first segment only
@@ -158,6 +161,11 @@ async def worker(queue, session, semaphore, results):
                 if not await host_allowed(session, url, headers):
                     print(f"⚠ SKIPPED (host slow/blocked or invalid): {url}")
                     continue
+
+            # Skip direct video files
+            if url.lower().endswith(VIDEO_EXTENSIONS):
+                print(f"⚠ SKIPPED (direct video file): {url}")
+                continue
 
             title = ""
             if extinf:
