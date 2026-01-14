@@ -1,23 +1,53 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="US: A&E EAST" tvg-name="USA A&E UHD" tvg-logo="https://images-na.ssl-images-amazon.com/images/I/312LhQsVqtL._SY355_.png" group-title="ENTERTAINMENT",USA A&E UHD
-http://supersonictv.live:8080/611366/682256/22040
-#EXTINF:-1 tvg-id="US: AMC EAST" tvg-name="USA AMC UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/AMC_logo_2016.svg/1280px-AMC_logo_2016.svg.png" group-title="ENTERTAINMENT",USA AMC UHD
-http://supersonictv.live:8080/611366/682256/22042
+#EXTINF:-1 tvg-id="22 THE POINT PITTSBURGH PA WPNT" tvg-name="USA ABC WPLG UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/ABC_%282013%29_Dark_Grey.svg/1200px-ABC_%282013%29_Dark_Grey.svg.png" group-title="ENTERTAINMENT",USA ABC WPLG UHD
+http://supersonictv.live:8080/611366/682256/22041
+#EXTINF:-1 tvg-id="US: AMERICAN HEROES CHANNEL" tvg-name="USA American Heroes" tvg-logo="http://apk.eternaltv.net/icons/americanhero.jpg" group-title="ENTERTAINMENT",USA American Heroes
+http://supersonictv.live:8080/611366/682256/22044
 #EXTINF:-1 tvg-id="US: ANIMAL PLANET EAST" tvg-name="USA Animal Planet East UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c8/AnimalPlanet.png" group-title="ENTERTAINMENT",USA Animal Planet East UHD
 http://supersonictv.live:8080/611366/682256/22045
 #EXTINF:-1 tvg-id="US: ANIMAL PLANET WEST" tvg-name="USA Animal Planet West LHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c8/AnimalPlanet.png" group-title="ENTERTAINMENT",USA Animal Planet West LHD
 http://supersonictv.live:8080/611366/682256/22046
-#EXTINF:-1 tvg-id="US: BBC AMERICA" tvg-name="USA BBC America UHD" tvg-logo="https://seeklogo.com/images/B/bbc-america-logo-1344C402CD-seeklogo.com.png" group-title="ENTERTAINMENT",USA BBC America UHD
-http://supersonictv.live:8080/611366/682256/22051
-#EXTINF:-1 tvg-id="US: BET HER EAST" tvg-name="USA BET HER" tvg-logo="https://www.nicepng.com/png/full/264-2641514_bet-her-bet-presents-love-and-happiness-an.png" group-title="ENTERTAINMENT",USA BET HER
-http://supersonictv.live:8080/611366/682256/22053
+#EXTINF:-1 tvg-id="US: AWE" tvg-name="USA AWE" tvg-logo="http://apk.eternaltv.net/icons/awechannel.jpg" group-title="ENTERTAINMENT",USA AWE
+http://supersonictv.live:8080/611366/682256/22049
+#EXTINF:-1 tvg-id="US: AXS TV" tvg-name="USA AXS TV" tvg-logo="https://static-us-east-2-fastly-a.www.philo.com/images/channel_logos/AXSTV/large_dark.png" group-title="ENTERTAINMENT",USA AXS TV
+http://supersonictv.live:8080/611366/682256/22050
 #EXTINF:-1 tvg-id="US: BET SOUL" tvg-name="USA BET SOUL" tvg-logo="https://www.pngitem.com/pimgs/m/192-1927516_bet-soul-custom-logo-bet-soul-png-logo.png" group-title="ENTERTAINMENT",USA BET SOUL
 http://supersonictv.live:8080/611366/682256/22055
 #EXTINF:-1 tvg-id="US: BET EAST" tvg-name="USA BET UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/BET_Logo.svg/1280px-BET_Logo.svg.png" group-title="ENTERTAINMENT",USA BET UHD
 http://supersonictv.live:8080/611366/682256/22052
 #EXTINF:-1 tvg-id="US: BOUNCE" tvg-name="USA BOUNCE TV" tvg-logo="https://storage.googleapis.com/btvwp-uploads/2018/02/5bfb1301-bounce_adjusted1.png" group-title="ENTERTAINMENT",USA BOUNCE TV
 http://supersonictv.live:8080/611366/682256/22058
+#EXTINF:-1 tvg-id="US: BRAVO WEST" tvg-name="USA Bravo West LHD" tvg-logo="http://epg4you.com/logos/bravo.png" group-title="ENTERTAINMENT",USA Bravo West LHD
+http://supersonictv.live:8080/611366/682256/22060
 #EXTINF:-1 tvg-id="US: BUZZR" tvg-name="USA BUZZR" tvg-logo="https://upload.wikimedia.org/wikipedia/en/b/be/Buzzr_%28TV_Network%29_Logo.png" group-title="ENTERTAINMENT",USA BUZZR
 http://supersonictv.live:8080/611366/682256/22061
-#EXTINF:-1 tvg-id="CA: CBS EAST" tvg-name="USA CBS UHD" tvg-logo="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fi.forbesimg.com%2Fmedia%2Flists%2Fcompanies%2Fcbs_416x416.jpg" group-title="ENTERTAINMENT",USA CBS UHD
-http://supersonictv.live:8080/611366/682256/22062
+#EXTINF:-1 tvg-id="US: COOKING CHANNEL" tvg-name="USA Cooking Channel" tvg-logo="https://cdn.technadu.com/wp-content/uploads/2018/11/Cooking-Channel.png" group-title="ENTERTAINMENT",USA Cooking Channel
+http://supersonictv.live:8080/611366/682256/22067
+#EXTINF:-1 tvg-id="US: DISCOVERY CHANNEL EAST" tvg-name="USA Discovery Channel UHD" tvg-logo="https://img.idesign.vn/1920x-/2019/04/22/ides_discoverychannel_04-2.png" group-title="ENTERTAINMENT",USA Discovery Channel UHD
+http://supersonictv.live:8080/611366/682256/22074
+#EXTINF:-1 tvg-id="US: DISCOVERY FAMILY" tvg-name="USA Discovery Family" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Discovery_Family_logo.svg/1200px-Discovery_Family_logo.svg.png" group-title="ENTERTAINMENT",USA Discovery Family
+http://supersonictv.live:8080/611366/682256/22076
+#EXTINF:-1 tvg-id="US: DISCOVERY LIFE" tvg-name="USA Discovery Life UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Discovery_Life_logo_2016.svg/1200px-Discovery_Life_logo_2016.svg.png" group-title="ENTERTAINMENT",USA Discovery Life UHD
+http://supersonictv.live:8080/611366/682256/22075
+#EXTINF:-1 tvg-id="US: DIY NETWORK" tvg-name="USA DIY Network UHD" tvg-logo="https://www.moneycrashers.com/wp-content/uploads/2018/11/diy-do-it-yourself-wooden-block-letters.jpg" group-title="ENTERTAINMENT",USA DIY Network UHD
+http://supersonictv.live:8080/611366/682256/22080
+#EXTINF:-1 tvg-id="US: FOOD NETWORK EAST" tvg-name="USA Food Network East LHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Food_Network.svg/1019px-Food_Network.svg.png" group-title="ENTERTAINMENT",USA Food Network East LHD
+http://supersonictv.live:8080/611366/682256/22084
+#EXTINF:-1 tvg-id="CA: FOX EAST" tvg-name="USA Fox UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Fox_Sports_Networks.svg/1200px-Fox_Sports_Networks.svg.png" group-title="ENTERTAINMENT",USA Fox UHD
+http://supersonictv.live:8080/611366/682256/22086
+#EXTINF:-1 tvg-id="US: FXX WEST" tvg-name="USA FXX West LHD" tvg-logo="http://epg4you.com/logos/fxx.png" group-title="ENTERTAINMENT",USA FXX West LHD
+http://supersonictv.live:8080/611366/682256/22095
+#EXTINF:-1 tvg-id="CA: GAME SHOW NETWORK" tvg-name="USA Game Show Network UHD" tvg-logo="https://www.dropbox.com/s/q2kxldj5xcbh29v/game%20show%20network.png?dl=1" group-title="ENTERTAINMENT",USA Game Show Network UHD
+http://supersonictv.live:8080/611366/682256/22098
+#EXTINF:-1 tvg-id="US: HLN EAST" tvg-name="USA HLN UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/HLN_%28TV_network%29_2017_logo.svg/1200px-HLN_%28TV_network%29_2017_logo.svg.png" group-title="ENTERTAINMENT",USA HLN UHD
+http://supersonictv.live:8080/611366/682256/22107
+#EXTINF:-1 tvg-id="US: INSP EAST" tvg-name="USA INSP" tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/5a/Official_logo_for_INSP.jpeg" group-title="ENTERTAINMENT",USA INSP
+http://supersonictv.live:8080/611366/682256/22109
+#EXTINF:-1 tvg-id="US: DISCOVERY ID EAST" tvg-name="USA Investigation Discovery East UHD" tvg-logo="https://www.dropbox.com/s/z7yctzw9dt14q9r/investigation%20discovery.jpg?dl=1" group-title="ENTERTAINMENT",USA Investigation Discovery East UHD
+http://supersonictv.live:8080/611366/682256/22110
+#EXTINF:-1 tvg-id="US: MAVTV" tvg-name="USA MAVTV" tvg-logo="https://www.wtcks.com/images/channels/logos/mav.png" group-title="ENTERTAINMENT",USA MAVTV
+http://supersonictv.live:8080/611366/682256/22117
+#EXTINF:-1 tvg-id="US: MOTOR TREND" tvg-name="USA MotorTrend UHD" tvg-logo="http://apk.eternaltv.net/icons/discovery-velocity.png" group-title="ENTERTAINMENT",USA MotorTrend UHD
+http://supersonictv.live:8080/611366/682256/22119
+#EXTINF:-1 tvg-id="US: NAT GEO WILD" tvg-name="USA Nat Geo WILD" tvg-logo="https://www.dropbox.com/s/o0wlndwtm0wzb3o/nat%20geo%20wild.png?dl=1" group-title="ENTERTAINMENT",USA Nat Geo WILD
+http://supersonictv.live:8080/611366/682256/22122
