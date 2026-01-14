@@ -3,21 +3,21 @@ import aiohttp
 import sys
 import time
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
-# ---------- CONFIG (ADJUSTED & REALISTIC) ----------
+# ---------- CONFIG ----------
 
 TIMEOUT = aiohttp.ClientTimeout(total=12)
 
 MAX_CONCURRENCY = 80
 MAX_HLS_DEPTH = 3
 
-MIN_SPEED_KBPS = 250        # realistic HD threshold
-MAX_TTFB = 4.0              # allow CDN warmup
-SAMPLE_BYTES = 384_000      # read up to 384 KB
-WARMUP_BYTES = 32_000       # ignore first 32 KB for speed
+MIN_SPEED_KBPS = 250
+MAX_TTFB = 4.0
+SAMPLE_BYTES = 384_000
+WARMUP_BYTES = 32_000
 
-RETRIES = 2                 # retry slow streams once
+RETRIES = 2
 
 DEFAULT_HEADERS = {
     "User-Agent": "Mozilla/5.0"
@@ -28,10 +28,10 @@ BLOCKED_DOMAINS = {
     "ssai2-ads.api.leiniao.com",
 }
 
-# ---------- SPEED TEST (WARMED & REALISTIC) ----------
+# ---------- SPEED TEST ----------
 
 async def stream_is_fast(session, url, headers):
-    for attempt in range(RETRIES):
+    for _ in range(RETRIES):
         try:
             start = time.perf_counter()
 
@@ -52,7 +52,6 @@ async def stream_is_fast(session, url, headers):
 
                     total += len(chunk)
 
-                    # warmup period
                     if total < WARMUP_BYTES:
                         continue
 
@@ -74,6 +73,9 @@ async def stream_is_fast(session, url, headers):
                 if ttfb <= MAX_TTFB and speed_kbps >= MIN_SPEED_KBPS:
                     return True
 
+                if ttfb > MAX_TTFB * 1.5:
+                    return False
+
         except Exception:
             pass
 
@@ -81,7 +83,7 @@ async def stream_is_fast(session, url, headers):
 
     return False
 
-# ---------- STREAM VALIDATION ----------
+# ---------- HLS / STREAM CHECK ----------
 
 async def is_stream_fast(session, url, headers, depth=0):
     if depth > MAX_HLS_DEPTH:
@@ -91,11 +93,9 @@ async def is_stream_fast(session, url, headers, depth=0):
         if d in url:
             return False
 
-    # Non-HLS stream
     if ".m3u8" not in url:
         return await stream_is_fast(session, url, headers)
 
-    # HLS playlist
     try:
         async with session.get(url, headers=headers) as r:
             if r.status >= 400:
@@ -109,7 +109,6 @@ async def is_stream_fast(session, url, headers, depth=0):
 
     lines = text.splitlines()
 
-    # Master playlist
     for i, line in enumerate(lines):
         if line.startswith("#EXT-X-STREAM-INF") and i + 1 < len(lines):
             variant = lines[i + 1].strip()
@@ -122,62 +121,91 @@ async def is_stream_fast(session, url, headers, depth=0):
                 )
             return False
 
-    # Media playlist → first segment
     segments = [l for l in lines if l and not l.startswith("#")]
     if not segments:
         return False
 
-    segment_url = urljoin(url, segments[0])
-    return await stream_is_fast(session, segment_url, headers)
+    return await stream_is_fast(session, urljoin(url, segments[0]), headers)
+
+# ---------- HOST CACHE ----------
+
+host_cache = {}
+host_lock = asyncio.Lock()
+
+async def host_allowed(session, url, headers):
+    host = urlparse(url).netloc
+
+    async with host_lock:
+        if host in host_cache:
+            return host_cache[host]
+
+    fast = await is_stream_fast(session, url, headers)
+
+    async with host_lock:
+        host_cache[host] = fast
+
+    return fast
 
 # ---------- WORKER ----------
 
-async def check_stream(semaphore, session, entry):
-    extinf, vlcopts, url = entry
-    headers = {}
+async def worker(queue, session, semaphore, results):
+    while True:
+        entry = await queue.get()
+        if entry is None:
+            queue.task_done()
+            return
 
-    for opt in vlcopts:
-        key, _, value = opt[len("#EXTVLCOPT:"):].partition("=")
-        k = key.lower()
-        if k == "http-referrer":
-            headers["Referer"] = value
-        elif k == "http-origin":
-            headers["Origin"] = value
-        elif k == "http-user-agent":
-            headers["User-Agent"] = value
+        extinf, vlcopts, url = entry
+        headers = {}
 
-    async with semaphore:
-        fast = await is_stream_fast(session, url, headers)
+        for opt in vlcopts:
+            key, _, value = opt[len("#EXTVLCOPT:"):].partition("=")
+            k = key.lower()
+            if k == "http-referrer":
+                headers["Referer"] = value
+            elif k == "http-origin":
+                headers["Origin"] = value
+            elif k == "http-user-agent":
+                headers["User-Agent"] = value
 
-    title = ""
-    if extinf:
-        parts = extinf[0].split(",", 1)
-        if len(parts) == 2:
-            title = parts[1].strip()
+        try:
+            async with semaphore:
+                if not await host_allowed(session, url, headers):
+                    return
+                fast = await is_stream_fast(session, url, headers)
 
-    return fast, title, extinf, vlcopts, url
+            if fast:
+                title = ""
+                if extinf:
+                    parts = extinf[0].split(",", 1)
+                    title = parts[1].strip() if len(parts) == 2 else ""
+                    extinf[0] = (
+                        f'{parts[0]} group-title="Fast",{parts[1]}'
+                        if len(parts) == 2
+                        else f'{parts[0]} group-title="Fast"'
+                    )
+                results.append((title.lower(), extinf, vlcopts, url))
+                print(f"✓ FAST: {title}")
+            else:
+                print(f"✗ SLOW: {url}")
+
+        finally:
+            queue.task_done()
 
 # ---------- MAIN ----------
 
 async def filter_fast_streams(input_path, output_path):
-    lines = Path(input_path).read_text(
-        encoding="utf-8", errors="ignore"
-    ).splitlines()
+    queue = asyncio.Queue(maxsize=MAX_CONCURRENCY * 2)
+    results = []
 
-    entries = []
-    extinf, vlcopts = [], []
+    connector = aiohttp.TCPConnector(
+        limit=MAX_CONCURRENCY,
+        limit_per_host=20,
+        ttl_dns_cache=300,
+        ssl=False,
+        enable_cleanup_closed=True
+    )
 
-    for line in lines:
-        if line.startswith("#EXTINF"):
-            extinf = [line]
-        elif line.startswith("#EXTVLCOPT"):
-            vlcopts.append(line)
-        elif line.startswith(("http://", "https://")):
-            entries.append((extinf.copy(), vlcopts.copy(), line.strip()))
-            extinf.clear()
-            vlcopts.clear()
-
-    connector = aiohttp.TCPConnector(limit_per_host=15, ssl=False)
     semaphore = asyncio.Semaphore(MAX_CONCURRENCY)
 
     async with aiohttp.ClientSession(
@@ -186,33 +214,41 @@ async def filter_fast_streams(input_path, output_path):
         headers=DEFAULT_HEADERS,
     ) as session:
 
-        tasks = [check_stream(semaphore, session, e) for e in entries]
-        fast_entries = []
+        workers = [
+            asyncio.create_task(worker(queue, session, semaphore, results))
+            for _ in range(MAX_CONCURRENCY)
+        ]
 
-        for coro in asyncio.as_completed(tasks):
-            fast, title, extinf, vlcopts, url = await coro
-            if fast:
-                print(f"✓ FAST: {title}")
-                if extinf:
-                    parts = extinf[0].split(",", 1)
-                    extinf[0] = (
-                        f'{parts[0]} group-title="Fast",{parts[1]}'
-                        if len(parts) == 2
-                        else f'{parts[0]} group-title="Fast"'
-                    )
-                fast_entries.append((title.lower(), extinf, vlcopts, url))
-            else:
-                print(f"✗ SLOW: {url}")
+        extinf, vlcopts = [], []
 
-    fast_entries.sort(key=lambda x: x[0])
+        with open(input_path, "r", encoding="utf-8", errors="ignore") as f:
+            for line in f:
+                line = line.strip()
+                if line.startswith("#EXTINF"):
+                    extinf = [line]
+                elif line.startswith("#EXTVLCOPT"):
+                    vlcopts.append(line)
+                elif line.startswith(("http://", "https://")):
+                    await queue.put((extinf.copy(), vlcopts.copy(), line))
+                    extinf.clear()
+                    vlcopts.clear()
 
-    out = ["#EXTM3U"]
-    for _, extinf, vlcopts, url in fast_entries:
-        out.extend(extinf)
-        out.extend(vlcopts)
-        out.append(url)
+        for _ in workers:
+            await queue.put(None)
 
-    Path(output_path).write_text("\n".join(out) + "\n", encoding="utf-8")
+        await queue.join()
+
+        for w in workers:
+            await w
+
+    results.sort(key=lambda x: x[0])
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        for _, extinf, vlcopts, url in results:
+            for line in extinf + vlcopts + [url]:
+                f.write(line + "\n")
+
     print(f"\nSaved FAST playlist to: {output_path}")
 
 # ---------- CLI ----------
