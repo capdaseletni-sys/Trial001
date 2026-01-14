@@ -3,44 +3,38 @@
 http://cord-cutter.net:8080/15564292/15564292/17858
 #EXTINF:-1 tvg-name="===== SHAHID LIVE =====" group-title="SHLS-LIVE-AK", ===== SHAHID LIVE =====
 https://shls-live-ak.akamaized.net/out/v1/8e2419c6c7494dbba478be025af490ee/index_1.m3u8
-#EXTINF:-1 tvg-name="BEIN SPORTS 1 HD" group-title="SANSAT", BEIN SPORTS 1 HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60954
-#EXTINF:-1 tvg-name="BEIN SPORTS 2 SD" group-title="SANSAT", BEIN SPORTS 2 SD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60961
-#EXTINF:-1 tvg-name="BEIN SPORTS 3 HD B2" group-title="SANSAT", BEIN SPORTS 3 HD B2
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/394075
+#EXTINF:-1 tvg-name="BEIN SPORTS 1 HD B2" group-title="SANSAT", BEIN SPORTS 1 HD B2
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/394073
+#EXTINF:-1 tvg-name="BEIN SPORTS 2 HD" group-title="SANSAT", BEIN SPORTS 2 HD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60955
 #EXTINF:-1 tvg-name="BEIN SPORTS 4 HD B2" group-title="SANSAT", BEIN SPORTS 4 HD B2
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576496
-#EXTINF:-1 tvg-name="BEIN SPORTS 4 SD" group-title="SANSAT", BEIN SPORTS 4 SD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60967
 #EXTINF:-1 tvg-name="BEIN SPORTS 5 FHD" group-title="SANSAT", BEIN SPORTS 5 FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36302
-#EXTINF:-1 tvg-name="BEIN SPORTS 5 HD B2" group-title="SANSAT", BEIN SPORTS 5 HD B2
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576497
+#EXTINF:-1 tvg-name="BEIN SPORTS 6" group-title="SANSAT", BEIN SPORTS 6
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5233
 #EXTINF:-1 tvg-name="BEIN SPORTS 6 HD B2" group-title="SANSAT", BEIN SPORTS 6 HD B2
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576498
+#EXTINF:-1 tvg-name="BEIN SPORTS 7" group-title="SANSAT", BEIN SPORTS 7
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5235
 #EXTINF:-1 tvg-name="BEIN SPORTS 7 FHD" group-title="SANSAT", BEIN SPORTS 7 FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36299
-#EXTINF:-1 tvg-name="BEIN SPORTS 7 HD B2" group-title="SANSAT", BEIN SPORTS 7 HD B2
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576499
-#EXTINF:-1 tvg-name="BEIN SPORTS HD" group-title="SANSAT", BEIN SPORTS HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/6727
-#EXTINF:-1 tvg-name="BEIN SPORTS MAX 2 HD LIVE" group-title="SANSAT", BEIN SPORTS MAX 2 HD LIVE
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585681
+#EXTINF:-1 tvg-name="BEIN SPORTS HD B2" group-title="SANSAT", BEIN SPORTS HD B2
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/667032
+#EXTINF:-1 tvg-name="BEIN SPORTS MAX 3 EN HD LIVE" group-title="SANSAT", BEIN SPORTS MAX 3 EN HD LIVE
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585682
+#EXTINF:-1 tvg-name="BEIN SPORTS NEWS" group-title="SANSAT", BEIN SPORTS NEWS
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/290371
+#EXTINF:-1 tvg-name="BEIN SPORTS XTRA 2 FHD" group-title="SANSAT", BEIN SPORTS XTRA 2 FHD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/135168
 #EXTINF:-1 tvg-id="cbcfredericton.ca" tvg-name="CA CBC  New Brunswick / Fredericton NB " tvg-logo="" group-title="CANADA" tvg-name="CA CBC  NEW BRUNSWICK / FREDERICTON NB" group-title="CORD-CUTTER", CA CBC  NEW BRUNSWICK / FREDERICTON NB
 http://cord-cutter.net:8080/15564292/15564292/217655
 #EXTINF:-1 tvg-id="" tvg-name="CA City News Toronto ON" tvg-logo="" group-title="CANADA" tvg-name="CA CITY NEWS TORONTO ON" group-title="CORD-CUTTER", CA CITY NEWS TORONTO ON
 http://cord-cutter.net:8080/15564292/15564292/216100
-#EXTINF:-1 tvg-id="history2.ca" tvg-name="CA H2 HD " tvg-logo="" group-title="CANADA" tvg-name="CA H2 HD" group-title="CORD-CUTTER", CA H2 HD
-http://cord-cutter.net:8080/15564292/15564292/210450
 #EXTINF:-1 tvg-id="muchmusic.ca" tvg-name="CA: MUCH MUSIC" tvg-logo="" group-title="CANADA" tvg-name="CA: MUCH MUSIC" group-title="CORD-CUTTER", CA: MUCH MUSIC
 http://cord-cutter.net:8080/15564292/15564292/215268
 #EXTINF:-1 tvg-id="" tvg-name="Carib TVDirect13 (D)" tvg-logo="" group-title="Caribbean" tvg-name="CARIB TVDIRECT13 (D)" group-title="CORD-CUTTER", CARIB TVDIRECT13 (D)
 http://cord-cutter.net:8080/15564292/15564292/216085
-#EXTINF:-1 tvg-id="" tvg-name="CBS: LA BATON ROUGE WAFB" tvg-logo="" group-title="USA | NEWS | REGIONALS " tvg-name="CBS: LA BATON ROUGE WAFB" group-title="CORD-CUTTER", CBS: LA BATON ROUGE WAFB
-http://cord-cutter.net:8080/15564292/15564292/211020
-#EXTINF:-1 tvg-id="cbs27wkbn.us" tvg-name="CBS: OH YOUNGSTOWN WKBN" tvg-logo="" group-title="USA | NEWS | REGIONALS " tvg-name="CBS: OH YOUNGSTOWN WKBN" group-title="CORD-CUTTER", CBS: OH YOUNGSTOWN WKBN
-http://cord-cutter.net:8080/15564292/15564292/209387
 #EXTINF:-1 tvg-name="CLASSICO SUPER CUP (BARCA VS REAL)" group-title="SANSAT", CLASSICO SUPER CUP (BARCA VS REAL)
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1644651
 #EXTINF:-1 tvg-name="DESTROY ALL MONSTERS (1968)" group-title="SANSAT", DESTROY ALL MONSTERS (1968)
@@ -49,42 +43,6 @@ http://www.sansat.plus:88/movie/02060789178359/02:00:00:00:00:00/443039.mpg
 http://cord-cutter.net:8080/15564292/15564292/235785
 #EXTINF:-1 tvg-id="" tvg-name=" tvg-name="HOT 108 JAMZ" TVG-LOGO="HTTPS://PNGIMG.COM/UPLOADS/RADIO/RADIO_PNG19293.PNG" GROUP-TITLE="RADIO STATIONS",,HOT 108 JAMZ" group-title="CORD-CUTTER", HOT 108 JAMZ" TVG-LOGO="HTTPS://PNGIMG.COM/UPLOADS/RADIO/RADIO_PNG19293.PNG" GROUP-TITLE="RADIO STATIONS",,HOT 108 JAMZ
 http://cord-cutter.net:8080/15564292/15564292/14663
-#EXTINF:-1 tvg-id="" tvg-name="IT: CANALE 5" tvg-logo="" group-title="ITALY " tvg-name="IT: CANALE 5" group-title="CORD-CUTTER", IT: CANALE 5
-http://cord-cutter.net:8080/15564292/15564292/212903
-#EXTINF:-1 tvg-id="" tvg-name="IT: CARTOONITO" tvg-logo="" group-title="ITALY " tvg-name="IT: CARTOONITO" group-title="CORD-CUTTER", IT: CARTOONITO
-http://cord-cutter.net:8080/15564292/15564292/212928
-#EXTINF:-1 tvg-id="" tvg-name="IT: FOCUS" tvg-logo="" group-title="ITALY " tvg-name="IT: FOCUS" group-title="CORD-CUTTER", IT: FOCUS
-http://cord-cutter.net:8080/15564292/15564292/212941
-#EXTINF:-1 tvg-id="" tvg-name="IT: FRISBEE" tvg-logo="" group-title="ITALY " tvg-name="IT: FRISBEE" group-title="CORD-CUTTER", IT: FRISBEE
-http://cord-cutter.net:8080/15564292/15564292/212929
-#EXTINF:-1 tvg-id="" tvg-name="IT: LA 5" tvg-logo="" group-title="ITALY " tvg-name="IT: LA 5" group-title="CORD-CUTTER", IT: LA 5
-http://cord-cutter.net:8080/15564292/15564292/212911
-#EXTINF:-1 tvg-id="" tvg-name="IT: MEDIASET ITALIA 2" tvg-logo="" group-title="ITALY " tvg-name="IT: MEDIASET ITALIA 2" group-title="CORD-CUTTER", IT: MEDIASET ITALIA 2
-http://cord-cutter.net:8080/15564292/15564292/212907
-#EXTINF:-1 tvg-id="" tvg-name="IT: RAI 1" tvg-logo="" group-title="ITALY " tvg-name="IT: RAI 1" group-title="CORD-CUTTER", IT: RAI 1
-http://cord-cutter.net:8080/15564292/15564292/212895
-#EXTINF:-1 tvg-id="" tvg-name="IT: RAI 2" tvg-logo="" group-title="ITALY " tvg-name="IT: RAI 2" group-title="CORD-CUTTER", IT: RAI 2
-http://cord-cutter.net:8080/15564292/15564292/212896
-#EXTINF:-1 tvg-id="" tvg-name="IT: RAI 3" tvg-logo="" group-title="ITALY " tvg-name="IT: RAI 3" group-title="CORD-CUTTER", IT: RAI 3
-http://cord-cutter.net:8080/15564292/15564292/212897
-#EXTINF:-1 tvg-id="" tvg-name="IT: RAI 4" tvg-logo="" group-title="ITALY " tvg-name="IT: RAI 4" group-title="CORD-CUTTER", IT: RAI 4
-http://cord-cutter.net:8080/15564292/15564292/212898
-#EXTINF:-1 tvg-id="" tvg-name="IT: RAI ITALIA" tvg-logo="" group-title="ITALY " tvg-name="IT: RAI ITALIA" group-title="CORD-CUTTER", IT: RAI ITALIA
-http://cord-cutter.net:8080/15564292/15564292/212900
-#EXTINF:-1 tvg-id="" tvg-name="IT: RAI MOVIE" tvg-logo="" group-title="ITALY " tvg-name="IT: RAI MOVIE" group-title="CORD-CUTTER", IT: RAI MOVIE
-http://cord-cutter.net:8080/15564292/15564292/212902
-#EXTINF:-1 tvg-id="" tvg-name="IT: RAI NEWS 24" tvg-logo="" group-title="ITALY " tvg-name="IT: RAI NEWS 24" group-title="CORD-CUTTER", IT: RAI NEWS 24
-http://cord-cutter.net:8080/15564292/15564292/212913
-#EXTINF:-1 tvg-id="" tvg-name="IT: RAI PREMIUM" tvg-logo="" group-title="ITALY " tvg-name="IT: RAI PREMIUM" group-title="CORD-CUTTER", IT: RAI PREMIUM
-http://cord-cutter.net:8080/15564292/15564292/212901
-#EXTINF:-1 tvg-id="" tvg-name="IT: RAI SCUOLA" tvg-logo="" group-title="ITALY " tvg-name="IT: RAI SCUOLA" group-title="CORD-CUTTER", IT: RAI SCUOLA
-http://cord-cutter.net:8080/15564292/15564292/212934
-#EXTINF:-1 tvg-id="" tvg-name="IT: RAI YOYO" tvg-logo="" group-title="ITALY " tvg-name="IT: RAI YOYO" group-title="CORD-CUTTER", IT: RAI YOYO
-http://cord-cutter.net:8080/15564292/15564292/212926
-#EXTINF:-1 tvg-id="" tvg-name="IT: RETE 4" tvg-logo="" group-title="ITALY " tvg-name="IT: RETE 4" group-title="CORD-CUTTER", IT: RETE 4
-http://cord-cutter.net:8080/15564292/15564292/212920
-#EXTINF:-1 tvg-id="" tvg-name="IT: SUPER!" tvg-logo="" group-title="ITALY " tvg-name="IT: SUPER!" group-title="CORD-CUTTER", IT: SUPER!
-http://cord-cutter.net:8080/15564292/15564292/212931
 #EXTINF:-1 tvg-id="" tvg-name="US NBC (KSNW) Wichita tvg-name="KS " TVG-LOGO="" GROUP-TITLE="USA | NEWS | REGIONALS ",US NBC (KSNW) WICHITA, KS" group-title="CORD-CUTTER", KS " TVG-LOGO="" GROUP-TITLE="USA | NEWS | REGIONALS ",US NBC (KSNW) WICHITA, KS
 http://cord-cutter.net:8080/15564292/15564292/216553
 #EXTINF:-1 tvg-id="" tvg-name="M4: Action" tvg-logo="" group-title="24/7 CHANNELS " tvg-name="M4: ACTION" group-title="CORD-CUTTER", M4: ACTION
@@ -737,24 +695,24 @@ http://protv65.shop:8080/hsn3868/hsn00xy/372627
 http://protv65.shop:8080/hsn3868/hsn00xy/192716
 #EXTINF:-1 tvg-id="" tvg-name="TR: MaximTV Terapi TV 2 HD" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/maxterapitv.png" group-title="TR/ MaximTV TERAPI" tvg-name="TR: MAXIMTV TERAPI TV 2 HD" group-title="PROTV65", TR: MAXIMTV TERAPI TV 2 HD
 http://protv65.shop:8080/hsn3868/hsn00xy/192717
+#EXTINF:-1 tvg-id="" tvg-name="TR: MaximTV Terapi TV 3 HD" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/maxterapitv.png" group-title="TR/ MaximTV TERAPI" tvg-name="TR: MAXIMTV TERAPI TV 3 HD" group-title="PROTV65", TR: MAXIMTV TERAPI TV 3 HD
+http://protv65.shop:8080/hsn3868/hsn00xy/192718
+#EXTINF:-1 tvg-id="" tvg-name="TR: MaximTV Terapi TV 4 HD" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/maxterapitv.png" group-title="TR/ MaximTV TERAPI" tvg-name="TR: MAXIMTV TERAPI TV 4 HD" group-title="PROTV65", TR: MAXIMTV TERAPI TV 4 HD
+http://protv65.shop:8080/hsn3868/hsn00xy/192719
 #EXTINF:-1 tvg-id="" tvg-name="TR: Tabii Spor 1 HD" tvg-logo="https://image.hurimg.com/i/hurriyet/75/0x0/64da73444e3fe11a44cb07eb.jpg" group-title="TR/ TABII SPOR" tvg-name="TR: TABII SPOR 1 HD" group-title="PROTV65", TR: TABII SPOR 1 HD
 http://protv65.shop:8080/hsn3868/hsn00xy/454312
 #EXTINF:-1 tvg-id="" tvg-name="TR: Tabii Spor 2 HD" tvg-logo="https://image.hurimg.com/i/hurriyet/75/0x0/64da73444e3fe11a44cb07eb.jpg" group-title="TR/ TABII SPOR" tvg-name="TR: TABII SPOR 2 HD" group-title="PROTV65", TR: TABII SPOR 2 HD
 http://protv65.shop:8080/hsn3868/hsn00xy/454316
+#EXTINF:-1 tvg-id="" tvg-name="TR: Tabii Spor 3 HD" tvg-logo="https://image.hurimg.com/i/hurriyet/75/0x0/64da73444e3fe11a44cb07eb.jpg" group-title="TR/ TABII SPOR" tvg-name="TR: TABII SPOR 3 HD" group-title="PROTV65", TR: TABII SPOR 3 HD
+http://protv65.shop:8080/hsn3868/hsn00xy/454318
 #EXTINF:-1 tvg-id="" tvg-name="TR: Tabii Spor 5 HD" tvg-logo="https://image.hurimg.com/i/hurriyet/75/0x0/64da73444e3fe11a44cb07eb.jpg" group-title="TR/ TABII SPOR" tvg-name="TR: TABII SPOR 5 HD" group-title="PROTV65", TR: TABII SPOR 5 HD
 http://protv65.shop:8080/hsn3868/hsn00xy/454322
-#EXTINF:-1 tvg-id="" tvg-name="US  Space City Home Network" tvg-logo="" group-title="USA " tvg-name="US  SPACE CITY HOME NETWORK" group-title="CORD-CUTTER", US  SPACE CITY HOME NETWORK
-http://cord-cutter.net:8080/15564292/15564292/213668
-#EXTINF:-1 tvg-id="" tvg-name="US (LN) HBCU Go" tvg-logo="" group-title="Sports Fanatic's " tvg-name="US (LN) HBCU GO" group-title="CORD-CUTTER", US (LN) HBCU GO
-http://cord-cutter.net:8080/15564292/15564292/209775
 #EXTINF:-1 tvg-id="" tvg-name="US ABC (WEAR) Pensacola " tvg-logo="" group-title="USA | NEWS | REGIONALS " tvg-name="US ABC (WEAR) PENSACOLA" group-title="CORD-CUTTER", US ABC (WEAR) PENSACOLA
 http://cord-cutter.net:8080/15564292/15564292/222768
 #EXTINF:-1 tvg-id="" tvg-name="US ABC 10 (KAKE) Wichita (H)" tvg-logo="" group-title="USA | NEWS | REGIONALS " tvg-name="US ABC 10 (KAKE) WICHITA (H)" group-title="CORD-CUTTER", US ABC 10 (KAKE) WICHITA (H)
 http://cord-cutter.net:8080/15564292/15564292/216555
 #EXTINF:-1 tvg-id="" tvg-name="US ABC 3 (KIII) Corpus Christi (H)" tvg-logo="" group-title="USA | NEWS | REGIONALS " tvg-name="US ABC 3 (KIII) CORPUS CHRISTI (H)" group-title="CORD-CUTTER", US ABC 3 (KIII) CORPUS CHRISTI (H)
 http://cord-cutter.net:8080/15564292/15564292/216621
-#EXTINF:-1 tvg-id="abc9wtvm.us" tvg-name="US ABC 9 (WTVM) Columbus GA " tvg-logo="" group-title="USA | NEWS | REGIONALS " tvg-name="US ABC 9 (WTVM) COLUMBUS GA" group-title="CORD-CUTTER", US ABC 9 (WTVM) COLUMBUS GA
-http://cord-cutter.net:8080/15564292/15564292/211373
 #EXTINF:-1 tvg-id="abcwcjb.us" tvg-name="US ABC20 (WCJB) Gainesville " tvg-logo="" group-title="USA | NEWS | REGIONALS " tvg-name="US ABC20 (WCJB) GAINESVILLE" group-title="CORD-CUTTER", US ABC20 (WCJB) GAINESVILLE
 http://cord-cutter.net:8080/15564292/15564292/222767
 #EXTINF:-1 tvg-id="" tvg-name="US ABC28 (KAMC) Lubbock/Texas (A)" tvg-logo="" group-title="USA | NEWS | REGIONALS " tvg-name="US ABC28 (KAMC) LUBBOCK/TEXAS (A)" group-title="CORD-CUTTER", US ABC28 (KAMC) LUBBOCK/TEXAS (A)
@@ -793,14 +751,10 @@ http://cord-cutter.net:8080/15564292/15564292/216549
 http://cord-cutter.net:8080/15564292/15564292/218604
 #EXTINF:-1 tvg-id="my28wrdc.us" tvg-name="US mytv28 (WRDC) Raleigh/Durham (A)" tvg-logo="" group-title="USA | NEWS | REGIONALS " tvg-name="US MYTV28 (WRDC) RALEIGH/DURHAM (A)" group-title="CORD-CUTTER", US MYTV28 (WRDC) RALEIGH/DURHAM (A)
 http://cord-cutter.net:8080/15564292/15564292/215021
-#EXTINF:-1 tvg-id="nbc10wsls.us" tvg-name="US NBC (WSLS) Roanoke (F)" tvg-logo="" group-title="USA | NEWS | REGIONALS " tvg-name="US NBC (WSLS) ROANOKE (F)" group-title="CORD-CUTTER", US NBC (WSLS) ROANOKE (F)
-http://cord-cutter.net:8080/15564292/15564292/212656
 #EXTINF:-1 tvg-id="nbc17kget.us" tvg-name="US NBC 17 (KGET) Bakersfield" tvg-logo="" group-title="USA | NEWS | REGIONALS " tvg-name="US NBC 17 (KGET) BAKERSFIELD" group-title="CORD-CUTTER", US NBC 17 (KGET) BAKERSFIELD
 http://cord-cutter.net:8080/15564292/15564292/216551
 #EXTINF:-1 tvg-id="nbc20wbbh.us" tvg-name="US NBC 20 (WBBH) Fort Myers " tvg-logo="" group-title="USA | NEWS | REGIONALS " tvg-name="US NBC 20 (WBBH) FORT MYERS" group-title="CORD-CUTTER", US NBC 20 (WBBH) FORT MYERS
 http://cord-cutter.net:8080/15564292/15564292/235784
-#EXTINF:-1 tvg-id="nbc9wtva.us" tvg-name="US NBC 9 (WTVA) Tupelo (D)" tvg-logo="" group-title="USA | NEWS | REGIONALS " tvg-name="US NBC 9 (WTVA) TUPELO (D)" group-title="CORD-CUTTER", US NBC 9 (WTVA) TUPELO (D)
-http://cord-cutter.net:8080/15564292/15564292/213646
 #EXTINF:-1 tvg-id="nbc11kcbd.us" tvg-name="US NBC11 (KCBD) Lubbock/Texas" tvg-logo="" group-title="USA | NEWS | REGIONALS " tvg-name="US NBC11 (KCBD) LUBBOCK/TEXAS" group-title="CORD-CUTTER", US NBC11 (KCBD) LUBBOCK/TEXAS
 http://cord-cutter.net:8080/15564292/15564292/216129
 #EXTINF:-1 tvg-id="nhlnetwork.us" tvg-name="US NHL Network" tvg-logo="" group-title="NHL" tvg-name="US NHL NETWORK" group-title="CORD-CUTTER", US NHL NETWORK
@@ -815,6 +769,8 @@ http://cord-cutter.net:8080/15564292/15564292/216622
 http://cord-cutter.net:8080/15564292/15564292/224582
 #EXTINF:-1 tvg-id="" tvg-name="US US CW 39 (KIAH) Houston " tvg-logo="" group-title="USA | NEWS | REGIONALS " tvg-name="US US CW 39 (KIAH) HOUSTON" group-title="CORD-CUTTER", US US CW 39 (KIAH) HOUSTON
 http://cord-cutter.net:8080/15564292/15564292/216086
+#EXTINF:-1 tvg-id="US: A&E EAST" tvg-name="USA A&E UHD" tvg-logo="https://images-na.ssl-images-amazon.com/images/I/312LhQsVqtL._SY355_.png" group-title="ENTERTAINMENT" tvg-name="USA A&E UHD" group-title="SUPERSONICTV", USA A&E UHD
+http://supersonictv.live:8080/611366/682256/22040
 #EXTINF:-1 tvg-id="US: AMC EAST" tvg-name="USA AMC UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/AMC_logo_2016.svg/1280px-AMC_logo_2016.svg.png" group-title="ENTERTAINMENT" tvg-name="USA AMC UHD" group-title="SUPERSONICTV", USA AMC UHD
 http://supersonictv.live:8080/611366/682256/22042
 #EXTINF:-1 tvg-id="US: AMERICAN HEROES CHANNEL" tvg-name="USA American Heroes" tvg-logo="http://apk.eternaltv.net/icons/americanhero.jpg" group-title="ENTERTAINMENT" tvg-name="USA AMERICAN HEROES" group-title="SUPERSONICTV", USA AMERICAN HEROES
@@ -823,34 +779,28 @@ http://supersonictv.live:8080/611366/682256/22044
 http://supersonictv.live:8080/611366/682256/22045
 #EXTINF:-1 tvg-id="US: ANIMAL PLANET WEST" tvg-name="USA Animal Planet West LHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c8/AnimalPlanet.png" group-title="ENTERTAINMENT" tvg-name="USA ANIMAL PLANET WEST LHD" group-title="SUPERSONICTV", USA ANIMAL PLANET WEST LHD
 http://supersonictv.live:8080/611366/682256/22046
-#EXTINF:-1 tvg-id="US: AXS TV" tvg-name="USA AXS TV" tvg-logo="https://static-us-east-2-fastly-a.www.philo.com/images/channel_logos/AXSTV/large_dark.png" group-title="ENTERTAINMENT" tvg-name="USA AXS TV" group-title="SUPERSONICTV", USA AXS TV
-http://supersonictv.live:8080/611366/682256/22050
-#EXTINF:-1 tvg-id="US: BET JAMS" tvg-name="USA BET Jams" tvg-logo="https://www.pngitem.com/pimgs/m/490-4901916_bet-logo-png-png-download-bet-jams-logo.png" group-title="ENTERTAINMENT" tvg-name="USA BET JAMS" group-title="SUPERSONICTV", USA BET JAMS
-http://supersonictv.live:8080/611366/682256/22054
 #EXTINF:-1 tvg-id="US: BET WEST" tvg-name="USA BET West" tvg-logo="https://yourbetadvisor.com/wp-content/uploads/2018/11/betway.png" group-title="ENTERTAINMENT" tvg-name="USA BET WEST" group-title="SUPERSONICTV", USA BET WEST
 http://supersonictv.live:8080/611366/682256/22057
 #EXTINF:-1 tvg-id="US: BOUNCE" tvg-name="USA BOUNCE TV" tvg-logo="https://storage.googleapis.com/btvwp-uploads/2018/02/5bfb1301-bounce_adjusted1.png" group-title="ENTERTAINMENT" tvg-name="USA BOUNCE TV" group-title="SUPERSONICTV", USA BOUNCE TV
 http://supersonictv.live:8080/611366/682256/22058
-#EXTINF:-1 tvg-id="US: BRAVO EAST" tvg-name="USA Bravo East UHD" tvg-logo="http://epg4you.com/logos/bravo.png" group-title="ENTERTAINMENT" tvg-name="USA BRAVO EAST UHD" group-title="SUPERSONICTV", USA BRAVO EAST UHD
-http://supersonictv.live:8080/611366/682256/22059
 #EXTINF:-1 tvg-id="US: BRAVO WEST" tvg-name="USA Bravo West LHD" tvg-logo="http://epg4you.com/logos/bravo.png" group-title="ENTERTAINMENT" tvg-name="USA BRAVO WEST LHD" group-title="SUPERSONICTV", USA BRAVO WEST LHD
 http://supersonictv.live:8080/611366/682256/22060
-#EXTINF:-1 tvg-id="US: COZI TV" tvg-name="USA COZI TV LHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Cozi_TV_logo.svg/1280px-Cozi_TV_logo.svg.png" group-title="ENTERTAINMENT" tvg-name="USA COZI TV LHD" group-title="SUPERSONICTV", USA COZI TV LHD
-http://supersonictv.live:8080/611366/682256/22070
-#EXTINF:-1 tvg-id="US: DESTINATION AMERICA" tvg-name="USA Destination America UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Destination_America_logo.svg/1200px-Destination_America_logo.svg.png" group-title="ENTERTAINMENT" tvg-name="USA DESTINATION AMERICA UHD" group-title="SUPERSONICTV", USA DESTINATION AMERICA UHD
-http://supersonictv.live:8080/611366/682256/22073
+#EXTINF:-1 tvg-id="US: CMT EAST" tvg-name="USA CMT UHD" tvg-logo="http://apk.eternaltv.net/icons/CMTV.png" group-title="ENTERTAINMENT" tvg-name="USA CMT UHD" group-title="SUPERSONICTV", USA CMT UHD
+http://supersonictv.live:8080/611366/682256/22063
+#EXTINF:-1 tvg-id="US: DISCOVERY CHANNEL EAST" tvg-name="USA Discovery Channel UHD" tvg-logo="https://img.idesign.vn/1920x-/2019/04/22/ides_discoverychannel_04-2.png" group-title="ENTERTAINMENT" tvg-name="USA DISCOVERY CHANNEL UHD" group-title="SUPERSONICTV", USA DISCOVERY CHANNEL UHD
+http://supersonictv.live:8080/611366/682256/22074
 #EXTINF:-1 tvg-id="CA: DISCOVERY SCIENCE" tvg-name="USA Discovery Science" tvg-logo="https://pbs.twimg.com/profile_images/908026116560101376/roWv2x4X_400x400.jpg" group-title="ENTERTAINMENT" tvg-name="USA DISCOVERY SCIENCE" group-title="SUPERSONICTV", USA DISCOVERY SCIENCE
 http://supersonictv.live:8080/611366/682256/22077
-#EXTINF:-1 tvg-id="US: FOOD NETWORK WEST" tvg-name="USA Food Network West LHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Food_Network_New_Logo.png/615px-Food_Network_New_Logo.png" group-title="ENTERTAINMENT" tvg-name="USA FOOD NETWORK WEST LHD" group-title="SUPERSONICTV", USA FOOD NETWORK WEST LHD
-http://supersonictv.live:8080/611366/682256/22085
 #EXTINF:-1 tvg-id="CA: FOX EAST" tvg-name="USA Fox UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Fox_Sports_Networks.svg/1200px-Fox_Sports_Networks.svg.png" group-title="ENTERTAINMENT" tvg-name="USA FOX UHD" group-title="SUPERSONICTV", USA FOX UHD
 http://supersonictv.live:8080/611366/682256/22086
-#EXTINF:-1 tvg-id="CA: GAME SHOW NETWORK" tvg-name="USA Game Show Network UHD" tvg-logo="https://www.dropbox.com/s/q2kxldj5xcbh29v/game%20show%20network.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA GAME SHOW NETWORK UHD" group-title="SUPERSONICTV", USA GAME SHOW NETWORK UHD
-http://supersonictv.live:8080/611366/682256/22098
-#EXTINF:-1 tvg-id="US: DISCOVERY ID EAST" tvg-name="USA Investigation Discovery East UHD" tvg-logo="https://www.dropbox.com/s/z7yctzw9dt14q9r/investigation%20discovery.jpg?dl=1" group-title="ENTERTAINMENT" tvg-name="USA INVESTIGATION DISCOVERY EAST UHD" group-title="SUPERSONICTV", USA INVESTIGATION DISCOVERY EAST UHD
-http://supersonictv.live:8080/611366/682256/22110
-#EXTINF:-1 tvg-id="US: JUSTICE CENTRAL" tvg-name="USA JUSTICE CENTRAL" tvg-logo="http://apk.eternaltv.net/icons/justice-central-graphic-2017jpg.jpg" group-title="ENTERTAINMENT" tvg-name="USA JUSTICE CENTRAL" group-title="SUPERSONICTV", USA JUSTICE CENTRAL
-http://supersonictv.live:8080/611366/682256/22112
+#EXTINF:-1 tvg-id="US: FXM" tvg-name="USA FXM UHD" tvg-logo="https://www.dropbox.com/s/jsecdvd2f8cw95c/fxm.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA FXM UHD" group-title="SUPERSONICTV", USA FXM UHD
+http://supersonictv.live:8080/611366/682256/22093
+#EXTINF:-1 tvg-id="US: GET TV" tvg-name="USA GET TV" tvg-logo="https://www.dropbox.com/s/j72rhqoj12n017r/get%20tv.jpg?dl=1" group-title="ENTERTAINMENT" tvg-name="USA GET TV" group-title="SUPERSONICTV", USA GET TV
+http://supersonictv.live:8080/611366/682256/22099
+#EXTINF:-1 tvg-id="US: HGTV EAST" tvg-name="USA HGTV West LHD" tvg-logo="https://www.dropbox.com/s/iax9yjkmxymvzaq/HGTV.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA HGTV WEST LHD" group-title="SUPERSONICTV", USA HGTV WEST LHD
+http://supersonictv.live:8080/611366/682256/22103
+#EXTINF:-1 tvg-id="US: DISCOVERY ID WEST" tvg-name="USA Investigation Discovery West LHD" tvg-logo="https://www.dropbox.com/s/z7yctzw9dt14q9r/investigation%20discovery.jpg?dl=1" group-title="ENTERTAINMENT" tvg-name="USA INVESTIGATION DISCOVERY WEST LHD" group-title="SUPERSONICTV", USA INVESTIGATION DISCOVERY WEST LHD
+http://supersonictv.live:8080/611366/682256/22111
 #EXTINF:-1 tvg-id="US: NAT GEO WILD" tvg-name="USA Nat Geo WILD" tvg-logo="https://www.dropbox.com/s/o0wlndwtm0wzb3o/nat%20geo%20wild.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA NAT GEO WILD" group-title="SUPERSONICTV", USA NAT GEO WILD
 http://supersonictv.live:8080/611366/682256/22122
 #EXTINF:-1 tvg-id="" tvg-name="USA Real NBA 01: Phoenix Suns vs Miami Heat @ 07:30 PM EST" tvg-logo="" group-title="NBA" tvg-name="USA REAL NBA 01: PHOENIX SUNS VS MIAMI HEAT @ 07:30 PM EST" group-title="CORD-CUTTER", USA REAL NBA 01: PHOENIX SUNS VS MIAMI HEAT @ 07:30 PM EST
@@ -889,10 +839,8 @@ http://cord-cutter.net:8080/15564292/15564292/259147
 http://cord-cutter.net:8080/15564292/15564292/259148
 #EXTINF:-1 tvg-id="" tvg-name="USA Real NHL 11: Toronto Maple Leafs vs Utah Mammoth @ 10:00 PM" tvg-logo="" group-title="NHL" tvg-name="USA REAL NHL 11: TORONTO MAPLE LEAFS VS UTAH MAMMOTH @ 10:00 PM" group-title="CORD-CUTTER", USA REAL NHL 11: TORONTO MAPLE LEAFS VS UTAH MAMMOTH @ 10:00 PM
 http://cord-cutter.net:8080/15564292/15564292/259149
-#EXTINF:-1 tvg-id="" tvg-name="USA | NFL " tvg-logo="" group-title="NFL" tvg-name="USA | NFL" group-title="CORD-CUTTER", USA | NFL
-http://cord-cutter.net:8080/15564292/15564292/208896
-#EXTINF:-1 tvg-id="" tvg-name="USA | NFL REDZONE 3" tvg-logo="" group-title="NFL" tvg-name="USA | NFL REDZONE 3" group-title="CORD-CUTTER", USA | NFL REDZONE 3
-http://cord-cutter.net:8080/15564292/15564292/208830
+#EXTINF:-1 tvg-id="CA: ADULT SWIM" tvg-name="USA: ADULT SWIM" tvg-logo="https://i.pinimg.com/originals/5c/31/62/5c31623f9319817ffba4715c50971444.jpg" group-title="ENTERTAINMENT" tvg-name="USA: ADULT SWIM" group-title="SUPERSONICTV", USA: ADULT SWIM
+http://supersonictv.live:8080/611366/682256/22043
 #EXTINF:-1 tvg-id="" tvg-name="VERIFIED AMATEURS: ALICE REDLIPS" tvg-logo="" group-title="XXX CHANNELS" tvg-name="VERIFIED AMATEURS: ALICE REDLIPS" group-title="CORD-CUTTER", VERIFIED AMATEURS: ALICE REDLIPS
 http://cord-cutter.net:8080/15564292/15564292/160074
 #EXTINF:-1 tvg-id="" tvg-name="VERIFIED AMATEURS: BIGTITTYGOTHEGG" tvg-logo="" group-title="XXX CHANNELS" tvg-name="VERIFIED AMATEURS: BIGTITTYGOTHEGG" group-title="CORD-CUTTER", VERIFIED AMATEURS: BIGTITTYGOTHEGG
@@ -1661,6 +1609,8 @@ http://cord-cutter.net:8080/15564292/15564292/215790
 http://cord-cutter.net:8080/15564292/15564292/215791
 #EXTINF:-1 tvg-id="" tvg-name="X4 | Youthlu#EXTVLCOPT:network-caching=1000" tvg-logo="" group-title="XXX CHANNELS" tvg-name="X4 | YOUTHLU#EXTVLCOPT:NETWORK-CACHING=1000" group-title="CORD-CUTTER", X4 | YOUTHLU#EXTVLCOPT:NETWORK-CACHING=1000
 http://cord-cutter.net:8080/15564292/15564292/215792
+#EXTINF:-1 tvg-id="US: ANTENNA TV" tvg-name="[]USA ANTENNA TV" tvg-logo="https://www.dropbox.com/s/a76wm2c5cikslms/Antenna%20TV.png?dl=1" group-title="ENTERTAINMENT" tvg-name="[]USA ANTENNA TV" group-title="SUPERSONICTV", []USA ANTENNA TV
+http://supersonictv.live:8080/611366/682256/22047
 #EXTINF:-1 tvg-name="|ADULT| BABES TV HD" group-title="SANSAT", |ADULT| BABES TV HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94535
 #EXTINF:-1 tvg-name="|ADULT| BALKAN EROTIC" group-title="SANSAT", |ADULT| BALKAN EROTIC
@@ -1985,8 +1935,12 @@ http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94602
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285952
 #EXTINF:-1 tvg-name="|AR| AL JAZEERA HD LIVE" group-title="LIVE-HLS-WEB-AJA-GCP", |AR| AL JAZEERA HD LIVE
 https://live-hls-web-aja-gcp.thehlive.com/AJA/02.m3u8
+#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 1 4K" group-title="SANSAT", |AR| BEIN SPORTS AFC 1 4K
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/176995
 #EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 1 SD" group-title="SANSAT", |AR| BEIN SPORTS AFC 1 SD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/435962
+#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 4K" group-title="SANSAT", |AR| BEIN SPORTS AFC 4K
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/176994
 #EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 5 HD" group-title="SANSAT", |AR| BEIN SPORTS AFC 5 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/435960
 #EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC SD" group-title="SANSAT", |AR| BEIN SPORTS AFC SD
@@ -2257,8 +2211,6 @@ https://shls-live-enc.edgenextcdn.net/out/v1/9747e20a05794a14b0cfccd7c621dd00/in
 https://shls-live-enc.edgenextcdn.net/out/v1/e7350ddf46c94dddafe14b099394ff56/index_12.m3u8
 #EXTINF:-1 tvg-name="|SHAHID| BAB AL HARA" group-title="SHLS-LIVE-ENC", |SHAHID| BAB AL HARA
 https://shls-live-enc.edgenextcdn.net/out/v1/948c54279b594944adde578c95f1d7d1/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| BIG TIME" group-title="SHLS-LIVE-AK", |SHAHID| BIG TIME
-https://shls-live-ak.akamaized.net/out/v1/07a6ab2d57b2453a91bbdd2d46b5865a/index_2.m3u8
 #EXTINF:-1 tvg-name="|SHAHID| BIG TIME PLUS" group-title="SHD-GCP-LIVE", |SHAHID| BIG TIME PLUS
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-big-time-plus/924283f994779a311c1389698ff7e736/manifest/video/1080p2400kbps/video.m3u8
 #EXTINF:-1 tvg-name="|SHAHID| EL-PODCASTERS" group-title="SHLS-LIVE-ENC", |SHAHID| EL-PODCASTERS
@@ -2289,14 +2241,8 @@ https://shls-live-enc.edgenextcdn.net/out/v1/40031eca7be34c4ea9744bf067f4fefa/in
 https://shls-live-enc.edgenextcdn.net/out/v1/e34e3ac9d2534543a13b44c2b458b0c2/index_1.m3u8
 #EXTINF:-1 tvg-id="ASpor.tr" tvg-name="|TR| A Spor HD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/a_spor.png" group-title="TR/ YEREL SPOR" tvg-name="|TR| A SPOR HD" group-title="PROTV65", |TR| A SPOR HD
 http://protv65.shop:8080/hsn3868/hsn00xy/6113
-#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Connect 3 |Mac Saati|" tvg-logo="https://resimyukle.io/uploadyeri/D3GN7pCi_download.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN CONNECT 3 |MAC SAATI|" group-title="PROTV65", |TR| BEIN CONNECT 3 |MAC SAATI|
-http://protv65.shop:8080/hsn3868/hsn00xy/137712
 #EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 1 (TTNET ÖZEL)" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 1 (TTNET ÖZEL)" group-title="PROTV65", |TR| BEIN SPORTS 1 (TTNET ÖZEL)
 http://protv65.shop:8080/hsn3868/hsn00xy/334642
-#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 1 4K [Feed]" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 1 4K [FEED]" group-title="PROTV65", |TR| BEIN SPORTS 1 4K [FEED]
-http://protv65.shop:8080/hsn3868/hsn00xy/35650
-#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 1 720p" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 1 720P" group-title="PROTV65", |TR| BEIN SPORTS 1 720P
-http://protv65.shop:8080/hsn3868/hsn00xy/351541
 #EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 1 8K [Feed]" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 1 8K [FEED]" group-title="PROTV65", |TR| BEIN SPORTS 1 8K [FEED]
 http://protv65.shop:8080/hsn3868/hsn00xy/191152
 #EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 1 FHD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 1 FHD" group-title="PROTV65", |TR| BEIN SPORTS 1 FHD
@@ -2311,16 +2257,22 @@ http://protv65.shop:8080/hsn3868/hsn00xy/98925
 http://protv65.shop:8080/hsn3868/hsn00xy/190072
 #EXTINF:-1 tvg-id="24KitchenTurkey.tr" tvg-name="|TR| beIN Sports 2 HD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_2.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 2 HD" group-title="PROTV65", |TR| BEIN SPORTS 2 HD
 http://protv65.shop:8080/hsn3868/hsn00xy/35730
+#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 2 SD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_2.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 2 SD" group-title="PROTV65", |TR| BEIN SPORTS 2 SD
+http://protv65.shop:8080/hsn3868/hsn00xy/196216
+#EXTINF:-1 tvg-id="24KitchenTurkey.tr" tvg-name="|TR| beIN Sports 3 HD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_3.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 3 HD" group-title="PROTV65", |TR| BEIN SPORTS 3 HD
+http://protv65.shop:8080/hsn3868/hsn00xy/6097
+#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 3 SD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_3.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 3 SD" group-title="PROTV65", |TR| BEIN SPORTS 3 SD
+http://protv65.shop:8080/hsn3868/hsn00xy/196217
 #EXTINF:-1 tvg-id="24KitchenTurkey.tr" tvg-name="|TR| beIN Sports 4 HD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 4 HD" group-title="PROTV65", |TR| BEIN SPORTS 4 HD
 http://protv65.shop:8080/hsn3868/hsn00xy/6098
-#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 4 UHD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 4 UHD" group-title="PROTV65", |TR| BEIN SPORTS 4 UHD
-http://protv65.shop:8080/hsn3868/hsn00xy/195813
-#EXTINF:-1 tvg-id="" tvg-name="|TR| D-Smart EuroSport 1" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/eurosport1.png" group-title="TR/ SMART SPOR" tvg-name="|TR| D-SMART EUROSPORT 1" group-title="PROTV65", |TR| D-SMART EUROSPORT 1
-http://protv65.shop:8080/hsn3868/hsn00xy/6106
+#EXTINF:-1 tvg-id="24KitchenTurkey.tr" tvg-name="|TR| beIN Sports Max 1" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_max_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS MAX 1" group-title="PROTV65", |TR| BEIN SPORTS MAX 1
+http://protv65.shop:8080/hsn3868/hsn00xy/6099
+#EXTINF:-1 tvg-id="" tvg-name="|TR| Exxen Sport 1 HD" tvg-logo="https://i.hizliresim.com/ow6rgag.png" group-title="TR/ EXXEN SPOR" tvg-name="|TR| EXXEN SPORT 1 HD" group-title="PROTV65", |TR| EXXEN SPORT 1 HD
+http://protv65.shop:8080/hsn3868/hsn00xy/452750
 #EXTINF:-1 tvg-id="" tvg-name="|TR| Exxen Sport 1 SD" tvg-logo="https://i.hizliresim.com/ow6rgag.png" group-title="TR/ EXXEN SPOR" tvg-name="|TR| EXXEN SPORT 1 SD" group-title="PROTV65", |TR| EXXEN SPORT 1 SD
 http://protv65.shop:8080/hsn3868/hsn00xy/453643
-#EXTINF:-1 tvg-id="" tvg-name="|TR| Exxen Sport 2 HD" tvg-logo="https://i.hizliresim.com/m7qc7nj.png" group-title="TR/ EXXEN SPOR" tvg-name="|TR| EXXEN SPORT 2 HD" group-title="PROTV65", |TR| EXXEN SPORT 2 HD
-http://protv65.shop:8080/hsn3868/hsn00xy/452752
+#EXTINF:-1 tvg-id="" tvg-name="|TR| Exxen Sport 1 UHD" tvg-logo="https://i.hizliresim.com/ow6rgag.png" group-title="TR/ EXXEN SPOR" tvg-name="|TR| EXXEN SPORT 1 UHD" group-title="PROTV65", |TR| EXXEN SPORT 1 UHD
+http://protv65.shop:8080/hsn3868/hsn00xy/469839
 #EXTINF:-1 tvg-id="" tvg-name="|TR| Exxen Sport 3 HD" tvg-logo="https://i.hizliresim.com/sup9c9o.png" group-title="TR/ EXXEN SPOR" tvg-name="|TR| EXXEN SPORT 3 HD" group-title="PROTV65", |TR| EXXEN SPORT 3 HD
 http://protv65.shop:8080/hsn3868/hsn00xy/452753
 #EXTINF:-1 tvg-id="" tvg-name="|TR| Exxen Sport 4 HD" tvg-logo="https://i.hizliresim.com/cwowc8h.png" group-title="TR/ EXXEN SPOR" tvg-name="|TR| EXXEN SPORT 4 HD" group-title="PROTV65", |TR| EXXEN SPORT 4 HD
@@ -2337,14 +2289,14 @@ http://protv65.shop:8080/hsn3868/hsn00xy/371591
 http://protv65.shop:8080/hsn3868/hsn00xy/6111
 #EXTINF:-1 tvg-id="" tvg-name="|TR| S Sport 1 HD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport.png" group-title="TR/ S-SPORT" tvg-name="|TR| S SPORT 1 HD" group-title="PROTV65", |TR| S SPORT 1 HD
 http://protv65.shop:8080/hsn3868/hsn00xy/115598
+#EXTINF:-1 tvg-id="" tvg-name="|TR| S Sport 2 HD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_spor_2.png" group-title="TR/ S-SPORT" tvg-name="|TR| S SPORT 2 HD" group-title="PROTV65", |TR| S SPORT 2 HD
+http://protv65.shop:8080/hsn3868/hsn00xy/6105
+#EXTINF:-1 tvg-id="" tvg-name="|TR| S Sport+5 Mac Saati" tvg-logo="http://www.broadcasterinfo.net/systems/images/ckImages/902687a2-ac5a-4174-baad-d887e93d252a.png" group-title="TR/ S-SPORT" tvg-name="|TR| S SPORT+5 MAC SAATI" group-title="PROTV65", |TR| S SPORT+5 MAC SAATI
+http://protv65.shop:8080/hsn3868/hsn00xy/137717
 #EXTINF:-1 tvg-id="" tvg-name="|TR| Sports TV" tvg-logo="https://tivizap.com/wp-content/uploads/2018/05/sports-tv.png" group-title="TR/ YEREL SPOR" tvg-name="|TR| SPORTS TV" group-title="PROTV65", |TR| SPORTS TV
 http://protv65.shop:8080/hsn3868/hsn00xy/20772
-#EXTINF:-1 tvg-id="" tvg-name="|TR| Tivibu Spor 3 FHD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/tivibu_spor_4.png" group-title="TR/ TIVIBU SPOR" tvg-name="|TR| TIVIBU SPOR 3 FHD" group-title="PROTV65", |TR| TIVIBU SPOR 3 FHD
-http://protv65.shop:8080/hsn3868/hsn00xy/113254
-#EXTINF:-1 tvg-id="" tvg-name="|TR| Tivibu Spor 4 FHD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/tivibu_spor.png" group-title="TR/ TIVIBU SPOR" tvg-name="|TR| TIVIBU SPOR 4 FHD" group-title="PROTV65", |TR| TIVIBU SPOR 4 FHD
-http://protv65.shop:8080/hsn3868/hsn00xy/115600
-#EXTINF:-1 tvg-id="" tvg-name="|TR| Tivibu Spor FHD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/tivibu_spor.png" group-title="TR/ TIVIBU SPOR" tvg-name="|TR| TIVIBU SPOR FHD" group-title="PROTV65", |TR| TIVIBU SPOR FHD
-http://protv65.shop:8080/hsn3868/hsn00xy/6101
+#EXTINF:-1 tvg-id="" tvg-name="|TR| Tivibu Spor 2 FHD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/tivibu_spor_3.png" group-title="TR/ TIVIBU SPOR" tvg-name="|TR| TIVIBU SPOR 2 FHD" group-title="PROTV65", |TR| TIVIBU SPOR 2 FHD
+http://protv65.shop:8080/hsn3868/hsn00xy/6103
 #EXTINF:-1 tvg-id="TRTSpor.tr" tvg-name="|TR| Trt Spor HD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/trt_spor.png" group-title="TR/ YEREL SPOR" tvg-name="|TR| TRT SPOR HD" group-title="PROTV65", |TR| TRT SPOR HD
 http://protv65.shop:8080/hsn3868/hsn00xy/6109
 #EXTINF:-1 tvg-id="" tvg-name="|TR| TRT Spor Yıldız" tvg-logo="https://logos-world.net/wp-content/uploads/2021/06/TRT-Spor-Yildiz-New-Logo.png" group-title="TR/ YEREL SPOR" tvg-name="|TR| TRT SPOR YILDIZ" group-title="PROTV65", |TR| TRT SPOR YILDIZ
