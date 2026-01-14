@@ -12,12 +12,20 @@ TIMEOUT = aiohttp.ClientTimeout(total=12)
 MAX_CONCURRENCY = 80
 MAX_HLS_DEPTH = 3
 
-MIN_SPEED_KBPS = 250
-MAX_TTFB = 4.0
-SAMPLE_BYTES = 384_000
-WARMUP_BYTES = 32_000
+# VERY FAST ONLY
+MIN_SPEED_KBPS = 1200        # ~1.2 MB/s
+MAX_TTFB = 1.5              # seconds
+SAMPLE_BYTES = 768_000
+WARMUP_BYTES = 64_000
+RETRIES = 1
 
-RETRIES = 2
+# 1080p ENFORCEMENT
+MIN_WIDTH = 1920
+MIN_HEIGHT = 1080
+MIN_BANDWIDTH = 5_000_000   # fallback if RESOLUTION missing
+
+# GROUP FILTER
+REQUIRED_GROUP_KEYWORD = "xxx"
 
 DEFAULT_HEADERS = {
     "User-Agent": "Mozilla/5.0"
@@ -34,6 +42,7 @@ async def stream_is_fast(session, url, headers):
     for _ in range(RETRIES):
         try:
             start = time.perf_counter()
+            now = start
 
             async with session.get(url, headers=headers) as r:
                 if r.status >= 400:
@@ -63,8 +72,8 @@ async def stream_is_fast(session, url, headers):
                     if measured >= SAMPLE_BYTES:
                         break
 
-                if not speed_start_time:
-                    continue
+                if not speed_start_time or measured < SAMPLE_BYTES * 0.9:
+                    return False
 
                 ttfb = first_byte_time - start
                 duration = max(now - speed_start_time, 0.001)
@@ -79,8 +88,6 @@ async def stream_is_fast(session, url, headers):
         except Exception:
             pass
 
-        await asyncio.sleep(0.2)
-
     return False
 
 # ---------- HLS / STREAM CHECK ----------
@@ -94,7 +101,7 @@ async def is_stream_fast(session, url, headers, depth=0):
             return False
 
     if ".m3u8" not in url:
-        return await stream_is_fast(session, url, headers)
+        return False  # non-HLS rejected (cannot verify 1080p)
 
     try:
         async with session.get(url, headers=headers) as r:
@@ -109,23 +116,56 @@ async def is_stream_fast(session, url, headers, depth=0):
 
     lines = text.splitlines()
 
-    for i, line in enumerate(lines):
-        if line.startswith("#EXT-X-STREAM-INF") and i + 1 < len(lines):
-            variant = lines[i + 1].strip()
-            if not variant.startswith("#"):
-                return await is_stream_fast(
-                    session,
-                    urljoin(url, variant),
-                    headers,
-                    depth + 1
-                )
-            return False
+    # ---------- MASTER PLAYLIST (1080p ENFORCED) ----------
+    best_variant = None
 
+    for i, line in enumerate(lines):
+        if not line.startswith("#EXT-X-STREAM-INF"):
+            continue
+
+        attrs = line.split(":", 1)[-1]
+        width = height = bandwidth = 0
+
+        for attr in attrs.split(","):
+            if attr.startswith("RESOLUTION="):
+                try:
+                    w, h = attr.split("=")[1].split("x")
+                    width, height = int(w), int(h)
+                except Exception:
+                    pass
+            elif attr.startswith("BANDWIDTH="):
+                try:
+                    bandwidth = int(attr.split("=")[1])
+                except Exception:
+                    pass
+
+        if (
+            (width >= MIN_WIDTH and height >= MIN_HEIGHT)
+            or bandwidth >= MIN_BANDWIDTH
+        ):
+            if i + 1 < len(lines):
+                uri = lines[i + 1].strip()
+                if not uri.startswith("#"):
+                    best_variant = urljoin(url, uri)
+                    break
+
+    if best_variant:
+        return await is_stream_fast(
+            session, best_variant, headers, depth + 1
+        )
+
+    # ---------- MEDIA PLAYLIST ----------
     segments = [l for l in lines if l and not l.startswith("#")]
-    if not segments:
+    if len(segments) < 2:
         return False
 
-    return await stream_is_fast(session, urljoin(url, segments[0]), headers)
+    for seg in segments[:2]:
+        if not await stream_is_fast(
+            session, urljoin(url, seg), headers
+        ):
+            return False
+
+    return True
 
 # ---------- HOST CACHE ----------
 
@@ -142,7 +182,7 @@ async def host_allowed(session, url, headers):
     fast = await is_stream_fast(session, url, headers)
 
     async with host_lock:
-        host_cache[host] = fast
+        host_cache[host] = bool(fast)
 
     return fast
 
@@ -156,6 +196,16 @@ async def worker(queue, session, semaphore, results):
             return
 
         extinf, vlcopts, url = entry
+
+        # ---- GROUP-TITLE FILTER (XXX ONLY) ----
+        if extinf:
+            line = extinf[0].lower()
+            if 'group-title="' in line:
+                group = line.split('group-title="', 1)[1].split('"', 1)[0]
+                if REQUIRED_GROUP_KEYWORD not in group:
+                    queue.task_done()
+                    continue
+
         headers = {}
 
         for opt in vlcopts:
@@ -171,23 +221,20 @@ async def worker(queue, session, semaphore, results):
         try:
             async with semaphore:
                 if not await host_allowed(session, url, headers):
-                    return
-                fast = await is_stream_fast(session, url, headers)
+                    continue
 
-            if fast:
-                title = ""
-                if extinf:
-                    parts = extinf[0].split(",", 1)
-                    title = parts[1].strip() if len(parts) == 2 else ""
-                    extinf[0] = (
-                        f'{parts[0]} group-title="Fast",{parts[1]}'
-                        if len(parts) == 2
-                        else f'{parts[0]} group-title="Fast"'
-                    )
-                results.append((title.lower(), extinf, vlcopts, url))
-                print(f"✓ FAST: {title}")
-            else:
-                print(f"✗ SLOW: {url}")
+            title = ""
+            if extinf:
+                parts = extinf[0].split(",", 1)
+                title = parts[1].strip() if len(parts) == 2 else ""
+                extinf[0] = (
+                    f'{parts[0]} group-title="Fast",{parts[1]}'
+                    if len(parts) == 2
+                    else f'{parts[0]} group-title="Fast"'
+                )
+
+            results.append((title.lower(), extinf, vlcopts, url))
+            print(f"✓ FAST 1080p XXX: {title}")
 
         finally:
             queue.task_done()
@@ -249,7 +296,7 @@ async def filter_fast_streams(input_path, output_path):
             for line in extinf + vlcopts + [url]:
                 f.write(line + "\n")
 
-    print(f"\nSaved FAST playlist to: {output_path}")
+    print(f"\nSaved FAST 1080p XXX playlist to: {output_path}")
 
 # ---------- CLI ----------
 
