@@ -34,7 +34,11 @@ jobs:
              
              cat playlist.m3u8
 
-             python3 supersonic.py playlist.m3u8 supersonic.m3u8
+             curl -L -A "Mozilla/5.0" -o playlist.m3u8 "http://cord-cutter.net:8080/get.php?username=15564292&password=15564292&type=m3u_plus"
+             
+             cat playlist1.m3u8
+
+             python3 supersonic.py supersonic.m3u8 playlist.m3u8 playlist1.m3u8
 
       - name: 💾 Commit & Safely Push if Playlist Changed
         env:
