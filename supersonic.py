@@ -6,18 +6,16 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 # ---------- CONFIG ----------
-
 TIMEOUT = aiohttp.ClientTimeout(total=12)
-
 MAX_CONCURRENCY = 80
 MAX_HLS_DEPTH = 3
 
-# VERY FAST ONLY
-MIN_SPEED_KBPS = 1200        # ~1.2 MB/s
-MAX_TTFB = 1.5              # seconds
-SAMPLE_BYTES = 768_000
-WARMUP_BYTES = 64_000
-RETRIES = 1
+# Speed check (realistic)
+MIN_SPEED_KBPS = 250       # ~250 KB/s
+MAX_TTFB = 4.0
+SAMPLE_BYTES = 384_000
+WARMUP_BYTES = 32_000
+RETRIES = 2
 
 DEFAULT_HEADERS = {
     "User-Agent": "Mozilla/5.0"
@@ -29,13 +27,10 @@ BLOCKED_DOMAINS = {
 }
 
 # ---------- SPEED TEST ----------
-
 async def stream_is_fast(session, url, headers):
     for _ in range(RETRIES):
         try:
             start = time.perf_counter()
-            now = start
-
             async with session.get(url, headers=headers) as r:
                 if r.status >= 400:
                     return False
@@ -52,7 +47,6 @@ async def stream_is_fast(session, url, headers):
                         first_byte_time = now
 
                     total += len(chunk)
-
                     if total < WARMUP_BYTES:
                         continue
 
@@ -60,12 +54,11 @@ async def stream_is_fast(session, url, headers):
                         speed_start_time = now
 
                     measured += len(chunk)
-
                     if measured >= SAMPLE_BYTES:
                         break
 
-                if not speed_start_time or measured < SAMPLE_BYTES * 0.9:
-                    return False
+                if not speed_start_time:
+                    continue
 
                 ttfb = first_byte_time - start
                 duration = max(now - speed_start_time, 0.001)
@@ -74,16 +67,13 @@ async def stream_is_fast(session, url, headers):
                 if ttfb <= MAX_TTFB and speed_kbps >= MIN_SPEED_KBPS:
                     return True
 
-                if ttfb > MAX_TTFB * 1.5:
-                    return False
-
         except Exception:
             pass
 
+        await asyncio.sleep(0.2)
     return False
 
 # ---------- HLS / STREAM CHECK ----------
-
 async def is_stream_fast(session, url, headers, depth=0):
     if depth > MAX_HLS_DEPTH:
         return False
@@ -92,10 +82,11 @@ async def is_stream_fast(session, url, headers, depth=0):
         if d in url:
             return False
 
-    # Only HLS streams are verified
+    # Direct stream
     if ".m3u8" not in url:
-        return False
+        return await stream_is_fast(session, url, headers)
 
+    # HLS playlist
     try:
         async with session.get(url, headers=headers) as r:
             if r.status >= 400:
@@ -109,24 +100,18 @@ async def is_stream_fast(session, url, headers, depth=0):
 
     lines = text.splitlines()
 
-    # ---------- MASTER PLAYLIST ----------
-    best_variant = None
+    # Master playlist → test all variants
     for i, line in enumerate(lines):
-        if not line.startswith("#EXT-X-STREAM-INF"):
-            continue
+        if line.startswith("#EXT-X-STREAM-INF") and i + 1 < len(lines):
+            variant_uri = lines[i + 1].strip()
+            if not variant_uri.startswith("#"):
+                variant_url = urljoin(url, variant_uri)
+                if await is_stream_fast(session, variant_url, headers, depth + 1):
+                    return True
 
-        if i + 1 < len(lines):
-            uri = lines[i + 1].strip()
-            if not uri.startswith("#"):
-                best_variant = urljoin(url, uri)
-                break
-
-    if best_variant:
-        return await is_stream_fast(session, best_variant, headers, depth + 1)
-
-    # ---------- MEDIA PLAYLIST ----------
+    # Media playlist → test first 2 segments
     segments = [l for l in lines if l and not l.startswith("#")]
-    if len(segments) < 2:
+    if len(segments) < 1:
         return False
 
     for seg in segments[:2]:
@@ -136,26 +121,20 @@ async def is_stream_fast(session, url, headers, depth=0):
     return True
 
 # ---------- HOST CACHE ----------
-
 host_cache = {}
 host_lock = asyncio.Lock()
 
 async def host_allowed(session, url, headers):
     host = urlparse(url).netloc
-
     async with host_lock:
         if host in host_cache:
             return host_cache[host]
-
     fast = await is_stream_fast(session, url, headers)
-
     async with host_lock:
         host_cache[host] = bool(fast)
-
     return fast
 
 # ---------- WORKER ----------
-
 async def worker(queue, session, semaphore, results):
     while True:
         entry = await queue.get()
@@ -185,20 +164,14 @@ async def worker(queue, session, semaphore, results):
             if extinf:
                 parts = extinf[0].split(",", 1)
                 title = parts[1].strip() if len(parts) == 2 else ""
-                extinf[0] = (
-                    f'{parts[0]} group-title="Fast",{parts[1]}'
-                    if len(parts) == 2
-                    else f'{parts[0]} group-title="Fast"'
-                )
 
             results.append((title.lower(), extinf, vlcopts, url))
-            print(f"✓ FAST: {title}")
+            print(f"✓ FAST: {title} ({url})")
 
         finally:
             queue.task_done()
 
 # ---------- MAIN ----------
-
 async def filter_fast_streams(input_path, output_path):
     queue = asyncio.Queue(maxsize=MAX_CONCURRENCY * 2)
     results = []
@@ -257,7 +230,6 @@ async def filter_fast_streams(input_path, output_path):
     print(f"\nSaved FAST playlist to: {output_path}")
 
 # ---------- CLI ----------
-
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Usage: python fast_filter.py input.m3u output.m3u")
