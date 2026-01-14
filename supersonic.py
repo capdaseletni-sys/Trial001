@@ -10,11 +10,12 @@ TIMEOUT = aiohttp.ClientTimeout(total=12)
 MAX_CONCURRENCY = 80
 MAX_HLS_DEPTH = 3
 
-MIN_SPEED_KBPS = 300       # adjusted for working streams
-MAX_TTFB = 5.0
+# Adjusted for more streams
+MIN_SPEED_KBPS = 300       # lower threshold to include slower streams
+MAX_TTFB = 5.0             # allow slower first byte
 SAMPLE_BYTES = 384_000
 WARMUP_BYTES = 32_000
-RETRIES = 2
+RETRIES = 3                # a few more retries
 
 DEFAULT_HEADERS = {
     "User-Agent": "Mozilla/5.0"
@@ -73,16 +74,23 @@ async def stream_is_fast(session, url, headers):
 
 # ---------- HLS / STREAM CHECK ----------
 async def is_stream_fast(session, url, headers, depth=0):
-    if depth > MAX_HLS_DEPTH:
-        return False
-
+    # Skip blocked domains
     for d in BLOCKED_DOMAINS:
         if d in url:
             return False
 
+    # Skip direct video files
+    if url.lower().endswith((".mp4", ".mkv")):
+        return False
+
+    if depth > MAX_HLS_DEPTH:
+        return False
+
+    # Non-HLS streams
     if ".m3u8" not in url:
         return await stream_is_fast(session, url, headers)
 
+    # HLS playlist
     try:
         async with session.get(url, headers=headers) as r:
             if r.status >= 400:
@@ -96,14 +104,14 @@ async def is_stream_fast(session, url, headers, depth=0):
 
     lines = text.splitlines()
 
-    # Master playlist
+    # Master playlist → check variants
     for i, line in enumerate(lines):
         if line.startswith("#EXT-X-STREAM-INF") and i + 1 < len(lines):
             variant_url = urljoin(url, lines[i+1].strip())
             if await is_stream_fast(session, variant_url, headers, depth+1):
                 return True
 
-    # Media playlist → first segment only
+    # Media playlist → check first segment only
     segments = [l for l in lines if l and not l.startswith("#")]
     if not segments:
         return False
@@ -148,7 +156,7 @@ async def worker(queue, session, semaphore, results):
         try:
             async with semaphore:
                 if not await host_allowed(session, url, headers):
-                    print(f"⚠ SKIPPED (host slow/blocked): {url}")
+                    print(f"⚠ SKIPPED (host slow/blocked or invalid): {url}")
                     continue
 
             title = ""
