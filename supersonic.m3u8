@@ -5,8 +5,6 @@ http://cord-cutter.net:8080/15564292/15564292/17846
 http://cord-cutter.net:8080/15564292/15564292/17858
 #EXTINF:-1 tvg-id="" tvg-name="011.FM - Totally 90s" tvg-logo="https://www.vhv.rs/dpng/d/29-290046_retro-music-png-transparent-png.png" group-title="Radio Stations" tvg-name="011.FM - TOTALLY 90S" group-title="CORD-CUTTER", 011.FM - TOTALLY 90S
 http://cord-cutter.net:8080/15564292/15564292/17826
-#EXTINF:-1 tvg-id="" tvg-name=" tvg-name="HOT 108 JAMZ" TVG-LOGO="HTTPS://PNGIMG.COM/UPLOADS/RADIO/RADIO_PNG19293.PNG" GROUP-TITLE="RADIO STATIONS",,HOT 108 JAMZ" group-title="CORD-CUTTER", HOT 108 JAMZ" TVG-LOGO="HTTPS://PNGIMG.COM/UPLOADS/RADIO/RADIO_PNG19293.PNG" GROUP-TITLE="RADIO STATIONS",,HOT 108 JAMZ
-http://cord-cutter.net:8080/15564292/15564292/14663
 #EXTINF:-1 tvg-name="|AR| AL JAZEERA HD LIVE" group-title="LIVE-HLS-WEB-AJA-GCP", |AR| AL JAZEERA HD LIVE
 https://live-hls-web-aja-gcp.thehlive.com/AJA/02.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="TR/ Duyurular" tvg-logo="https://apkx.xyz/abc.png" group-title="TR/ MaximTV DUYURULAR" tvg-name="TR/ DUYURULAR" group-title="PROTV65", TR/ DUYURULAR
@@ -19,6 +17,12 @@ http://protv65.shop:8080/hsn3868/hsn00xy/372625
 http://protv65.shop:8080/hsn3868/hsn00xy/372626
 #EXTINF:-1 tvg-id="" tvg-name="TR: Fil Spor [Maç Saati Aktif] 5 HD" tvg-logo="https://i.hizliresim.com/t8diqat.png" group-title="TR/ FIL SPORT" tvg-name="TR: FIL SPOR [MAÇ SAATI AKTIF] 5 HD" group-title="PROTV65", TR: FIL SPOR [MAÇ SAATI AKTIF] 5 HD
 http://protv65.shop:8080/hsn3868/hsn00xy/372627
+#EXTINF:-1 tvg-id="" tvg-name="TR: MaximTV Terapi TV 1 HD" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/maxterapitv.png" group-title="TR/ MaximTV TERAPI" tvg-name="TR: MAXIMTV TERAPI TV 1 HD" group-title="PROTV65", TR: MAXIMTV TERAPI TV 1 HD
+http://protv65.shop:8080/hsn3868/hsn00xy/192716
+#EXTINF:-1 tvg-id="" tvg-name="TR: MaximTV Terapi TV 2 HD" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/maxterapitv.png" group-title="TR/ MaximTV TERAPI" tvg-name="TR: MAXIMTV TERAPI TV 2 HD" group-title="PROTV65", TR: MAXIMTV TERAPI TV 2 HD
+http://protv65.shop:8080/hsn3868/hsn00xy/192717
+#EXTINF:-1 tvg-id="" tvg-name="TR: MaximTV Terapi TV 3 HD" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/maxterapitv.png" group-title="TR/ MaximTV TERAPI" tvg-name="TR: MAXIMTV TERAPI TV 3 HD" group-title="PROTV65", TR: MAXIMTV TERAPI TV 3 HD
+http://protv65.shop:8080/hsn3868/hsn00xy/192718
 #EXTINF:-1 tvg-id="" tvg-name="TR: Tabii Spor 1 HD" tvg-logo="https://image.hurimg.com/i/hurriyet/75/0x0/64da73444e3fe11a44cb07eb.jpg" group-title="TR/ TABII SPOR" tvg-name="TR: TABII SPOR 1 HD" group-title="PROTV65", TR: TABII SPOR 1 HD
 http://protv65.shop:8080/hsn3868/hsn00xy/454312
 #EXTINF:-1 tvg-id="" tvg-name="TR: Tabii Spor 2 HD" tvg-logo="https://image.hurimg.com/i/hurriyet/75/0x0/64da73444e3fe11a44cb07eb.jpg" group-title="TR/ TABII SPOR" tvg-name="TR: TABII SPOR 2 HD" group-title="PROTV65", TR: TABII SPOR 2 HD
@@ -31,40 +35,44 @@ http://protv65.shop:8080/hsn3868/hsn00xy/454322
 http://protv65.shop:8080/hsn3868/hsn00xy/454324
 #EXTINF:-1 tvg-id="ASpor.tr" tvg-name="|TR| A Spor HD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/a_spor.png" group-title="TR/ YEREL SPOR" tvg-name="|TR| A SPOR HD" group-title="PROTV65", |TR| A SPOR HD
 http://protv65.shop:8080/hsn3868/hsn00xy/6113
+#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Connect 1 |Mac Saati|" tvg-logo="https://resimyukle.io/uploadyeri/D3GN7pCi_download.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN CONNECT 1 |MAC SAATI|" group-title="PROTV65", |TR| BEIN CONNECT 1 |MAC SAATI|
+http://protv65.shop:8080/hsn3868/hsn00xy/137710
+#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 1 (TTNET ÖZEL)" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 1 (TTNET ÖZEL)" group-title="PROTV65", |TR| BEIN SPORTS 1 (TTNET ÖZEL)
+http://protv65.shop:8080/hsn3868/hsn00xy/334642
 #EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 1 4K [Feed]" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 1 4K [FEED]" group-title="PROTV65", |TR| BEIN SPORTS 1 4K [FEED]
 http://protv65.shop:8080/hsn3868/hsn00xy/35650
-#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 1 720p" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 1 720P" group-title="PROTV65", |TR| BEIN SPORTS 1 720P
-http://protv65.shop:8080/hsn3868/hsn00xy/351541
 #EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 1 8K [Feed]" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 1 8K [FEED]" group-title="PROTV65", |TR| BEIN SPORTS 1 8K [FEED]
 http://protv65.shop:8080/hsn3868/hsn00xy/191152
-#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 1 FHD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 1 FHD" group-title="PROTV65", |TR| BEIN SPORTS 1 FHD
-http://protv65.shop:8080/hsn3868/hsn00xy/126272
-#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 1 HD (BoX)" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 1 HD (BOX)" group-title="PROTV65", |TR| BEIN SPORTS 1 HD (BOX)
-http://protv65.shop:8080/hsn3868/hsn00xy/456567
+#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 1 HD (Kutu Yayin)" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 1 HD (KUTU YAYIN)" group-title="PROTV65", |TR| BEIN SPORTS 1 HD (KUTU YAYIN)
+http://protv65.shop:8080/hsn3868/hsn00xy/456568
 #EXTINF:-1 tvg-id="24KitchenTurkey.tr" tvg-name="|TR| beIN Sports 1 HD [VIP]" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 1 HD [VIP]" group-title="PROTV65", |TR| BEIN SPORTS 1 HD [VIP]
 http://protv65.shop:8080/hsn3868/hsn00xy/98925
+#EXTINF:-1 tvg-id="24KitchenTurkey.tr" tvg-name="|TR| beIN Sports 1 SD [480p]" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 1 SD [480P]" group-title="PROTV65", |TR| BEIN SPORTS 1 SD [480P]
+http://protv65.shop:8080/hsn3868/hsn00xy/35762
 #EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 1 VIP H265" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 1 VIP H265" group-title="PROTV65", |TR| BEIN SPORTS 1 VIP H265
 http://protv65.shop:8080/hsn3868/hsn00xy/190072
-#EXTINF:-1 tvg-id="24KitchenTurkey.tr" tvg-name="|TR| beIN Sports 2 HD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_2.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 2 HD" group-title="PROTV65", |TR| BEIN SPORTS 2 HD
-http://protv65.shop:8080/hsn3868/hsn00xy/35730
+#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 2 SD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_2.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 2 SD" group-title="PROTV65", |TR| BEIN SPORTS 2 SD
+http://protv65.shop:8080/hsn3868/hsn00xy/196216
 #EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 2 UHD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_2.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 2 UHD" group-title="PROTV65", |TR| BEIN SPORTS 2 UHD
 http://protv65.shop:8080/hsn3868/hsn00xy/195811
 #EXTINF:-1 tvg-id="24KitchenTurkey.tr" tvg-name="|TR| beIN Sports 3 HD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_3.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 3 HD" group-title="PROTV65", |TR| BEIN SPORTS 3 HD
 http://protv65.shop:8080/hsn3868/hsn00xy/6097
-#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 3 UHD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_3.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 3 UHD" group-title="PROTV65", |TR| BEIN SPORTS 3 UHD
-http://protv65.shop:8080/hsn3868/hsn00xy/195812
-#EXTINF:-1 tvg-id="24KitchenTurkey.tr" tvg-name="|TR| beIN Sports 4 HD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 4 HD" group-title="PROTV65", |TR| BEIN SPORTS 4 HD
-http://protv65.shop:8080/hsn3868/hsn00xy/6098
-#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 4 SD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 4 SD" group-title="PROTV65", |TR| BEIN SPORTS 4 SD
-http://protv65.shop:8080/hsn3868/hsn00xy/196218
-#EXTINF:-1 tvg-id="24KitchenTurkey.tr" tvg-name="|TR| beIN Sports Max 1" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_max_1.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS MAX 1" group-title="PROTV65", |TR| BEIN SPORTS MAX 1
-http://protv65.shop:8080/hsn3868/hsn00xy/6099
-#EXTINF:-1 tvg-id="24KitchenTurkey.tr" tvg-name="|TR| beIN Sports Max 2" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_max_2.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS MAX 2" group-title="PROTV65", |TR| BEIN SPORTS MAX 2
-http://protv65.shop:8080/hsn3868/hsn00xy/6100
+#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 3 SD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_3.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 3 SD" group-title="PROTV65", |TR| BEIN SPORTS 3 SD
+http://protv65.shop:8080/hsn3868/hsn00xy/196217
+#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 4 UHD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/bein_sports_4.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 4 UHD" group-title="PROTV65", |TR| BEIN SPORTS 4 UHD
+http://protv65.shop:8080/hsn3868/hsn00xy/195813
+#EXTINF:-1 tvg-id="" tvg-name="|TR| beIN Sports 5 HD" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/beinsport-5.png" group-title="TR/ BEIN SPOR" tvg-name="|TR| BEIN SPORTS 5 HD" group-title="PROTV65", |TR| BEIN SPORTS 5 HD
+http://protv65.shop:8080/hsn3868/hsn00xy/125936
 #EXTINF:-1 tvg-id="" tvg-name="|TR| D-Smart EuroSport 1" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/eurosport1.png" group-title="TR/ SMART SPOR" tvg-name="|TR| D-SMART EUROSPORT 1" group-title="PROTV65", |TR| D-SMART EUROSPORT 1
 http://protv65.shop:8080/hsn3868/hsn00xy/6106
 #EXTINF:-1 tvg-id="" tvg-name="|TR| Exxen Sport 1 HD" tvg-logo="https://i.hizliresim.com/ow6rgag.png" group-title="TR/ EXXEN SPOR" tvg-name="|TR| EXXEN SPORT 1 HD" group-title="PROTV65", |TR| EXXEN SPORT 1 HD
 http://protv65.shop:8080/hsn3868/hsn00xy/452750
+#EXTINF:-1 tvg-id="" tvg-name="|TR| Exxen Sport 1 SD" tvg-logo="https://i.hizliresim.com/ow6rgag.png" group-title="TR/ EXXEN SPOR" tvg-name="|TR| EXXEN SPORT 1 SD" group-title="PROTV65", |TR| EXXEN SPORT 1 SD
+http://protv65.shop:8080/hsn3868/hsn00xy/453643
+#EXTINF:-1 tvg-id="" tvg-name="|TR| Exxen Sport 1 UHD" tvg-logo="https://i.hizliresim.com/ow6rgag.png" group-title="TR/ EXXEN SPOR" tvg-name="|TR| EXXEN SPORT 1 UHD" group-title="PROTV65", |TR| EXXEN SPORT 1 UHD
+http://protv65.shop:8080/hsn3868/hsn00xy/469839
+#EXTINF:-1 tvg-id="" tvg-name="|TR| Exxen Sport 2 HD" tvg-logo="https://i.hizliresim.com/m7qc7nj.png" group-title="TR/ EXXEN SPOR" tvg-name="|TR| EXXEN SPORT 2 HD" group-title="PROTV65", |TR| EXXEN SPORT 2 HD
+http://protv65.shop:8080/hsn3868/hsn00xy/452752
 #EXTINF:-1 tvg-id="" tvg-name="|TR| Exxen Sport 3 HD" tvg-logo="https://i.hizliresim.com/sup9c9o.png" group-title="TR/ EXXEN SPOR" tvg-name="|TR| EXXEN SPORT 3 HD" group-title="PROTV65", |TR| EXXEN SPORT 3 HD
 http://protv65.shop:8080/hsn3868/hsn00xy/452753
 #EXTINF:-1 tvg-id="" tvg-name="|TR| Exxen Sport 4 HD" tvg-logo="https://i.hizliresim.com/cwowc8h.png" group-title="TR/ EXXEN SPOR" tvg-name="|TR| EXXEN SPORT 4 HD" group-title="PROTV65", |TR| EXXEN SPORT 4 HD
@@ -75,14 +83,14 @@ http://protv65.shop:8080/hsn3868/hsn00xy/452755
 http://protv65.shop:8080/hsn3868/hsn00xy/6114
 #EXTINF:-1 tvg-id="" tvg-name="|TR| HT Sport HD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/htspor.png" group-title="TR/ TURKCELL TV" tvg-name="|TR| HT SPORT HD" group-title="PROTV65", |TR| HT SPORT HD
 http://protv65.shop:8080/hsn3868/hsn00xy/462482
+#EXTINF:-1 tvg-id="" tvg-name="|TR| MaximTV Fight TV" tvg-logo="https://apkx.xyz/tv-tum-dunya-logolar/logolar/maxfighttv.png" group-title="TR/ YEREL SPOR" tvg-name="|TR| MAXIMTV FIGHT TV" group-title="PROTV65", |TR| MAXIMTV FIGHT TV
+http://protv65.shop:8080/hsn3868/hsn00xy/371591
 #EXTINF:-1 tvg-id="" tvg-name="|TR| S Sport 1 HD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_sport.png" group-title="TR/ S-SPORT" tvg-name="|TR| S SPORT 1 HD" group-title="PROTV65", |TR| S SPORT 1 HD
 http://protv65.shop:8080/hsn3868/hsn00xy/115598
-#EXTINF:-1 tvg-id="" tvg-name="|TR| S Sport 2 HD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/s_spor_2.png" group-title="TR/ S-SPORT" tvg-name="|TR| S SPORT 2 HD" group-title="PROTV65", |TR| S SPORT 2 HD
-http://protv65.shop:8080/hsn3868/hsn00xy/6105
-#EXTINF:-1 tvg-id="" tvg-name="|TR| S Sport+4 Mac Saati" tvg-logo="http://www.broadcasterinfo.net/systems/images/ckImages/902687a2-ac5a-4174-baad-d887e93d252a.png" group-title="TR/ S-SPORT" tvg-name="|TR| S SPORT+4 MAC SAATI" group-title="PROTV65", |TR| S SPORT+4 MAC SAATI
-http://protv65.shop:8080/hsn3868/hsn00xy/137716
 #EXTINF:-1 tvg-id="" tvg-name="|TR| S Sport+5 Mac Saati" tvg-logo="http://www.broadcasterinfo.net/systems/images/ckImages/902687a2-ac5a-4174-baad-d887e93d252a.png" group-title="TR/ S-SPORT" tvg-name="|TR| S SPORT+5 MAC SAATI" group-title="PROTV65", |TR| S SPORT+5 MAC SAATI
 http://protv65.shop:8080/hsn3868/hsn00xy/137717
+#EXTINF:-1 tvg-id="" tvg-name="|TR| Spor Smart 2 HD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/spor_smart.png" group-title="TR/ SMART SPOR" tvg-name="|TR| SPOR SMART 2 HD" group-title="PROTV65", |TR| SPOR SMART 2 HD
+http://protv65.shop:8080/hsn3868/hsn00xy/113272
 #EXTINF:-1 tvg-id="" tvg-name="|TR| Sports TV" tvg-logo="https://tivizap.com/wp-content/uploads/2018/05/sports-tv.png" group-title="TR/ YEREL SPOR" tvg-name="|TR| SPORTS TV" group-title="PROTV65", |TR| SPORTS TV
 http://protv65.shop:8080/hsn3868/hsn00xy/20772
 #EXTINF:-1 tvg-id="" tvg-name="|TR| Tivibu Spor 1 FHD" tvg-logo="http://apkx.xyz/tv-tum-dunya-logolar/logolar/tv-tum-dunya-logolar/turkeyT/tivibu_spor_2.png" group-title="TR/ TIVIBU SPOR" tvg-name="|TR| TIVIBU SPOR 1 FHD" group-title="PROTV65", |TR| TIVIBU SPOR 1 FHD
@@ -99,40 +107,36 @@ http://protv65.shop:8080/hsn3868/hsn00xy/6101
 http://protv65.shop:8080/hsn3868/hsn00xy/6109
 #EXTINF:-1 tvg-id="" tvg-name="|TR| TRT Spor Yıldız" tvg-logo="https://logos-world.net/wp-content/uploads/2021/06/TRT-Spor-Yildiz-New-Logo.png" group-title="TR/ YEREL SPOR" tvg-name="|TR| TRT SPOR YILDIZ" group-title="PROTV65", |TR| TRT SPOR YILDIZ
 http://protv65.shop:8080/hsn3868/hsn00xy/353402
-#EXTINF:-1 tvg-name="BEIN SPORTS 1 ENGLISH" group-title="SANSAT", BEIN SPORTS 1 ENGLISH
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5241
-#EXTINF:-1 tvg-name="BEIN SPORTS 1 HD B2" group-title="SANSAT", BEIN SPORTS 1 HD B2
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/394073
-#EXTINF:-1 tvg-name="BEIN SPORTS 1 SD" group-title="SANSAT", BEIN SPORTS 1 SD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60960
-#EXTINF:-1 tvg-name="BEIN SPORTS 2 FRENCH FHD" group-title="SANSAT", BEIN SPORTS 2 FRENCH FHD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/63500
-#EXTINF:-1 tvg-name="BEIN SPORTS 2 HD" group-title="SANSAT", BEIN SPORTS 2 HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60955
-#EXTINF:-1 tvg-name="BEIN SPORTS 3 FHD" group-title="SANSAT", BEIN SPORTS 3 FHD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60959
-#EXTINF:-1 tvg-name="BEIN SPORTS 5 HD B2" group-title="SANSAT", BEIN SPORTS 5 HD B2
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576497
+#EXTINF:-1 tvg-name="BEIN SPORTS 1 ENGLISH FHD" group-title="SANSAT", BEIN SPORTS 1 ENGLISH FHD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36295
+#EXTINF:-1 tvg-name="BEIN SPORTS 1 HD" group-title="SANSAT", BEIN SPORTS 1 HD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60954
+#EXTINF:-1 tvg-name="BEIN SPORTS 3 HD B2" group-title="SANSAT", BEIN SPORTS 3 HD B2
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/394075
+#EXTINF:-1 tvg-name="BEIN SPORTS 4 HD B2" group-title="SANSAT", BEIN SPORTS 4 HD B2
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576496
+#EXTINF:-1 tvg-name="BEIN SPORTS 6 FHD" group-title="SANSAT", BEIN SPORTS 6 FHD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36300
 #EXTINF:-1 tvg-name="BEIN SPORTS 6 HD B2" group-title="SANSAT", BEIN SPORTS 6 HD B2
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576498
 #EXTINF:-1 tvg-name="BEIN SPORTS 7" group-title="SANSAT", BEIN SPORTS 7
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5235
-#EXTINF:-1 tvg-name="BEIN SPORTS 7 FHD" group-title="SANSAT", BEIN SPORTS 7 FHD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36299
+#EXTINF:-1 tvg-name="BEIN SPORTS 7 HD B2" group-title="SANSAT", BEIN SPORTS 7 HD B2
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576499
+#EXTINF:-1 tvg-name="BEIN SPORTS 8" group-title="SANSAT", BEIN SPORTS 8
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5237
 #EXTINF:-1 tvg-name="BEIN SPORTS 8 FHD" group-title="SANSAT", BEIN SPORTS 8 FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36298
 #EXTINF:-1 tvg-name="BEIN SPORTS 9 FHD" group-title="SANSAT", BEIN SPORTS 9 FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36297
-#EXTINF:-1 tvg-name="BEIN SPORTS 9 HD B2" group-title="SANSAT", BEIN SPORTS 9 HD B2
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576501
 #EXTINF:-1 tvg-name="BEIN SPORTS HD" group-title="SANSAT", BEIN SPORTS HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/6727
-#EXTINF:-1 tvg-name="BEIN SPORTS MAX 1 HD LIVE" group-title="SANSAT", BEIN SPORTS MAX 1 HD LIVE
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585680
-#EXTINF:-1 tvg-name="BEIN SPORTS MAX 2 HD LIVE" group-title="SANSAT", BEIN SPORTS MAX 2 HD LIVE
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585681
-#EXTINF:-1 tvg-name="CLASSICO SUPER CUP (BARCA VS REAL)" group-title="SANSAT", CLASSICO SUPER CUP (BARCA VS REAL)
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1644651
+#EXTINF:-1 tvg-name="BEIN SPORTS HD B2" group-title="SANSAT", BEIN SPORTS HD B2
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/667032
+#EXTINF:-1 tvg-name="BEIN SPORTS MAX 3 EN HD LIVE" group-title="SANSAT", BEIN SPORTS MAX 3 EN HD LIVE
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585682
+#EXTINF:-1 tvg-name="BEIN SPORTS NEWS" group-title="SANSAT", BEIN SPORTS NEWS
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/290371
 #EXTINF:-1 tvg-name="|ADULT| BABES TV HD" group-title="SANSAT", |ADULT| BABES TV HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94535
 #EXTINF:-1 tvg-name="|ADULT| BALKAN EROTIC" group-title="SANSAT", |ADULT| BALKAN EROTIC
@@ -455,8 +459,6 @@ http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94600
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94602
 #EXTINF:-1 tvg-name="|ADULT| ОХ-АХ HD" group-title="SANSAT", |ADULT| ОХ-АХ HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285952
-#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 1 4K" group-title="SANSAT", |AR| BEIN SPORTS AFC 1 4K
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/176995
 #EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 1 SD" group-title="SANSAT", |AR| BEIN SPORTS AFC 1 SD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/435962
 #EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 2 SD" group-title="SANSAT", |AR| BEIN SPORTS AFC 2 SD
@@ -927,32 +929,30 @@ https://shls-live-enc.edgenextcdn.net/out/v1/2a0f4768f7fa42ed813674628b487e95/in
 https://shls-live-enc.edgenextcdn.net/out/v1/40031eca7be34c4ea9744bf067f4fefa/index_8.m3u8
 #EXTINF:-1 tvg-name="|SHAHID| TASH" group-title="SHLS-LIVE-ENC", |SHAHID| TASH
 https://shls-live-enc.edgenextcdn.net/out/v1/e34e3ac9d2534543a13b44c2b458b0c2/index_1.m3u8
+#EXTINF:-1 tvg-id="US: A&E EAST" tvg-name="USA A&E UHD" tvg-logo="https://images-na.ssl-images-amazon.com/images/I/312LhQsVqtL._SY355_.png" group-title="ENTERTAINMENT" tvg-name="USA A&E UHD" group-title="SUPERSONICTV", USA A&E UHD
+http://supersonictv.live:8080/611366/682256/22040
 #EXTINF:-1 tvg-id="US: AMC EAST" tvg-name="USA AMC UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/AMC_logo_2016.svg/1280px-AMC_logo_2016.svg.png" group-title="ENTERTAINMENT" tvg-name="USA AMC UHD" group-title="SUPERSONICTV", USA AMC UHD
 http://supersonictv.live:8080/611366/682256/22042
-#EXTINF:-1 tvg-id="US: ASPIRE" tvg-name="USA Aspire" tvg-logo="https://i.pinimg.com/originals/6b/2d/d3/6b2dd3639e8d8260b584fb040f0987ce.png" group-title="ENTERTAINMENT" tvg-name="USA ASPIRE" group-title="SUPERSONICTV", USA ASPIRE
-http://supersonictv.live:8080/611366/682256/22048
-#EXTINF:-1 tvg-id="US: AWE" tvg-name="USA AWE" tvg-logo="http://apk.eternaltv.net/icons/awechannel.jpg" group-title="ENTERTAINMENT" tvg-name="USA AWE" group-title="SUPERSONICTV", USA AWE
-http://supersonictv.live:8080/611366/682256/22049
+#EXTINF:-1 tvg-id="US: ANIMAL PLANET WEST" tvg-name="USA Animal Planet West LHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c8/AnimalPlanet.png" group-title="ENTERTAINMENT" tvg-name="USA ANIMAL PLANET WEST LHD" group-title="SUPERSONICTV", USA ANIMAL PLANET WEST LHD
+http://supersonictv.live:8080/611366/682256/22046
+#EXTINF:-1 tvg-id="US: AXS TV" tvg-name="USA AXS TV" tvg-logo="https://static-us-east-2-fastly-a.www.philo.com/images/channel_logos/AXSTV/large_dark.png" group-title="ENTERTAINMENT" tvg-name="USA AXS TV" group-title="SUPERSONICTV", USA AXS TV
+http://supersonictv.live:8080/611366/682256/22050
 #EXTINF:-1 tvg-id="US: BBC AMERICA" tvg-name="USA BBC America UHD" tvg-logo="https://seeklogo.com/images/B/bbc-america-logo-1344C402CD-seeklogo.com.png" group-title="ENTERTAINMENT" tvg-name="USA BBC AMERICA UHD" group-title="SUPERSONICTV", USA BBC AMERICA UHD
 http://supersonictv.live:8080/611366/682256/22051
-#EXTINF:-1 tvg-id="US: BET HER EAST" tvg-name="USA BET HER" tvg-logo="https://www.nicepng.com/png/full/264-2641514_bet-her-bet-presents-love-and-happiness-an.png" group-title="ENTERTAINMENT" tvg-name="USA BET HER" group-title="SUPERSONICTV", USA BET HER
-http://supersonictv.live:8080/611366/682256/22053
 #EXTINF:-1 tvg-id="US: BET JAMS" tvg-name="USA BET Jams" tvg-logo="https://www.pngitem.com/pimgs/m/490-4901916_bet-logo-png-png-download-bet-jams-logo.png" group-title="ENTERTAINMENT" tvg-name="USA BET JAMS" group-title="SUPERSONICTV", USA BET JAMS
 http://supersonictv.live:8080/611366/682256/22054
-#EXTINF:-1 tvg-id="US: BET SOUL" tvg-name="USA BET SOUL" tvg-logo="https://www.pngitem.com/pimgs/m/192-1927516_bet-soul-custom-logo-bet-soul-png-logo.png" group-title="ENTERTAINMENT" tvg-name="USA BET SOUL" group-title="SUPERSONICTV", USA BET SOUL
-http://supersonictv.live:8080/611366/682256/22055
+#EXTINF:-1 tvg-id="US: BET WEST" tvg-name="USA BET West" tvg-logo="https://yourbetadvisor.com/wp-content/uploads/2018/11/betway.png" group-title="ENTERTAINMENT" tvg-name="USA BET WEST" group-title="SUPERSONICTV", USA BET WEST
+http://supersonictv.live:8080/611366/682256/22057
 #EXTINF:-1 tvg-id="US: BOUNCE" tvg-name="USA BOUNCE TV" tvg-logo="https://storage.googleapis.com/btvwp-uploads/2018/02/5bfb1301-bounce_adjusted1.png" group-title="ENTERTAINMENT" tvg-name="USA BOUNCE TV" group-title="SUPERSONICTV", USA BOUNCE TV
 http://supersonictv.live:8080/611366/682256/22058
-#EXTINF:-1 tvg-id="US: BRAVO EAST" tvg-name="USA Bravo East UHD" tvg-logo="http://epg4you.com/logos/bravo.png" group-title="ENTERTAINMENT" tvg-name="USA BRAVO EAST UHD" group-title="SUPERSONICTV", USA BRAVO EAST UHD
-http://supersonictv.live:8080/611366/682256/22059
 #EXTINF:-1 tvg-id="US: BRAVO WEST" tvg-name="USA Bravo West LHD" tvg-logo="http://epg4you.com/logos/bravo.png" group-title="ENTERTAINMENT" tvg-name="USA BRAVO WEST LHD" group-title="SUPERSONICTV", USA BRAVO WEST LHD
 http://supersonictv.live:8080/611366/682256/22060
 #EXTINF:-1 tvg-id="US: BUZZR" tvg-name="USA BUZZR" tvg-logo="https://upload.wikimedia.org/wikipedia/en/b/be/Buzzr_%28TV_Network%29_Logo.png" group-title="ENTERTAINMENT" tvg-name="USA BUZZR" group-title="SUPERSONICTV", USA BUZZR
 http://supersonictv.live:8080/611366/682256/22061
 #EXTINF:-1 tvg-id="CA: CBS EAST" tvg-name="USA CBS UHD" tvg-logo="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fi.forbesimg.com%2Fmedia%2Flists%2Fcompanies%2Fcbs_416x416.jpg" group-title="ENTERTAINMENT" tvg-name="USA CBS UHD" group-title="SUPERSONICTV", USA CBS UHD
 http://supersonictv.live:8080/611366/682256/22062
-#EXTINF:-1 tvg-id="US: CNBC" tvg-name="USA CNBC UHD" tvg-logo="http://epg4you.com/logos/cnbc.png" group-title="ENTERTAINMENT" tvg-name="USA CNBC UHD" group-title="SUPERSONICTV", USA CNBC UHD
-http://supersonictv.live:8080/611366/682256/22064
+#EXTINF:-1 tvg-id="US: CMT EAST" tvg-name="USA CMT UHD" tvg-logo="http://apk.eternaltv.net/icons/CMTV.png" group-title="ENTERTAINMENT" tvg-name="USA CMT UHD" group-title="SUPERSONICTV", USA CMT UHD
+http://supersonictv.live:8080/611366/682256/22063
 #EXTINF:-1 tvg-id="US: DESTINATION AMERICA" tvg-name="USA Destination America UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Destination_America_logo.svg/1200px-Destination_America_logo.svg.png" group-title="ENTERTAINMENT" tvg-name="USA DESTINATION AMERICA UHD" group-title="SUPERSONICTV", USA DESTINATION AMERICA UHD
 http://supersonictv.live:8080/611366/682256/22073
 #EXTINF:-1 tvg-id="US: DISCOVERY CHANNEL EAST" tvg-name="USA Discovery Channel UHD" tvg-logo="https://img.idesign.vn/1920x-/2019/04/22/ides_discoverychannel_04-2.png" group-title="ENTERTAINMENT" tvg-name="USA DISCOVERY CHANNEL UHD" group-title="SUPERSONICTV", USA DISCOVERY CHANNEL UHD
@@ -967,23 +967,25 @@ http://supersonictv.live:8080/611366/682256/22077
 http://supersonictv.live:8080/611366/682256/22087
 #EXTINF:-1 tvg-id="CA: FOX EAST" tvg-name="USA Fox UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Fox_Sports_Networks.svg/1200px-Fox_Sports_Networks.svg.png" group-title="ENTERTAINMENT" tvg-name="USA FOX UHD" group-title="SUPERSONICTV", USA FOX UHD
 http://supersonictv.live:8080/611366/682256/22086
-#EXTINF:-1 tvg-id="US: FX EAST" tvg-name="USA FX East UHD" tvg-logo="http://epg4you.com/logos/fx.png" group-title="ENTERTAINMENT" tvg-name="USA FX EAST UHD" group-title="SUPERSONICTV", USA FX EAST UHD
-http://supersonictv.live:8080/611366/682256/22091
+#EXTINF:-1 tvg-id="US: FXM" tvg-name="USA FXM UHD" tvg-logo="https://www.dropbox.com/s/jsecdvd2f8cw95c/fxm.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA FXM UHD" group-title="SUPERSONICTV", USA FXM UHD
+http://supersonictv.live:8080/611366/682256/22093
 #EXTINF:-1 tvg-id="US: FYI EAST" tvg-name="USA FYI" tvg-logo="https://www.dropbox.com/s/l1h6fe0rs4yjepz/fyi%20network.jpg?dl=1" group-title="ENTERTAINMENT" tvg-name="USA FYI" group-title="SUPERSONICTV", USA FYI
 http://supersonictv.live:8080/611366/682256/22096
 #EXTINF:-1 tvg-id="" tvg-name="USA Galavision" tvg-logo="" group-title="ENTERTAINMENT" tvg-name="USA GALAVISION" group-title="SUPERSONICTV", USA GALAVISION
 http://supersonictv.live:8080/611366/682256/22097
-#EXTINF:-1 tvg-id="US: GET TV" tvg-name="USA GET TV" tvg-logo="https://www.dropbox.com/s/j72rhqoj12n017r/get%20tv.jpg?dl=1" group-title="ENTERTAINMENT" tvg-name="USA GET TV" group-title="SUPERSONICTV", USA GET TV
-http://supersonictv.live:8080/611366/682256/22099
+#EXTINF:-1 tvg-id="US: HGTV EAST" tvg-name="USA HGTV East UHD" tvg-logo="https://www.dropbox.com/s/iax9yjkmxymvzaq/HGTV.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA HGTV EAST UHD" group-title="SUPERSONICTV", USA HGTV EAST UHD
+http://supersonictv.live:8080/611366/682256/22101
 #EXTINF:-1 tvg-id="US: HLN EAST" tvg-name="USA HLN UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/HLN_%28TV_network%29_2017_logo.svg/1200px-HLN_%28TV_network%29_2017_logo.svg.png" group-title="ENTERTAINMENT" tvg-name="USA HLN UHD" group-title="SUPERSONICTV", USA HLN UHD
 http://supersonictv.live:8080/611366/682256/22107
 #EXTINF:-1 tvg-id="US: IFC EAST" tvg-name="USA IFC LHD" tvg-logo="https://www.dropbox.com/s/qev01ebg00pnssl/ifc.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA IFC LHD" group-title="SUPERSONICTV", USA IFC LHD
 http://supersonictv.live:8080/611366/682256/22108
-#EXTINF:-1 tvg-id="US: INSP EAST" tvg-name="USA INSP" tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/5a/Official_logo_for_INSP.jpeg" group-title="ENTERTAINMENT" tvg-name="USA INSP" group-title="SUPERSONICTV", USA INSP
-http://supersonictv.live:8080/611366/682256/22109
+#EXTINF:-1 tvg-id="US: DISCOVERY ID WEST" tvg-name="USA Investigation Discovery West LHD" tvg-logo="https://www.dropbox.com/s/z7yctzw9dt14q9r/investigation%20discovery.jpg?dl=1" group-title="ENTERTAINMENT" tvg-name="USA INVESTIGATION DISCOVERY WEST LHD" group-title="SUPERSONICTV", USA INVESTIGATION DISCOVERY WEST LHD
+http://supersonictv.live:8080/611366/682256/22111
+#EXTINF:-1 tvg-id="US: LOGO EAST" tvg-name="USA LOGO" tvg-logo="http://apk.eternaltv.net/icons/logotv.jpg" group-title="ENTERTAINMENT" tvg-name="USA LOGO" group-title="SUPERSONICTV", USA LOGO
+http://supersonictv.live:8080/611366/682256/22116
 #EXTINF:-1 tvg-id="US: MAVTV" tvg-name="USA MAVTV" tvg-logo="https://www.wtcks.com/images/channels/logos/mav.png" group-title="ENTERTAINMENT" tvg-name="USA MAVTV" group-title="SUPERSONICTV", USA MAVTV
 http://supersonictv.live:8080/611366/682256/22117
 #EXTINF:-1 tvg-id="US: MOTOR TREND" tvg-name="USA MotorTrend UHD" tvg-logo="http://apk.eternaltv.net/icons/discovery-velocity.png" group-title="ENTERTAINMENT" tvg-name="USA MOTORTREND UHD" group-title="SUPERSONICTV", USA MOTORTREND UHD
 http://supersonictv.live:8080/611366/682256/22119
-#EXTINF:-1 tvg-id="US: NAT GEO WILD" tvg-name="USA Nat Geo WILD" tvg-logo="https://www.dropbox.com/s/o0wlndwtm0wzb3o/nat%20geo%20wild.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA NAT GEO WILD" group-title="SUPERSONICTV", USA NAT GEO WILD
-http://supersonictv.live:8080/611366/682256/22122
+#EXTINF:-1 tvg-id="US: ANTENNA TV" tvg-name="[]USA ANTENNA TV" tvg-logo="https://www.dropbox.com/s/a76wm2c5cikslms/Antenna%20TV.png?dl=1" group-title="ENTERTAINMENT" tvg-name="[]USA ANTENNA TV" group-title="SUPERSONICTV", []USA ANTENNA TV
+http://supersonictv.live:8080/611366/682256/22047
