@@ -10,11 +10,10 @@ TIMEOUT = aiohttp.ClientTimeout(total=12)
 MAX_CONCURRENCY = 80
 MAX_HLS_DEPTH = 3
 
-# Realistic HD thresholds (avoids slow streams)
-MIN_SPEED_KBPS = 500       # ~500 KB/s, smooth 720p–1080p
-MAX_TTFB = 4.0             # seconds
-SAMPLE_BYTES = 384_000     # measure 384 KB
-WARMUP_BYTES = 32_000      # ignore first 32 KB
+MIN_SPEED_KBPS = 300       # adjusted for working streams
+MAX_TTFB = 4.0
+SAMPLE_BYTES = 384_000
+WARMUP_BYTES = 32_000
 RETRIES = 2
 
 DEFAULT_HEADERS = {
@@ -28,7 +27,7 @@ BLOCKED_DOMAINS = {
 
 # ---------- SPEED TEST ----------
 async def stream_is_fast(session, url, headers):
-    for _ in range(RETRIES):
+    for attempt in range(RETRIES):
         try:
             start = time.perf_counter()
             async with session.get(url, headers=headers) as r:
@@ -42,7 +41,6 @@ async def stream_is_fast(session, url, headers):
 
                 async for chunk in r.content.iter_chunked(8192):
                     now = time.perf_counter()
-
                     if first_byte_time is None:
                         first_byte_time = now
 
@@ -70,7 +68,7 @@ async def stream_is_fast(session, url, headers):
         except Exception:
             pass
 
-        await asyncio.sleep(0.2)
+        await asyncio.sleep(0.2 * (attempt + 1))
     return False
 
 # ---------- HLS / STREAM CHECK ----------
@@ -82,11 +80,9 @@ async def is_stream_fast(session, url, headers, depth=0):
         if d in url:
             return False
 
-    # Direct stream
     if ".m3u8" not in url:
         return await stream_is_fast(session, url, headers)
 
-    # HLS playlist
     try:
         async with session.get(url, headers=headers) as r:
             if r.status >= 400:
@@ -100,25 +96,19 @@ async def is_stream_fast(session, url, headers, depth=0):
 
     lines = text.splitlines()
 
-    # Master playlist → test all variants
+    # Master playlist
     for i, line in enumerate(lines):
         if line.startswith("#EXT-X-STREAM-INF") and i + 1 < len(lines):
-            variant_uri = lines[i + 1].strip()
-            if not variant_uri.startswith("#"):
-                variant_url = urljoin(url, variant_uri)
-                if await is_stream_fast(session, variant_url, headers, depth + 1):
-                    return True
+            variant_url = urljoin(url, lines[i+1].strip())
+            if await is_stream_fast(session, variant_url, headers, depth+1):
+                return True
 
-    # Media playlist → test first 2 segments
+    # Media playlist → first segment only
     segments = [l for l in lines if l and not l.startswith("#")]
-    if len(segments) < 1:
+    if not segments:
         return False
 
-    for seg in segments[:2]:
-        if not await stream_is_fast(session, urljoin(url, seg), headers):
-            return False
-
-    return True
+    return await stream_is_fast(session, urljoin(url, segments[0]), headers)
 
 # ---------- HOST CACHE ----------
 host_cache = {}
@@ -158,6 +148,7 @@ async def worker(queue, session, semaphore, results):
         try:
             async with semaphore:
                 if not await host_allowed(session, url, headers):
+                    print(f"⚠ SKIPPED (host slow/blocked): {url}")
                     continue
 
             title = ""
@@ -172,7 +163,7 @@ async def worker(queue, session, semaphore, results):
             queue.task_done()
 
 # ---------- MAIN ----------
-async def filter_fast_streams(input_path, output_path):
+async def filter_fast_streams_multiple(input_paths, output_path):
     queue = asyncio.Queue(maxsize=MAX_CONCURRENCY * 2)
     results = []
 
@@ -197,20 +188,26 @@ async def filter_fast_streams(input_path, output_path):
             for _ in range(MAX_CONCURRENCY)
         ]
 
-        extinf, vlcopts = [], []
+        # Process all input playlists
+        for input_path in input_paths:
+            if not Path(input_path).exists():
+                print(f"⚠ Input file does not exist: {input_path}")
+                continue
 
-        with open(input_path, "r", encoding="utf-8", errors="ignore") as f:
-            for line in f:
-                line = line.strip()
-                if line.startswith("#EXTINF"):
-                    extinf = [line]
-                elif line.startswith("#EXTVLCOPT"):
-                    vlcopts.append(line)
-                elif line.startswith(("http://", "https://")):
-                    await queue.put((extinf.copy(), vlcopts.copy(), line))
-                    extinf.clear()
-                    vlcopts.clear()
+            extinf, vlcopts = [], []
+            with open(input_path, "r", encoding="utf-8", errors="ignore") as f:
+                for line in f:
+                    line = line.strip()
+                    if line.startswith("#EXTINF"):
+                        extinf = [line]
+                    elif line.startswith("#EXTVLCOPT"):
+                        vlcopts.append(line)
+                    elif line.startswith(("http://", "https://")):
+                        await queue.put((extinf.copy(), vlcopts.copy(), line))
+                        extinf.clear()
+                        vlcopts.clear()
 
+        # Stop workers
         for _ in workers:
             await queue.put(None)
 
@@ -219,6 +216,7 @@ async def filter_fast_streams(input_path, output_path):
         for w in workers:
             await w
 
+    # Sort results and save
     results.sort(key=lambda x: x[0])
 
     with open(output_path, "w", encoding="utf-8") as f:
@@ -231,12 +229,11 @@ async def filter_fast_streams(input_path, output_path):
 
 # ---------- CLI ----------
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python fast_filter.py input.m3u output.m3u")
+    if len(sys.argv) < 3:
+        print("Usage: python fast_filter.py output.m3u input1.m3u input2.m3u ...")
         sys.exit(1)
 
-    if not Path(sys.argv[1]).exists():
-        print("Input file does not exist.")
-        sys.exit(1)
+    output_file = sys.argv[1]
+    input_files = sys.argv[2:]
 
-    asyncio.run(filter_fast_streams(sys.argv[1], sys.argv[2]))
+    asyncio.run(filter_fast_streams_multiple(input_files, output_file))
