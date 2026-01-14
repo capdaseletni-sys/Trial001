@@ -24,9 +24,6 @@ MIN_WIDTH = 1920
 MIN_HEIGHT = 1080
 MIN_BANDWIDTH = 5_000_000   # fallback if RESOLUTION missing
 
-# GROUP FILTER
-REQUIRED_GROUP_KEYWORD = "xxx"
-
 DEFAULT_HEADERS = {
     "User-Agent": "Mozilla/5.0"
 }
@@ -100,8 +97,9 @@ async def is_stream_fast(session, url, headers, depth=0):
         if d in url:
             return False
 
+    # Only HLS allowed (needed for 1080p verification)
     if ".m3u8" not in url:
-        return False  # non-HLS rejected (cannot verify 1080p)
+        return False
 
     try:
         async with session.get(url, headers=headers) as r:
@@ -196,16 +194,6 @@ async def worker(queue, session, semaphore, results):
             return
 
         extinf, vlcopts, url = entry
-
-        # ---- GROUP-TITLE FILTER (XXX ONLY) ----
-        if extinf:
-            line = extinf[0].lower()
-            if 'group-title="' in line:
-                group = line.split('group-title="', 1)[1].split('"', 1)[0]
-                if REQUIRED_GROUP_KEYWORD not in group:
-                    queue.task_done()
-                    continue
-
         headers = {}
 
         for opt in vlcopts:
@@ -234,7 +222,7 @@ async def worker(queue, session, semaphore, results):
                 )
 
             results.append((title.lower(), extinf, vlcopts, url))
-            print(f"✓ FAST 1080p XXX: {title}")
+            print(f"✓ FAST 1080p: {title}")
 
         finally:
             queue.task_done()
@@ -296,7 +284,7 @@ async def filter_fast_streams(input_path, output_path):
             for line in extinf + vlcopts + [url]:
                 f.write(line + "\n")
 
-    print(f"\nSaved FAST 1080p XXX playlist to: {output_path}")
+    print(f"\nSaved FAST 1080p playlist to: {output_path}")
 
 # ---------- CLI ----------
 
