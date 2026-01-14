@@ -10,7 +10,7 @@ TIMEOUT = aiohttp.ClientTimeout(total=12)
 MAX_CONCURRENCY = 80
 MAX_HLS_DEPTH = 3
 
-MIN_SPEED_KBPS = 350
+MIN_SPEED_KBPS = 330
 MAX_TTFB = 5.0
 SAMPLE_BYTES = 384_000
 WARMUP_BYTES = 32_000
@@ -132,7 +132,7 @@ def get_group_title_from_url(url):
     host = urlparse(url).netloc.lower()
     if host.startswith("www."):
         host = host[4:]
-    return host.split(".")[0]  # take main domain as group title
+    return host.split(".")[0].upper()  # main domain, ALL CAPS
 
 # ---------- WORKER ----------
 async def worker(queue, session, semaphore, results):
@@ -231,7 +231,7 @@ async def filter_fast_streams_multiple(input_paths, output_path):
 
     results.sort(key=lambda x: x[0])
 
-    # Write playlist with uppercase title and URL-based group-title
+    # Write playlist with uppercase title and uppercase group-title
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for title_upper, group_title, extinf, vlcopts, url in results:
