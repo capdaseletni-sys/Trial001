@@ -1,46 +1,54 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="011.FM - Motown live" tvg-logo="https://www.vhv.rs/dpng/d/29-290046_retro-music-png-transparent-png.png" group-title="Radio Stations" tvg-name="011.FM - MOTOWN LIVE" group-title="CORD-CUTTER", 011.FM - MOTOWN LIVE
+http://cord-cutter.net:8080/15564292/15564292/17846
 #EXTINF:-1 tvg-id="" tvg-name="011.FM - Retro 70s" tvg-logo="https://www.vhv.rs/dpng/d/29-290046_retro-music-png-transparent-png.png" group-title="Radio Stations" tvg-name="011.FM - RETRO 70S" group-title="CORD-CUTTER", 011.FM - RETRO 70S
 http://cord-cutter.net:8080/15564292/15564292/17858
-#EXTINF:-1 tvg-id="" tvg-name="24/7 FRIENDS" tvg-logo="" group-title="24/7 CHANNELS " tvg-name="24/7 FRIENDS" group-title="CORD-CUTTER", 24/7 FRIENDS
-http://cord-cutter.net:8080/15564292/15564292/66407
-#EXTINF:-1 tvg-id="" tvg-name=" tvg-name="HOT 108 JAMZ" TVG-LOGO="HTTPS://PNGIMG.COM/UPLOADS/RADIO/RADIO_PNG19293.PNG" GROUP-TITLE="RADIO STATIONS",,HOT 108 JAMZ" group-title="CORD-CUTTER", HOT 108 JAMZ" TVG-LOGO="HTTPS://PNGIMG.COM/UPLOADS/RADIO/RADIO_PNG19293.PNG" GROUP-TITLE="RADIO STATIONS",,HOT 108 JAMZ
-http://cord-cutter.net:8080/15564292/15564292/14663
+#EXTINF:-1 tvg-id="" tvg-name="011.FM - Totally 90s" tvg-logo="https://www.vhv.rs/dpng/d/29-290046_retro-music-png-transparent-png.png" group-title="Radio Stations" tvg-name="011.FM - TOTALLY 90S" group-title="CORD-CUTTER", 011.FM - TOTALLY 90S
+http://cord-cutter.net:8080/15564292/15564292/17826
 #EXTINF:-1 tvg-name="|AR| AL JAZEERA HD LIVE" group-title="LIVE-HLS-WEB-AJA-GCP", |AR| AL JAZEERA HD LIVE
 https://live-hls-web-aja-gcp.thehlive.com/AJA/02.m3u8
-#EXTINF:-1 tvg-name="BEIN SPORTS 1 FRENCH SD" group-title="SANSAT", BEIN SPORTS 1 FRENCH SD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/117945
-#EXTINF:-1 tvg-name="BEIN SPORTS 2 HD B2" group-title="SANSAT", BEIN SPORTS 2 HD B2
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/394074
+#EXTINF:-1 tvg-name="BEIN SPORTS 1 ENGLISH" group-title="SANSAT", BEIN SPORTS 1 ENGLISH
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5241
+#EXTINF:-1 tvg-name="BEIN SPORTS 1 ENGLISH FHD" group-title="SANSAT", BEIN SPORTS 1 ENGLISH FHD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36295
+#EXTINF:-1 tvg-name="BEIN SPORTS 1 HD" group-title="SANSAT", BEIN SPORTS 1 HD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60954
+#EXTINF:-1 tvg-name="BEIN SPORTS 2 HD" group-title="SANSAT", BEIN SPORTS 2 HD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60955
 #EXTINF:-1 tvg-name="BEIN SPORTS 2 SD" group-title="SANSAT", BEIN SPORTS 2 SD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60961
+#EXTINF:-1 tvg-name="BEIN SPORTS 3 FHD" group-title="SANSAT", BEIN SPORTS 3 FHD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60959
 #EXTINF:-1 tvg-name="BEIN SPORTS 3 HD" group-title="SANSAT", BEIN SPORTS 3 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60956
-#EXTINF:-1 tvg-name="BEIN SPORTS 4 FHD" group-title="SANSAT", BEIN SPORTS 4 FHD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36301
-#EXTINF:-1 tvg-name="BEIN SPORTS 4 HD B2" group-title="SANSAT", BEIN SPORTS 4 HD B2
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576496
-#EXTINF:-1 tvg-name="BEIN SPORTS 5 SD" group-title="SANSAT", BEIN SPORTS 5 SD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60970
-#EXTINF:-1 tvg-name="BEIN SPORTS 7" group-title="SANSAT", BEIN SPORTS 7
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5235
+#EXTINF:-1 tvg-name="BEIN SPORTS 5 HD B2" group-title="SANSAT", BEIN SPORTS 5 HD B2
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576497
+#EXTINF:-1 tvg-name="BEIN SPORTS 6 FHD" group-title="SANSAT", BEIN SPORTS 6 FHD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36300
+#EXTINF:-1 tvg-name="BEIN SPORTS 6 SD" group-title="SANSAT", BEIN SPORTS 6 SD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60969
 #EXTINF:-1 tvg-name="BEIN SPORTS 7 FHD" group-title="SANSAT", BEIN SPORTS 7 FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36299
-#EXTINF:-1 tvg-name="BEIN SPORTS 7 SD" group-title="SANSAT", BEIN SPORTS 7 SD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60963
 #EXTINF:-1 tvg-name="BEIN SPORTS 8" group-title="SANSAT", BEIN SPORTS 8
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5237
 #EXTINF:-1 tvg-name="BEIN SPORTS 8 FHD" group-title="SANSAT", BEIN SPORTS 8 FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36298
+#EXTINF:-1 tvg-name="BEIN SPORTS 8 SD" group-title="SANSAT", BEIN SPORTS 8 SD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60964
 #EXTINF:-1 tvg-name="BEIN SPORTS 9" group-title="SANSAT", BEIN SPORTS 9
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5239
+#EXTINF:-1 tvg-name="BEIN SPORTS 9 HD B2" group-title="SANSAT", BEIN SPORTS 9 HD B2
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576501
 #EXTINF:-1 tvg-name="BEIN SPORTS 9 SD" group-title="SANSAT", BEIN SPORTS 9 SD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60965
 #EXTINF:-1 tvg-name="BEIN SPORTS HD" group-title="SANSAT", BEIN SPORTS HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/6727
-#EXTINF:-1 tvg-name="BEIN SPORTS MAX 1 HD LIVE" group-title="SANSAT", BEIN SPORTS MAX 1 HD LIVE
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585680
-#EXTINF:-1 tvg-name="BEIN SPORTS MAX 3 EN HD LIVE" group-title="SANSAT", BEIN SPORTS MAX 3 EN HD LIVE
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585682
+#EXTINF:-1 tvg-name="BEIN SPORTS HD B2" group-title="SANSAT", BEIN SPORTS HD B2
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/667032
+#EXTINF:-1 tvg-name="BEIN SPORTS MAX 4 FR HD LIVE" group-title="SANSAT", BEIN SPORTS MAX 4 FR HD LIVE
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585683
+#EXTINF:-1 tvg-name="BEIN SPORTS NEWS" group-title="SANSAT", BEIN SPORTS NEWS
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/290371
 #EXTINF:-1 tvg-name="|ADULT| BABES TV HD" group-title="SANSAT", |ADULT| BABES TV HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94535
 #EXTINF:-1 tvg-name="|ADULT| BALKAN EROTIC" group-title="SANSAT", |ADULT| BALKAN EROTIC
@@ -363,10 +371,14 @@ http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94600
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94602
 #EXTINF:-1 tvg-name="|ADULT| ОХ-АХ HD" group-title="SANSAT", |ADULT| ОХ-АХ HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285952
+#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 1 4K" group-title="SANSAT", |AR| BEIN SPORTS AFC 1 4K
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/176995
 #EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 1 SD" group-title="SANSAT", |AR| BEIN SPORTS AFC 1 SD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/435962
-#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 5 HD" group-title="SANSAT", |AR| BEIN SPORTS AFC 5 HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/435960
+#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 2 SD" group-title="SANSAT", |AR| BEIN SPORTS AFC 2 SD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/435963
+#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 4K" group-title="SANSAT", |AR| BEIN SPORTS AFC 4K
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/176994
 #EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC SD" group-title="SANSAT", |AR| BEIN SPORTS AFC SD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/435961
 #EXTINF:-1 tvg-name="|AZAM|  UTV" group-title="SANSAT", |AZAM|  UTV
@@ -797,6 +809,8 @@ https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mohammed-abdou/ae9bed6024bb80
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-rashed-almajed/5acf573bde2dd6f133cbd6a338b1f312/manifest/video/1080p2400kbps/video.m3u8
 #EXTINF:-1 tvg-name="===== SHAHID LIVE =====" group-title="SHLS-LIVE-AK", ===== SHAHID LIVE =====
 https://shls-live-ak.akamaized.net/out/v1/8e2419c6c7494dbba478be025af490ee/index_1.m3u8
+#EXTINF:-1 tvg-name="|SHAHID| BIG TIME" group-title="SHLS-LIVE-AK", |SHAHID| BIG TIME
+https://shls-live-ak.akamaized.net/out/v1/07a6ab2d57b2453a91bbdd2d46b5865a/index_2.m3u8
 #EXTINF:-1 tvg-name="|SHAHID| AFLAM" group-title="SHLS-LIVE-ENC", |SHAHID| AFLAM
 https://shls-live-enc.edgenextcdn.net/out/v1/0044dd4b001a466c941ad77b04a574a2/index_11.m3u8
 #EXTINF:-1 tvg-name="|SHAHID| AL KABEER AWI" group-title="SHLS-LIVE-ENC", |SHAHID| AL KABEER AWI
@@ -831,16 +845,18 @@ https://shls-live-enc.edgenextcdn.net/out/v1/2a0f4768f7fa42ed813674628b487e95/in
 https://shls-live-enc.edgenextcdn.net/out/v1/40031eca7be34c4ea9744bf067f4fefa/index_8.m3u8
 #EXTINF:-1 tvg-name="|SHAHID| TASH" group-title="SHLS-LIVE-ENC", |SHAHID| TASH
 https://shls-live-enc.edgenextcdn.net/out/v1/e34e3ac9d2534543a13b44c2b458b0c2/index_1.m3u8
-#EXTINF:-1 tvg-id="22 THE POINT PITTSBURGH PA WPNT" tvg-name="USA ABC WPLG UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/ABC_%282013%29_Dark_Grey.svg/1200px-ABC_%282013%29_Dark_Grey.svg.png" group-title="ENTERTAINMENT" tvg-name="USA ABC WPLG UHD" group-title="SUPERSONICTV", USA ABC WPLG UHD
-http://supersonictv.live:8080/611366/682256/22041
-#EXTINF:-1 tvg-id="US: AWE" tvg-name="USA AWE" tvg-logo="http://apk.eternaltv.net/icons/awechannel.jpg" group-title="ENTERTAINMENT" tvg-name="USA AWE" group-title="SUPERSONICTV", USA AWE
-http://supersonictv.live:8080/611366/682256/22049
-#EXTINF:-1 tvg-id="US: BBC AMERICA" tvg-name="USA BBC America UHD" tvg-logo="https://seeklogo.com/images/B/bbc-america-logo-1344C402CD-seeklogo.com.png" group-title="ENTERTAINMENT" tvg-name="USA BBC AMERICA UHD" group-title="SUPERSONICTV", USA BBC AMERICA UHD
-http://supersonictv.live:8080/611366/682256/22051
-#EXTINF:-1 tvg-id="US: BET HER EAST" tvg-name="USA BET HER" tvg-logo="https://www.nicepng.com/png/full/264-2641514_bet-her-bet-presents-love-and-happiness-an.png" group-title="ENTERTAINMENT" tvg-name="USA BET HER" group-title="SUPERSONICTV", USA BET HER
-http://supersonictv.live:8080/611366/682256/22053
+#EXTINF:-1 tvg-id="US: A&E EAST" tvg-name="USA A&E UHD" tvg-logo="https://images-na.ssl-images-amazon.com/images/I/312LhQsVqtL._SY355_.png" group-title="ENTERTAINMENT" tvg-name="USA A&E UHD" group-title="SUPERSONICTV", USA A&E UHD
+http://supersonictv.live:8080/611366/682256/22040
+#EXTINF:-1 tvg-id="US: AMC EAST" tvg-name="USA AMC UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/AMC_logo_2016.svg/1280px-AMC_logo_2016.svg.png" group-title="ENTERTAINMENT" tvg-name="USA AMC UHD" group-title="SUPERSONICTV", USA AMC UHD
+http://supersonictv.live:8080/611366/682256/22042
+#EXTINF:-1 tvg-id="US: ANIMAL PLANET EAST" tvg-name="USA Animal Planet East UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c8/AnimalPlanet.png" group-title="ENTERTAINMENT" tvg-name="USA ANIMAL PLANET EAST UHD" group-title="SUPERSONICTV", USA ANIMAL PLANET EAST UHD
+http://supersonictv.live:8080/611366/682256/22045
+#EXTINF:-1 tvg-id="US: ASPIRE" tvg-name="USA Aspire" tvg-logo="https://i.pinimg.com/originals/6b/2d/d3/6b2dd3639e8d8260b584fb040f0987ce.png" group-title="ENTERTAINMENT" tvg-name="USA ASPIRE" group-title="SUPERSONICTV", USA ASPIRE
+http://supersonictv.live:8080/611366/682256/22048
 #EXTINF:-1 tvg-id="US: BET SOUL" tvg-name="USA BET SOUL" tvg-logo="https://www.pngitem.com/pimgs/m/192-1927516_bet-soul-custom-logo-bet-soul-png-logo.png" group-title="ENTERTAINMENT" tvg-name="USA BET SOUL" group-title="SUPERSONICTV", USA BET SOUL
 http://supersonictv.live:8080/611366/682256/22055
+#EXTINF:-1 tvg-id="US: BET EAST" tvg-name="USA BET UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/BET_Logo.svg/1280px-BET_Logo.svg.png" group-title="ENTERTAINMENT" tvg-name="USA BET UHD" group-title="SUPERSONICTV", USA BET UHD
+http://supersonictv.live:8080/611366/682256/22052
 #EXTINF:-1 tvg-id="US: BOUNCE" tvg-name="USA BOUNCE TV" tvg-logo="https://storage.googleapis.com/btvwp-uploads/2018/02/5bfb1301-bounce_adjusted1.png" group-title="ENTERTAINMENT" tvg-name="USA BOUNCE TV" group-title="SUPERSONICTV", USA BOUNCE TV
 http://supersonictv.live:8080/611366/682256/22058
 #EXTINF:-1 tvg-id="US: BRAVO EAST" tvg-name="USA Bravo East UHD" tvg-logo="http://epg4you.com/logos/bravo.png" group-title="ENTERTAINMENT" tvg-name="USA BRAVO EAST UHD" group-title="SUPERSONICTV", USA BRAVO EAST UHD
@@ -849,31 +865,37 @@ http://supersonictv.live:8080/611366/682256/22059
 http://supersonictv.live:8080/611366/682256/22060
 #EXTINF:-1 tvg-id="US: BUZZR" tvg-name="USA BUZZR" tvg-logo="https://upload.wikimedia.org/wikipedia/en/b/be/Buzzr_%28TV_Network%29_Logo.png" group-title="ENTERTAINMENT" tvg-name="USA BUZZR" group-title="SUPERSONICTV", USA BUZZR
 http://supersonictv.live:8080/611366/682256/22061
-#EXTINF:-1 tvg-id="US: COOKING CHANNEL" tvg-name="USA Cooking Channel" tvg-logo="https://cdn.technadu.com/wp-content/uploads/2018/11/Cooking-Channel.png" group-title="ENTERTAINMENT" tvg-name="USA COOKING CHANNEL" group-title="SUPERSONICTV", USA COOKING CHANNEL
-http://supersonictv.live:8080/611366/682256/22067
+#EXTINF:-1 tvg-id="CA: CBS EAST" tvg-name="USA CBS UHD" tvg-logo="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fi.forbesimg.com%2Fmedia%2Flists%2Fcompanies%2Fcbs_416x416.jpg" group-title="ENTERTAINMENT" tvg-name="USA CBS UHD" group-title="SUPERSONICTV", USA CBS UHD
+http://supersonictv.live:8080/611366/682256/22062
+#EXTINF:-1 tvg-id="US: COMET EAST" tvg-name="USA Comet" tvg-logo="https://cdn.freebiesupply.com/logos/large/2x/comet-1-logo-png-transparent.png" group-title="ENTERTAINMENT" tvg-name="USA COMET" group-title="SUPERSONICTV", USA COMET
+http://supersonictv.live:8080/611366/682256/22066
 #EXTINF:-1 tvg-id="US: DESTINATION AMERICA" tvg-name="USA Destination America UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Destination_America_logo.svg/1200px-Destination_America_logo.svg.png" group-title="ENTERTAINMENT" tvg-name="USA DESTINATION AMERICA UHD" group-title="SUPERSONICTV", USA DESTINATION AMERICA UHD
 http://supersonictv.live:8080/611366/682256/22073
 #EXTINF:-1 tvg-id="US: DISCOVERY CHANNEL EAST" tvg-name="USA Discovery Channel UHD" tvg-logo="https://img.idesign.vn/1920x-/2019/04/22/ides_discoverychannel_04-2.png" group-title="ENTERTAINMENT" tvg-name="USA DISCOVERY CHANNEL UHD" group-title="SUPERSONICTV", USA DISCOVERY CHANNEL UHD
 http://supersonictv.live:8080/611366/682256/22074
-#EXTINF:-1 tvg-id="US: DISCOVERY FAMILY" tvg-name="USA Discovery Family" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Discovery_Family_logo.svg/1200px-Discovery_Family_logo.svg.png" group-title="ENTERTAINMENT" tvg-name="USA DISCOVERY FAMILY" group-title="SUPERSONICTV", USA DISCOVERY FAMILY
-http://supersonictv.live:8080/611366/682256/22076
+#EXTINF:-1 tvg-id="US: DISCOVERY LIFE" tvg-name="USA Discovery Life UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Discovery_Life_logo_2016.svg/1200px-Discovery_Life_logo_2016.svg.png" group-title="ENTERTAINMENT" tvg-name="USA DISCOVERY LIFE UHD" group-title="SUPERSONICTV", USA DISCOVERY LIFE UHD
+http://supersonictv.live:8080/611366/682256/22075
 #EXTINF:-1 tvg-id="US: FOOD NETWORK WEST" tvg-name="USA Food Network West LHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Food_Network_New_Logo.png/615px-Food_Network_New_Logo.png" group-title="ENTERTAINMENT" tvg-name="USA FOOD NETWORK WEST LHD" group-title="SUPERSONICTV", USA FOOD NETWORK WEST LHD
 http://supersonictv.live:8080/611366/682256/22085
+#EXTINF:-1 tvg-id="" tvg-name="USA Fox Life Latin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/27/Fox_life_it.png" group-title="ENTERTAINMENT" tvg-name="USA FOX LIFE LATIN" group-title="SUPERSONICTV", USA FOX LIFE LATIN
+http://supersonictv.live:8080/611366/682256/22087
 #EXTINF:-1 tvg-id="CA: FOX EAST" tvg-name="USA Fox UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Fox_Sports_Networks.svg/1200px-Fox_Sports_Networks.svg.png" group-title="ENTERTAINMENT" tvg-name="USA FOX UHD" group-title="SUPERSONICTV", USA FOX UHD
 http://supersonictv.live:8080/611366/682256/22086
 #EXTINF:-1 tvg-id="US: FYI EAST" tvg-name="USA FYI" tvg-logo="https://www.dropbox.com/s/l1h6fe0rs4yjepz/fyi%20network.jpg?dl=1" group-title="ENTERTAINMENT" tvg-name="USA FYI" group-title="SUPERSONICTV", USA FYI
 http://supersonictv.live:8080/611366/682256/22096
 #EXTINF:-1 tvg-id="" tvg-name="USA Galavision" tvg-logo="" group-title="ENTERTAINMENT" tvg-name="USA GALAVISION" group-title="SUPERSONICTV", USA GALAVISION
 http://supersonictv.live:8080/611366/682256/22097
+#EXTINF:-1 tvg-id="CA: GAME SHOW NETWORK" tvg-name="USA Game Show Network UHD" tvg-logo="https://www.dropbox.com/s/q2kxldj5xcbh29v/game%20show%20network.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA GAME SHOW NETWORK UHD" group-title="SUPERSONICTV", USA GAME SHOW NETWORK UHD
+http://supersonictv.live:8080/611366/682256/22098
+#EXTINF:-1 tvg-id="US: IFC EAST" tvg-name="USA IFC LHD" tvg-logo="https://www.dropbox.com/s/qev01ebg00pnssl/ifc.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA IFC LHD" group-title="SUPERSONICTV", USA IFC LHD
+http://supersonictv.live:8080/611366/682256/22108
 #EXTINF:-1 tvg-id="US: INSP EAST" tvg-name="USA INSP" tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/5a/Official_logo_for_INSP.jpeg" group-title="ENTERTAINMENT" tvg-name="USA INSP" group-title="SUPERSONICTV", USA INSP
 http://supersonictv.live:8080/611366/682256/22109
-#EXTINF:-1 tvg-id="US: LIFETIME EAST" tvg-name="USA Lifetime East UHD" tvg-logo="https://www.dropbox.com/s/g2fiv3375o4p9zo/lifetime.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA LIFETIME EAST UHD" group-title="SUPERSONICTV", USA LIFETIME EAST UHD
-http://supersonictv.live:8080/611366/682256/22115
+#EXTINF:-1 tvg-id="US: DISCOVERY ID EAST" tvg-name="USA Investigation Discovery East UHD" tvg-logo="https://www.dropbox.com/s/z7yctzw9dt14q9r/investigation%20discovery.jpg?dl=1" group-title="ENTERTAINMENT" tvg-name="USA INVESTIGATION DISCOVERY EAST UHD" group-title="SUPERSONICTV", USA INVESTIGATION DISCOVERY EAST UHD
+http://supersonictv.live:8080/611366/682256/22110
 #EXTINF:-1 tvg-id="US: MOTOR TREND" tvg-name="USA MotorTrend UHD" tvg-logo="http://apk.eternaltv.net/icons/discovery-velocity.png" group-title="ENTERTAINMENT" tvg-name="USA MOTORTREND UHD" group-title="SUPERSONICTV", USA MOTORTREND UHD
 http://supersonictv.live:8080/611366/682256/22119
-#EXTINF:-1 tvg-id="US: NAT GEO WILD" tvg-name="USA Nat Geo WILD" tvg-logo="https://www.dropbox.com/s/o0wlndwtm0wzb3o/nat%20geo%20wild.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA NAT GEO WILD" group-title="SUPERSONICTV", USA NAT GEO WILD
-http://supersonictv.live:8080/611366/682256/22122
-#EXTINF:-1 tvg-id="CA: ADULT SWIM" tvg-name="USA: ADULT SWIM" tvg-logo="https://i.pinimg.com/originals/5c/31/62/5c31623f9319817ffba4715c50971444.jpg" group-title="ENTERTAINMENT" tvg-name="USA: ADULT SWIM" group-title="SUPERSONICTV", USA: ADULT SWIM
-http://supersonictv.live:8080/611366/682256/22043
+#EXTINF:-1 tvg-id="US: MTV EAST" tvg-name="USA MTV UHD" tvg-logo="https://www.dropbox.com/s/uuddhpaxf0bz1da/MTV.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA MTV UHD" group-title="SUPERSONICTV", USA MTV UHD
+http://supersonictv.live:8080/611366/682256/22120
 #EXTINF:-1 tvg-id="US: ANTENNA TV" tvg-name="[]USA ANTENNA TV" tvg-logo="https://www.dropbox.com/s/a76wm2c5cikslms/Antenna%20TV.png?dl=1" group-title="ENTERTAINMENT" tvg-name="[]USA ANTENNA TV" group-title="SUPERSONICTV", []USA ANTENNA TV
 http://supersonictv.live:8080/611366/682256/22047
