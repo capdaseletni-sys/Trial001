@@ -1,899 +1,889 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="" tvg-name="011.FM - Motown live" tvg-logo="https://www.vhv.rs/dpng/d/29-290046_retro-music-png-transparent-png.png" group-title="Radio Stations" tvg-name="011.FM - Motown live" group-title="011.FM -", 011.FM - Motown live
+#EXTINF:-1 tvg-id="" tvg-name="011.FM - Motown live" tvg-logo="https://www.vhv.rs/dpng/d/29-290046_retro-music-png-transparent-png.png" group-title="Radio Stations" tvg-name="011.FM - Motown live" group-title="cord-cutter", 011.FM - Motown live
 http://cord-cutter.net:8080/15564292/15564292/17846
-#EXTINF:-1 tvg-id="" tvg-name="011.FM - Retro 70s" tvg-logo="https://www.vhv.rs/dpng/d/29-290046_retro-music-png-transparent-png.png" group-title="Radio Stations" tvg-name="011.FM - Retro 70s" group-title="011.FM -", 011.FM - Retro 70s
+#EXTINF:-1 tvg-id="" tvg-name="011.FM - Retro 70s" tvg-logo="https://www.vhv.rs/dpng/d/29-290046_retro-music-png-transparent-png.png" group-title="Radio Stations" tvg-name="011.FM - Retro 70s" group-title="cord-cutter", 011.FM - Retro 70s
 http://cord-cutter.net:8080/15564292/15564292/17858
-#EXTINF:-1 tvg-id="" tvg-name="011.FM - Totally 90s" tvg-logo="https://www.vhv.rs/dpng/d/29-290046_retro-music-png-transparent-png.png" group-title="Radio Stations" tvg-name="011.FM - Totally 90s" group-title="011.FM -", 011.FM - Totally 90s
+#EXTINF:-1 tvg-id="" tvg-name="011.FM - Totally 90s" tvg-logo="https://www.vhv.rs/dpng/d/29-290046_retro-music-png-transparent-png.png" group-title="Radio Stations" tvg-name="011.FM - Totally 90s" group-title="cord-cutter", 011.FM - Totally 90s
 http://cord-cutter.net:8080/15564292/15564292/17826
-#EXTINF:-1 tvg-name="===== SHAHID LIVE =====" group-title="===== SHAHID", ===== SHAHID LIVE =====
+#EXTINF:-1 tvg-name="===== SHAHID LIVE =====" group-title="shls-live-ak", ===== SHAHID LIVE =====
 https://shls-live-ak.akamaized.net/out/v1/8e2419c6c7494dbba478be025af490ee/index_1.m3u8
-#EXTINF:-1 tvg-name="BEIN SPORTS 1 HD" group-title="BEIN SPORTS", BEIN SPORTS 1 HD
+#EXTINF:-1 tvg-name="BEIN SPORTS 1 FRENCH FHD" group-title="sansat", BEIN SPORTS 1 FRENCH FHD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/63499
+#EXTINF:-1 tvg-name="BEIN SPORTS 1 HD" group-title="sansat", BEIN SPORTS 1 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60954
-#EXTINF:-1 tvg-name="BEIN SPORTS 2 HD B2" group-title="BEIN SPORTS", BEIN SPORTS 2 HD B2
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/394074
-#EXTINF:-1 tvg-name="BEIN SPORTS 3 HD" group-title="BEIN SPORTS", BEIN SPORTS 3 HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60956
-#EXTINF:-1 tvg-name="BEIN SPORTS 4 FHD" group-title="BEIN SPORTS", BEIN SPORTS 4 FHD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36301
-#EXTINF:-1 tvg-name="BEIN SPORTS 5 HD B2" group-title="BEIN SPORTS", BEIN SPORTS 5 HD B2
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576497
-#EXTINF:-1 tvg-name="BEIN SPORTS 6" group-title="BEIN SPORTS", BEIN SPORTS 6
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5233
-#EXTINF:-1 tvg-name="BEIN SPORTS 6 FHD" group-title="BEIN SPORTS", BEIN SPORTS 6 FHD
+#EXTINF:-1 tvg-name="BEIN SPORTS 1 HD B2" group-title="sansat", BEIN SPORTS 1 HD B2
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/394073
+#EXTINF:-1 tvg-name="BEIN SPORTS 3 FHD" group-title="sansat", BEIN SPORTS 3 FHD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60959
+#EXTINF:-1 tvg-name="BEIN SPORTS 3 HD B2" group-title="sansat", BEIN SPORTS 3 HD B2
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/394075
+#EXTINF:-1 tvg-name="BEIN SPORTS 6 FHD" group-title="sansat", BEIN SPORTS 6 FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36300
-#EXTINF:-1 tvg-name="BEIN SPORTS 6 HD B2" group-title="BEIN SPORTS", BEIN SPORTS 6 HD B2
+#EXTINF:-1 tvg-name="BEIN SPORTS 6 HD B2" group-title="sansat", BEIN SPORTS 6 HD B2
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576498
-#EXTINF:-1 tvg-name="BEIN SPORTS 7" group-title="BEIN SPORTS", BEIN SPORTS 7
+#EXTINF:-1 tvg-name="BEIN SPORTS 7" group-title="sansat", BEIN SPORTS 7
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5235
-#EXTINF:-1 tvg-name="BEIN SPORTS 7 HD B2" group-title="BEIN SPORTS", BEIN SPORTS 7 HD B2
+#EXTINF:-1 tvg-name="BEIN SPORTS 7 FHD" group-title="sansat", BEIN SPORTS 7 FHD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36299
+#EXTINF:-1 tvg-name="BEIN SPORTS 7 HD B2" group-title="sansat", BEIN SPORTS 7 HD B2
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576499
-#EXTINF:-1 tvg-name="BEIN SPORTS 8" group-title="BEIN SPORTS", BEIN SPORTS 8
+#EXTINF:-1 tvg-name="BEIN SPORTS 8" group-title="sansat", BEIN SPORTS 8
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5237
-#EXTINF:-1 tvg-name="BEIN SPORTS 8 FHD" group-title="BEIN SPORTS", BEIN SPORTS 8 FHD
+#EXTINF:-1 tvg-name="BEIN SPORTS 8 FHD" group-title="sansat", BEIN SPORTS 8 FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36298
-#EXTINF:-1 tvg-name="BEIN SPORTS 9 FHD" group-title="BEIN SPORTS", BEIN SPORTS 9 FHD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36297
-#EXTINF:-1 tvg-name="BEIN SPORTS HD" group-title="BEIN SPORTS", BEIN SPORTS HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/6727
-#EXTINF:-1 tvg-name="BEIN SPORTS MAX 1 HD LIVE" group-title="BEIN SPORTS", BEIN SPORTS MAX 1 HD LIVE
+#EXTINF:-1 tvg-name="BEIN SPORTS MAX 1 HD LIVE" group-title="sansat", BEIN SPORTS MAX 1 HD LIVE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585680
-#EXTINF:-1 tvg-name="BEIN SPORTS MAX 2 HD LIVE" group-title="BEIN SPORTS", BEIN SPORTS MAX 2 HD LIVE
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585681
-#EXTINF:-1 tvg-name="BEIN SPORTS MAX 3 EN HD LIVE" group-title="BEIN SPORTS", BEIN SPORTS MAX 3 EN HD LIVE
+#EXTINF:-1 tvg-name="BEIN SPORTS MAX 3 EN HD LIVE" group-title="sansat", BEIN SPORTS MAX 3 EN HD LIVE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585682
-#EXTINF:-1 tvg-name="BEIN SPORTS XTRA 2 FHD" group-title="BEIN SPORTS", BEIN SPORTS XTRA 2 FHD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/135168
-#EXTINF:-1 tvg-id="" tvg-name=" tvg-name="Hot 108 JAMZ" tvg-logo="https://pngimg.com/uploads/radio/radio_PNG19293.png" group-title="Radio Stations",,Hot 108 JAMZ" group-title="Hot 108", Hot 108 JAMZ" tvg-logo="https://pngimg.com/uploads/radio/radio_PNG19293.png" group-title="Radio Stations",,Hot 108 JAMZ
+#EXTINF:-1 tvg-name="BEIN SPORTS NEWS" group-title="sansat", BEIN SPORTS NEWS
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/290371
+#EXTINF:-1 tvg-id="" tvg-name=" tvg-name="Hot 108 JAMZ" tvg-logo="https://pngimg.com/uploads/radio/radio_PNG19293.png" group-title="Radio Stations",,Hot 108 JAMZ" group-title="cord-cutter", Hot 108 JAMZ" tvg-logo="https://pngimg.com/uploads/radio/radio_PNG19293.png" group-title="Radio Stations",,Hot 108 JAMZ
 http://cord-cutter.net:8080/15564292/15564292/14663
-#EXTINF:-1 tvg-id="US: A&E EAST" tvg-name="USA A&E UHD" tvg-logo="https://images-na.ssl-images-amazon.com/images/I/312LhQsVqtL._SY355_.png" group-title="ENTERTAINMENT" tvg-name="USA A&E UHD" group-title="USA A&E", USA A&E UHD
-http://supersonictv.live:8080/611366/682256/22040
-#EXTINF:-1 tvg-id="US: ASPIRE" tvg-name="USA Aspire" tvg-logo="https://i.pinimg.com/originals/6b/2d/d3/6b2dd3639e8d8260b584fb040f0987ce.png" group-title="ENTERTAINMENT" tvg-name="USA Aspire" group-title="USA Aspire", USA Aspire
+#EXTINF:-1 tvg-id="US: ASPIRE" tvg-name="USA Aspire" tvg-logo="https://i.pinimg.com/originals/6b/2d/d3/6b2dd3639e8d8260b584fb040f0987ce.png" group-title="ENTERTAINMENT" tvg-name="USA Aspire" group-title="supersonictv", USA Aspire
 http://supersonictv.live:8080/611366/682256/22048
-#EXTINF:-1 tvg-id="US: BET GOSPEL" tvg-name="USA BET Gospel" tvg-logo="https://www.pngkey.com/png/detail/264-2641524_bet-gospel-1-gospel-logo.png" group-title="ENTERTAINMENT" tvg-name="USA BET Gospel" group-title="USA BET", USA BET Gospel
+#EXTINF:-1 tvg-id="US: AWE" tvg-name="USA AWE" tvg-logo="http://apk.eternaltv.net/icons/awechannel.jpg" group-title="ENTERTAINMENT" tvg-name="USA AWE" group-title="supersonictv", USA AWE
+http://supersonictv.live:8080/611366/682256/22049
+#EXTINF:-1 tvg-id="US: BBC AMERICA" tvg-name="USA BBC America UHD" tvg-logo="https://seeklogo.com/images/B/bbc-america-logo-1344C402CD-seeklogo.com.png" group-title="ENTERTAINMENT" tvg-name="USA BBC America UHD" group-title="supersonictv", USA BBC America UHD
+http://supersonictv.live:8080/611366/682256/22051
+#EXTINF:-1 tvg-id="US: BET GOSPEL" tvg-name="USA BET Gospel" tvg-logo="https://www.pngkey.com/png/detail/264-2641524_bet-gospel-1-gospel-logo.png" group-title="ENTERTAINMENT" tvg-name="USA BET Gospel" group-title="supersonictv", USA BET Gospel
 http://supersonictv.live:8080/611366/682256/22056
-#EXTINF:-1 tvg-id="US: BET HER EAST" tvg-name="USA BET HER" tvg-logo="https://www.nicepng.com/png/full/264-2641514_bet-her-bet-presents-love-and-happiness-an.png" group-title="ENTERTAINMENT" tvg-name="USA BET HER" group-title="USA BET", USA BET HER
+#EXTINF:-1 tvg-id="US: BET HER EAST" tvg-name="USA BET HER" tvg-logo="https://www.nicepng.com/png/full/264-2641514_bet-her-bet-presents-love-and-happiness-an.png" group-title="ENTERTAINMENT" tvg-name="USA BET HER" group-title="supersonictv", USA BET HER
 http://supersonictv.live:8080/611366/682256/22053
-#EXTINF:-1 tvg-id="US: BET SOUL" tvg-name="USA BET SOUL" tvg-logo="https://www.pngitem.com/pimgs/m/192-1927516_bet-soul-custom-logo-bet-soul-png-logo.png" group-title="ENTERTAINMENT" tvg-name="USA BET SOUL" group-title="USA BET", USA BET SOUL
-http://supersonictv.live:8080/611366/682256/22055
-#EXTINF:-1 tvg-id="US: BET EAST" tvg-name="USA BET UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/BET_Logo.svg/1280px-BET_Logo.svg.png" group-title="ENTERTAINMENT" tvg-name="USA BET UHD" group-title="USA BET", USA BET UHD
+#EXTINF:-1 tvg-id="US: BET EAST" tvg-name="USA BET UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/BET_Logo.svg/1280px-BET_Logo.svg.png" group-title="ENTERTAINMENT" tvg-name="USA BET UHD" group-title="supersonictv", USA BET UHD
 http://supersonictv.live:8080/611366/682256/22052
-#EXTINF:-1 tvg-id="US: BOUNCE" tvg-name="USA BOUNCE TV" tvg-logo="https://storage.googleapis.com/btvwp-uploads/2018/02/5bfb1301-bounce_adjusted1.png" group-title="ENTERTAINMENT" tvg-name="USA BOUNCE TV" group-title="USA BOUNCE", USA BOUNCE TV
+#EXTINF:-1 tvg-id="US: BOUNCE" tvg-name="USA BOUNCE TV" tvg-logo="https://storage.googleapis.com/btvwp-uploads/2018/02/5bfb1301-bounce_adjusted1.png" group-title="ENTERTAINMENT" tvg-name="USA BOUNCE TV" group-title="supersonictv", USA BOUNCE TV
 http://supersonictv.live:8080/611366/682256/22058
-#EXTINF:-1 tvg-id="US: BRAVO EAST" tvg-name="USA Bravo East UHD" tvg-logo="http://epg4you.com/logos/bravo.png" group-title="ENTERTAINMENT" tvg-name="USA Bravo East UHD" group-title="USA Bravo", USA Bravo East UHD
+#EXTINF:-1 tvg-id="US: BRAVO EAST" tvg-name="USA Bravo East UHD" tvg-logo="http://epg4you.com/logos/bravo.png" group-title="ENTERTAINMENT" tvg-name="USA Bravo East UHD" group-title="supersonictv", USA Bravo East UHD
 http://supersonictv.live:8080/611366/682256/22059
-#EXTINF:-1 tvg-id="US: BRAVO WEST" tvg-name="USA Bravo West LHD" tvg-logo="http://epg4you.com/logos/bravo.png" group-title="ENTERTAINMENT" tvg-name="USA Bravo West LHD" group-title="USA Bravo", USA Bravo West LHD
+#EXTINF:-1 tvg-id="US: BRAVO WEST" tvg-name="USA Bravo West LHD" tvg-logo="http://epg4you.com/logos/bravo.png" group-title="ENTERTAINMENT" tvg-name="USA Bravo West LHD" group-title="supersonictv", USA Bravo West LHD
 http://supersonictv.live:8080/611366/682256/22060
-#EXTINF:-1 tvg-id="US: BUZZR" tvg-name="USA BUZZR" tvg-logo="https://upload.wikimedia.org/wikipedia/en/b/be/Buzzr_%28TV_Network%29_Logo.png" group-title="ENTERTAINMENT" tvg-name="USA BUZZR" group-title="USA BUZZR", USA BUZZR
+#EXTINF:-1 tvg-id="US: BUZZR" tvg-name="USA BUZZR" tvg-logo="https://upload.wikimedia.org/wikipedia/en/b/be/Buzzr_%28TV_Network%29_Logo.png" group-title="ENTERTAINMENT" tvg-name="USA BUZZR" group-title="supersonictv", USA BUZZR
 http://supersonictv.live:8080/611366/682256/22061
-#EXTINF:-1 tvg-id="CA: CBS EAST" tvg-name="USA CBS UHD" tvg-logo="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fi.forbesimg.com%2Fmedia%2Flists%2Fcompanies%2Fcbs_416x416.jpg" group-title="ENTERTAINMENT" tvg-name="USA CBS UHD" group-title="USA CBS", USA CBS UHD
+#EXTINF:-1 tvg-id="CA: CBS EAST" tvg-name="USA CBS UHD" tvg-logo="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fi.forbesimg.com%2Fmedia%2Flists%2Fcompanies%2Fcbs_416x416.jpg" group-title="ENTERTAINMENT" tvg-name="USA CBS UHD" group-title="supersonictv", USA CBS UHD
 http://supersonictv.live:8080/611366/682256/22062
-#EXTINF:-1 tvg-id="US: CMT EAST" tvg-name="USA CMT UHD" tvg-logo="http://apk.eternaltv.net/icons/CMTV.png" group-title="ENTERTAINMENT" tvg-name="USA CMT UHD" group-title="USA CMT", USA CMT UHD
-http://supersonictv.live:8080/611366/682256/22063
-#EXTINF:-1 tvg-id="US: DESTINATION AMERICA" tvg-name="USA Destination America UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Destination_America_logo.svg/1200px-Destination_America_logo.svg.png" group-title="ENTERTAINMENT" tvg-name="USA Destination America UHD" group-title="USA Destination", USA Destination America UHD
+#EXTINF:-1 tvg-id="US: CNBC" tvg-name="USA CNBC UHD" tvg-logo="http://epg4you.com/logos/cnbc.png" group-title="ENTERTAINMENT" tvg-name="USA CNBC UHD" group-title="supersonictv", USA CNBC UHD
+http://supersonictv.live:8080/611366/682256/22064
+#EXTINF:-1 tvg-id="US: DESTINATION AMERICA" tvg-name="USA Destination America UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Destination_America_logo.svg/1200px-Destination_America_logo.svg.png" group-title="ENTERTAINMENT" tvg-name="USA Destination America UHD" group-title="supersonictv", USA Destination America UHD
 http://supersonictv.live:8080/611366/682256/22073
-#EXTINF:-1 tvg-id="US: DISCOVERY CHANNEL EAST" tvg-name="USA Discovery Channel UHD" tvg-logo="https://img.idesign.vn/1920x-/2019/04/22/ides_discoverychannel_04-2.png" group-title="ENTERTAINMENT" tvg-name="USA Discovery Channel UHD" group-title="USA Discovery", USA Discovery Channel UHD
-http://supersonictv.live:8080/611366/682256/22074
-#EXTINF:-1 tvg-id="US: DISCOVERY FAMILY" tvg-name="USA Discovery Family" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Discovery_Family_logo.svg/1200px-Discovery_Family_logo.svg.png" group-title="ENTERTAINMENT" tvg-name="USA Discovery Family" group-title="USA Discovery", USA Discovery Family
+#EXTINF:-1 tvg-id="US: DISCOVERY FAMILY" tvg-name="USA Discovery Family" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Discovery_Family_logo.svg/1200px-Discovery_Family_logo.svg.png" group-title="ENTERTAINMENT" tvg-name="USA Discovery Family" group-title="supersonictv", USA Discovery Family
 http://supersonictv.live:8080/611366/682256/22076
-#EXTINF:-1 tvg-id="US: DISCOVERY LIFE" tvg-name="USA Discovery Life UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Discovery_Life_logo_2016.svg/1200px-Discovery_Life_logo_2016.svg.png" group-title="ENTERTAINMENT" tvg-name="USA Discovery Life UHD" group-title="USA Discovery", USA Discovery Life UHD
+#EXTINF:-1 tvg-id="US: DISCOVERY LIFE" tvg-name="USA Discovery Life UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Discovery_Life_logo_2016.svg/1200px-Discovery_Life_logo_2016.svg.png" group-title="ENTERTAINMENT" tvg-name="USA Discovery Life UHD" group-title="supersonictv", USA Discovery Life UHD
 http://supersonictv.live:8080/611366/682256/22075
-#EXTINF:-1 tvg-id="CA: DISCOVERY SCIENCE" tvg-name="USA Discovery Science" tvg-logo="https://pbs.twimg.com/profile_images/908026116560101376/roWv2x4X_400x400.jpg" group-title="ENTERTAINMENT" tvg-name="USA Discovery Science" group-title="USA Discovery", USA Discovery Science
+#EXTINF:-1 tvg-id="CA: DISCOVERY SCIENCE" tvg-name="USA Discovery Science" tvg-logo="https://pbs.twimg.com/profile_images/908026116560101376/roWv2x4X_400x400.jpg" group-title="ENTERTAINMENT" tvg-name="USA Discovery Science" group-title="supersonictv", USA Discovery Science
 http://supersonictv.live:8080/611366/682256/22077
-#EXTINF:-1 tvg-id="US: FOOD NETWORK WEST" tvg-name="USA Food Network West LHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Food_Network_New_Logo.png/615px-Food_Network_New_Logo.png" group-title="ENTERTAINMENT" tvg-name="USA Food Network West LHD" group-title="USA Food", USA Food Network West LHD
+#EXTINF:-1 tvg-id="US: FOOD NETWORK WEST" tvg-name="USA Food Network West LHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Food_Network_New_Logo.png/615px-Food_Network_New_Logo.png" group-title="ENTERTAINMENT" tvg-name="USA Food Network West LHD" group-title="supersonictv", USA Food Network West LHD
 http://supersonictv.live:8080/611366/682256/22085
-#EXTINF:-1 tvg-id="" tvg-name="USA Fox Life Latin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/27/Fox_life_it.png" group-title="ENTERTAINMENT" tvg-name="USA Fox Life Latin" group-title="USA Fox", USA Fox Life Latin
+#EXTINF:-1 tvg-id="" tvg-name="USA Fox Life Latin" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/27/Fox_life_it.png" group-title="ENTERTAINMENT" tvg-name="USA Fox Life Latin" group-title="supersonictv", USA Fox Life Latin
 http://supersonictv.live:8080/611366/682256/22087
-#EXTINF:-1 tvg-id="CA: FOX EAST" tvg-name="USA Fox UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Fox_Sports_Networks.svg/1200px-Fox_Sports_Networks.svg.png" group-title="ENTERTAINMENT" tvg-name="USA Fox UHD" group-title="USA Fox", USA Fox UHD
+#EXTINF:-1 tvg-id="CA: FOX EAST" tvg-name="USA Fox UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Fox_Sports_Networks.svg/1200px-Fox_Sports_Networks.svg.png" group-title="ENTERTAINMENT" tvg-name="USA Fox UHD" group-title="supersonictv", USA Fox UHD
 http://supersonictv.live:8080/611366/682256/22086
-#EXTINF:-1 tvg-id="US: FYI EAST" tvg-name="USA FYI" tvg-logo="https://www.dropbox.com/s/l1h6fe0rs4yjepz/fyi%20network.jpg?dl=1" group-title="ENTERTAINMENT" tvg-name="USA FYI" group-title="USA FYI", USA FYI
-http://supersonictv.live:8080/611366/682256/22096
-#EXTINF:-1 tvg-id="" tvg-name="USA Galavision" tvg-logo="" group-title="ENTERTAINMENT" tvg-name="USA Galavision" group-title="USA Galavision", USA Galavision
-http://supersonictv.live:8080/611366/682256/22097
-#EXTINF:-1 tvg-id="US: HGTV EAST" tvg-name="USA HGTV West LHD" tvg-logo="https://www.dropbox.com/s/iax9yjkmxymvzaq/HGTV.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA HGTV West LHD" group-title="USA HGTV", USA HGTV West LHD
-http://supersonictv.live:8080/611366/682256/22103
-#EXTINF:-1 tvg-id="US: HLN EAST" tvg-name="USA HLN UHD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/HLN_%28TV_network%29_2017_logo.svg/1200px-HLN_%28TV_network%29_2017_logo.svg.png" group-title="ENTERTAINMENT" tvg-name="USA HLN UHD" group-title="USA HLN", USA HLN UHD
-http://supersonictv.live:8080/611366/682256/22107
-#EXTINF:-1 tvg-id="US: IFC EAST" tvg-name="USA IFC LHD" tvg-logo="https://www.dropbox.com/s/qev01ebg00pnssl/ifc.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA IFC LHD" group-title="USA IFC", USA IFC LHD
+#EXTINF:-1 tvg-id="US: FXX WEST" tvg-name="USA FXX West LHD" tvg-logo="http://epg4you.com/logos/fxx.png" group-title="ENTERTAINMENT" tvg-name="USA FXX West LHD" group-title="supersonictv", USA FXX West LHD
+http://supersonictv.live:8080/611366/682256/22095
+#EXTINF:-1 tvg-id="CA: GAME SHOW NETWORK" tvg-name="USA Game Show Network UHD" tvg-logo="https://www.dropbox.com/s/q2kxldj5xcbh29v/game%20show%20network.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA Game Show Network UHD" group-title="supersonictv", USA Game Show Network UHD
+http://supersonictv.live:8080/611366/682256/22098
+#EXTINF:-1 tvg-id="US: IFC EAST" tvg-name="USA IFC LHD" tvg-logo="https://www.dropbox.com/s/qev01ebg00pnssl/ifc.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA IFC LHD" group-title="supersonictv", USA IFC LHD
 http://supersonictv.live:8080/611366/682256/22108
-#EXTINF:-1 tvg-id="US: DISCOVERY ID WEST" tvg-name="USA Investigation Discovery West LHD" tvg-logo="https://www.dropbox.com/s/z7yctzw9dt14q9r/investigation%20discovery.jpg?dl=1" group-title="ENTERTAINMENT" tvg-name="USA Investigation Discovery West LHD" group-title="USA Investigation", USA Investigation Discovery West LHD
-http://supersonictv.live:8080/611366/682256/22111
-#EXTINF:-1 tvg-id="US: LOGO EAST" tvg-name="USA LOGO" tvg-logo="http://apk.eternaltv.net/icons/logotv.jpg" group-title="ENTERTAINMENT" tvg-name="USA LOGO" group-title="USA LOGO", USA LOGO
-http://supersonictv.live:8080/611366/682256/22116
-#EXTINF:-1 tvg-id="US: MAVTV" tvg-name="USA MAVTV" tvg-logo="https://www.wtcks.com/images/channels/logos/mav.png" group-title="ENTERTAINMENT" tvg-name="USA MAVTV" group-title="USA MAVTV", USA MAVTV
+#EXTINF:-1 tvg-id="US: INSP EAST" tvg-name="USA INSP" tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/5a/Official_logo_for_INSP.jpeg" group-title="ENTERTAINMENT" tvg-name="USA INSP" group-title="supersonictv", USA INSP
+http://supersonictv.live:8080/611366/682256/22109
+#EXTINF:-1 tvg-id="US: LAFF" tvg-name="USA LAFF" tvg-logo="http://apk.eternaltv.net/icons/laff-logov2.jpg" group-title="ENTERTAINMENT" tvg-name="USA LAFF" group-title="supersonictv", USA LAFF
+http://supersonictv.live:8080/611366/682256/22113
+#EXTINF:-1 tvg-id="US: MAVTV" tvg-name="USA MAVTV" tvg-logo="https://www.wtcks.com/images/channels/logos/mav.png" group-title="ENTERTAINMENT" tvg-name="USA MAVTV" group-title="supersonictv", USA MAVTV
 http://supersonictv.live:8080/611366/682256/22117
-#EXTINF:-1 tvg-id="US: MTV EAST" tvg-name="USA MTV UHD" tvg-logo="https://www.dropbox.com/s/uuddhpaxf0bz1da/MTV.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA MTV UHD" group-title="USA MTV", USA MTV UHD
+#EXTINF:-1 tvg-id="US: MTV EAST" tvg-name="USA MTV UHD" tvg-logo="https://www.dropbox.com/s/uuddhpaxf0bz1da/MTV.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA MTV UHD" group-title="supersonictv", USA MTV UHD
 http://supersonictv.live:8080/611366/682256/22120
-#EXTINF:-1 tvg-id="CA: ADULT SWIM" tvg-name="USA: ADULT SWIM" tvg-logo="https://i.pinimg.com/originals/5c/31/62/5c31623f9319817ffba4715c50971444.jpg" group-title="ENTERTAINMENT" tvg-name="USA: ADULT SWIM" group-title="USA: ADULT", USA: ADULT SWIM
+#EXTINF:-1 tvg-id="US: NAT GEO WILD" tvg-name="USA Nat Geo WILD" tvg-logo="https://www.dropbox.com/s/o0wlndwtm0wzb3o/nat%20geo%20wild.png?dl=1" group-title="ENTERTAINMENT" tvg-name="USA Nat Geo WILD" group-title="supersonictv", USA Nat Geo WILD
+http://supersonictv.live:8080/611366/682256/22122
+#EXTINF:-1 tvg-id="CA: ADULT SWIM" tvg-name="USA: ADULT SWIM" tvg-logo="https://i.pinimg.com/originals/5c/31/62/5c31623f9319817ffba4715c50971444.jpg" group-title="ENTERTAINMENT" tvg-name="USA: ADULT SWIM" group-title="supersonictv", USA: ADULT SWIM
 http://supersonictv.live:8080/611366/682256/22043
-#EXTINF:-1 tvg-name="|ADULT| BABES TV HD" group-title="|ADULT| BABES", |ADULT| BABES TV HD
+#EXTINF:-1 tvg-name="|ADULT| BABES TV HD" group-title="sansat", |ADULT| BABES TV HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94535
-#EXTINF:-1 tvg-name="|ADULT| BALKAN EROTIC" group-title="|ADULT| BALKAN", |ADULT| BALKAN EROTIC
+#EXTINF:-1 tvg-name="|ADULT| BALKAN EROTIC" group-title="sansat", |ADULT| BALKAN EROTIC
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94603
-#EXTINF:-1 tvg-name="|ADULT| BANG U" group-title="|ADULT| BANG", |ADULT| BANG U
+#EXTINF:-1 tvg-name="|ADULT| BANG U" group-title="sansat", |ADULT| BANG U
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94536
-#EXTINF:-1 tvg-name="|ADULT| BANGBROS UHD 4K" group-title="|ADULT| BANGBROS", |ADULT| BANGBROS UHD 4K
+#EXTINF:-1 tvg-name="|ADULT| BANGBROS UHD 4K" group-title="sansat", |ADULT| BANGBROS UHD 4K
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285944
-#EXTINF:-1 tvg-name="|ADULT| BARELY LEGAL" group-title="|ADULT| BARELY", |ADULT| BARELY LEGAL
+#EXTINF:-1 tvg-name="|ADULT| BARELY LEGAL" group-title="sansat", |ADULT| BARELY LEGAL
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94538
-#EXTINF:-1 tvg-name="|ADULT| BEATE UHSE.TV" group-title="|ADULT| BEATE", |ADULT| BEATE UHSE.TV
+#EXTINF:-1 tvg-name="|ADULT| BEATE UHSE.TV" group-title="sansat", |ADULT| BEATE UHSE.TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94539
-#EXTINF:-1 tvg-name="|ADULT| BIG TITS 3" group-title="|ADULT| BIG", |ADULT| BIG TITS 3
+#EXTINF:-1 tvg-name="|ADULT| BIG TITS 3" group-title="sansat", |ADULT| BIG TITS 3
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285939
-#EXTINF:-1 tvg-name="|ADULT| BLACKED 1" group-title="|ADULT| BLACKED", |ADULT| BLACKED 1
+#EXTINF:-1 tvg-name="|ADULT| BLACKED 1" group-title="sansat", |ADULT| BLACKED 1
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285919
-#EXTINF:-1 tvg-name="|ADULT| BLACKED RAW" group-title="|ADULT| BLACKED", |ADULT| BLACKED RAW
+#EXTINF:-1 tvg-name="|ADULT| BLACKED RAW" group-title="sansat", |ADULT| BLACKED RAW
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285920
-#EXTINF:-1 tvg-name="|ADULT| BLACKED RAW HD" group-title="|ADULT| BLACKED", |ADULT| BLACKED RAW HD
+#EXTINF:-1 tvg-name="|ADULT| BLACKED RAW HD" group-title="sansat", |ADULT| BLACKED RAW HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285947
-#EXTINF:-1 tvg-name="|ADULT| BLUE HUSTLER" group-title="|ADULT| BLUE", |ADULT| BLUE HUSTLER
+#EXTINF:-1 tvg-name="|ADULT| BLUE HUSTLER" group-title="sansat", |ADULT| BLUE HUSTLER
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94540
-#EXTINF:-1 tvg-name="|ADULT| BLUE HUSTLER EUROPE" group-title="|ADULT| BLUE", |ADULT| BLUE HUSTLER EUROPE
+#EXTINF:-1 tvg-name="|ADULT| BLUE HUSTLER EUROPE" group-title="sansat", |ADULT| BLUE HUSTLER EUROPE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94626
-#EXTINF:-1 tvg-name="|ADULT| BRAZZERS" group-title="|ADULT| BRAZZERS", |ADULT| BRAZZERS
+#EXTINF:-1 tvg-name="|ADULT| BRAZZERS" group-title="sansat", |ADULT| BRAZZERS
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94541
-#EXTINF:-1 tvg-name="|ADULT| BRAZZERS TV" group-title="|ADULT| BRAZZERS", |ADULT| BRAZZERS TV
+#EXTINF:-1 tvg-name="|ADULT| BRAZZERS TV" group-title="sansat", |ADULT| BRAZZERS TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94542
-#EXTINF:-1 tvg-name="|ADULT| BRAZZERS TV EUROPE" group-title="|ADULT| BRAZZERS", |ADULT| BRAZZERS TV EUROPE
+#EXTINF:-1 tvg-name="|ADULT| BRAZZERS TV EUROPE" group-title="sansat", |ADULT| BRAZZERS TV EUROPE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94543
-#EXTINF:-1 tvg-name="|ADULT| CANDY HD" group-title="|ADULT| CANDY", |ADULT| CANDY HD
+#EXTINF:-1 tvg-name="|ADULT| CANDY HD" group-title="sansat", |ADULT| CANDY HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94544
-#EXTINF:-1 tvg-name="|ADULT| CUCKOLD" group-title="|ADULT| CUCKOLD", |ADULT| CUCKOLD
+#EXTINF:-1 tvg-name="|ADULT| CUCKOLD" group-title="sansat", |ADULT| CUCKOLD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285943
-#EXTINF:-1 tvg-name="|ADULT| DAY WITH A PORNSTAR FHD" group-title="|ADULT| DAY", |ADULT| DAY WITH A PORNSTAR FHD
+#EXTINF:-1 tvg-name="|ADULT| DAY WITH A PORNSTAR FHD" group-title="sansat", |ADULT| DAY WITH A PORNSTAR FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285946
-#EXTINF:-1 tvg-name="|ADULT| DEEPER FHD" group-title="|ADULT| DEEPER", |ADULT| DEEPER FHD
+#EXTINF:-1 tvg-name="|ADULT| DEEPER FHD" group-title="sansat", |ADULT| DEEPER FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285948
-#EXTINF:-1 tvg-name="|ADULT| DESTINY 2 TV +18 HD" group-title="|ADULT| DESTINY", |ADULT| DESTINY 2 TV +18 HD
+#EXTINF:-1 tvg-name="|ADULT| DESTINY 2 TV +18 HD" group-title="sansat", |ADULT| DESTINY 2 TV +18 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285934
-#EXTINF:-1 tvg-name="|ADULT| DORCEL HD" group-title="|ADULT| DORCEL", |ADULT| DORCEL HD
+#EXTINF:-1 tvg-name="|ADULT| DORCEL HD" group-title="sansat", |ADULT| DORCEL HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94546
-#EXTINF:-1 tvg-name="|ADULT| DORCEL XXX HD" group-title="|ADULT| DORCEL", |ADULT| DORCEL XXX HD
+#EXTINF:-1 tvg-name="|ADULT| DORCEL XXX HD" group-title="sansat", |ADULT| DORCEL XXX HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94547
-#EXTINF:-1 tvg-name="|ADULT| DUSK!" group-title="|ADULT| DUSK!", |ADULT| DUSK!
+#EXTINF:-1 tvg-name="|ADULT| DUSK!" group-title="sansat", |ADULT| DUSK!
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94549
-#EXTINF:-1 tvg-name="|ADULT| EroX" group-title="|ADULT| EroX", |ADULT| EroX
+#EXTINF:-1 tvg-name="|ADULT| EroX" group-title="sansat", |ADULT| EroX
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621932
-#EXTINF:-1 tvg-name="|ADULT| EROX HD" group-title="|ADULT| EROX", |ADULT| EROX HD
+#EXTINF:-1 tvg-name="|ADULT| EROX HD" group-title="sansat", |ADULT| EROX HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94550
-#EXTINF:-1 tvg-name="|ADULT| EROXXX HD" group-title="|ADULT| EROXXX", |ADULT| EROXXX HD
+#EXTINF:-1 tvg-name="|ADULT| EROXXX HD" group-title="sansat", |ADULT| EROXXX HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94551
-#EXTINF:-1 tvg-name="|ADULT| EVIL ANGEL HD" group-title="|ADULT| EVIL", |ADULT| EVIL ANGEL HD
+#EXTINF:-1 tvg-name="|ADULT| EVIL ANGEL HD" group-title="sansat", |ADULT| EVIL ANGEL HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94552
-#EXTINF:-1 tvg-name="|ADULT| EXTASY" group-title="|ADULT| EXTASY", |ADULT| EXTASY
+#EXTINF:-1 tvg-name="|ADULT| EXTASY" group-title="sansat", |ADULT| EXTASY
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94553
-#EXTINF:-1 tvg-name="|ADULT| EXTREM" group-title="|ADULT| EXTREM", |ADULT| EXTREM
+#EXTINF:-1 tvg-name="|ADULT| EXTREM" group-title="sansat", |ADULT| EXTREM
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94554
-#EXTINF:-1 tvg-name="|ADULT| EXTREME" group-title="|ADULT| EXTREME", |ADULT| EXTREME
+#EXTINF:-1 tvg-name="|ADULT| EXTREME" group-title="sansat", |ADULT| EXTREME
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94627
-#EXTINF:-1 tvg-name="|ADULT| EXX EXOTICA" group-title="|ADULT| EXX", |ADULT| EXX EXOTICA
+#EXTINF:-1 tvg-name="|ADULT| EXX EXOTICA" group-title="sansat", |ADULT| EXX EXOTICA
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94624
-#EXTINF:-1 tvg-name="|ADULT| EXXXOTICA" group-title="|ADULT| EXXXOTICA", |ADULT| EXXXOTICA
+#EXTINF:-1 tvg-name="|ADULT| EXXXOTICA" group-title="sansat", |ADULT| EXXXOTICA
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94555
-#EXTINF:-1 tvg-name="|ADULT| Fake Agent" group-title="|ADULT| Fake", |ADULT| Fake Agent
+#EXTINF:-1 tvg-name="|ADULT| Fake Agent" group-title="sansat", |ADULT| Fake Agent
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621933
-#EXTINF:-1 tvg-name="|ADULT| Fake Taxi 2" group-title="|ADULT| Fake", |ADULT| Fake Taxi 2
+#EXTINF:-1 tvg-name="|ADULT| Fake Taxi 2" group-title="sansat", |ADULT| Fake Taxi 2
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621935
-#EXTINF:-1 tvg-name="|ADULT| Fake Taxi 3" group-title="|ADULT| Fake", |ADULT| Fake Taxi 3
+#EXTINF:-1 tvg-name="|ADULT| Fake Taxi 3" group-title="sansat", |ADULT| Fake Taxi 3
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621936
-#EXTINF:-1 tvg-name="|ADULT| FAP TV 2" group-title="|ADULT| FAP", |ADULT| FAP TV 2
+#EXTINF:-1 tvg-name="|ADULT| FAP TV 2" group-title="sansat", |ADULT| FAP TV 2
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285926
-#EXTINF:-1 tvg-name="|ADULT| FAP TV 3" group-title="|ADULT| FAP", |ADULT| FAP TV 3
+#EXTINF:-1 tvg-name="|ADULT| FAP TV 3" group-title="sansat", |ADULT| FAP TV 3
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285927
-#EXTINF:-1 tvg-name="|ADULT| FAP TV 4" group-title="|ADULT| FAP", |ADULT| FAP TV 4
+#EXTINF:-1 tvg-name="|ADULT| FAP TV 4" group-title="sansat", |ADULT| FAP TV 4
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285928
-#EXTINF:-1 tvg-name="|ADULT| FASHION TV" group-title="|ADULT| FASHION", |ADULT| FASHION TV
+#EXTINF:-1 tvg-name="|ADULT| FASHION TV" group-title="sansat", |ADULT| FASHION TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94625
-#EXTINF:-1 tvg-name="|ADULT| FAST BOYZ" group-title="|ADULT| FAST", |ADULT| FAST BOYZ
+#EXTINF:-1 tvg-name="|ADULT| FAST BOYZ" group-title="sansat", |ADULT| FAST BOYZ
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94629
-#EXTINF:-1 tvg-name="|ADULT| FREE X TV" group-title="|ADULT| FREE", |ADULT| FREE X TV
+#EXTINF:-1 tvg-name="|ADULT| FREE X TV" group-title="sansat", |ADULT| FREE X TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94556
-#EXTINF:-1 tvg-name="|ADULT| FRENCH LOVER" group-title="|ADULT| FRENCH", |ADULT| FRENCH LOVER
+#EXTINF:-1 tvg-name="|ADULT| FRENCH LOVER" group-title="sansat", |ADULT| FRENCH LOVER
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94557
-#EXTINF:-1 tvg-name="|ADULT| FRENCH LOVER EUROPE" group-title="|ADULT| FRENCH", |ADULT| FRENCH LOVER EUROPE
+#EXTINF:-1 tvg-name="|ADULT| FRENCH LOVER EUROPE" group-title="sansat", |ADULT| FRENCH LOVER EUROPE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94558
-#EXTINF:-1 tvg-name="|ADULT| HOT CLUB 1 FHD" group-title="|ADULT| HOT", |ADULT| HOT CLUB 1 FHD
+#EXTINF:-1 tvg-name="|ADULT| HOT CLUB 1 FHD" group-title="sansat", |ADULT| HOT CLUB 1 FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285960
-#EXTINF:-1 tvg-name="|ADULT| HOT CLUB 2 FHD" group-title="|ADULT| HOT", |ADULT| HOT CLUB 2 FHD
+#EXTINF:-1 tvg-name="|ADULT| HOT CLUB 2 FHD" group-title="sansat", |ADULT| HOT CLUB 2 FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285961
-#EXTINF:-1 tvg-name="|ADULT| HOT TV" group-title="|ADULT| HOT", |ADULT| HOT TV
+#EXTINF:-1 tvg-name="|ADULT| HOT TV" group-title="sansat", |ADULT| HOT TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94560
-#EXTINF:-1 tvg-name="|ADULT| HUSTLER HD" group-title="|ADULT| HUSTLER", |ADULT| HUSTLER HD
+#EXTINF:-1 tvg-name="|ADULT| HUSTLER HD" group-title="sansat", |ADULT| HUSTLER HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94529
-#EXTINF:-1 tvg-name="|ADULT| HUSTLER TV" group-title="|ADULT| HUSTLER", |ADULT| HUSTLER TV
+#EXTINF:-1 tvg-name="|ADULT| HUSTLER TV" group-title="sansat", |ADULT| HUSTLER TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94561
-#EXTINF:-1 tvg-name="|ADULT| JASMIN TV" group-title="|ADULT| JASMIN", |ADULT| JASMIN TV
+#EXTINF:-1 tvg-name="|ADULT| JASMIN TV" group-title="sansat", |ADULT| JASMIN TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94562
-#EXTINF:-1 tvg-name="|ADULT| LEO TV" group-title="|ADULT| LEO", |ADULT| LEO TV
+#EXTINF:-1 tvg-name="|ADULT| LEO TV" group-title="sansat", |ADULT| LEO TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94563
-#EXTINF:-1 tvg-name="|ADULT| LESBIAN AFFAIR" group-title="|ADULT| LESBIAN", |ADULT| LESBIAN AFFAIR
+#EXTINF:-1 tvg-name="|ADULT| LESBIAN AFFAIR" group-title="sansat", |ADULT| LESBIAN AFFAIR
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94564
-#EXTINF:-1 tvg-name="|ADULT| MAN-X" group-title="|ADULT| MAN-X", |ADULT| MAN-X
+#EXTINF:-1 tvg-name="|ADULT| MAN-X" group-title="sansat", |ADULT| MAN-X
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94630
-#EXTINF:-1 tvg-name="|ADULT| MATURE 2" group-title="|ADULT| MATURE", |ADULT| MATURE 2
+#EXTINF:-1 tvg-name="|ADULT| MATURE 2" group-title="sansat", |ADULT| MATURE 2
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285938
-#EXTINF:-1 tvg-name="|ADULT| MEIDEN VAN HOLLAND HARD" group-title="|ADULT| MEIDEN", |ADULT| MEIDEN VAN HOLLAND HARD
+#EXTINF:-1 tvg-name="|ADULT| MEIDEN VAN HOLLAND HARD" group-title="sansat", |ADULT| MEIDEN VAN HOLLAND HARD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94565
-#EXTINF:-1 tvg-name="|ADULT| MIAMI TV HD" group-title="|ADULT| MIAMI", |ADULT| MIAMI TV HD
+#EXTINF:-1 tvg-name="|ADULT| MIAMI TV HD" group-title="sansat", |ADULT| MIAMI TV HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285933
-#EXTINF:-1 tvg-name="|ADULT| MILF 2" group-title="|ADULT| MILF", |ADULT| MILF 2
+#EXTINF:-1 tvg-name="|ADULT| MILF 2" group-title="sansat", |ADULT| MILF 2
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285936
-#EXTINF:-1 tvg-name="|ADULT| MILF 3" group-title="|ADULT| MILF", |ADULT| MILF 3
+#EXTINF:-1 tvg-name="|ADULT| MILF 3" group-title="sansat", |ADULT| MILF 3
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285937
-#EXTINF:-1 tvg-name="|ADULT| MILF Revolution" group-title="|ADULT| MILF", |ADULT| MILF Revolution
+#EXTINF:-1 tvg-name="|ADULT| MILF Revolution" group-title="sansat", |ADULT| MILF Revolution
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621942
-#EXTINF:-1 tvg-name="|ADULT| MILF TV" group-title="|ADULT| MILF", |ADULT| MILF TV
+#EXTINF:-1 tvg-name="|ADULT| MILF TV" group-title="sansat", |ADULT| MILF TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94566
-#EXTINF:-1 tvg-name="|ADULT| Mofos" group-title="|ADULT| Mofos", |ADULT| Mofos
+#EXTINF:-1 tvg-name="|ADULT| Mofos" group-title="sansat", |ADULT| Mofos
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621943
-#EXTINF:-1 tvg-name="|ADULT| Moms Teach Sex" group-title="|ADULT| Moms", |ADULT| Moms Teach Sex
+#EXTINF:-1 tvg-name="|ADULT| Moms Teach Sex" group-title="sansat", |ADULT| Moms Teach Sex
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621944
-#EXTINF:-1 tvg-name="|ADULT| NET XX" group-title="|ADULT| NET", |ADULT| NET XX
+#EXTINF:-1 tvg-name="|ADULT| NET XX" group-title="sansat", |ADULT| NET XX
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94567
-#EXTINF:-1 tvg-name="|ADULT| NetXXL" group-title="|ADULT| NetXXL", |ADULT| NetXXL
+#EXTINF:-1 tvg-name="|ADULT| NetXXL" group-title="sansat", |ADULT| NetXXL
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621945
-#EXTINF:-1 tvg-name="|ADULT| NUART TV" group-title="|ADULT| NUART", |ADULT| NUART TV
+#EXTINF:-1 tvg-name="|ADULT| NUART TV" group-title="sansat", |ADULT| NUART TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94568
-#EXTINF:-1 tvg-name="|ADULT| OLDTIMER" group-title="|ADULT| OLDTIMER", |ADULT| OLDTIMER
+#EXTINF:-1 tvg-name="|ADULT| OLDTIMER" group-title="sansat", |ADULT| OLDTIMER
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94570
-#EXTINF:-1 tvg-name="|ADULT| P HD PRIVATE" group-title="|ADULT| P", |ADULT| P HD PRIVATE
+#EXTINF:-1 tvg-name="|ADULT| P HD PRIVATE" group-title="sansat", |ADULT| P HD PRIVATE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94631
-#EXTINF:-1 tvg-name="|ADULT| PASSIE XXX" group-title="|ADULT| PASSIE", |ADULT| PASSIE XXX
+#EXTINF:-1 tvg-name="|ADULT| PASSIE XXX" group-title="sansat", |ADULT| PASSIE XXX
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94572
-#EXTINF:-1 tvg-name="|ADULT| PASSION XXX" group-title="|ADULT| PASSION", |ADULT| PASSION XXX
+#EXTINF:-1 tvg-name="|ADULT| PASSION XXX" group-title="sansat", |ADULT| PASSION XXX
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94571
-#EXTINF:-1 tvg-name="|ADULT| PASSIONXXX ANALSRETCHED" group-title="|ADULT| PASSIONXXX", |ADULT| PASSIONXXX ANALSRETCHED
+#EXTINF:-1 tvg-name="|ADULT| PASSIONXXX ANALSRETCHED" group-title="sansat", |ADULT| PASSIONXXX ANALSRETCHED
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285922
-#EXTINF:-1 tvg-name="|ADULT| PENTHOUSE BLACK" group-title="|ADULT| PENTHOUSE", |ADULT| PENTHOUSE BLACK
+#EXTINF:-1 tvg-name="|ADULT| PENTHOUSE BLACK" group-title="sansat", |ADULT| PENTHOUSE BLACK
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94532
-#EXTINF:-1 tvg-name="|ADULT| Penthouse Gold" group-title="|ADULT| Penthouse", |ADULT| Penthouse Gold
+#EXTINF:-1 tvg-name="|ADULT| Penthouse Gold" group-title="sansat", |ADULT| Penthouse Gold
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621951
-#EXTINF:-1 tvg-name="|ADULT| PENTHOUSE GOLD HD" group-title="|ADULT| PENTHOUSE", |ADULT| PENTHOUSE GOLD HD
+#EXTINF:-1 tvg-name="|ADULT| PENTHOUSE GOLD HD" group-title="sansat", |ADULT| PENTHOUSE GOLD HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94531
-#EXTINF:-1 tvg-name="|ADULT| Penthouse Quickies" group-title="|ADULT| Penthouse", |ADULT| Penthouse Quickies
+#EXTINF:-1 tvg-name="|ADULT| Penthouse Quickies" group-title="sansat", |ADULT| Penthouse Quickies
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621953
-#EXTINF:-1 tvg-name="|ADULT| PENTHOUSE QUICKIES HD" group-title="|ADULT| PENTHOUSE", |ADULT| PENTHOUSE QUICKIES HD
+#EXTINF:-1 tvg-name="|ADULT| PENTHOUSE QUICKIES HD" group-title="sansat", |ADULT| PENTHOUSE QUICKIES HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94530
-#EXTINF:-1 tvg-name="|ADULT| PINK EROTIC" group-title="|ADULT| PINK", |ADULT| PINK EROTIC
+#EXTINF:-1 tvg-name="|ADULT| PINK EROTIC" group-title="sansat", |ADULT| PINK EROTIC
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94616
-#EXTINF:-1 tvg-name="|ADULT| PINK EROTIC 2" group-title="|ADULT| PINK", |ADULT| PINK EROTIC 2
+#EXTINF:-1 tvg-name="|ADULT| PINK EROTIC 2" group-title="sansat", |ADULT| PINK EROTIC 2
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94617
-#EXTINF:-1 tvg-name="|ADULT| PINK EROTIC 3" group-title="|ADULT| PINK", |ADULT| PINK EROTIC 3
+#EXTINF:-1 tvg-name="|ADULT| PINK EROTIC 3" group-title="sansat", |ADULT| PINK EROTIC 3
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94618
-#EXTINF:-1 tvg-name="|ADULT| PINK EROTIC 4" group-title="|ADULT| PINK", |ADULT| PINK EROTIC 4
+#EXTINF:-1 tvg-name="|ADULT| PINK EROTIC 4" group-title="sansat", |ADULT| PINK EROTIC 4
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94619
-#EXTINF:-1 tvg-name="|ADULT| PINK EROTIC 5" group-title="|ADULT| PINK", |ADULT| PINK EROTIC 5
+#EXTINF:-1 tvg-name="|ADULT| PINK EROTIC 5" group-title="sansat", |ADULT| PINK EROTIC 5
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94620
-#EXTINF:-1 tvg-name="|ADULT| PINK EROTIC 6" group-title="|ADULT| PINK", |ADULT| PINK EROTIC 6
+#EXTINF:-1 tvg-name="|ADULT| PINK EROTIC 6" group-title="sansat", |ADULT| PINK EROTIC 6
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94621
-#EXTINF:-1 tvg-name="|ADULT| PINK EROTIC 7" group-title="|ADULT| PINK", |ADULT| PINK EROTIC 7
+#EXTINF:-1 tvg-name="|ADULT| PINK EROTIC 7" group-title="sansat", |ADULT| PINK EROTIC 7
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94622
-#EXTINF:-1 tvg-name="|ADULT| PINK O TV" group-title="|ADULT| PINK", |ADULT| PINK O TV
+#EXTINF:-1 tvg-name="|ADULT| PINK O TV" group-title="sansat", |ADULT| PINK O TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94573
-#EXTINF:-1 tvg-name="|ADULT| PLAYBOY" group-title="|ADULT| PLAYBOY", |ADULT| PLAYBOY
+#EXTINF:-1 tvg-name="|ADULT| PLAYBOY" group-title="sansat", |ADULT| PLAYBOY
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94574
-#EXTINF:-1 tvg-name="|ADULT| PLAYBOY EUROPE" group-title="|ADULT| PLAYBOY", |ADULT| PLAYBOY EUROPE
+#EXTINF:-1 tvg-name="|ADULT| PLAYBOY EUROPE" group-title="sansat", |ADULT| PLAYBOY EUROPE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94575
-#EXTINF:-1 tvg-name="|ADULT| PORNBOX HENTAINED" group-title="|ADULT| PORNBOX", |ADULT| PORNBOX HENTAINED
+#EXTINF:-1 tvg-name="|ADULT| PORNBOX HENTAINED" group-title="sansat", |ADULT| PORNBOX HENTAINED
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285852
-#EXTINF:-1 tvg-name="|ADULT| PORNBOX STROKIES" group-title="|ADULT| PORNBOX", |ADULT| PORNBOX STROKIES
+#EXTINF:-1 tvg-name="|ADULT| PORNBOX STROKIES" group-title="sansat", |ADULT| PORNBOX STROKIES
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285900
-#EXTINF:-1 tvg-name="|ADULT| PRIVATE TV HD" group-title="|ADULT| PRIVATE", |ADULT| PRIVATE TV HD
+#EXTINF:-1 tvg-name="|ADULT| PRIVATE TV HD" group-title="sansat", |ADULT| PRIVATE TV HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94534
-#EXTINF:-1 tvg-name="|ADULT| PRIVE TV" group-title="|ADULT| PRIVE", |ADULT| PRIVE TV
+#EXTINF:-1 tvg-name="|ADULT| PRIVE TV" group-title="sansat", |ADULT| PRIVE TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94577
-#EXTINF:-1 tvg-name="|ADULT| REALITY KINGS" group-title="|ADULT| REALITY", |ADULT| REALITY KINGS
+#EXTINF:-1 tvg-name="|ADULT| REALITY KINGS" group-title="sansat", |ADULT| REALITY KINGS
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94578
-#EXTINF:-1 tvg-name="|ADULT| REDLIGHT HD" group-title="|ADULT| REDLIGHT", |ADULT| REDLIGHT HD
+#EXTINF:-1 tvg-name="|ADULT| REDLIGHT HD" group-title="sansat", |ADULT| REDLIGHT HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94580
-#EXTINF:-1 tvg-name="|ADULT| RUSSIAN NIGHT" group-title="|ADULT| RUSSIAN", |ADULT| RUSSIAN NIGHT
+#EXTINF:-1 tvg-name="|ADULT| RUSSIAN NIGHT" group-title="sansat", |ADULT| RUSSIAN NIGHT
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94581
-#EXTINF:-1 tvg-name="|ADULT| SECRET CIRCLE" group-title="|ADULT| SECRET", |ADULT| SECRET CIRCLE
+#EXTINF:-1 tvg-name="|ADULT| SECRET CIRCLE" group-title="sansat", |ADULT| SECRET CIRCLE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94583
-#EXTINF:-1 tvg-name="|ADULT| SEXT & SENSO" group-title="|ADULT| SEXT", |ADULT| SEXT & SENSO
+#EXTINF:-1 tvg-name="|ADULT| SEXT & SENSO" group-title="sansat", |ADULT| SEXT & SENSO
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94585
-#EXTINF:-1 tvg-name="|ADULT| SEXT6SENSO" group-title="|ADULT| SEXT6SENSO", |ADULT| SEXT6SENSO
+#EXTINF:-1 tvg-name="|ADULT| SEXT6SENSO" group-title="sansat", |ADULT| SEXT6SENSO
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285954
-#EXTINF:-1 tvg-name="|ADULT| SEXY HOT" group-title="|ADULT| SEXY", |ADULT| SEXY HOT
+#EXTINF:-1 tvg-name="|ADULT| SEXY HOT" group-title="sansat", |ADULT| SEXY HOT
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94587
-#EXTINF:-1 tvg-name="|ADULT| SLTV ADULT 2 HD" group-title="|ADULT| SLTV", |ADULT| SLTV ADULT 2 HD
+#EXTINF:-1 tvg-name="|ADULT| SLTV ADULT 2 HD" group-title="sansat", |ADULT| SLTV ADULT 2 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285958
-#EXTINF:-1 tvg-name="|ADULT| SLTV ADULT 3 HD" group-title="|ADULT| SLTV", |ADULT| SLTV ADULT 3 HD
+#EXTINF:-1 tvg-name="|ADULT| SLTV ADULT 3 HD" group-title="sansat", |ADULT| SLTV ADULT 3 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285959
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : ABELLA DANGER" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : ABELLA DANGER
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : ABELLA DANGER" group-title="sansat", |ADULT| STARS EXCLUSIVE : ABELLA DANGER
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621889
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : ADRIANA CHECHIK" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : ADRIANA CHECHIK
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : ADRIANA CHECHIK" group-title="sansat", |ADULT| STARS EXCLUSIVE : ADRIANA CHECHIK
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621890
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : ALINA LOPEZ" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : ALINA LOPEZ
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : ALINA LOPEZ" group-title="sansat", |ADULT| STARS EXCLUSIVE : ALINA LOPEZ
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621891
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : ANGELA WHITE" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : ANGELA WHITE
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : ANGELA WHITE" group-title="sansat", |ADULT| STARS EXCLUSIVE : ANGELA WHITE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621892
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : ARIANA MARIE" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : ARIANA MARIE
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : ARIANA MARIE" group-title="sansat", |ADULT| STARS EXCLUSIVE : ARIANA MARIE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621893
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : BRANDI LOVE" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : BRANDI LOVE
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : BRANDI LOVE" group-title="sansat", |ADULT| STARS EXCLUSIVE : BRANDI LOVE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621894
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : DANI DANIELS" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : DANI DANIELS
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : DANI DANIELS" group-title="sansat", |ADULT| STARS EXCLUSIVE : DANI DANIELS
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621895
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : DANI JENSEN" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : DANI JENSEN
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : DANI JENSEN" group-title="sansat", |ADULT| STARS EXCLUSIVE : DANI JENSEN
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621896
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : ELSA JEAN" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : ELSA JEAN
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : ELSA JEAN" group-title="sansat", |ADULT| STARS EXCLUSIVE : ELSA JEAN
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621897
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : EMILY WILLIS" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : EMILY WILLIS
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : EMILY WILLIS" group-title="sansat", |ADULT| STARS EXCLUSIVE : EMILY WILLIS
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621898
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : EVA LOVIA" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : EVA LOVIA
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : EVA LOVIA" group-title="sansat", |ADULT| STARS EXCLUSIVE : EVA LOVIA
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621899
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : GINA VALENTINA" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : GINA VALENTINA
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : GINA VALENTINA" group-title="sansat", |ADULT| STARS EXCLUSIVE : GINA VALENTINA
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621900
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : JANICE GRIFFITH" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : JANICE GRIFFITH
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : JANICE GRIFFITH" group-title="sansat", |ADULT| STARS EXCLUSIVE : JANICE GRIFFITH
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621901
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : JESSA RHODES" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : JESSA RHODES
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : JESSA RHODES" group-title="sansat", |ADULT| STARS EXCLUSIVE : JESSA RHODES
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621902
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : LENA PAUL" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : LENA PAUL
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : LENA PAUL" group-title="sansat", |ADULT| STARS EXCLUSIVE : LENA PAUL
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621903
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : LISA ANN" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : LISA ANN
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : LISA ANN" group-title="sansat", |ADULT| STARS EXCLUSIVE : LISA ANN
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621904
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : MADISON IVY" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : MADISON IVY
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : MADISON IVY" group-title="sansat", |ADULT| STARS EXCLUSIVE : MADISON IVY
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621905
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : MIA MALKOVA" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : MIA MALKOVA
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : MIA MALKOVA" group-title="sansat", |ADULT| STARS EXCLUSIVE : MIA MALKOVA
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621906
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : NICOLE ANISTON" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : NICOLE ANISTON
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : NICOLE ANISTON" group-title="sansat", |ADULT| STARS EXCLUSIVE : NICOLE ANISTON
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621907
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : VALENTINA NAPPI" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE : VALENTINA NAPPI
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE : VALENTINA NAPPI" group-title="sansat", |ADULT| STARS EXCLUSIVE : VALENTINA NAPPI
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621908
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE AUGUST AMES" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE AUGUST AMES
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE AUGUST AMES" group-title="sansat", |ADULT| STARS EXCLUSIVE AUGUST AMES
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285906
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE AUTUMN FALLS" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE AUTUMN FALLS
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE AUTUMN FALLS" group-title="sansat", |ADULT| STARS EXCLUSIVE AUTUMN FALLS
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285907
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE LANA RHOADES" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE LANA RHOADES
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE LANA RHOADES" group-title="sansat", |ADULT| STARS EXCLUSIVE LANA RHOADES
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285908
-#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE: BLAKE BLOSSOM" group-title="|ADULT| STARS", |ADULT| STARS EXCLUSIVE: BLAKE BLOSSOM
+#EXTINF:-1 tvg-name="|ADULT| STARS EXCLUSIVE: BLAKE BLOSSOM" group-title="sansat", |ADULT| STARS EXCLUSIVE: BLAKE BLOSSOM
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621909
-#EXTINF:-1 tvg-name="|ADULT| STARS XXX HD" group-title="|ADULT| STARS", |ADULT| STARS XXX HD
+#EXTINF:-1 tvg-name="|ADULT| STARS XXX HD" group-title="sansat", |ADULT| STARS XXX HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94588
-#EXTINF:-1 tvg-name="|ADULT| SUPER ONE HD" group-title="|ADULT| SUPER", |ADULT| SUPER ONE HD
+#EXTINF:-1 tvg-name="|ADULT| SUPER ONE HD" group-title="sansat", |ADULT| SUPER ONE HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94589
-#EXTINF:-1 tvg-name="|ADULT| TABOO" group-title="|ADULT| TABOO", |ADULT| TABOO
+#EXTINF:-1 tvg-name="|ADULT| TABOO" group-title="sansat", |ADULT| TABOO
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94590
-#EXTINF:-1 tvg-name="|ADULT| Tushy HD" group-title="|ADULT| Tushy", |ADULT| Tushy HD
+#EXTINF:-1 tvg-name="|ADULT| Tushy HD" group-title="sansat", |ADULT| Tushy HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621940
-#EXTINF:-1 tvg-name="|ADULT| VENUS TV" group-title="|ADULT| VENUS", |ADULT| VENUS TV
+#EXTINF:-1 tvg-name="|ADULT| VENUS TV" group-title="sansat", |ADULT| VENUS TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94591
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : CHERRY GRACE" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : CHERRY GRACE
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : CHERRY GRACE" group-title="sansat", |ADULT| VERIFIED AMATEURS : CHERRY GRACE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621910
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : CHESSIE RAE" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : CHESSIE RAE
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : CHESSIE RAE" group-title="sansat", |ADULT| VERIFIED AMATEURS : CHESSIE RAE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621911
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : ELLAKAI" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : ELLAKAI
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : ELLAKAI" group-title="sansat", |ADULT| VERIFIED AMATEURS : ELLAKAI
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621912
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : FIAMURR" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : FIAMURR
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : FIAMURR" group-title="sansat", |ADULT| VERIFIED AMATEURS : FIAMURR
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621913
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : KRISS KISS" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : KRISS KISS
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : KRISS KISS" group-title="sansat", |ADULT| VERIFIED AMATEURS : KRISS KISS
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621914
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : LEAH MEOW" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : LEAH MEOW
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : LEAH MEOW" group-title="sansat", |ADULT| VERIFIED AMATEURS : LEAH MEOW
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621915
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : MIKANIKA69" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : MIKANIKA69
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : MIKANIKA69" group-title="sansat", |ADULT| VERIFIED AMATEURS : MIKANIKA69
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621916
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : MOLLYREDWOLF" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : MOLLYREDWOLF
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : MOLLYREDWOLF" group-title="sansat", |ADULT| VERIFIED AMATEURS : MOLLYREDWOLF
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621917
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : NOFACEGIRL" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : NOFACEGIRL
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : NOFACEGIRL" group-title="sansat", |ADULT| VERIFIED AMATEURS : NOFACEGIRL
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621918
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : NOTSOAMATEUR" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : NOTSOAMATEUR
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : NOTSOAMATEUR" group-title="sansat", |ADULT| VERIFIED AMATEURS : NOTSOAMATEUR
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621919
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : NYNA FERRAGNI" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : NYNA FERRAGNI
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : NYNA FERRAGNI" group-title="sansat", |ADULT| VERIFIED AMATEURS : NYNA FERRAGNI
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621920
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : SOLAZOLA" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : SOLAZOLA
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : SOLAZOLA" group-title="sansat", |ADULT| VERIFIED AMATEURS : SOLAZOLA
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621921
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : SWEET BUNNY" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : SWEET BUNNY
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : SWEET BUNNY" group-title="sansat", |ADULT| VERIFIED AMATEURS : SWEET BUNNY
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621922
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : TESSA WINTERS" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : TESSA WINTERS
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : TESSA WINTERS" group-title="sansat", |ADULT| VERIFIED AMATEURS : TESSA WINTERS
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621923
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : TINNA ANGEL" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : TINNA ANGEL
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : TINNA ANGEL" group-title="sansat", |ADULT| VERIFIED AMATEURS : TINNA ANGEL
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621924
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : YINYLEON" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS : YINYLEON
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS : YINYLEON" group-title="sansat", |ADULT| VERIFIED AMATEURS : YINYLEON
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621925
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS ALICE REDLIPS" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS ALICE REDLIPS
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS ALICE REDLIPS" group-title="sansat", |ADULT| VERIFIED AMATEURS ALICE REDLIPS
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285909
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS DANI DANIELS" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS DANI DANIELS
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS DANI DANIELS" group-title="sansat", |ADULT| VERIFIED AMATEURS DANI DANIELS
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285910
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS LUXURYGIRL" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS LUXURYGIRL
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS LUXURYGIRL" group-title="sansat", |ADULT| VERIFIED AMATEURS LUXURYGIRL
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285911
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS MINI DIVA" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS MINI DIVA
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS MINI DIVA" group-title="sansat", |ADULT| VERIFIED AMATEURS MINI DIVA
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285912
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS PURPLE BITCH" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS PURPLE BITCH
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS PURPLE BITCH" group-title="sansat", |ADULT| VERIFIED AMATEURS PURPLE BITCH
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285913
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS REISLIN" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS REISLIN
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS REISLIN" group-title="sansat", |ADULT| VERIFIED AMATEURS REISLIN
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285914
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS SECRETCRUSH" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS SECRETCRUSH
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS SECRETCRUSH" group-title="sansat", |ADULT| VERIFIED AMATEURS SECRETCRUSH
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285915
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS SHAIDEN ROUGE" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS SHAIDEN ROUGE
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS SHAIDEN ROUGE" group-title="sansat", |ADULT| VERIFIED AMATEURS SHAIDEN ROUGE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285916
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS UMA JOLIE" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS UMA JOLIE
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS UMA JOLIE" group-title="sansat", |ADULT| VERIFIED AMATEURS UMA JOLIE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285918
-#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS: BIGTITTYGOTHEGG" group-title="|ADULT| VERIFIED", |ADULT| VERIFIED AMATEURS: BIGTITTYGOTHEGG
+#EXTINF:-1 tvg-name="|ADULT| VERIFIED AMATEURS: BIGTITTYGOTHEGG" group-title="sansat", |ADULT| VERIFIED AMATEURS: BIGTITTYGOTHEGG
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/621926
-#EXTINF:-1 tvg-name="|ADULT| VIVID RED HD" group-title="|ADULT| VIVID", |ADULT| VIVID RED HD
+#EXTINF:-1 tvg-name="|ADULT| VIVID RED HD" group-title="sansat", |ADULT| VIVID RED HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94592
-#EXTINF:-1 tvg-name="|ADULT| VIVID TV EUROPE" group-title="|ADULT| VIVID", |ADULT| VIVID TV EUROPE
+#EXTINF:-1 tvg-name="|ADULT| VIVID TV EUROPE" group-title="sansat", |ADULT| VIVID TV EUROPE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94593
-#EXTINF:-1 tvg-name="|ADULT| WAAYH" group-title="|ADULT| WAAYH", |ADULT| WAAYH
+#EXTINF:-1 tvg-name="|ADULT| WAAYH" group-title="sansat", |ADULT| WAAYH
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94615
-#EXTINF:-1 tvg-name="|ADULT| X BUNGA BUNGA" group-title="|ADULT| X", |ADULT| X BUNGA BUNGA
+#EXTINF:-1 tvg-name="|ADULT| X BUNGA BUNGA" group-title="sansat", |ADULT| X BUNGA BUNGA
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94595
-#EXTINF:-1 tvg-name="|ADULT| X DESIRE" group-title="|ADULT| X", |ADULT| X DESIRE
+#EXTINF:-1 tvg-name="|ADULT| X DESIRE" group-title="sansat", |ADULT| X DESIRE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94596
-#EXTINF:-1 tvg-name="|ADULT| XXL" group-title="|ADULT| XXL", |ADULT| XXL
+#EXTINF:-1 tvg-name="|ADULT| XXL" group-title="sansat", |ADULT| XXL
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94598
-#EXTINF:-1 tvg-name="|ADULT| XY MIX HD" group-title="|ADULT| XY", |ADULT| XY MIX HD
+#EXTINF:-1 tvg-name="|ADULT| XY MIX HD" group-title="sansat", |ADULT| XY MIX HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94600
-#EXTINF:-1 tvg-name="|ADULT| ZEST TV" group-title="|ADULT| ZEST", |ADULT| ZEST TV
+#EXTINF:-1 tvg-name="|ADULT| ZEST TV" group-title="sansat", |ADULT| ZEST TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94602
-#EXTINF:-1 tvg-name="|ADULT| ОХ-АХ HD" group-title="|ADULT| ОХ-АХ", |ADULT| ОХ-АХ HD
+#EXTINF:-1 tvg-name="|ADULT| ОХ-АХ HD" group-title="sansat", |ADULT| ОХ-АХ HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285952
-#EXTINF:-1 tvg-name="|AR| AL JAZEERA HD LIVE" group-title="|AR| AL", |AR| AL JAZEERA HD LIVE
+#EXTINF:-1 tvg-name="|AR| AL JAZEERA HD LIVE" group-title="live-hls-web-aja-gcp", |AR| AL JAZEERA HD LIVE
 https://live-hls-web-aja-gcp.thehlive.com/AJA/02.m3u8
-#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 1 4K" group-title="|AR| BEIN", |AR| BEIN SPORTS AFC 1 4K
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/176995
-#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 1 SD" group-title="|AR| BEIN", |AR| BEIN SPORTS AFC 1 SD
+#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 1 SD" group-title="sansat", |AR| BEIN SPORTS AFC 1 SD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/435962
-#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 5 HD" group-title="|AR| BEIN", |AR| BEIN SPORTS AFC 5 HD
+#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 2 SD" group-title="sansat", |AR| BEIN SPORTS AFC 2 SD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/435963
+#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 5 HD" group-title="sansat", |AR| BEIN SPORTS AFC 5 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/435960
-#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC SD" group-title="|AR| BEIN", |AR| BEIN SPORTS AFC SD
+#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC SD" group-title="sansat", |AR| BEIN SPORTS AFC SD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/435961
-#EXTINF:-1 tvg-name="|AZAM|  UTV" group-title="|AZAM| UTV", |AZAM|  UTV
+#EXTINF:-1 tvg-name="|AZAM|  UTV" group-title="sansat", |AZAM|  UTV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562499
-#EXTINF:-1 tvg-name="|AZAM| AFRICA NEWS" group-title="|AZAM| AFRICA", |AZAM| AFRICA NEWS
+#EXTINF:-1 tvg-name="|AZAM| AFRICA NEWS" group-title="sansat", |AZAM| AFRICA NEWS
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562518
-#EXTINF:-1 tvg-name="|AZAM| ARISE AND SHINE" group-title="|AZAM| ARISE", |AZAM| ARISE AND SHINE
+#EXTINF:-1 tvg-name="|AZAM| ARISE AND SHINE" group-title="sansat", |AZAM| ARISE AND SHINE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562526
-#EXTINF:-1 tvg-name="|AZAM| AZAM SPORTS 1" group-title="|AZAM| AZAM", |AZAM| AZAM SPORTS 1
+#EXTINF:-1 tvg-name="|AZAM| AZAM SPORTS 1" group-title="sansat", |AZAM| AZAM SPORTS 1
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562495
-#EXTINF:-1 tvg-name="|AZAM| AZAM SPORTS 2" group-title="|AZAM| AZAM", |AZAM| AZAM SPORTS 2
+#EXTINF:-1 tvg-name="|AZAM| AZAM SPORTS 2" group-title="sansat", |AZAM| AZAM SPORTS 2
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562496
-#EXTINF:-1 tvg-name="|AZAM| AZAM SPORTS 3" group-title="|AZAM| AZAM", |AZAM| AZAM SPORTS 3
+#EXTINF:-1 tvg-name="|AZAM| AZAM SPORTS 3" group-title="sansat", |AZAM| AZAM SPORTS 3
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562497
-#EXTINF:-1 tvg-name="|AZAM| AZAM TWO" group-title="|AZAM| AZAM", |AZAM| AZAM TWO
+#EXTINF:-1 tvg-name="|AZAM| AZAM TWO" group-title="sansat", |AZAM| AZAM TWO
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562494
-#EXTINF:-1 tvg-name="|AZAM| BET" group-title="|AZAM| BET", |AZAM| BET
+#EXTINF:-1 tvg-name="|AZAM| BET" group-title="sansat", |AZAM| BET
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562513
-#EXTINF:-1 tvg-name="|AZAM| BLOOMBERG" group-title="|AZAM| BLOOMBERG", |AZAM| BLOOMBERG
+#EXTINF:-1 tvg-name="|AZAM| BLOOMBERG" group-title="sansat", |AZAM| BLOOMBERG
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562519
-#EXTINF:-1 tvg-name="|AZAM| CBEEBIES" group-title="|AZAM| CBEEBIES", |AZAM| CBEEBIES
+#EXTINF:-1 tvg-name="|AZAM| CBEEBIES" group-title="sansat", |AZAM| CBEEBIES
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562514
-#EXTINF:-1 tvg-name="|AZAM| CGTN" group-title="|AZAM| CGTN", |AZAM| CGTN
+#EXTINF:-1 tvg-name="|AZAM| CGTN" group-title="sansat", |AZAM| CGTN
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562522
-#EXTINF:-1 tvg-name="|AZAM| CHANNEL 44" group-title="|AZAM| CHANNEL", |AZAM| CHANNEL 44
+#EXTINF:-1 tvg-name="|AZAM| CHANNEL 44" group-title="sansat", |AZAM| CHANNEL 44
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562505
-#EXTINF:-1 tvg-name="|AZAM| DW ENGLISH" group-title="|AZAM| DW", |AZAM| DW ENGLISH
+#EXTINF:-1 tvg-name="|AZAM| DW ENGLISH" group-title="sansat", |AZAM| DW ENGLISH
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562527
-#EXTINF:-1 tvg-name="|AZAM| ESPN" group-title="|AZAM| ESPN", |AZAM| ESPN
+#EXTINF:-1 tvg-name="|AZAM| ESPN" group-title="sansat", |AZAM| ESPN
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562525
-#EXTINF:-1 tvg-name="|AZAM| FIX & FOXI" group-title="|AZAM| FIX", |AZAM| FIX & FOXI
+#EXTINF:-1 tvg-name="|AZAM| FIX & FOXI" group-title="sansat", |AZAM| FIX & FOXI
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562515
-#EXTINF:-1 tvg-name="|AZAM| FOODIES" group-title="|AZAM| FOODIES", |AZAM| FOODIES
+#EXTINF:-1 tvg-name="|AZAM| FOODIES" group-title="sansat", |AZAM| FOODIES
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562521
-#EXTINF:-1 tvg-name="|AZAM| FRANCE 24" group-title="|AZAM| FRANCE", |AZAM| FRANCE 24
+#EXTINF:-1 tvg-name="|AZAM| FRANCE 24" group-title="sansat", |AZAM| FRANCE 24
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562512
-#EXTINF:-1 tvg-name="|AZAM| HORIZON TV" group-title="|AZAM| HORIZON", |AZAM| HORIZON TV
+#EXTINF:-1 tvg-name="|AZAM| HORIZON TV" group-title="sansat", |AZAM| HORIZON TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562504
-#EXTINF:-1 tvg-name="|AZAM| KEYONA TV" group-title="|AZAM| KEYONA", |AZAM| KEYONA TV
+#EXTINF:-1 tvg-name="|AZAM| KEYONA TV" group-title="sansat", |AZAM| KEYONA TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562528
-#EXTINF:-1 tvg-name="|AZAM| KIX MOVIES" group-title="|AZAM| KIX", |AZAM| KIX MOVIES
+#EXTINF:-1 tvg-name="|AZAM| KIX MOVIES" group-title="sansat", |AZAM| KIX MOVIES
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562520
-#EXTINF:-1 tvg-name="|AZAM| KTN BURUDANI" group-title="|AZAM| KTN", |AZAM| KTN BURUDANI
+#EXTINF:-1 tvg-name="|AZAM| KTN BURUDANI" group-title="sansat", |AZAM| KTN BURUDANI
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562503
-#EXTINF:-1 tvg-name="|AZAM| KTN FARMER" group-title="|AZAM| KTN", |AZAM| KTN FARMER
+#EXTINF:-1 tvg-name="|AZAM| KTN FARMER" group-title="sansat", |AZAM| KTN FARMER
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562508
-#EXTINF:-1 tvg-name="|AZAM| KTN NEWS" group-title="|AZAM| KTN", |AZAM| KTN NEWS
+#EXTINF:-1 tvg-name="|AZAM| KTN NEWS" group-title="sansat", |AZAM| KTN NEWS
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562507
-#EXTINF:-1 tvg-name="|AZAM| NAT GEO WILD" group-title="|AZAM| NAT", |AZAM| NAT GEO WILD
+#EXTINF:-1 tvg-name="|AZAM| NAT GEO WILD" group-title="sansat", |AZAM| NAT GEO WILD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562523
-#EXTINF:-1 tvg-name="|AZAM| NATIONAL GEOGRAPHIC" group-title="|AZAM| NATIONAL", |AZAM| NATIONAL GEOGRAPHIC
+#EXTINF:-1 tvg-name="|AZAM| NATIONAL GEOGRAPHIC" group-title="sansat", |AZAM| NATIONAL GEOGRAPHIC
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562517
-#EXTINF:-1 tvg-name="|AZAM| NINA TV" group-title="|AZAM| NINA", |AZAM| NINA TV
+#EXTINF:-1 tvg-name="|AZAM| NINA TV" group-title="sansat", |AZAM| NINA TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562501
-#EXTINF:-1 tvg-name="|AZAM| NTV KENYA" group-title="|AZAM| NTV", |AZAM| NTV KENYA
+#EXTINF:-1 tvg-name="|AZAM| NTV KENYA" group-title="sansat", |AZAM| NTV KENYA
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562510
-#EXTINF:-1 tvg-name="|AZAM| NTV UGANDA" group-title="|AZAM| NTV", |AZAM| NTV UGANDA
+#EXTINF:-1 tvg-name="|AZAM| NTV UGANDA" group-title="sansat", |AZAM| NTV UGANDA
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562509
-#EXTINF:-1 tvg-name="|AZAM| SALT TV" group-title="|AZAM| SALT", |AZAM| SALT TV
+#EXTINF:-1 tvg-name="|AZAM| SALT TV" group-title="sansat", |AZAM| SALT TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562506
-#EXTINF:-1 tvg-name="|AZAM| SINEMA ZETU" group-title="|AZAM| SINEMA", |AZAM| SINEMA ZETU
+#EXTINF:-1 tvg-name="|AZAM| SINEMA ZETU" group-title="sansat", |AZAM| SINEMA ZETU
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562498
-#EXTINF:-1 tvg-name="|AZAM| SONY ENTERTAINMENT" group-title="|AZAM| SONY", |AZAM| SONY ENTERTAINMENT
+#EXTINF:-1 tvg-name="|AZAM| SONY ENTERTAINMENT" group-title="sansat", |AZAM| SONY ENTERTAINMENT
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562511
-#EXTINF:-1 tvg-name="|AZAM| SONY MAX" group-title="|AZAM| SONY", |AZAM| SONY MAX
+#EXTINF:-1 tvg-name="|AZAM| SONY MAX" group-title="sansat", |AZAM| SONY MAX
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562516
-#EXTINF:-1 tvg-name="|AZAM| TRACE MZIKI" group-title="|AZAM| TRACE", |AZAM| TRACE MZIKI
+#EXTINF:-1 tvg-name="|AZAM| TRACE MZIKI" group-title="sansat", |AZAM| TRACE MZIKI
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562524
-#EXTINF:-1 tvg-name="|AZAM| TV WEST" group-title="|AZAM| TV", |AZAM| TV WEST
+#EXTINF:-1 tvg-name="|AZAM| TV WEST" group-title="sansat", |AZAM| TV WEST
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562502
-#EXTINF:-1 tvg-name="|AZAM| ZBC 2" group-title="|AZAM| ZBC", |AZAM| ZBC 2
+#EXTINF:-1 tvg-name="|AZAM| ZBC 2" group-title="sansat", |AZAM| ZBC 2
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562500
-#EXTINF:-1 tvg-name="|MY| 8TV HD" group-title="|MY| 8TV", |MY| 8TV HD
+#EXTINF:-1 tvg-name="|MY| 8TV HD" group-title="sansat", |MY| 8TV HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562573
-#EXTINF:-1 tvg-name="|MY| ANIMAL PLANET HD" group-title="|MY| ANIMAL", |MY| ANIMAL PLANET HD
+#EXTINF:-1 tvg-name="|MY| ANIMAL PLANET HD" group-title="sansat", |MY| ANIMAL PLANET HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562529
-#EXTINF:-1 tvg-name="|MY| ASTRO ARENA 2 HD" group-title="|MY| ASTRO", |MY| ASTRO ARENA 2 HD
+#EXTINF:-1 tvg-name="|MY| ASTRO ARENA 2 HD" group-title="sansat", |MY| ASTRO ARENA 2 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562531
-#EXTINF:-1 tvg-name="|MY| ASTRO ARENA HD" group-title="|MY| ASTRO", |MY| ASTRO ARENA HD
+#EXTINF:-1 tvg-name="|MY| ASTRO ARENA HD" group-title="sansat", |MY| ASTRO ARENA HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562530
-#EXTINF:-1 tvg-name="|MY| ASTRO AURA HD" group-title="|MY| ASTRO", |MY| ASTRO AURA HD
+#EXTINF:-1 tvg-name="|MY| ASTRO AURA HD" group-title="sansat", |MY| ASTRO AURA HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562532
-#EXTINF:-1 tvg-name="|MY| ASTRO AWANI HD" group-title="|MY| ASTRO", |MY| ASTRO AWANI HD
+#EXTINF:-1 tvg-name="|MY| ASTRO AWANI HD" group-title="sansat", |MY| ASTRO AWANI HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562574
-#EXTINF:-1 tvg-name="|MY| ASTRO CITRA HD" group-title="|MY| ASTRO", |MY| ASTRO CITRA HD
+#EXTINF:-1 tvg-name="|MY| ASTRO CITRA HD" group-title="sansat", |MY| ASTRO CITRA HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562533
-#EXTINF:-1 tvg-name="|MY| ASTRO CRICKET HD" group-title="|MY| ASTRO", |MY| ASTRO CRICKET HD
+#EXTINF:-1 tvg-name="|MY| ASTRO CRICKET HD" group-title="sansat", |MY| ASTRO CRICKET HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562534
-#EXTINF:-1 tvg-name="|MY| ASTRO OASIS HD" group-title="|MY| ASTRO", |MY| ASTRO OASIS HD
+#EXTINF:-1 tvg-name="|MY| ASTRO OASIS HD" group-title="sansat", |MY| ASTRO OASIS HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562535
-#EXTINF:-1 tvg-name="|MY| ASTRO RANIA HD" group-title="|MY| ASTRO", |MY| ASTRO RANIA HD
+#EXTINF:-1 tvg-name="|MY| ASTRO RANIA HD" group-title="sansat", |MY| ASTRO RANIA HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562536
-#EXTINF:-1 tvg-name="|MY| ASTRO SUPERSPORT 2 HD" group-title="|MY| ASTRO", |MY| ASTRO SUPERSPORT 2 HD
+#EXTINF:-1 tvg-name="|MY| ASTRO SUPERSPORT 2 HD" group-title="sansat", |MY| ASTRO SUPERSPORT 2 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562538
-#EXTINF:-1 tvg-name="|MY| ASTRO SUPERSPORT 3 HD" group-title="|MY| ASTRO", |MY| ASTRO SUPERSPORT 3 HD
+#EXTINF:-1 tvg-name="|MY| ASTRO SUPERSPORT 3 HD" group-title="sansat", |MY| ASTRO SUPERSPORT 3 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562539
-#EXTINF:-1 tvg-name="|MY| ASTRO SUPERSPORT 4 HD" group-title="|MY| ASTRO", |MY| ASTRO SUPERSPORT 4 HD
+#EXTINF:-1 tvg-name="|MY| ASTRO SUPERSPORT 4 HD" group-title="sansat", |MY| ASTRO SUPERSPORT 4 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562540
-#EXTINF:-1 tvg-name="|MY| ASTRO SUPERSPORT HD" group-title="|MY| ASTRO", |MY| ASTRO SUPERSPORT HD
+#EXTINF:-1 tvg-name="|MY| ASTRO SUPERSPORT HD" group-title="sansat", |MY| ASTRO SUPERSPORT HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562537
-#EXTINF:-1 tvg-name="|MY| ASTRO VAANAVIL HD" group-title="|MY| ASTRO", |MY| ASTRO VAANAVIL HD
+#EXTINF:-1 tvg-name="|MY| ASTRO VAANAVIL HD" group-title="sansat", |MY| ASTRO VAANAVIL HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562541
-#EXTINF:-1 tvg-name="|MY| ASTRO WARNA HD" group-title="|MY| ASTRO", |MY| ASTRO WARNA HD
+#EXTINF:-1 tvg-name="|MY| ASTRO WARNA HD" group-title="sansat", |MY| ASTRO WARNA HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562542
-#EXTINF:-1 tvg-name="|MY| AXN HD" group-title="|MY| AXN", |MY| AXN HD
+#EXTINF:-1 tvg-name="|MY| AXN HD" group-title="sansat", |MY| AXN HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562543
-#EXTINF:-1 tvg-name="|MY| BBC EARTH HD" group-title="|MY| BBC", |MY| BBC EARTH HD
+#EXTINF:-1 tvg-name="|MY| BBC EARTH HD" group-title="sansat", |MY| BBC EARTH HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562544
-#EXTINF:-1 tvg-name="|MY| BBC LIFESTYLE HD" group-title="|MY| BBC", |MY| BBC LIFESTYLE HD
+#EXTINF:-1 tvg-name="|MY| BBC LIFESTYLE HD" group-title="sansat", |MY| BBC LIFESTYLE HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562545
-#EXTINF:-1 tvg-name="|MY| CELESTIAL MOVIES HD" group-title="|MY| CELESTIAL", |MY| CELESTIAL MOVIES HD
+#EXTINF:-1 tvg-name="|MY| CELESTIAL MOVIES HD" group-title="sansat", |MY| CELESTIAL MOVIES HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562546
-#EXTINF:-1 tvg-name="|MY| CRIME+ INVESTIGATION HD" group-title="|MY| CRIME+", |MY| CRIME+ INVESTIGATION HD
+#EXTINF:-1 tvg-name="|MY| CRIME+ INVESTIGATION HD" group-title="sansat", |MY| CRIME+ INVESTIGATION HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562547
-#EXTINF:-1 tvg-name="|MY| DISCOVERY WORLD HD" group-title="|MY| DISCOVERY", |MY| DISCOVERY WORLD HD
+#EXTINF:-1 tvg-name="|MY| DISCOVERY WORLD HD" group-title="sansat", |MY| DISCOVERY WORLD HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562548
-#EXTINF:-1 tvg-name="|MY| HARVEST TV HD" group-title="|MY| HARVEST", |MY| HARVEST TV HD
+#EXTINF:-1 tvg-name="|MY| HARVEST TV HD" group-title="sansat", |MY| HARVEST TV HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562549
-#EXTINF:-1 tvg-name="|MY| HBO HD" group-title="|MY| HBO", |MY| HBO HD
+#EXTINF:-1 tvg-name="|MY| HBO HD" group-title="sansat", |MY| HBO HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562550
-#EXTINF:-1 tvg-name="|MY| HITS HD" group-title="|MY| HITS", |MY| HITS HD
+#EXTINF:-1 tvg-name="|MY| HITS HD" group-title="sansat", |MY| HITS HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562551
-#EXTINF:-1 tvg-name="|MY| KIX HD" group-title="|MY| KIX", |MY| KIX HD
+#EXTINF:-1 tvg-name="|MY| KIX HD" group-title="sansat", |MY| KIX HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562552
-#EXTINF:-1 tvg-name="|MY| LOCAL NOW FAMILY FLIX HD" group-title="|MY| LOCAL", |MY| LOCAL NOW FAMILY FLIX HD
+#EXTINF:-1 tvg-name="|MY| LOCAL NOW FAMILY FLIX HD" group-title="sansat", |MY| LOCAL NOW FAMILY FLIX HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562553
-#EXTINF:-1 tvg-name="|MY| MTV HD" group-title="|MY| MTV", |MY| MTV HD
+#EXTINF:-1 tvg-name="|MY| MTV HD" group-title="sansat", |MY| MTV HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562554
-#EXTINF:-1 tvg-name="|MY| NICK JR HD" group-title="|MY| NICK", |MY| NICK JR HD
+#EXTINF:-1 tvg-name="|MY| NICK JR HD" group-title="sansat", |MY| NICK JR HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562555
-#EXTINF:-1 tvg-name="|MY| NTV 7 HD" group-title="|MY| NTV", |MY| NTV 7 HD
+#EXTINF:-1 tvg-name="|MY| NTV 7 HD" group-title="sansat", |MY| NTV 7 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562556
-#EXTINF:-1 tvg-name="|MY| PREMIER SPORTS HD" group-title="|MY| PREMIER", |MY| PREMIER SPORTS HD
+#EXTINF:-1 tvg-name="|MY| PREMIER SPORTS HD" group-title="sansat", |MY| PREMIER SPORTS HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562557
-#EXTINF:-1 tvg-name="|MY| RTB SUKMAINDERA HD" group-title="|MY| RTB", |MY| RTB SUKMAINDERA HD
+#EXTINF:-1 tvg-name="|MY| RTB SUKMAINDERA HD" group-title="sansat", |MY| RTB SUKMAINDERA HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562558
-#EXTINF:-1 tvg-name="|MY| RTM TV 1 HD" group-title="|MY| RTM", |MY| RTM TV 1 HD
+#EXTINF:-1 tvg-name="|MY| RTM TV 1 HD" group-title="sansat", |MY| RTM TV 1 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562559
-#EXTINF:-1 tvg-name="|MY| RTM TV 2 HD" group-title="|MY| RTM", |MY| RTM TV 2 HD
+#EXTINF:-1 tvg-name="|MY| RTM TV 2 HD" group-title="sansat", |MY| RTM TV 2 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562560
-#EXTINF:-1 tvg-name="|MY| TV 1 HD" group-title="|MY| TV", |MY| TV 1 HD
+#EXTINF:-1 tvg-name="|MY| TV 1 HD" group-title="sansat", |MY| TV 1 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562561
-#EXTINF:-1 tvg-name="|MY| TV 2 HD" group-title="|MY| TV", |MY| TV 2 HD
+#EXTINF:-1 tvg-name="|MY| TV 2 HD" group-title="sansat", |MY| TV 2 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562562
-#EXTINF:-1 tvg-name="|MY| TV 3 HD" group-title="|MY| TV", |MY| TV 3 HD
+#EXTINF:-1 tvg-name="|MY| TV 3 HD" group-title="sansat", |MY| TV 3 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562563
-#EXTINF:-1 tvg-name="|MY| TV 9 HD" group-title="|MY| TV", |MY| TV 9 HD
+#EXTINF:-1 tvg-name="|MY| TV 9 HD" group-title="sansat", |MY| TV 9 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562564
-#EXTINF:-1 tvg-name="|MY| TV ALHIJRAH HD" group-title="|MY| TV", |MY| TV ALHIJRAH HD
+#EXTINF:-1 tvg-name="|MY| TV ALHIJRAH HD" group-title="sansat", |MY| TV ALHIJRAH HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562565
-#EXTINF:-1 tvg-name="|MY| TVB E NEWS HD" group-title="|MY| TVB", |MY| TVB E NEWS HD
+#EXTINF:-1 tvg-name="|MY| TVB E NEWS HD" group-title="sansat", |MY| TVB E NEWS HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562566
-#EXTINF:-1 tvg-name="|MY| TVB 星河 HD" group-title="|MY| TVB", |MY| TVB 星河 HD
+#EXTINF:-1 tvg-name="|MY| TVB 星河 HD" group-title="sansat", |MY| TVB 星河 HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562567
-#EXTINF:-1 tvg-name="|MY| TVBS HD" group-title="|MY| TVBS", |MY| TVBS HD
+#EXTINF:-1 tvg-name="|MY| TVBS HD" group-title="sansat", |MY| TVBS HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562568
-#EXTINF:-1 tvg-name="|MY| TVN HD" group-title="|MY| TVN", |MY| TVN HD
+#EXTINF:-1 tvg-name="|MY| TVN HD" group-title="sansat", |MY| TVN HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562569
-#EXTINF:-1 tvg-name="|MY| TVN MOVIES HD" group-title="|MY| TVN", |MY| TVN MOVIES HD
+#EXTINF:-1 tvg-name="|MY| TVN MOVIES HD" group-title="sansat", |MY| TVN MOVIES HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562570
-#EXTINF:-1 tvg-name="|MY| TVS HD" group-title="|MY| TVS", |MY| TVS HD
+#EXTINF:-1 tvg-name="|MY| TVS HD" group-title="sansat", |MY| TVS HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562571
-#EXTINF:-1 tvg-name="|MY| WARNER TV HD" group-title="|MY| WARNER", |MY| WARNER TV HD
+#EXTINF:-1 tvg-name="|MY| WARNER TV HD" group-title="sansat", |MY| WARNER TV HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562572
-#EXTINF:-1 tvg-name="|PH| ABS CBN" group-title="|PH| ABS", |PH| ABS CBN
+#EXTINF:-1 tvg-name="|PH| ABS CBN" group-title="sansat", |PH| ABS CBN
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562454
-#EXTINF:-1 tvg-name="|PH| ANC" group-title="|PH| ANC", |PH| ANC
+#EXTINF:-1 tvg-name="|PH| ANC" group-title="sansat", |PH| ANC
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562453
-#EXTINF:-1 tvg-name="|PH| ANIMAL PLANET" group-title="|PH| ANIMAL", |PH| ANIMAL PLANET
+#EXTINF:-1 tvg-name="|PH| ANIMAL PLANET" group-title="sansat", |PH| ANIMAL PLANET
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562470
-#EXTINF:-1 tvg-name="|PH| ANIMAX" group-title="|PH| ANIMAX", |PH| ANIMAX
+#EXTINF:-1 tvg-name="|PH| ANIMAX" group-title="sansat", |PH| ANIMAX
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562474
-#EXTINF:-1 tvg-name="|PH| ARIRANG TV WORLD" group-title="|PH| ARIRANG", |PH| ARIRANG TV WORLD
+#EXTINF:-1 tvg-name="|PH| ARIRANG TV WORLD" group-title="sansat", |PH| ARIRANG TV WORLD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562469
-#EXTINF:-1 tvg-name="|PH| ASIAN FOOD NETWORK" group-title="|PH| ASIAN", |PH| ASIAN FOOD NETWORK
+#EXTINF:-1 tvg-name="|PH| ASIAN FOOD NETWORK" group-title="sansat", |PH| ASIAN FOOD NETWORK
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562455
-#EXTINF:-1 tvg-name="|PH| AXN" group-title="|PH| AXN", |PH| AXN
+#EXTINF:-1 tvg-name="|PH| AXN" group-title="sansat", |PH| AXN
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562475
-#EXTINF:-1 tvg-name="|PH| BLOOMBERG TV" group-title="|PH| BLOOMBERG", |PH| BLOOMBERG TV
+#EXTINF:-1 tvg-name="|PH| BLOOMBERG TV" group-title="sansat", |PH| BLOOMBERG TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562459
-#EXTINF:-1 tvg-name="|PH| CARTOON NETWORK" group-title="|PH| CARTOON", |PH| CARTOON NETWORK
+#EXTINF:-1 tvg-name="|PH| CARTOON NETWORK" group-title="sansat", |PH| CARTOON NETWORK
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562477
-#EXTINF:-1 tvg-name="|PH| CINE MO!" group-title="|PH| CINE", |PH| CINE MO!
+#EXTINF:-1 tvg-name="|PH| CINE MO!" group-title="sansat", |PH| CINE MO!
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562457
-#EXTINF:-1 tvg-name="|PH| CINEMA ONE" group-title="|PH| CINEMA", |PH| CINEMA ONE
+#EXTINF:-1 tvg-name="|PH| CINEMA ONE" group-title="sansat", |PH| CINEMA ONE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562476
-#EXTINF:-1 tvg-name="|PH| CNN HD" group-title="|PH| CNN", |PH| CNN HD
+#EXTINF:-1 tvg-name="|PH| CNN HD" group-title="sansat", |PH| CNN HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562468
-#EXTINF:-1 tvg-name="|PH| DREAMWORKS HD" group-title="|PH| DREAMWORKS", |PH| DREAMWORKS HD
+#EXTINF:-1 tvg-name="|PH| DREAMWORKS HD" group-title="sansat", |PH| DREAMWORKS HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562466
-#EXTINF:-1 tvg-name="|PH| GMA LIFE" group-title="|PH| GMA", |PH| GMA LIFE
+#EXTINF:-1 tvg-name="|PH| GMA LIFE" group-title="sansat", |PH| GMA LIFE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562449
-#EXTINF:-1 tvg-name="|PH| GMA NEWS TV" group-title="|PH| GMA", |PH| GMA NEWS TV
+#EXTINF:-1 tvg-name="|PH| GMA NEWS TV" group-title="sansat", |PH| GMA NEWS TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562450
-#EXTINF:-1 tvg-name="|PH| GMA PINOY TV" group-title="|PH| GMA", |PH| GMA PINOY TV
+#EXTINF:-1 tvg-name="|PH| GMA PINOY TV" group-title="sansat", |PH| GMA PINOY TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562451
-#EXTINF:-1 tvg-name="|PH| GREAT COMMISSION TV" group-title="|PH| GREAT", |PH| GREAT COMMISSION TV
+#EXTINF:-1 tvg-name="|PH| GREAT COMMISSION TV" group-title="sansat", |PH| GREAT COMMISSION TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562467
-#EXTINF:-1 tvg-name="|PH| HITS HD" group-title="|PH| HITS", |PH| HITS HD
+#EXTINF:-1 tvg-name="|PH| HITS HD" group-title="sansat", |PH| HITS HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562465
-#EXTINF:-1 tvg-name="|PH| IBC13" group-title="|PH| IBC13", |PH| IBC13
+#EXTINF:-1 tvg-name="|PH| IBC13" group-title="sansat", |PH| IBC13
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562480
-#EXTINF:-1 tvg-name="|PH| KAPATID TV 5" group-title="|PH| KAPATID", |PH| KAPATID TV 5
+#EXTINF:-1 tvg-name="|PH| KAPATID TV 5" group-title="sansat", |PH| KAPATID TV 5
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562471
-#EXTINF:-1 tvg-name="|PH| KIX HD" group-title="|PH| KIX", |PH| KIX HD
+#EXTINF:-1 tvg-name="|PH| KIX HD" group-title="sansat", |PH| KIX HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562464
-#EXTINF:-1 tvg-name="|PH| KNOWLEDGE CHANNEL" group-title="|PH| KNOWLEDGE", |PH| KNOWLEDGE CHANNEL
+#EXTINF:-1 tvg-name="|PH| KNOWLEDGE CHANNEL" group-title="sansat", |PH| KNOWLEDGE CHANNEL
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562481
-#EXTINF:-1 tvg-name="|PH| LIFETIME" group-title="|PH| LIFETIME", |PH| LIFETIME
+#EXTINF:-1 tvg-name="|PH| LIFETIME" group-title="sansat", |PH| LIFETIME
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562490
-#EXTINF:-1 tvg-name="|PH| MOONBUG KIDS SD" group-title="|PH| MOONBUG", |PH| MOONBUG KIDS SD
+#EXTINF:-1 tvg-name="|PH| MOONBUG KIDS SD" group-title="sansat", |PH| MOONBUG KIDS SD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562463
-#EXTINF:-1 tvg-name="|PH| MTV ASIA" group-title="|PH| MTV", |PH| MTV ASIA
+#EXTINF:-1 tvg-name="|PH| MTV ASIA" group-title="sansat", |PH| MTV ASIA
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562482
-#EXTINF:-1 tvg-name="|PH| MYX" group-title="|PH| MYX", |PH| MYX
+#EXTINF:-1 tvg-name="|PH| MYX" group-title="sansat", |PH| MYX
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562483
-#EXTINF:-1 tvg-name="|PH| NHK WORLD" group-title="|PH| NHK", |PH| NHK WORLD
+#EXTINF:-1 tvg-name="|PH| NHK WORLD" group-title="sansat", |PH| NHK WORLD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562473
-#EXTINF:-1 tvg-name="|PH| NICK JUNIOR" group-title="|PH| NICK", |PH| NICK JUNIOR
+#EXTINF:-1 tvg-name="|PH| NICK JUNIOR" group-title="sansat", |PH| NICK JUNIOR
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562491
-#EXTINF:-1 tvg-name="|PH| NICKELODEON" group-title="|PH| NICKELODEON", |PH| NICKELODEON
+#EXTINF:-1 tvg-name="|PH| NICKELODEON" group-title="sansat", |PH| NICKELODEON
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562479
-#EXTINF:-1 tvg-name="|PH| ONE" group-title="|PH| ONE", |PH| ONE
+#EXTINF:-1 tvg-name="|PH| ONE" group-title="sansat", |PH| ONE
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562484
-#EXTINF:-1 tvg-name="|PH| ONE NEWS HD" group-title="|PH| ONE", |PH| ONE NEWS HD
+#EXTINF:-1 tvg-name="|PH| ONE NEWS HD" group-title="sansat", |PH| ONE NEWS HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562461
-#EXTINF:-1 tvg-name="|PH| ONE SPORTS" group-title="|PH| ONE", |PH| ONE SPORTS
+#EXTINF:-1 tvg-name="|PH| ONE SPORTS" group-title="sansat", |PH| ONE SPORTS
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562478
-#EXTINF:-1 tvg-name="|PH| ONE SPORTS PLUS" group-title="|PH| ONE", |PH| ONE SPORTS PLUS
+#EXTINF:-1 tvg-name="|PH| ONE SPORTS PLUS" group-title="sansat", |PH| ONE SPORTS PLUS
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562462
-#EXTINF:-1 tvg-name="|PH| OUTDOOR CHANNEL" group-title="|PH| OUTDOOR", |PH| OUTDOOR CHANNEL
+#EXTINF:-1 tvg-name="|PH| OUTDOOR CHANNEL" group-title="sansat", |PH| OUTDOOR CHANNEL
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562485
-#EXTINF:-1 tvg-name="|PH| PBA RUSH" group-title="|PH| PBA", |PH| PBA RUSH
+#EXTINF:-1 tvg-name="|PH| PBA RUSH" group-title="sansat", |PH| PBA RUSH
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562472
-#EXTINF:-1 tvg-name="|PH| PREMIER SPORTS HD" group-title="|PH| PREMIER", |PH| PREMIER SPORTS HD
+#EXTINF:-1 tvg-name="|PH| PREMIER SPORTS HD" group-title="sansat", |PH| PREMIER SPORTS HD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562460
-#EXTINF:-1 tvg-name="|PH| PTV4" group-title="|PH| PTV4", |PH| PTV4
+#EXTINF:-1 tvg-name="|PH| PTV4" group-title="sansat", |PH| PTV4
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562488
-#EXTINF:-1 tvg-name="|PH| SARI SARI" group-title="|PH| SARI", |PH| SARI SARI
+#EXTINF:-1 tvg-name="|PH| SARI SARI" group-title="sansat", |PH| SARI SARI
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562486
-#EXTINF:-1 tvg-name="|PH| TAP SPORTS" group-title="|PH| TAP", |PH| TAP SPORTS
+#EXTINF:-1 tvg-name="|PH| TAP SPORTS" group-title="sansat", |PH| TAP SPORTS
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562458
-#EXTINF:-1 tvg-name="|PH| TFC" group-title="|PH| TFC", |PH| TFC
+#EXTINF:-1 tvg-name="|PH| TFC" group-title="sansat", |PH| TFC
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562452
-#EXTINF:-1 tvg-name="|PH| TFC ASIA" group-title="|PH| TFC", |PH| TFC ASIA
+#EXTINF:-1 tvg-name="|PH| TFC ASIA" group-title="sansat", |PH| TFC ASIA
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562489
-#EXTINF:-1 tvg-name="|PH| TRAVEL CHANNEL" group-title="|PH| TRAVEL", |PH| TRAVEL CHANNEL
+#EXTINF:-1 tvg-name="|PH| TRAVEL CHANNEL" group-title="sansat", |PH| TRAVEL CHANNEL
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562492
-#EXTINF:-1 tvg-name="|PH| TV5" group-title="|PH| TV5", |PH| TV5
+#EXTINF:-1 tvg-name="|PH| TV5" group-title="sansat", |PH| TV5
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562493
-#EXTINF:-1 tvg-name="|PH| UAAP VARSITY CH" group-title="|PH| UAAP", |PH| UAAP VARSITY CH
+#EXTINF:-1 tvg-name="|PH| UAAP VARSITY CH" group-title="sansat", |PH| UAAP VARSITY CH
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562456
-#EXTINF:-1 tvg-name="|PH| WARNER TV" group-title="|PH| WARNER", |PH| WARNER TV
+#EXTINF:-1 tvg-name="|PH| WARNER TV" group-title="sansat", |PH| WARNER TV
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562487
-#EXTINF:-1 tvg-name="|SHAHID| ABDUL MAJEED ABDULLAH" group-title="|SHAHID| ABDUL", |SHAHID| ABDUL MAJEED ABDULLAH
+#EXTINF:-1 tvg-name="|SHAHID| ABDUL MAJEED ABDULLAH" group-title="shd-gcp-live", |SHAHID| ABDUL MAJEED ABDULLAH
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-abdulmajeed-abdullah/def450c25e1f2dd4379ca782e07c96a8/manifest/video/1080p2400kbps/video.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| AFLAM" group-title="|SHAHID| AFLAM", |SHAHID| AFLAM
+#EXTINF:-1 tvg-name="|SHAHID| AFLAM" group-title="shls-live-enc", |SHAHID| AFLAM
 https://shls-live-enc.edgenextcdn.net/out/v1/0044dd4b001a466c941ad77b04a574a2/index_11.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| AL KABEER AWI" group-title="|SHAHID| AL", |SHAHID| AL KABEER AWI
+#EXTINF:-1 tvg-name="|SHAHID| AL KABEER AWI" group-title="shls-live-enc", |SHAHID| AL KABEER AWI
 https://shls-live-enc.edgenextcdn.net/out/v1/5f5de4f9efe24f758f1364dde5e2a45c/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| AL LEABA" group-title="|SHAHID| AL", |SHAHID| AL LEABA
+#EXTINF:-1 tvg-name="|SHAHID| AL LEABA" group-title="shls-live-enc", |SHAHID| AL LEABA
 https://shls-live-enc.edgenextcdn.net/out/v1/d6e1fdee781f4506a6ac147fee5ba715/index_11.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| ALHOSN" group-title="|SHAHID| ALHOSN", |SHAHID| ALHOSN
+#EXTINF:-1 tvg-name="|SHAHID| ALHOSN" group-title="shls-live-enc", |SHAHID| ALHOSN
 https://shls-live-enc.edgenextcdn.net/out/v1/9747e20a05794a14b0cfccd7c621dd00/index_2.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| ANIME" group-title="|SHAHID| ANIME", |SHAHID| ANIME
+#EXTINF:-1 tvg-name="|SHAHID| ANIME" group-title="shls-live-enc", |SHAHID| ANIME
 https://shls-live-enc.edgenextcdn.net/out/v1/e7350ddf46c94dddafe14b099394ff56/index_12.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| BAB AL HARA" group-title="|SHAHID| BAB", |SHAHID| BAB AL HARA
+#EXTINF:-1 tvg-name="|SHAHID| BAB AL HARA" group-title="shls-live-enc", |SHAHID| BAB AL HARA
 https://shls-live-enc.edgenextcdn.net/out/v1/948c54279b594944adde578c95f1d7d1/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| BIG TIME PLUS" group-title="|SHAHID| BIG", |SHAHID| BIG TIME PLUS
+#EXTINF:-1 tvg-name="|SHAHID| BIG TIME PLUS" group-title="shd-gcp-live", |SHAHID| BIG TIME PLUS
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-big-time-plus/924283f994779a311c1389698ff7e736/manifest/video/1080p2400kbps/video.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| EL-PODCASTERS" group-title="|SHAHID| EL-PODCASTERS", |SHAHID| EL-PODCASTERS
+#EXTINF:-1 tvg-name="|SHAHID| EL-PODCASTERS" group-title="shls-live-enc", |SHAHID| EL-PODCASTERS
 https://shls-live-enc.edgenextcdn.net/out/v1/18cffab0757d448ca6c1a686d330b346/index_2.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| HIKAYAT DOFAA" group-title="|SHAHID| HIKAYAT", |SHAHID| HIKAYAT DOFAA
+#EXTINF:-1 tvg-name="|SHAHID| HIKAYAT DOFAA" group-title="shls-live-enc", |SHAHID| HIKAYAT DOFAA
 https://shls-live-enc.edgenextcdn.net/out/v1/cf05f1dbbeae4878bbc4a5919cef3391/index_2.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| MARAYA" group-title="|SHAHID| MARAYA", |SHAHID| MARAYA
+#EXTINF:-1 tvg-name="|SHAHID| MARAYA" group-title="shls-live-enc", |SHAHID| MARAYA
 https://shls-live-enc.edgenextcdn.net/out/v1/a4a39d8e92e34b0780ca602270a59512/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| MASRAH MASR" group-title="|SHAHID| MASRAH", |SHAHID| MASRAH MASR
+#EXTINF:-1 tvg-name="|SHAHID| MASRAH MASR" group-title="shls-live-enc", |SHAHID| MASRAH MASR
 https://shls-live-enc.edgenextcdn.net/out/v1/8fae48b64942450cb5d60b3fb6910de0/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| MOVIES ACTION" group-title="|SHAHID| MOVIES", |SHAHID| MOVIES ACTION
+#EXTINF:-1 tvg-name="|SHAHID| MOVIES ACTION" group-title="shls-live-enc", |SHAHID| MOVIES ACTION
 https://shls-live-enc.edgenextcdn.net/out/v1/46079e838e65490c8299f902a7731168/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| MOVIES THRILLER" group-title="|SHAHID| MOVIES", |SHAHID| MOVIES THRILLER
+#EXTINF:-1 tvg-name="|SHAHID| MOVIES THRILLER" group-title="shls-live-enc", |SHAHID| MOVIES THRILLER
 https://shls-live-enc.edgenextcdn.net/out/v1/f6d718e841f8442f8374de47f18c93a7/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| MUHAMMAD ABDO" group-title="|SHAHID| MUHAMMAD", |SHAHID| MUHAMMAD ABDO
+#EXTINF:-1 tvg-name="|SHAHID| MUHAMMAD ABDO" group-title="shd-gcp-live", |SHAHID| MUHAMMAD ABDO
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mohammed-abdou/ae9bed6024bb80026b2ab5a4de4754ef/manifest/video/720p1750kbps/video.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| NASER AL QASSABY" group-title="|SHAHID| NASER", |SHAHID| NASER AL QASSABY
+#EXTINF:-1 tvg-name="|SHAHID| NASER AL QASSABY" group-title="shls-live-enc", |SHAHID| NASER AL QASSABY
 https://shls-live-enc.edgenextcdn.net/out/v1/20e003242d244710bfe9ca0fd2b94d00/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| RASHED AL-MAJED" group-title="|SHAHID| RASHED", |SHAHID| RASHED AL-MAJED
+#EXTINF:-1 tvg-name="|SHAHID| RASHED AL-MAJED" group-title="shd-gcp-live", |SHAHID| RASHED AL-MAJED
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-rashed-almajed/5acf573bde2dd6f133cbd6a338b1f312/manifest/video/1080p2400kbps/video.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| RED BULL TV" group-title="|SHAHID| RED", |SHAHID| RED BULL TV
+#EXTINF:-1 tvg-name="|SHAHID| RED BULL TV" group-title="shls-live-enc", |SHAHID| RED BULL TV
 https://shls-live-enc.edgenextcdn.net/out/v1/ad35123d4ad041068bce26ae67ee3180/index_3.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| SELFIE" group-title="|SHAHID| SELFIE", |SHAHID| SELFIE
+#EXTINF:-1 tvg-name="|SHAHID| SELFIE" group-title="shls-live-enc", |SHAHID| SELFIE
 https://shls-live-enc.edgenextcdn.net/out/v1/2a0f4768f7fa42ed813674628b487e95/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| SIKKAT SAFAR" group-title="|SHAHID| SIKKAT", |SHAHID| SIKKAT SAFAR
+#EXTINF:-1 tvg-name="|SHAHID| SIKKAT SAFAR" group-title="shls-live-enc", |SHAHID| SIKKAT SAFAR
 https://shls-live-enc.edgenextcdn.net/out/v1/40031eca7be34c4ea9744bf067f4fefa/index_8.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| TASH" group-title="|SHAHID| TASH", |SHAHID| TASH
+#EXTINF:-1 tvg-name="|SHAHID| TASH" group-title="shls-live-enc", |SHAHID| TASH
 https://shls-live-enc.edgenextcdn.net/out/v1/e34e3ac9d2534543a13b44c2b458b0c2/index_1.m3u8
-#EXTINF:-1 tvg-name="|US| 24/7 30 COINS FHD" group-title="|US| 24/7", |US| 24/7 30 COINS FHD
+#EXTINF:-1 tvg-name="|US| 24/7 30 COINS FHD" group-title="sansat", |US| 24/7 30 COINS FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562370
-#EXTINF:-1 tvg-name="|US| 24/7 ADVENTURE BEAST FHD" group-title="|US| 24/7", |US| 24/7 ADVENTURE BEAST FHD
+#EXTINF:-1 tvg-name="|US| 24/7 ADVENTURE BEAST FHD" group-title="sansat", |US| 24/7 ADVENTURE BEAST FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562371
-#EXTINF:-1 tvg-name="|US| 24/7 ALF FHD" group-title="|US| 24/7", |US| 24/7 ALF FHD
+#EXTINF:-1 tvg-name="|US| 24/7 ALF FHD" group-title="sansat", |US| 24/7 ALF FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562372
-#EXTINF:-1 tvg-name="|US| 24/7 ALO ALO FHD" group-title="|US| 24/7", |US| 24/7 ALO ALO FHD
+#EXTINF:-1 tvg-name="|US| 24/7 ALO ALO FHD" group-title="sansat", |US| 24/7 ALO ALO FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562373
-#EXTINF:-1 tvg-name="|US| 24/7 ANDRIJA I ANĐELKA FHD" group-title="|US| 24/7", |US| 24/7 ANDRIJA I ANĐELKA FHD
+#EXTINF:-1 tvg-name="|US| 24/7 ANDRIJA I ANĐELKA FHD" group-title="sansat", |US| 24/7 ANDRIJA I ANĐELKA FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562374
-#EXTINF:-1 tvg-name="|US| 24/7 ATTACK ON TITAN FHD" group-title="|US| 24/7", |US| 24/7 ATTACK ON TITAN FHD
+#EXTINF:-1 tvg-name="|US| 24/7 ATTACK ON TITAN FHD" group-title="sansat", |US| 24/7 ATTACK ON TITAN FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562416
-#EXTINF:-1 tvg-name="|US| 24/7 BAS ME BRIGA FHD" group-title="|US| 24/7", |US| 24/7 BAS ME BRIGA FHD
+#EXTINF:-1 tvg-name="|US| 24/7 BAS ME BRIGA FHD" group-title="sansat", |US| 24/7 BAS ME BRIGA FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562434
-#EXTINF:-1 tvg-name="|US| 24/7 BATMAN FHD" group-title="|US| 24/7", |US| 24/7 BATMAN FHD
+#EXTINF:-1 tvg-name="|US| 24/7 BATMAN FHD" group-title="sansat", |US| 24/7 BATMAN FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562375
-#EXTINF:-1 tvg-name="|US| 24/7 BATWOMAN FHD" group-title="|US| 24/7", |US| 24/7 BATWOMAN FHD
+#EXTINF:-1 tvg-name="|US| 24/7 BATWOMAN FHD" group-title="sansat", |US| 24/7 BATWOMAN FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562422
-#EXTINF:-1 tvg-name="|US| 24/7 BILLIONS FHD" group-title="|US| 24/7", |US| 24/7 BILLIONS FHD
+#EXTINF:-1 tvg-name="|US| 24/7 BILLIONS FHD" group-title="sansat", |US| 24/7 BILLIONS FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562376
-#EXTINF:-1 tvg-name="|US| 24/7 BLACK KNIGHT FHD" group-title="|US| 24/7", |US| 24/7 BLACK KNIGHT FHD
+#EXTINF:-1 tvg-name="|US| 24/7 BLACK KNIGHT FHD" group-title="sansat", |US| 24/7 BLACK KNIGHT FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562428
-#EXTINF:-1 tvg-name="|US| 24/7 BOKI MAJSTORE FHD" group-title="|US| 24/7", |US| 24/7 BOKI MAJSTORE FHD
+#EXTINF:-1 tvg-name="|US| 24/7 BOKI MAJSTORE FHD" group-title="sansat", |US| 24/7 BOKI MAJSTORE FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562435
-#EXTINF:-1 tvg-name="|US| 24/7 BRAČNE VODE FHD" group-title="|US| 24/7", |US| 24/7 BRAČNE VODE FHD
+#EXTINF:-1 tvg-name="|US| 24/7 BRAČNE VODE FHD" group-title="sansat", |US| 24/7 BRAČNE VODE FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562418
-#EXTINF:-1 tvg-name="|US| 24/7 CASTLE AND CASTLE FHD" group-title="|US| 24/7", |US| 24/7 CASTLE AND CASTLE FHD
+#EXTINF:-1 tvg-name="|US| 24/7 CASTLE AND CASTLE FHD" group-title="sansat", |US| 24/7 CASTLE AND CASTLE FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562377
-#EXTINF:-1 tvg-name="|US| 24/7 CHARLIE CHAPLIN FHD" group-title="|US| 24/7", |US| 24/7 CHARLIE CHAPLIN FHD
+#EXTINF:-1 tvg-name="|US| 24/7 CHARLIE CHAPLIN FHD" group-title="sansat", |US| 24/7 CHARLIE CHAPLIN FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562378
-#EXTINF:-1 tvg-name="|US| 24/7 CHICAGO PARTY AUNT FHD" group-title="|US| 24/7", |US| 24/7 CHICAGO PARTY AUNT FHD
+#EXTINF:-1 tvg-name="|US| 24/7 CHICAGO PARTY AUNT FHD" group-title="sansat", |US| 24/7 CHICAGO PARTY AUNT FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562379
-#EXTINF:-1 tvg-name="|US| 24/7 CLICKBAIT FHD" group-title="|US| 24/7", |US| 24/7 CLICKBAIT FHD
+#EXTINF:-1 tvg-name="|US| 24/7 CLICKBAIT FHD" group-title="sansat", |US| 24/7 CLICKBAIT FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562380
-#EXTINF:-1 tvg-name="|US| 24/7 CLOSE ENOUGH FHD" group-title="|US| 24/7", |US| 24/7 CLOSE ENOUGH FHD
+#EXTINF:-1 tvg-name="|US| 24/7 CLOSE ENOUGH FHD" group-title="sansat", |US| 24/7 CLOSE ENOUGH FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562381
-#EXTINF:-1 tvg-name="|US| 24/7 CRAIG OF THE CREEK FHD" group-title="|US| 24/7", |US| 24/7 CRAIG OF THE CREEK FHD
+#EXTINF:-1 tvg-name="|US| 24/7 CRAIG OF THE CREEK FHD" group-title="sansat", |US| 24/7 CRAIG OF THE CREEK FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562441
-#EXTINF:-1 tvg-name="|US| 24/7 DEAD END: PARANORMAL PARK FHD" group-title="|US| 24/7", |US| 24/7 DEAD END: PARANORMAL PARK FHD
+#EXTINF:-1 tvg-name="|US| 24/7 DEAD END: PARANORMAL PARK FHD" group-title="sansat", |US| 24/7 DEAD END: PARANORMAL PARK FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562431
-#EXTINF:-1 tvg-name="|US| 24/7 DEAD TO ME FHD" group-title="|US| 24/7", |US| 24/7 DEAD TO ME FHD
+#EXTINF:-1 tvg-name="|US| 24/7 DEAD TO ME FHD" group-title="sansat", |US| 24/7 DEAD TO ME FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562382
-#EXTINF:-1 tvg-name="|US| 24/7 DOBRO JUTRO KOMŠIJA FHD" group-title="|US| 24/7", |US| 24/7 DOBRO JUTRO KOMŠIJA FHD
+#EXTINF:-1 tvg-name="|US| 24/7 DOBRO JUTRO KOMŠIJA FHD" group-title="sansat", |US| 24/7 DOBRO JUTRO KOMŠIJA FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562429
-#EXTINF:-1 tvg-name="|US| 24/7 DVA I POL MUŠKARCA FHD" group-title="|US| 24/7", |US| 24/7 DVA I POL MUŠKARCA FHD
+#EXTINF:-1 tvg-name="|US| 24/7 DVA I POL MUŠKARCA FHD" group-title="sansat", |US| 24/7 DVA I POL MUŠKARCA FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562383
-#EXTINF:-1 tvg-name="|US| 24/7 ELVES FHD" group-title="|US| 24/7", |US| 24/7 ELVES FHD
+#EXTINF:-1 tvg-name="|US| 24/7 ELVES FHD" group-title="sansat", |US| 24/7 ELVES FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562384
-#EXTINF:-1 tvg-name="|US| 24/7 FALLOUT FHD" group-title="|US| 24/7", |US| 24/7 FALLOUT FHD
+#EXTINF:-1 tvg-name="|US| 24/7 FALLOUT FHD" group-title="sansat", |US| 24/7 FALLOUT FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562444
-#EXTINF:-1 tvg-name="|US| 24/7 FAMILY BUSINESS FHD" group-title="|US| 24/7", |US| 24/7 FAMILY BUSINESS FHD
+#EXTINF:-1 tvg-name="|US| 24/7 FAMILY BUSINESS FHD" group-title="sansat", |US| 24/7 FAMILY BUSINESS FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562385
-#EXTINF:-1 tvg-name="|US| 24/7 FATMA FHD" group-title="|US| 24/7", |US| 24/7 FATMA FHD
+#EXTINF:-1 tvg-name="|US| 24/7 FATMA FHD" group-title="sansat", |US| 24/7 FATMA FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562386
-#EXTINF:-1 tvg-name="|US| 24/7 FORMULA 1 TV FHD" group-title="|US| 24/7", |US| 24/7 FORMULA 1 TV FHD
+#EXTINF:-1 tvg-name="|US| 24/7 FORMULA 1 TV FHD" group-title="sansat", |US| 24/7 FORMULA 1 TV FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562387
-#EXTINF:-1 tvg-name="|US| 24/7 FRASIER FHD" group-title="|US| 24/7", |US| 24/7 FRASIER FHD
+#EXTINF:-1 tvg-name="|US| 24/7 FRASIER FHD" group-title="sansat", |US| 24/7 FRASIER FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562424
-#EXTINF:-1 tvg-name="|US| 24/7 GENERATION 56K FHD" group-title="|US| 24/7", |US| 24/7 GENERATION 56K FHD
+#EXTINF:-1 tvg-name="|US| 24/7 GENERATION 56K FHD" group-title="sansat", |US| 24/7 GENERATION 56K FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562388
-#EXTINF:-1 tvg-name="|US| 24/7 GRIZZY AND THE LEMMINGS FHD" group-title="|US| 24/7", |US| 24/7 GRIZZY AND THE LEMMINGS FHD
+#EXTINF:-1 tvg-name="|US| 24/7 GRIZZY AND THE LEMMINGS FHD" group-title="sansat", |US| 24/7 GRIZZY AND THE LEMMINGS FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562415
-#EXTINF:-1 tvg-name="|US| 24/7 H2 DOCU FHD" group-title="|US| 24/7", |US| 24/7 H2 DOCU FHD
+#EXTINF:-1 tvg-name="|US| 24/7 H2 DOCU FHD" group-title="sansat", |US| 24/7 H2 DOCU FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562389
-#EXTINF:-1 tvg-name="|US| 24/7 HARRY POTTER FHD" group-title="|US| 24/7", |US| 24/7 HARRY POTTER FHD
+#EXTINF:-1 tvg-name="|US| 24/7 HARRY POTTER FHD" group-title="sansat", |US| 24/7 HARRY POTTER FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562421
-#EXTINF:-1 tvg-name="|US| 24/7 HIT & RUN" group-title="|US| 24/7", |US| 24/7 HIT & RUN
+#EXTINF:-1 tvg-name="|US| 24/7 HIT & RUN" group-title="sansat", |US| 24/7 HIT & RUN
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562390
-#EXTINF:-1 tvg-name="|US| 24/7 HOOPS FHD" group-title="|US| 24/7", |US| 24/7 HOOPS FHD
+#EXTINF:-1 tvg-name="|US| 24/7 HOOPS FHD" group-title="sansat", |US| 24/7 HOOPS FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562391
-#EXTINF:-1 tvg-name="|US| 24/7 IDJ PILICI FHD" group-title="|US| 24/7", |US| 24/7 IDJ PILICI FHD
+#EXTINF:-1 tvg-name="|US| 24/7 IDJ PILICI FHD" group-title="sansat", |US| 24/7 IDJ PILICI FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562423
-#EXTINF:-1 tvg-name="|US| 24/7 INSIDE JOB FHD" group-title="|US| 24/7", |US| 24/7 INSIDE JOB FHD
+#EXTINF:-1 tvg-name="|US| 24/7 INSIDE JOB FHD" group-title="sansat", |US| 24/7 INSIDE JOB FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562445
-#EXTINF:-1 tvg-name="|US| 24/7 JAMES BOND 007 FHD" group-title="|US| 24/7", |US| 24/7 JAMES BOND 007 FHD
+#EXTINF:-1 tvg-name="|US| 24/7 JAMES BOND 007 FHD" group-title="sansat", |US| 24/7 JAMES BOND 007 FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562438
-#EXTINF:-1 tvg-name="|US| 24/7 JAPAN SINKS: PEOPLE OF HOPE FHD" group-title="|US| 24/7", |US| 24/7 JAPAN SINKS: PEOPLE OF HOPE FHD
+#EXTINF:-1 tvg-name="|US| 24/7 JAPAN SINKS: PEOPLE OF HOPE FHD" group-title="sansat", |US| 24/7 JAPAN SINKS: PEOPLE OF HOPE FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562392
-#EXTINF:-1 tvg-name="|US| 24/7 JURASSIC WORLD CAMP CRETACEOUS FHD" group-title="|US| 24/7", |US| 24/7 JURASSIC WORLD CAMP CRETACEOUS FHD
+#EXTINF:-1 tvg-name="|US| 24/7 JURASSIC WORLD CAMP CRETACEOUS FHD" group-title="sansat", |US| 24/7 JURASSIC WORLD CAMP CRETACEOUS FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562417
-#EXTINF:-1 tvg-name="|US| 24/7 JURASSIC WORLD FHD" group-title="|US| 24/7", |US| 24/7 JURASSIC WORLD FHD
+#EXTINF:-1 tvg-name="|US| 24/7 JURASSIC WORLD FHD" group-title="sansat", |US| 24/7 JURASSIC WORLD FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562432
-#EXTINF:-1 tvg-name="|US| 24/7 JUŽNI VETAR" group-title="|US| 24/7", |US| 24/7 JUŽNI VETAR
+#EXTINF:-1 tvg-name="|US| 24/7 JUŽNI VETAR" group-title="sansat", |US| 24/7 JUŽNI VETAR
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562446
-#EXTINF:-1 tvg-name="|US| 24/7 KAKO SAM UPOZNAO VAŠU MAJKU FHD" group-title="|US| 24/7", |US| 24/7 KAKO SAM UPOZNAO VAŠU MAJKU FHD
+#EXTINF:-1 tvg-name="|US| 24/7 KAKO SAM UPOZNAO VAŠU MAJKU FHD" group-title="sansat", |US| 24/7 KAKO SAM UPOZNAO VAŠU MAJKU FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562393
-#EXTINF:-1 tvg-name="|US| 24/7 KOD VELJE FHD" group-title="|US| 24/7", |US| 24/7 KOD VELJE FHD
+#EXTINF:-1 tvg-name="|US| 24/7 KOD VELJE FHD" group-title="sansat", |US| 24/7 KOD VELJE FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562436
-#EXTINF:-1 tvg-name="|US| 24/7 KOTA FACTORY FHD" group-title="|US| 24/7", |US| 24/7 KOTA FACTORY FHD
+#EXTINF:-1 tvg-name="|US| 24/7 KOTA FACTORY FHD" group-title="sansat", |US| 24/7 KOTA FACTORY FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562394
-#EXTINF:-1 tvg-name="|US| 24/7 KURSADZIJE FHD" group-title="|US| 24/7", |US| 24/7 KURSADZIJE FHD
+#EXTINF:-1 tvg-name="|US| 24/7 KURSADZIJE FHD" group-title="sansat", |US| 24/7 KURSADZIJE FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562426
-#EXTINF:-1 tvg-name="|US| 24/7 LOONEY TUNES CARTOONS" group-title="|US| 24/7", |US| 24/7 LOONEY TUNES CARTOONS
+#EXTINF:-1 tvg-name="|US| 24/7 LOONEY TUNES CARTOONS" group-title="sansat", |US| 24/7 LOONEY TUNES CARTOONS
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562448
-#EXTINF:-1 tvg-name="|US| 24/7 LOVE 101 FHD" group-title="|US| 24/7", |US| 24/7 LOVE 101 FHD
+#EXTINF:-1 tvg-name="|US| 24/7 LOVE 101 FHD" group-title="sansat", |US| 24/7 LOVE 101 FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562395
-#EXTINF:-1 tvg-name="|US| 24/7 LUD, ZBUNJEN, NORMALAN FHD" group-title="|US| 24/7", |US| 24/7 LUD, ZBUNJEN, NORMALAN FHD
+#EXTINF:-1 tvg-name="|US| 24/7 LUD, ZBUNJEN, NORMALAN FHD" group-title="sansat", |US| 24/7 LUD, ZBUNJEN, NORMALAN FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562396
-#EXTINF:-1 tvg-name="|US| 24/7 MALA SUPRUGA FHD" group-title="|US| 24/7", |US| 24/7 MALA SUPRUGA FHD
+#EXTINF:-1 tvg-name="|US| 24/7 MALA SUPRUGA FHD" group-title="sansat", |US| 24/7 MALA SUPRUGA FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562397
-#EXTINF:-1 tvg-name="|US| 24/7 METAL SHOP MASTERS FHD" group-title="|US| 24/7", |US| 24/7 METAL SHOP MASTERS FHD
+#EXTINF:-1 tvg-name="|US| 24/7 METAL SHOP MASTERS FHD" group-title="sansat", |US| 24/7 METAL SHOP MASTERS FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562398
-#EXTINF:-1 tvg-name="|US| 24/7 MICKEY MOUSE FHD" group-title="|US| 24/7", |US| 24/7 MICKEY MOUSE FHD
+#EXTINF:-1 tvg-name="|US| 24/7 MICKEY MOUSE FHD" group-title="sansat", |US| 24/7 MICKEY MOUSE FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562419
-#EXTINF:-1 tvg-name="|US| 24/7 MONTY PYTHONS FHD" group-title="|US| 24/7", |US| 24/7 MONTY PYTHONS FHD
+#EXTINF:-1 tvg-name="|US| 24/7 MONTY PYTHONS FHD" group-title="sansat", |US| 24/7 MONTY PYTHONS FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562440
-#EXTINF:-1 tvg-name="|US| 24/7 MRKOMIR FHD" group-title="|US| 24/7", |US| 24/7 MRKOMIR FHD
+#EXTINF:-1 tvg-name="|US| 24/7 MRKOMIR FHD" group-title="sansat", |US| 24/7 MRKOMIR FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562399
-#EXTINF:-1 tvg-name="|US| 24/7 MUĆKE FHD" group-title="|US| 24/7", |US| 24/7 MUĆKE FHD
+#EXTINF:-1 tvg-name="|US| 24/7 MUĆKE FHD" group-title="sansat", |US| 24/7 MUĆKE FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562400
-#EXTINF:-1 tvg-name="|US| 24/7 NIJESMO MI OD JUCE FHD" group-title="|US| 24/7", |US| 24/7 NIJESMO MI OD JUCE FHD
+#EXTINF:-1 tvg-name="|US| 24/7 NIJESMO MI OD JUCE FHD" group-title="sansat", |US| 24/7 NIJESMO MI OD JUCE FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562433
-#EXTINF:-1 tvg-name="|US| 24/7 OATS STUDIOS FHD" group-title="|US| 24/7", |US| 24/7 OATS STUDIOS FHD
+#EXTINF:-1 tvg-name="|US| 24/7 OATS STUDIOS FHD" group-title="sansat", |US| 24/7 OATS STUDIOS FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562401
-#EXTINF:-1 tvg-name="|US| 24/7 OBITELJ UPSHAW FHD" group-title="|US| 24/7", |US| 24/7 OBITELJ UPSHAW FHD
+#EXTINF:-1 tvg-name="|US| 24/7 OBITELJ UPSHAW FHD" group-title="sansat", |US| 24/7 OBITELJ UPSHAW FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562443
-#EXTINF:-1 tvg-name="|US| 24/7 OBLAK U SLUŽBI ZAKONA FHD" group-title="|US| 24/7", |US| 24/7 OBLAK U SLUŽBI ZAKONA FHD
+#EXTINF:-1 tvg-name="|US| 24/7 OBLAK U SLUŽBI ZAKONA FHD" group-title="sansat", |US| 24/7 OBLAK U SLUŽBI ZAKONA FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562367
-#EXTINF:-1 tvg-name="|US| 24/7 ON THE VERGE FHD" group-title="|US| 24/7", |US| 24/7 ON THE VERGE FHD
+#EXTINF:-1 tvg-name="|US| 24/7 ON THE VERGE FHD" group-title="sansat", |US| 24/7 ON THE VERGE FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562402
-#EXTINF:-1 tvg-name="|US| 24/7 PRIJATELJI FHD" group-title="|US| 24/7", |US| 24/7 PRIJATELJI FHD
+#EXTINF:-1 tvg-name="|US| 24/7 PRIJATELJI FHD" group-title="sansat", |US| 24/7 PRIJATELJI FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562403
-#EXTINF:-1 tvg-name="|US| 24/7 QUARANTINE TALES FHD" group-title="|US| 24/7", |US| 24/7 QUARANTINE TALES FHD
+#EXTINF:-1 tvg-name="|US| 24/7 QUARANTINE TALES FHD" group-title="sansat", |US| 24/7 QUARANTINE TALES FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562404
-#EXTINF:-1 tvg-name="|US| 24/7 RAGNAROK FHD" group-title="|US| 24/7", |US| 24/7 RAGNAROK FHD
+#EXTINF:-1 tvg-name="|US| 24/7 RAGNAROK FHD" group-title="sansat", |US| 24/7 RAGNAROK FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562405
-#EXTINF:-1 tvg-name="|US| 24/7 RAISING DION FHD" group-title="|US| 24/7", |US| 24/7 RAISING DION FHD
+#EXTINF:-1 tvg-name="|US| 24/7 RAISING DION FHD" group-title="sansat", |US| 24/7 RAISING DION FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562406
-#EXTINF:-1 tvg-name="|US| 24/7 SAN SNOVA FHD" group-title="|US| 24/7", |US| 24/7 SAN SNOVA FHD
+#EXTINF:-1 tvg-name="|US| 24/7 SAN SNOVA FHD" group-title="sansat", |US| 24/7 SAN SNOVA FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562439
-#EXTINF:-1 tvg-name="|US| 24/7 SCAREDY CATS FHD" group-title="|US| 24/7", |US| 24/7 SCAREDY CATS FHD
+#EXTINF:-1 tvg-name="|US| 24/7 SCAREDY CATS FHD" group-title="sansat", |US| 24/7 SCAREDY CATS FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562407
-#EXTINF:-1 tvg-name="|US| 24/7 SCOOBY DOO FHD" group-title="|US| 24/7", |US| 24/7 SCOOBY DOO FHD
+#EXTINF:-1 tvg-name="|US| 24/7 SCOOBY DOO FHD" group-title="sansat", |US| 24/7 SCOOBY DOO FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562368
-#EXTINF:-1 tvg-name="|US| 24/7 SEINFELD FHD" group-title="|US| 24/7", |US| 24/7 SEINFELD FHD
+#EXTINF:-1 tvg-name="|US| 24/7 SEINFELD FHD" group-title="sansat", |US| 24/7 SEINFELD FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562442
-#EXTINF:-1 tvg-name="|US| 24/7 SISYPHUS FHD" group-title="|US| 24/7", |US| 24/7 SISYPHUS FHD
+#EXTINF:-1 tvg-name="|US| 24/7 SISYPHUS FHD" group-title="sansat", |US| 24/7 SISYPHUS FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562408
-#EXTINF:-1 tvg-name="|US| 24/7 SOUTH PARK FHD" group-title="|US| 24/7", |US| 24/7 SOUTH PARK FHD
+#EXTINF:-1 tvg-name="|US| 24/7 SOUTH PARK FHD" group-title="sansat", |US| 24/7 SOUTH PARK FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562409
-#EXTINF:-1 tvg-name="|US| 24/7 SPIRIT RANGERS FHD" group-title="|US| 24/7", |US| 24/7 SPIRIT RANGERS FHD
+#EXTINF:-1 tvg-name="|US| 24/7 SPIRIT RANGERS FHD" group-title="sansat", |US| 24/7 SPIRIT RANGERS FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562425
-#EXTINF:-1 tvg-name="|US| 24/7 STAR TREK FHD" group-title="|US| 24/7", |US| 24/7 STAR TREK FHD
+#EXTINF:-1 tvg-name="|US| 24/7 STAR TREK FHD" group-title="sansat", |US| 24/7 STAR TREK FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562430
-#EXTINF:-1 tvg-name="|US| 24/7 STAR TREK: NOVA GENERACIJA FHD" group-title="|US| 24/7", |US| 24/7 STAR TREK: NOVA GENERACIJA FHD
+#EXTINF:-1 tvg-name="|US| 24/7 STAR TREK: NOVA GENERACIJA FHD" group-title="sansat", |US| 24/7 STAR TREK: NOVA GENERACIJA FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562410
-#EXTINF:-1 tvg-name="|US| 24/7 STAR TREK: VOYAGER FHD" group-title="|US| 24/7", |US| 24/7 STAR TREK: VOYAGER FHD
+#EXTINF:-1 tvg-name="|US| 24/7 STAR TREK: VOYAGER FHD" group-title="sansat", |US| 24/7 STAR TREK: VOYAGER FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562366
-#EXTINF:-1 tvg-name="|US| 24/7 STRUČNI ŠTAB FHD" group-title="|US| 24/7", |US| 24/7 STRUČNI ŠTAB FHD
+#EXTINF:-1 tvg-name="|US| 24/7 STRUČNI ŠTAB FHD" group-title="sansat", |US| 24/7 STRUČNI ŠTAB FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562411
-#EXTINF:-1 tvg-name="|US| 24/7 TENDER FHD" group-title="|US| 24/7", |US| 24/7 TENDER FHD
+#EXTINF:-1 tvg-name="|US| 24/7 TENDER FHD" group-title="sansat", |US| 24/7 TENDER FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562369
-#EXTINF:-1 tvg-name="|US| 24/7 TEORIJA VELIKOG PRASKA FHD" group-title="|US| 24/7", |US| 24/7 TEORIJA VELIKOG PRASKA FHD
+#EXTINF:-1 tvg-name="|US| 24/7 TEORIJA VELIKOG PRASKA FHD" group-title="sansat", |US| 24/7 TEORIJA VELIKOG PRASKA FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562412
-#EXTINF:-1 tvg-name="|US| 24/7 THE SIMPSONS FHD" group-title="|US| 24/7", |US| 24/7 THE SIMPSONS FHD
+#EXTINF:-1 tvg-name="|US| 24/7 THE SIMPSONS FHD" group-title="sansat", |US| 24/7 THE SIMPSONS FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562420
-#EXTINF:-1 tvg-name="|US| 24/7 THE WITCHER FHD" group-title="|US| 24/7", |US| 24/7 THE WITCHER FHD
+#EXTINF:-1 tvg-name="|US| 24/7 THE WITCHER FHD" group-title="sansat", |US| 24/7 THE WITCHER FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562413
-#EXTINF:-1 tvg-name="|US| 24/7 ULTRAMAN FHD" group-title="|US| 24/7", |US| 24/7 ULTRAMAN FHD
+#EXTINF:-1 tvg-name="|US| 24/7 ULTRAMAN FHD" group-title="sansat", |US| 24/7 ULTRAMAN FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562427
-#EXTINF:-1 tvg-name="|US| 24/7 VELMA" group-title="|US| 24/7", |US| 24/7 VELMA
+#EXTINF:-1 tvg-name="|US| 24/7 VELMA" group-title="sansat", |US| 24/7 VELMA
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562447
-#EXTINF:-1 tvg-name="|US| 24/7 VEČERNJA ŠKOLA FHD" group-title="|US| 24/7", |US| 24/7 VEČERNJA ŠKOLA FHD
+#EXTINF:-1 tvg-name="|US| 24/7 VEČERNJA ŠKOLA FHD" group-title="sansat", |US| 24/7 VEČERNJA ŠKOLA FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562414
-#EXTINF:-1 tvg-name="|US| 24/7 ĐEKNA FHD" group-title="|US| 24/7", |US| 24/7 ĐEKNA FHD
+#EXTINF:-1 tvg-name="|US| 24/7 ĐEKNA FHD" group-title="sansat", |US| 24/7 ĐEKNA FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562437
