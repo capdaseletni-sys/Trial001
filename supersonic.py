@@ -110,4 +110,69 @@ async def worker(queue, session, semaphore, results):
             if "=" in content:
                 key, value = content.split("=", 1)
                 k = key.lower()
-                if k == "http-referrer": headers["Referer"] =
+                if k == "http-referrer": headers["Referer"] = value
+                elif k == "http-origin": headers["Origin"] = value
+                elif k == "http-user-agent": headers["User-Agent"] = value
+
+        async with semaphore:
+            if not any(url.lower().endswith(ext) for ext in VIDEO_EXTENSIONS):
+                if await host_allowed(session, url, headers):
+                    title = "UNTITLED"
+                    if extinf:
+                        parts = extinf[0].split(",", 1)
+                        title = parts[1].strip() if len(parts) == 2 else "UNTITLED"
+                    results.append((title.upper(), get_group_title_from_url(url), extinf, vlcopts, url))
+                    fast_count += 1
+        
+        processed_count += 1
+        update_progress()
+        queue.task_done()
+
+async def main(input_paths, output_path):
+    global total_tasks
+    queue, results, all_entries = asyncio.Queue(), [], []
+    for path in input_paths:
+        p = Path(path)
+        if not p.exists(): continue
+        curr_extinf, curr_vlc = [], []
+        with open(p, "r", encoding="utf-8", errors="ignore") as f:
+            for line in f:
+                line = line.strip()
+                if line.startswith("#EXTINF"): curr_extinf = [line]
+                elif line.startswith("#EXTVLCOPT"): curr_vlc.append(line)
+                elif line.startswith(("http://", "https://")):
+                    all_entries.append((curr_extinf.copy(), curr_vlc.copy(), line))
+                    curr_extinf, curr_vlc = [], []
+    
+    total_tasks = len(all_entries)
+    if total_tasks == 0:
+        print("No channels found.")
+        return
+
+    print(f"Scanning {total_tasks} channels...")
+    connector = aiohttp.TCPConnector(limit=MAX_CONCURRENCY, ssl=False)
+    async with aiohttp.ClientSession(connector=connector, headers=DEFAULT_HEADERS) as session:
+        semaphore = asyncio.Semaphore(MAX_CONCURRENCY)
+        workers = [asyncio.create_task(worker(queue, session, semaphore, results)) for _ in range(MAX_CONCURRENCY)]
+        for entry in all_entries: await queue.put(entry)
+        for _ in workers: await queue.put(None)
+        await queue.join()
+        for w in workers: await w
+
+    results.sort(key=lambda x: (x[1], x[0]))
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        for title, group, extinf, vlc, url in results:
+            if extinf:
+                dur_part = extinf[0].split(",", 1)[0]
+                duration = dur_part.split(":")[-1] if ":" in dur_part else "-1"
+                f.write(f'#EXTINF:{duration} tvg-name="{title}" group-title="{group}", {title}\n')
+            for v in vlc: f.write(v + "\n")
+            f.write(url + "\n")
+    print(f"\n\n✅ Done! Saved {fast_count} channels to {output_path}")
+
+if __name__ == "__main__":
+    if len(sys.argv) < 3:
+        print("Usage: python3 supersonic.py output.m3u8 input1.m3u8 ...")
+    else:
+        asyncio.run(main(sys.argv[2:], sys.argv[1]))
