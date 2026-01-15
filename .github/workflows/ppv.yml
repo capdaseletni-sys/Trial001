@@ -25,7 +25,7 @@ jobs:
 
       - name: 📦 Install Python dependencies & Playwright
         run: |
-          pip install selectolax
+          pip install requests
 
       - name: 🎯 Run scraping script
         run: python playlist.py
