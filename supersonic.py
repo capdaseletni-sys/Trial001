@@ -6,15 +6,15 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 # ---------- ADJUSTED CONFIG FOR MAXIMUM RESULTS ----------
-TIMEOUT = aiohttp.ClientTimeout(total=20)   # 20 seconds to allow for slow handshakes
-MAX_CONCURRENCY = 50                       # Lowered slightly to prevent IP blocking
-MAX_HLS_DEPTH = 3
+TIMEOUT = aiohttp.ClientTimeout(total=8)    # 20 seconds to allow for slow handshakes
+MAX_CONCURRENCY = 100                       # Lowered slightly to prevent IP blocking
+MAX_HLS_DEPTH = 2
 
 MIN_SPEED_KBPS = 300                       # Minimal speed for SD/Compressed HD
-MAX_TTFB = 5.0                            # Very generous time for server response
-SAMPLE_BYTES = 256_000                     # Smaller sample for faster individual tests
-WARMUP_BYTES = 4_000                       # Minimal warmup
-RETRIES = 1                                
+MAX_TTFB = 4.0                             # Very generous time for server response
+SAMPLE_BYTES = 64_000                      # Smaller sample for faster individual tests
+WARMUP_BYTES = 1_000                       # Minimal warmup
+RETRIES = 0                                
 
 DEFAULT_HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 VIDEO_EXTENSIONS = (".mp4", ".mkv", ".avi")
