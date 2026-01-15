@@ -151,4 +151,22 @@ async def main(input_paths, output_path):
     connector = aiohttp.TCPConnector(limit=MAX_CONCURRENCY, ssl=False)
     async with aiohttp.ClientSession(connector=connector, headers=DEFAULT_HEADERS) as session:
         semaphore = asyncio.Semaphore(MAX_CONCURRENCY)
-        workers = [async
+        # FIXED: Changed 'async' back to 'asyncio.create_task'
+        workers = [asyncio.create_task(worker(queue, session, semaphore, results)) for _ in range(MAX_CONCURRENCY)]
+        for entry in all_entries: await queue.put(entry)
+        for _ in workers: await queue.put(None)
+        await queue.join()
+        for w in workers: await w
+
+    results.sort(key=lambda x: (x[1], x[0]))
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        for title, group, extinf, vlc, url in results:
+            if extinf:
+                # Extract duration safely (handles #EXTINF:-1 or #EXTINF:0)
+                dur_part = extinf[0].split(",", 1)[0]
+                duration = dur_part.split(":")[-1] if ":" in dur_part else "-1"
+                f.write(f'#EXTINF:{duration} tvg-name="{title}" group-title="{group}", {title}\n')
+            for v in vlc: f.write(v + "\n")
+            f.write(url + "\n")
+    print(f"\n\n✅ Done! Saved {
