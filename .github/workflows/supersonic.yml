@@ -2,7 +2,7 @@ name: 🚀 Merge All + Filter
 
 on:
   schedule:
-    - cron: '0 */5 * * *'  # ⏰ Every 5 hours
+    - cron: '0 */12 * * *'  # ⏰ Every 5 hours
   workflow_dispatch:        # Automatic
 
 permissions:
