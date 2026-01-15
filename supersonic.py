@@ -10,8 +10,8 @@ TIMEOUT = aiohttp.ClientTimeout(total=8)    # 20 seconds to allow for slow hands
 MAX_CONCURRENCY = 100                       # Lowered slightly to prevent IP blocking
 MAX_HLS_DEPTH = 2
 
-MIN_SPEED_KBPS = 300                       # Minimal speed for SD/Compressed HD
-MAX_TTFB = 4.0                             # Very generous time for server response
+MIN_SPEED_KBPS = 350                       # Minimal speed for SD/Compressed HD
+MAX_TTFB = 3.0                             # Very generous time for server response
 SAMPLE_BYTES = 64_000                      # Smaller sample for faster individual tests
 WARMUP_BYTES = 1_000                       # Minimal warmup
 RETRIES = 0                                
