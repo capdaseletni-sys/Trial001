@@ -1,28 +1,40 @@
 #EXTM3U
-#EXTINF://bellmedia-images.imgix.net/lede/wp-content/uploads/2014/02/RDS_Logo_Colour.png" group-title="Canada French" tvg-name="CA (FR) RDS2 HD (B)" group-title="CORD-CUTTER", CA (FR) RDS2 HD (B)
-http://cord-cutter.net:8080/15564292/15564292/57490
+#EXTINF://seekvectorlogo.net/wp-content/uploads/2018/07/bbc-radio-1-vector-logo.png" group-title="Radio Stations" tvg-name="(ILR) CLASSIC FM" group-title="CORD-CUTTER", (ILR) CLASSIC FM
+http://cord-cutter.net:8080/15564292/15564292/14388
+#EXTINF://is4-ssl.mzstatic.com/image/thumb/Music115/v4/0a/ec/b6/0aecb6be-51b1-88d4-4a7e-e169270de6cf/artwork.jpg/600x600bf.png" group-title="Radio Stations" tvg-name="1 HITS 50S LIVE" group-title="CORD-CUTTER", 1 HITS 50S LIVE
+http://cord-cutter.net:8080/15564292/15564292/17872
+#EXTINF://pngimg.com/uploads/radio/radio_PNG19293.png" group-title="Radio Stations" tvg-name="AMBIENT SLEEPING PILL [OPT-2]" group-title="CORD-CUTTER", AMBIENT SLEEPING PILL [OPT-2]
+http://cord-cutter.net:8080/15564292/15564292/14658
+#EXTINF:-1 tvg-id="" tvg-name=" tvg-name="HOT 108 JAMZ" TVG-LOGO="HTTPS://PNGIMG.COM/UPLOADS/RADIO/RADIO_PNG19293.PNG" GROUP-TITLE="RADIO STATIONS",,HOT 108 JAMZ" group-title="CORD-CUTTER", HOT 108 JAMZ" TVG-LOGO="HTTPS://PNGIMG.COM/UPLOADS/RADIO/RADIO_PNG19293.PNG" GROUP-TITLE="RADIO STATIONS",,HOT 108 JAMZ
+http://cord-cutter.net:8080/15564292/15564292/14663
 #EXTINF:-1 tvg-name="|AR| AL JAZEERA HD LIVE" group-title="LIVE-HLS-WEB-AJA-GCP", |AR| AL JAZEERA HD LIVE
 https://live-hls-web-aja-gcp.thehlive.com/AJA/02.m3u8
-#EXTINF:-1 tvg-name="BEIN SPORTS 1 FRENCH SD" group-title="SANSAT", BEIN SPORTS 1 FRENCH SD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/117945
-#EXTINF:-1 tvg-name="BEIN SPORTS 1 HD" group-title="SANSAT", BEIN SPORTS 1 HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60954
-#EXTINF:-1 tvg-name="BEIN SPORTS 1 HD B2" group-title="SANSAT", BEIN SPORTS 1 HD B2
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/394073
-#EXTINF:-1 tvg-name="BEIN SPORTS 2 HD" group-title="SANSAT", BEIN SPORTS 2 HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/60955
+#EXTINF:-1 tvg-name="BEIN SPORTS 1 ENGLISH" group-title="SANSAT", BEIN SPORTS 1 ENGLISH
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5241
+#EXTINF:-1 tvg-name="BEIN SPORTS 1 ENGLISH FHD" group-title="SANSAT", BEIN SPORTS 1 ENGLISH FHD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36295
+#EXTINF:-1 tvg-name="BEIN SPORTS 1 FRENCH FHD" group-title="SANSAT", BEIN SPORTS 1 FRENCH FHD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/63499
 #EXTINF:-1 tvg-name="BEIN SPORTS 6" group-title="SANSAT", BEIN SPORTS 6
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5233
-#EXTINF:-1 tvg-name="BEIN SPORTS HD B2" group-title="SANSAT", BEIN SPORTS HD B2
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/667032
-#EXTINF:-1 tvg-name="BEIN SPORTS MAX 1 HD LIVE" group-title="SANSAT", BEIN SPORTS MAX 1 HD LIVE
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585680
-#EXTINF:-1 tvg-name="BEIN SPORTS MAX 3 EN HD LIVE" group-title="SANSAT", BEIN SPORTS MAX 3 EN HD LIVE
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585682
-#EXTINF:-1 tvg-name="BEIN SPORTS MAX 4 FR HD LIVE" group-title="SANSAT", BEIN SPORTS MAX 4 FR HD LIVE
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585683
-#EXTINF:-1 tvg-name="BEIN SPORTS NEWS" group-title="SANSAT", BEIN SPORTS NEWS
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/290371
+#EXTINF:-1 tvg-name="BEIN SPORTS 7 HD B2" group-title="SANSAT", BEIN SPORTS 7 HD B2
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576499
+#EXTINF:-1 tvg-name="BEIN SPORTS 8 FHD" group-title="SANSAT", BEIN SPORTS 8 FHD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36298
+#EXTINF:-1 tvg-name="BEIN SPORTS 8 HD B2" group-title="SANSAT", BEIN SPORTS 8 HD B2
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576500
+#EXTINF:-1 tvg-name="BEIN SPORTS 9" group-title="SANSAT", BEIN SPORTS 9
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5239
+#EXTINF:-1 tvg-name="BEIN SPORTS 9 FHD" group-title="SANSAT", BEIN SPORTS 9 FHD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36297
+#EXTINF:-1 tvg-name="BEIN SPORTS HD" group-title="SANSAT", BEIN SPORTS HD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/6727
+#EXTINF:-1 tvg-name="BEIN SPORTS MAX 2 HD LIVE" group-title="SANSAT", BEIN SPORTS MAX 2 HD LIVE
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585681
+#EXTINF:-1 tvg-name="BEIN SPORTS XTRA 3" group-title="SANSAT", BEIN SPORTS XTRA 3
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5240
+#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 5 HD" group-title="SANSAT", |AR| BEIN SPORTS AFC 5 HD
+http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/435960
 #EXTINF:-1 tvg-name="|SHAHID| ABDUL MAJEED ABDULLAH" group-title="SHD-GCP-LIVE", |SHAHID| ABDUL MAJEED ABDULLAH
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-abdulmajeed-abdullah/def450c25e1f2dd4379ca782e07c96a8/manifest/video/1080p2400kbps/video.m3u8
 #EXTINF:-1 tvg-name="|SHAHID| BIG TIME PLUS" group-title="SHD-GCP-LIVE", |SHAHID| BIG TIME PLUS
@@ -69,17 +81,13 @@ https://shls-live-enc.edgenextcdn.net/out/v1/2a0f4768f7fa42ed813674628b487e95/in
 https://shls-live-enc.edgenextcdn.net/out/v1/40031eca7be34c4ea9744bf067f4fefa/index_8.m3u8
 #EXTINF:-1 tvg-name="|SHAHID| TASH" group-title="SHLS-LIVE-ENC", |SHAHID| TASH
 https://shls-live-enc.edgenextcdn.net/out/v1/e34e3ac9d2534543a13b44c2b458b0c2/index_1.m3u8
-#EXTINF://upload.wikimedia.org/wikipedia/commons/c/c8/AnimalPlanet.png" group-title="ENTERTAINMENT" tvg-name="USA ANIMAL PLANET WEST LHD" group-title="SUPERSONICTV", USA ANIMAL PLANET WEST LHD
-http://supersonictv.live:8080/611366/682256/22046
-#EXTINF://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Food_Network_New_Logo.png/615px-Food_Network_New_Logo.png" group-title="ENTERTAINMENT" tvg-name="USA FOOD NETWORK WEST LHD" group-title="SUPERSONICTV", USA FOOD NETWORK WEST LHD
-http://supersonictv.live:8080/611366/682256/22085
+#EXTINF://i.pinimg.com/originals/6b/2d/d3/6b2dd3639e8d8260b584fb040f0987ce.png" group-title="ENTERTAINMENT" tvg-name="USA ASPIRE" group-title="SUPERSONICTV", USA ASPIRE
+http://supersonictv.live:8080/611366/682256/22048
+#EXTINF://static-us-east-2-fastly-a.www.philo.com/images/channel_logos/AXSTV/large_dark.png" group-title="ENTERTAINMENT" tvg-name="USA AXS TV" group-title="SUPERSONICTV", USA AXS TV
+http://supersonictv.live:8080/611366/682256/22050
+#EXTINF://epg4you.com/logos/bravo.png" group-title="ENTERTAINMENT" tvg-name="USA BRAVO WEST LHD" group-title="SUPERSONICTV", USA BRAVO WEST LHD
+http://supersonictv.live:8080/611366/682256/22060
+#EXTINF://epg4you.com/logos/discoverychannel.png" group-title="ENTERTAINMENT" tvg-name="USA DISCOVERY WEST LHD" group-title="SUPERSONICTV", USA DISCOVERY WEST LHD
+http://supersonictv.live:8080/611366/682256/22079
 #EXTINF://epg4you.com/logos/fx.png" group-title="ENTERTAINMENT" tvg-name="USA FX WEST LHD" group-title="SUPERSONICTV", USA FX WEST LHD
 http://supersonictv.live:8080/611366/682256/22092
-#EXTINF://epg4you.com/logos/fxx.png" group-title="ENTERTAINMENT" tvg-name="USA FXX EAST UHD" group-title="SUPERSONICTV", USA FXX EAST UHD
-http://supersonictv.live:8080/611366/682256/22094
-#EXTINF://epg4you.com/logos/fxx.png" group-title="ENTERTAINMENT" tvg-name="USA FXX WEST LHD" group-title="SUPERSONICTV", USA FXX WEST LHD
-http://supersonictv.live:8080/611366/682256/22095
-#EXTINF://www.dropbox.com/s/j72rhqoj12n017r/get%20tv.jpg?dl=1" group-title="ENTERTAINMENT" tvg-name="USA GET TV" group-title="SUPERSONICTV", USA GET TV
-http://supersonictv.live:8080/611366/682256/22099
-#EXTINF://apk.eternaltv.net/icons/grit.jpg" group-title="ENTERTAINMENT" tvg-name="USA GRIT TV" group-title="SUPERSONICTV", USA GRIT TV
-http://supersonictv.live:8080/611366/682256/22100
