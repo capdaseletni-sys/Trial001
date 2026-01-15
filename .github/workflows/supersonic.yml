@@ -32,6 +32,8 @@ jobs:
       - name: 🎯 Run scraping script
         run: chmod +x update_playlists.sh
 
+             ./update_playlists.sh
+
       - name: 💾 Commit & Safely Push if Playlist Changed
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
