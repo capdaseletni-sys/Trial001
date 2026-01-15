@@ -28,7 +28,7 @@ jobs:
           pip install selectolax
 
       - name: 🎯 Run scraping script
-        run: python istreameast.py
+        run: python playlist.py
 
       - name: 💾 Commit & Safely Push if Playlist Changed
         env:
@@ -38,7 +38,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           # Stage the output
-          git add istrmest.m3u8
+          git add playlist.m3u8
 
           # Check if file actually changed
           if git diff --cached --quiet; then
