@@ -46,7 +46,11 @@ jobs:
              
              cat playlist3.m3u8
 
-             python3 supersonic.py supersonic.m3u8 playlist.m3u8 playlist1.m3u8 playlist2.m3u8 playlist3.m3u8
+             curl -L -A "Mozilla/5.0" -o playlist4.m3u8 "http://portal-iptv.net:8080get.php?username=077998950140&password=077998950140&&type=m3u_plus"
+             
+             cat playlist4.m3u8
+
+             python3 supersonic.py supersonic.m3u8 playlist.m3u8 playlist1.m3u8 playlist2.m3u8 playlist3.m3u8 playlist4.m3u8
 
       - name: 💾 Commit & Safely Push if Playlist Changed
         env:
