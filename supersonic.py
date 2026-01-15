@@ -10,7 +10,7 @@ TIMEOUT = aiohttp.ClientTimeout(total=25)   # Wait up to 25s for slow servers
 MAX_CONCURRENCY = 80                       # Moderate speed to avoid getting banned
 MAX_HLS_DEPTH = 3
 
-MIN_SPEED_KBPS = 400                        # Bare minimum to be "alive"
+MIN_SPEED_KBPS = 700                       # Bare minimum to be "alive"
 MAX_TTFB = 2.0                            # Allow very slow server responses
 SAMPLE_BYTES = 16_000                      # Just need a tiny bit of data to verify
 WARMUP_BYTES = 0                           # No warmup needed for basic check
