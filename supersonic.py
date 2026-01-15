@@ -6,14 +6,14 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 # ---------- CONFIG ----------
-TIMEOUT = aiohttp.ClientTimeout(total=15)
-MAX_CONCURRENCY = 80
+TIMEOUT = aiohttp.ClientTimeout(total=20)
+MAX_CONCURRENCY = 60
 MAX_HLS_DEPTH = 3
-MIN_SPEED_KBPS = 300
+MIN_SPEED_KBPS = 150
 MAX_TTFB = 6.0
-SAMPLE_BYTES = 384_000
-WARMUP_BYTES = 8_000 
-RETRIES = 2
+SAMPLE_BYTES = 256_000
+WARMUP_BYTES = 4_000 
+RETRIES = 1
 DEFAULT_HEADERS = {"User-Agent": "Mozilla/5.0"}
 BLOCKED_DOMAINS = {"amagi.tv", "ssai2-ads.api.leiniao.com"}
 VIDEO_EXTENSIONS = (".mp4", ".mkv", ".avi")
