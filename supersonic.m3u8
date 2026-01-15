@@ -1,93 +1,29 @@
 #EXTM3U
-#EXTINF://seekvectorlogo.net/wp-content/uploads/2018/07/bbc-radio-1-vector-logo.png" group-title="Radio Stations" tvg-name="(ILR) CLASSIC FM" group-title="CORD-CUTTER", (ILR) CLASSIC FM
-http://cord-cutter.net:8080/15564292/15564292/14388
-#EXTINF://is4-ssl.mzstatic.com/image/thumb/Music115/v4/0a/ec/b6/0aecb6be-51b1-88d4-4a7e-e169270de6cf/artwork.jpg/600x600bf.png" group-title="Radio Stations" tvg-name="1 HITS 50S LIVE" group-title="CORD-CUTTER", 1 HITS 50S LIVE
-http://cord-cutter.net:8080/15564292/15564292/17872
-#EXTINF://pngimg.com/uploads/radio/radio_PNG19293.png" group-title="Radio Stations" tvg-name="AMBIENT SLEEPING PILL [OPT-2]" group-title="CORD-CUTTER", AMBIENT SLEEPING PILL [OPT-2]
-http://cord-cutter.net:8080/15564292/15564292/14658
-#EXTINF:-1 tvg-id="" tvg-name=" tvg-name="HOT 108 JAMZ" TVG-LOGO="HTTPS://PNGIMG.COM/UPLOADS/RADIO/RADIO_PNG19293.PNG" GROUP-TITLE="RADIO STATIONS",,HOT 108 JAMZ" group-title="CORD-CUTTER", HOT 108 JAMZ" TVG-LOGO="HTTPS://PNGIMG.COM/UPLOADS/RADIO/RADIO_PNG19293.PNG" GROUP-TITLE="RADIO STATIONS",,HOT 108 JAMZ
-http://cord-cutter.net:8080/15564292/15564292/14663
-#EXTINF:-1 tvg-name="|AR| AL JAZEERA HD LIVE" group-title="LIVE-HLS-WEB-AJA-GCP", |AR| AL JAZEERA HD LIVE
-https://live-hls-web-aja-gcp.thehlive.com/AJA/02.m3u8
-#EXTINF:-1 tvg-name="BEIN SPORTS 1 ENGLISH" group-title="SANSAT", BEIN SPORTS 1 ENGLISH
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5241
-#EXTINF:-1 tvg-name="BEIN SPORTS 1 ENGLISH FHD" group-title="SANSAT", BEIN SPORTS 1 ENGLISH FHD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36295
-#EXTINF:-1 tvg-name="BEIN SPORTS 1 FRENCH FHD" group-title="SANSAT", BEIN SPORTS 1 FRENCH FHD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/63499
-#EXTINF:-1 tvg-name="BEIN SPORTS 6" group-title="SANSAT", BEIN SPORTS 6
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5233
-#EXTINF:-1 tvg-name="BEIN SPORTS 7 HD B2" group-title="SANSAT", BEIN SPORTS 7 HD B2
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576499
-#EXTINF:-1 tvg-name="BEIN SPORTS 8 FHD" group-title="SANSAT", BEIN SPORTS 8 FHD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36298
-#EXTINF:-1 tvg-name="BEIN SPORTS 8 HD B2" group-title="SANSAT", BEIN SPORTS 8 HD B2
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/576500
-#EXTINF:-1 tvg-name="BEIN SPORTS 9" group-title="SANSAT", BEIN SPORTS 9
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5239
-#EXTINF:-1 tvg-name="BEIN SPORTS 9 FHD" group-title="SANSAT", BEIN SPORTS 9 FHD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/36297
-#EXTINF:-1 tvg-name="BEIN SPORTS HD" group-title="SANSAT", BEIN SPORTS HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/6727
-#EXTINF:-1 tvg-name="BEIN SPORTS MAX 2 HD LIVE" group-title="SANSAT", BEIN SPORTS MAX 2 HD LIVE
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1585681
-#EXTINF:-1 tvg-name="BEIN SPORTS XTRA 3" group-title="SANSAT", BEIN SPORTS XTRA 3
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/5240
-#EXTINF:-1 tvg-name="|AR| BEIN SPORTS AFC 5 HD" group-title="SANSAT", |AR| BEIN SPORTS AFC 5 HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/435960
-#EXTINF:-1 tvg-name="|SHAHID| ABDUL MAJEED ABDULLAH" group-title="SHD-GCP-LIVE", |SHAHID| ABDUL MAJEED ABDULLAH
-https://shd-gcp-live.edgenextcdn.net/live/bitmovin-abdulmajeed-abdullah/def450c25e1f2dd4379ca782e07c96a8/manifest/video/1080p2400kbps/video.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| BIG TIME PLUS" group-title="SHD-GCP-LIVE", |SHAHID| BIG TIME PLUS
-https://shd-gcp-live.edgenextcdn.net/live/bitmovin-big-time-plus/924283f994779a311c1389698ff7e736/manifest/video/1080p2400kbps/video.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| MUHAMMAD ABDO" group-title="SHD-GCP-LIVE", |SHAHID| MUHAMMAD ABDO
-https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mohammed-abdou/ae9bed6024bb80026b2ab5a4de4754ef/manifest/video/720p1750kbps/video.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| RASHED AL-MAJED" group-title="SHD-GCP-LIVE", |SHAHID| RASHED AL-MAJED
-https://shd-gcp-live.edgenextcdn.net/live/bitmovin-rashed-almajed/5acf573bde2dd6f133cbd6a338b1f312/manifest/video/1080p2400kbps/video.m3u8
-#EXTINF:-1 tvg-name="===== SHAHID LIVE =====" group-title="SHLS-LIVE-AK", ===== SHAHID LIVE =====
-https://shls-live-ak.akamaized.net/out/v1/8e2419c6c7494dbba478be025af490ee/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| BIG TIME" group-title="SHLS-LIVE-AK", |SHAHID| BIG TIME
-https://shls-live-ak.akamaized.net/out/v1/07a6ab2d57b2453a91bbdd2d46b5865a/index_2.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| AFLAM" group-title="SHLS-LIVE-ENC", |SHAHID| AFLAM
-https://shls-live-enc.edgenextcdn.net/out/v1/0044dd4b001a466c941ad77b04a574a2/index_11.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| AL KABEER AWI" group-title="SHLS-LIVE-ENC", |SHAHID| AL KABEER AWI
-https://shls-live-enc.edgenextcdn.net/out/v1/5f5de4f9efe24f758f1364dde5e2a45c/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| AL LEABA" group-title="SHLS-LIVE-ENC", |SHAHID| AL LEABA
-https://shls-live-enc.edgenextcdn.net/out/v1/d6e1fdee781f4506a6ac147fee5ba715/index_11.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| ALHOSN" group-title="SHLS-LIVE-ENC", |SHAHID| ALHOSN
-https://shls-live-enc.edgenextcdn.net/out/v1/9747e20a05794a14b0cfccd7c621dd00/index_2.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| ANIME" group-title="SHLS-LIVE-ENC", |SHAHID| ANIME
-https://shls-live-enc.edgenextcdn.net/out/v1/e7350ddf46c94dddafe14b099394ff56/index_12.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| BAB AL HARA" group-title="SHLS-LIVE-ENC", |SHAHID| BAB AL HARA
-https://shls-live-enc.edgenextcdn.net/out/v1/948c54279b594944adde578c95f1d7d1/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| EL-PODCASTERS" group-title="SHLS-LIVE-ENC", |SHAHID| EL-PODCASTERS
-https://shls-live-enc.edgenextcdn.net/out/v1/18cffab0757d448ca6c1a686d330b346/index_2.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| HIKAYAT DOFAA" group-title="SHLS-LIVE-ENC", |SHAHID| HIKAYAT DOFAA
-https://shls-live-enc.edgenextcdn.net/out/v1/cf05f1dbbeae4878bbc4a5919cef3391/index_2.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| MARAYA" group-title="SHLS-LIVE-ENC", |SHAHID| MARAYA
-https://shls-live-enc.edgenextcdn.net/out/v1/a4a39d8e92e34b0780ca602270a59512/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| MASRAH MASR" group-title="SHLS-LIVE-ENC", |SHAHID| MASRAH MASR
-https://shls-live-enc.edgenextcdn.net/out/v1/8fae48b64942450cb5d60b3fb6910de0/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| MOVIES ACTION" group-title="SHLS-LIVE-ENC", |SHAHID| MOVIES ACTION
-https://shls-live-enc.edgenextcdn.net/out/v1/46079e838e65490c8299f902a7731168/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| MOVIES THRILLER" group-title="SHLS-LIVE-ENC", |SHAHID| MOVIES THRILLER
-https://shls-live-enc.edgenextcdn.net/out/v1/f6d718e841f8442f8374de47f18c93a7/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| NASER AL QASSABY" group-title="SHLS-LIVE-ENC", |SHAHID| NASER AL QASSABY
-https://shls-live-enc.edgenextcdn.net/out/v1/20e003242d244710bfe9ca0fd2b94d00/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| RED BULL TV" group-title="SHLS-LIVE-ENC", |SHAHID| RED BULL TV
-https://shls-live-enc.edgenextcdn.net/out/v1/ad35123d4ad041068bce26ae67ee3180/index_3.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| SELFIE" group-title="SHLS-LIVE-ENC", |SHAHID| SELFIE
-https://shls-live-enc.edgenextcdn.net/out/v1/2a0f4768f7fa42ed813674628b487e95/index_1.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| SIKKAT SAFAR" group-title="SHLS-LIVE-ENC", |SHAHID| SIKKAT SAFAR
-https://shls-live-enc.edgenextcdn.net/out/v1/40031eca7be34c4ea9744bf067f4fefa/index_8.m3u8
-#EXTINF:-1 tvg-name="|SHAHID| TASH" group-title="SHLS-LIVE-ENC", |SHAHID| TASH
-https://shls-live-enc.edgenextcdn.net/out/v1/e34e3ac9d2534543a13b44c2b458b0c2/index_1.m3u8
-#EXTINF://i.pinimg.com/originals/6b/2d/d3/6b2dd3639e8d8260b584fb040f0987ce.png" group-title="ENTERTAINMENT" tvg-name="USA ASPIRE" group-title="SUPERSONICTV", USA ASPIRE
-http://supersonictv.live:8080/611366/682256/22048
-#EXTINF://static-us-east-2-fastly-a.www.philo.com/images/channel_logos/AXSTV/large_dark.png" group-title="ENTERTAINMENT" tvg-name="USA AXS TV" group-title="SUPERSONICTV", USA AXS TV
-http://supersonictv.live:8080/611366/682256/22050
-#EXTINF://epg4you.com/logos/bravo.png" group-title="ENTERTAINMENT" tvg-name="USA BRAVO WEST LHD" group-title="SUPERSONICTV", USA BRAVO WEST LHD
-http://supersonictv.live:8080/611366/682256/22060
-#EXTINF://epg4you.com/logos/discoverychannel.png" group-title="ENTERTAINMENT" tvg-name="USA DISCOVERY WEST LHD" group-title="SUPERSONICTV", USA DISCOVERY WEST LHD
-http://supersonictv.live:8080/611366/682256/22079
-#EXTINF://epg4you.com/logos/fx.png" group-title="ENTERTAINMENT" tvg-name="USA FX WEST LHD" group-title="SUPERSONICTV", USA FX WEST LHD
-http://supersonictv.live:8080/611366/682256/22092
+http://supersonictv.live:8080/611366/682256/85870
+http://supersonictv.live:8080/611366/682256/22179
+http://supersonictv.live:8080/611366/682256/84956
+http://supersonictv.live:8080/611366/682256/85205
+http://supersonictv.live:8080/611366/682256/40411
+http://supersonictv.live:8080/611366/682256/83867
+http://supersonictv.live:8080/611366/682256/84589
+http://supersonictv.live:8080/611366/682256/77132
+http://supersonictv.live:8080/611366/682256/22900
+http://supersonictv.live:8080/611366/682256/84002
+http://supersonictv.live:8080/611366/682256/79923
+http://supersonictv.live:8080/611366/682256/84476
+http://supersonictv.live:8080/611366/682256/40485
+http://supersonictv.live:8080/611366/682256/22059
+http://supersonictv.live:8080/611366/682256/71366
+http://supersonictv.live:8080/611366/682256/84261
+http://supersonictv.live:8080/611366/682256/86494
+http://supersonictv.live:8080/611366/682256/85905
+http://supersonictv.live:8080/611366/682256/83920
+http://supersonictv.live:8080/611366/682256/84123
+http://supersonictv.live:8080/611366/682256/83925
+http://supersonictv.live:8080/611366/682256/71664
+http://supersonictv.live:8080/611366/682256/83474
+http://supersonictv.live:8080/611366/682256/84079
+http://supersonictv.live:8080/611366/682256/85446
+http://supersonictv.live:8080/611366/682256/80367
+http://supersonictv.live:8080/611366/682256/85068
+http://supersonictv.live:8080/611366/682256/85882
