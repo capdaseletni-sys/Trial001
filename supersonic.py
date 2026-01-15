@@ -6,15 +6,15 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 # ---------- FORGIVING CONFIG (MAXIMIZE SAVES) ----------
-TIMEOUT = aiohttp.ClientTimeout(total=25)   # Wait up to 25s for slow servers
-MAX_CONCURRENCY = 80                       # Moderate speed to avoid getting banned
+TIMEOUT = aiohttp.ClientTimeout(total=12)   # Wait up to 25s for slow servers
+MAX_CONCURRENCY = 100                       # Moderate speed to avoid getting banned
 MAX_HLS_DEPTH = 3
 
-MIN_SPEED_KBPS = 700                       # Bare minimum to be "alive"
-MAX_TTFB = 2.0                            # Allow very slow server responses
-SAMPLE_BYTES = 16_000                      # Just need a tiny bit of data to verify
-WARMUP_BYTES = 0                           # No warmup needed for basic check
-RETRIES = 1                                
+MIN_SPEED_KBPS = 500                       # Bare minimum to be "alive"
+MAX_TTFB = 3.0                            # Allow very slow server responses
+SAMPLE_BYTES = 128_000                      # Just need a tiny bit of data to verify
+WARMUP_BYTES = 32_000                          # No warmup needed for basic check
+RETRIES = 0                                
 
 DEFAULT_HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"}
 
