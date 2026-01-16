@@ -1,10 +1,19 @@
 import re
+import asyncio
+import aiohttp
+import time
 from collections import defaultdict
 
 INPUT_FILE = "supersonic.m3u8"
 OUTPUT_FILE = "supersonic.m3u8"
 
-# 1️⃣ Primary grouping by channel name
+# ================= CONFIG =================
+MAX_TIMEOUT = 5          # seconds (fast streams only)
+MAX_CONCURRENCY = 25     # safe for GitHub Actions
+EXCLUDED_EXTENSIONS = (".mp4", ".mkv")
+IGNORED_PREFIXES = ("hd", "fhd", "uhd", "4k", "8k")
+# ==========================================
+
 NAME_GROUPS = {
     "Documentary": ["discovery", "nat geo", "history", "animal"],
     "Entertainment": ["entertainment", "series", "show"],
@@ -16,7 +25,6 @@ NAME_GROUPS = {
     "Sports": ["sport", "espn", "beins", "sky sports", "fox sports"],
 }
 
-# 2️⃣ Fallback keyword detection
 KEYWORD_GROUPS = {
     "News": ["news", "report", "live"],
     "Sports": ["match", "league", "cup", "football", "soccer"],
@@ -25,29 +33,20 @@ KEYWORD_GROUPS = {
     "Music": ["music", "radio", "hits"],
 }
 
-# ❌ Excluded stream extensions
-EXCLUDED_EXTENSIONS = (".mkv", ".mp4")
-
-# ❌ Ignored quality prefixes
-IGNORED_PREFIXES = ("hd", "fhd", "uhd", "4k", "8k")
-
+# ---------- Helpers ----------
 def normalize_title(title: str) -> str:
     t = title.lower().strip()
     t = re.sub(r"^[\[\(\{]?(hd|fhd|uhd|4k|8k)[\]\)\}]?\s*-?\s*", "", t)
-    t = re.sub(r"\s+", " ", t)
-    return t
+    return re.sub(r"\s+", " ", t)
 
 def detect_group(title: str) -> str:
     t = title.lower()
-
-    for group, words in NAME_GROUPS.items():
+    for g, words in NAME_GROUPS.items():
         if any(w in t for w in words):
-            return group
-
-    for group, words in KEYWORD_GROUPS.items():
+            return g
+    for g, words in KEYWORD_GROUPS.items():
         if any(w in t for w in words):
-            return group
-
+            return g
     return "Mix"
 
 def rebuild_extinf(extinf, group):
@@ -63,7 +62,6 @@ def parse_playlist(lines):
             extinf = lines[i].strip()
             url = lines[i + 1].strip()
 
-            # ❌ Skip excluded formats
             if url.lower().endswith(EXCLUDED_EXTENSIONS):
                 i += 2
                 continue
@@ -75,6 +73,47 @@ def parse_playlist(lines):
             i += 1
     return entries
 
+# ---------- Stream validation ----------
+async def check_stream(session, sem, url):
+    async with sem:
+        start = time.monotonic()
+        try:
+            async with session.head(url, timeout=MAX_TIMEOUT, allow_redirects=True) as r:
+                if r.status < 400:
+                    return True, time.monotonic() - start
+        except:
+            pass
+
+        # Fallback GET (range request)
+        try:
+            headers = {"Range": "bytes=0-1024"}
+            async with session.get(url, headers=headers, timeout=MAX_TIMEOUT) as r:
+                if r.status < 400:
+                    return True, time.monotonic() - start
+        except:
+            pass
+
+        return False, None
+
+async def filter_fast_streams(entries):
+    sem = asyncio.Semaphore(MAX_CONCURRENCY)
+    timeout = aiohttp.ClientTimeout(total=MAX_TIMEOUT)
+    connector = aiohttp.TCPConnector(ssl=False)
+
+    async with aiohttp.ClientSession(timeout=timeout, connector=connector) as session:
+        tasks = [
+            check_stream(session, sem, url)
+            for _, _, url in entries
+        ]
+        results = await asyncio.gather(*tasks)
+
+    return [
+        entries[i]
+        for i, (ok, _) in enumerate(results)
+        if ok
+    ]
+
+# ---------- Main ----------
 def main():
     with open(INPUT_FILE, "r", encoding="utf-8", errors="ignore") as f:
         lines = f.readlines()
@@ -82,23 +121,24 @@ def main():
     header = [l for l in lines if l.startswith("#EXTM3U")]
     entries = parse_playlist(lines)
 
-    grouped = defaultdict(dict)  # group -> {normalized_title: (sort_key, extinf, url)}
+    print(f"🔍 Checking {len(entries)} streams...")
+    entries = asyncio.run(filter_fast_streams(entries))
+    print(f"✅ {len(entries)} fast & working streams kept")
+
+    grouped = defaultdict(dict)
 
     for title, extinf, url in entries:
         normalized = normalize_title(title)
         group = detect_group(title)
         extinf = rebuild_extinf(extinf, group)
 
-        # 🧹 Deduplicate by normalized title
         if normalized not in grouped[group]:
             grouped[group][normalized] = (normalized, extinf, url)
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.writelines(header)
 
-        # 🔤 Sort groups A–Z
         for group in sorted(grouped.keys()):
-            # 🔤 Sort channels A–Z (ignoring prefixes)
             for _, extinf, url in sorted(grouped[group].values(), key=lambda x: x[0]):
                 f.write(extinf + "\n")
                 f.write(url + "\n")
