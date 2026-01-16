@@ -25,6 +25,18 @@ KEYWORD_GROUPS = {
     "Music": ["music", "radio", "hits"],
 }
 
+# ❌ Excluded stream extensions
+EXCLUDED_EXTENSIONS = (".mkv", ".mp4")
+
+# ❌ Ignored quality prefixes
+IGNORED_PREFIXES = ("hd", "fhd", "uhd", "4k", "8k")
+
+def normalize_title(title: str) -> str:
+    t = title.lower().strip()
+    t = re.sub(r"^[\[\(\{]?(hd|fhd|uhd|4k|8k)[\]\)\}]?\s*-?\s*", "", t)
+    t = re.sub(r"\s+", " ", t)
+    return t
+
 def detect_group(title: str) -> str:
     t = title.lower()
 
@@ -50,6 +62,12 @@ def parse_playlist(lines):
         if lines[i].startswith("#EXTINF"):
             extinf = lines[i].strip()
             url = lines[i + 1].strip()
+
+            # ❌ Skip excluded formats
+            if url.lower().endswith(EXCLUDED_EXTENSIONS):
+                i += 2
+                continue
+
             title = extinf.split(",")[-1].strip()
             entries.append((title, extinf, url))
             i += 2
@@ -64,22 +82,24 @@ def main():
     header = [l for l in lines if l.startswith("#EXTM3U")]
     entries = parse_playlist(lines)
 
-    grouped = defaultdict(list)
+    grouped = defaultdict(dict)  # group -> {normalized_title: (sort_key, extinf, url)}
 
     for title, extinf, url in entries:
+        normalized = normalize_title(title)
         group = detect_group(title)
         extinf = rebuild_extinf(extinf, group)
-        grouped[group].append((title.lower(), title, extinf, url))
+
+        # 🧹 Deduplicate by normalized title
+        if normalized not in grouped[group]:
+            grouped[group][normalized] = (normalized, extinf, url)
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.writelines(header)
 
-        # 3️⃣ Sort groups A–Z
+        # 🔤 Sort groups A–Z
         for group in sorted(grouped.keys()):
-            # 4️⃣ Sort channels inside each group A–Z
-            channels = sorted(grouped[group], key=lambda x: x[0])
-
-            for _, _, extinf, url in channels:
+            # 🔤 Sort channels A–Z (ignoring prefixes)
+            for _, extinf, url in sorted(grouped[group].values(), key=lambda x: x[0]):
                 f.write(extinf + "\n")
                 f.write(url + "\n")
 
