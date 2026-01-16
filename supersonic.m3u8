@@ -27,8 +27,6 @@ http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/864501
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1079543
 #EXTINF:-1 group-title="Mix",THMANYAH 2 4K
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1079547
-#EXTINF:-1 group-title="Mix",THMANYAH 2 RAW
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1079544
 #EXTINF:-1 group-title="Mix",THMANYAH 3 RAW
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1079545
 #EXTINF:-1 tvg-id="US: FXX WEST" tvg-name="USA FXX West LHD" tvg-logo="http://epg4you.com/logos/fxx.png" group-title="Mix",USA FXX West LHD
@@ -123,5 +121,3 @@ https://live-hls-web-aja-gcp.thehlive.com/AJA/02.m3u8
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/126751
 #EXTINF:-1 tvg-id="" tvg-name="[IN] QURAN TV" tvg-logo="" group-title="Religious",[IN] QURAN TV
 http://supersonictv.live:8080/611366/682256/85528
-#EXTINF:-1 group-title="Sports",|US| ESPN+ 133:
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/542476
