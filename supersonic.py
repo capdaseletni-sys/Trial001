@@ -8,7 +8,7 @@ from urllib.parse import urljoin, urlparse
 # ---------- HIGH-SPEED CONFIG (600K OPTIMIZED) ----------
 TIMEOUT = aiohttp.ClientTimeout(total=10, connect=5)  # Fast fail for dead servers
 MAX_CONCURRENCY = 500         # High concurrency for large lists
-MAX_HLS_DEPTH = 2             # Fewer jumps for M3U8s
+MAX_HLS_DEPTH = 4             # Fewer jumps for M3U8s
 SAMPLE_BYTES = 16_000         # Just need 16KB to prove it's alive (Huge speed boost)
 DEFAULT_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
