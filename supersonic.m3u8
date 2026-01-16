@@ -49,36 +49,8 @@ http://supersonictv.live:8080/611366/682256/22118
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/632617
 #EXTINF:-1 group-title="Mix",|ADULT| BANGBROS UHD 4K
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285944
-#EXTINF:-1 group-title="Mix",|AR| AL ARABY HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/93948
-#EXTINF:-1 group-title="Mix",|AR| BEIN EXTRA 1 4K
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/719771
-#EXTINF:-1 group-title="Mix",|BE| PLUG RTL HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/538196
-#EXTINF:-1 group-title="Mix",|BE| VEDIA 4K
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1057476
-#EXTINF:-1 group-title="Mix",|CA| CBC CALGARY HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94088
-#EXTINF:-1 group-title="Mix",|CA| CHCH HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/268666
-#EXTINF:-1 group-title="Mix",|CA| TREEHOUSE
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/94232
-#EXTINF:-1 group-title="Mix",|DE-4K| SKY DOCUMENTARIES HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/194739
-#EXTINF:-1 group-title="Mix",|DE| BUNDESLIGA REPLAY 7 HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/661934
-#EXTINF:-1 group-title="Mix",|EG| NILE FAMILY
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/7246
 #EXTINF:-1 group-title="Mix",|FR| PLANETE+ SD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/127078
-#EXTINF:-1 group-title="Mix",|FR| W9 FHD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/127283
-#EXTINF:-1 group-title="Mix",|IQ| IRAQ 24 HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/115227
-#EXTINF:-1 group-title="Mix",|LB| AL MANAR
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/149001
-#EXTINF:-1 group-title="Mix",|RDOM| TELESISTEMA
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/191266
 #EXTINF:-1 group-title="Mix",|SHAHID| ABDUL MAJEED ABDULLAH
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-abdulmajeed-abdullah/def450c25e1f2dd4379ca782e07c96a8/manifest/video/1080p2400kbps/video.m3u8
 #EXTINF:-1 group-title="Mix",|SHAHID| AFLAM
@@ -147,8 +119,6 @@ https://shls-live-ak.akamaized.net/out/v1/8e2419c6c7494dbba478be025af490ee/index
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/102487
 #EXTINF:-1 group-title="News",|AR| AL JAZEERA HD LIVE
 https://live-hls-web-aja-gcp.thehlive.com/AJA/02.m3u8
-#EXTINF:-1 group-title="News",|FR| (SKWEEK) - LIVE 4 FHD (ONLY ON EVENT)
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/560839
 #EXTINF:-1 group-title="News",|FR| CNEWS FHD
 http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/126751
 #EXTINF:-1 tvg-id="" tvg-name="[IN] QURAN TV" tvg-logo="" group-title="Religious",[IN] QURAN TV
