@@ -5,18 +5,15 @@ import time
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
-# ---------- FORGIVING CONFIG (MAXIMIZE SAVES) ----------
-TIMEOUT = aiohttp.ClientTimeout(total=12)   # Wait up to 25s for slow servers
-MAX_CONCURRENCY = 100                       # Moderate speed to avoid getting banned
-MAX_HLS_DEPTH = 3
-
-MIN_SPEED_KBPS = 500                       # Bare minimum to be "alive"
-MAX_TTFB = 3.0                            # Allow very slow server responses
-SAMPLE_BYTES = 128_000                      # Just need a tiny bit of data to verify
-WARMUP_BYTES = 32_000                          # No warmup needed for basic check
-RETRIES = 0                                
-
-DEFAULT_HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"}
+# ---------- HIGH-SPEED CONFIG (600K OPTIMIZED) ----------
+TIMEOUT = aiohttp.ClientTimeout(total=10, connect=5)  # Fast fail for dead servers
+MAX_CONCURRENCY = 500         # High concurrency for large lists
+MAX_HLS_DEPTH = 2             # Fewer jumps for M3U8s
+SAMPLE_BYTES = 16_000         # Just need 16KB to prove it's alive (Huge speed boost)
+DEFAULT_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "Range": "bytes=0-16384"   # Ask server for only the first chunk
+}
 
 # ---------- GLOBAL COUNTERS ----------
 processed_count = 0
@@ -24,67 +21,43 @@ fast_count = 0
 total_tasks = 0
 
 async def stream_is_alive(session, url, headers):
-    """Verifies if a stream is reachable and sending any data."""
     try:
-        start = time.perf_counter()
-        # Using GET directly as some servers block HEAD
         async with session.get(url, headers=headers, timeout=TIMEOUT) as r:
             if r.status >= 400: return False
             
-            first_byte_time = None
-            measured = 0
-            
             # If we get even 1 chunk of data, it's alive!
+            measured = 0
             async for chunk in r.content.iter_chunked(4096):
-                if first_byte_time is None:
-                    first_byte_time = time.perf_counter()
-                
                 measured += len(chunk)
-                if measured >= SAMPLE_BYTES:
-                    break
-            
-            if measured > 0:
-                return True
+                if measured > 0: return True # Instant success
+                if measured >= SAMPLE_BYTES: break
+            return measured > 0
     except:
         return False
-    return False
 
 async def check_link(session, url, headers, depth=0):
-    """Detects if M3U8 or TS and checks life."""
     if depth > MAX_HLS_DEPTH: return False
     
-    # Xtream codes / Direct links
+    # Check non-m3u8 links directly (TS, MP4, etc)
     if ".m3u8" not in url.lower():
         return await stream_is_alive(session, url, headers)
 
-    # M3U8 Manifests
+    # M3U8 Manifest handling
     try:
-        async with session.get(url, headers=headers, timeout=10) as r:
+        async with session.get(url, headers=headers, timeout=5) as r:
             if r.status >= 400: return False
             text = await r.text()
             if not text.startswith("#EXTM3U"): return False
             
-            lines = text.splitlines()
-            # Try to find the first playable segment or variant
-            for line in lines:
+            for line in text.splitlines():
                 line = line.strip()
-                if not line or line.startswith("#"):
-                    if line.startswith("#EXT-X-STREAM-INF"):
-                        continue # We'll check the next line for URL
-                    continue
+                if not line or line.startswith("#"): continue
                 
-                # Check the first URL found in the manifest
                 target_url = urljoin(url, line)
                 return await stream_is_alive(session, target_url, headers)
     except:
         return False
     return False
-
-def update_progress():
-    global processed_count, fast_count, total_tasks
-    percent = (processed_count / total_tasks * 100) if total_tasks > 0 else 0
-    sys.stdout.write(f"\rScanning: {percent:.1f}% ({processed_count}/{total_tasks}) | Saved: {fast_count}")
-    sys.stdout.flush()
 
 async def worker(queue, session, semaphore, results):
     global processed_count, fast_count
@@ -105,23 +78,22 @@ async def worker(queue, session, semaphore, results):
 
         async with semaphore:
             if await check_link(session, url, headers):
-                title = "UNTITLED"
-                if extinf:
-                    parts = extinf[0].split(",", 1)
-                    title = parts[1].strip() if len(parts) == 2 else "UNTITLED"
-                
                 group = urlparse(url).netloc.upper()
-                results.append((title.upper(), group, extinf, vlcopts, url))
+                results.append((group, extinf, vlcopts, url))
                 fast_count += 1
         
         processed_count += 1
-        if processed_count % 10 == 0: update_progress()
+        if processed_count % 100 == 0:
+            sys.stdout.write(f"\rScanning: {(processed_count/total_tasks*100):.1f}% | Alive: {fast_count}")
+            sys.stdout.flush()
         queue.task_done()
 
 async def main(input_paths, output_path):
     global total_tasks
     queue, results, all_entries = asyncio.Queue(), [], []
-    
+    seen_urls = set() # Duplicate filter
+
+    print("📖 Loading files and removing duplicates...")
     for path in input_paths:
         p = Path(path)
         if not p.exists(): continue
@@ -132,35 +104,42 @@ async def main(input_paths, output_path):
                 if line.startswith("#EXTINF"): curr_extinf = [line]
                 elif line.startswith("#EXTVLCOPT"): curr_vlc.append(line)
                 elif line.startswith(("http://", "https://")):
-                    all_entries.append((curr_extinf.copy(), curr_vlc.copy(), line))
+                    if line not in seen_urls: # Filter
+                        all_entries.append((curr_extinf.copy(), curr_vlc.copy(), line))
+                        seen_urls.add(line)
                     curr_extinf, curr_vlc = [], []
     
     total_tasks = len(all_entries)
     if total_tasks == 0: return print("No links found.")
-
-    print(f"Broad Scanning {total_tasks} channels...")
+    print(f"🚀 Processing {total_tasks} unique channels (Concurrency: {MAX_CONCURRENCY})")
     
-    connector = aiohttp.TCPConnector(limit=MAX_CONCURRENCY, ssl=False)
+    # Optimized Connector with DNS Caching
+    connector = aiohttp.TCPConnector(
+        limit=MAX_CONCURRENCY, 
+        ssl=False, 
+        use_dns_cache=True, 
+        ttl_dns_cache=300
+    )
+    
     async with aiohttp.ClientSession(connector=connector) as session:
         semaphore = asyncio.Semaphore(MAX_CONCURRENCY)
         workers = [asyncio.create_task(worker(queue, session, semaphore, results)) for _ in range(MAX_CONCURRENCY)]
+        
         for entry in all_entries: await queue.put(entry)
         for _ in workers: await queue.put(None)
         await queue.join()
 
-    results.sort(key=lambda x: (x[1], x[0]))
+    print(f"\n💾 Saving {len(results)} working links...")
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-        for title, group, extinf, vlc, url in results:
-            if extinf:
-                dur = extinf[0].split(",", 1)[0].split(":")[-1]
-                f.write(f'#EXTINF:{dur} group-title="{group}", {title}\n')
+        for group, extinf, vlc, url in results:
+            if extinf: f.write(extinf[0] + "\n")
             for v in vlc: f.write(v + "\n")
             f.write(url + "\n")
-    print(f"\n\n✅ Finished! Successfully saved {len(results)} links.")
+    print("✨ All tasks complete.")
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print("Usage: python3 supersonic.py output.m3u input1.m3u ...")
+        print("Usage: python forcem3u.py output.m3u input1.m3u ...")
     else:
         asyncio.run(main(sys.argv[2:], sys.argv[1]))
