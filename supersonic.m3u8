@@ -113,11 +113,7 @@ https://shls-live-enc.edgenextcdn.net/out/v1/46079e838e65490c8299f902a7731168/in
 https://shls-live-enc.edgenextcdn.net/out/v1/f6d718e841f8442f8374de47f18c93a7/index_1.m3u8
 #EXTINF:-1 group-title="News",===== SHAHID LIVE =====
 https://shls-live-ak.akamaized.net/out/v1/8e2419c6c7494dbba478be025af490ee/index_1.m3u8
-#EXTINF:-1 group-title="News",UK-4K: SKY NEWS
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/102487
 #EXTINF:-1 group-title="News",|AR| AL JAZEERA HD LIVE
 https://live-hls-web-aja-gcp.thehlive.com/AJA/02.m3u8
-#EXTINF:-1 group-title="News",|FR| CNEWS FHD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/126751
 #EXTINF:-1 tvg-id="" tvg-name="[IN] QURAN TV" tvg-logo="" group-title="Religious",[IN] QURAN TV
 http://supersonictv.live:8080/611366/682256/85528
