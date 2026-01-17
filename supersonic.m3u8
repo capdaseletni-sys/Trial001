@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="Documentary",|US| ANIMAL PLANET HD (EAST)
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/158036
 #EXTINF:-1 tvg-id="" tvg-name="[BR] Inter TV dos Vales FHD" tvg-logo="" group-title="Mix",[BR] Inter TV dos Vales FHD
 http://supersonictv.live:8080/611366/682256/85044
 #EXTINF:-1 tvg-id="" tvg-name="[BR] TC Action DUAL HD" tvg-logo="" group-title="Mix",[BR] TC Action DUAL HD
@@ -19,16 +17,6 @@ http://supersonictv.live:8080/611366/682256/71641
 http://supersonictv.live:8080/611366/682256/71452
 #EXTINF:-1 tvg-id="" tvg-name="PH TV5" tvg-logo="" group-title="Mix",PH TV5
 http://supersonictv.live:8080/611366/682256/85977
-#EXTINF:-1 group-title="Mix",THMANYAH 1 4K
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1079546
-#EXTINF:-1 group-title="Mix",THMANYAH 1 HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/864501
-#EXTINF:-1 group-title="Mix",THMANYAH 1 RAW
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1079543
-#EXTINF:-1 group-title="Mix",THMANYAH 2 4K
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1079547
-#EXTINF:-1 group-title="Mix",THMANYAH 3 RAW
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1079545
 #EXTINF:-1 tvg-id="US: FXX WEST" tvg-name="USA FXX West LHD" tvg-logo="http://epg4you.com/logos/fxx.png" group-title="Mix",USA FXX West LHD
 http://supersonictv.live:8080/611366/682256/22095
 #EXTINF:-1 tvg-id="US: FYI EAST" tvg-name="USA FYI" tvg-logo="https://www.dropbox.com/s/l1h6fe0rs4yjepz/fyi%20network.jpg?dl=1" group-title="Mix",USA FYI
@@ -43,12 +31,6 @@ http://supersonictv.live:8080/611366/682256/22109
 http://supersonictv.live:8080/611366/682256/22113
 #EXTINF:-1 tvg-id="METV+ HOUSTON TX KYAZ" tvg-name="USA ME TV (KYAZ)" tvg-logo="https://cdn.tvpassport.com/image/station/240x135/metv.png" group-title="Mix",USA ME TV (KYAZ)
 http://supersonictv.live:8080/611366/682256/22118
-#EXTINF:-1 group-title="Mix",| loubna wa aami lakhdar | لبنى وعمي الأخضر |
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/632617
-#EXTINF:-1 group-title="Mix",|ADULT| BANGBROS UHD 4K
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/285944
-#EXTINF:-1 group-title="Mix",|FR| PLANETE+ SD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/127078
 #EXTINF:-1 group-title="Mix",|SHAHID| ABDUL MAJEED ABDULLAH
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-abdulmajeed-abdullah/def450c25e1f2dd4379ca782e07c96a8/manifest/video/1080p2400kbps/video.m3u8
 #EXTINF:-1 group-title="Mix",|SHAHID| AFLAM
@@ -89,24 +71,6 @@ https://shls-live-enc.edgenextcdn.net/out/v1/2a0f4768f7fa42ed813674628b487e95/in
 https://shls-live-enc.edgenextcdn.net/out/v1/40031eca7be34c4ea9744bf067f4fefa/index_8.m3u8
 #EXTINF:-1 group-title="Mix",|SHAHID| TASH
 https://shls-live-enc.edgenextcdn.net/out/v1/e34e3ac9d2534543a13b44c2b458b0c2/index_1.m3u8
-#EXTINF:-1 group-title="Mix",|SP| DAZN F1 SD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/195484
-#EXTINF:-1 group-title="Mix",|SP| LALIGA REPLAY 5 HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/660023
-#EXTINF:-1 group-title="Mix",|UK| SKY STORE PREMIERE 30 HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/1562675
-#EXTINF:-1 group-title="Mix",|US| ACC NETWORK HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/159606
-#EXTINF:-1 group-title="Mix",|US| CBS 6 TULSA
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/665751
-#EXTINF:-1 group-title="Mix",|US| CW 39 MIAMI
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/665530
-#EXTINF:-1 group-title="Mix",|US| NBC 24 TOLEDO
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/665432
-#EXTINF:-1 group-title="Mix",|US| PPV 40:
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/665814
-#EXTINF:-1 group-title="Movies",|BR| HBO POP HD
-http://www.sansat.plus:88/02060789178359/02:00:00:00:00:00/577068
 #EXTINF:-1 group-title="Movies",|SHAHID| MOVIES ACTION
 https://shls-live-enc.edgenextcdn.net/out/v1/46079e838e65490c8299f902a7731168/index_1.m3u8
 #EXTINF:-1 group-title="Movies",|SHAHID| MOVIES THRILLER
