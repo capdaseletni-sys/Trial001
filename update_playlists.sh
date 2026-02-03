@@ -2,7 +2,7 @@
 
 # Define the output files and their corresponding URLs
 urls=(
-    "http://hardcoremedia.xyz:80/get.php?username=NW3Vk7xXwW&password=8375773282&&type=m3u_plus"
+    "http://localiptv.site:85/get.php?username=lacigalfov&password=lacigalfov&type=m3u_plus"
 )
 
 # Array to keep track of downloaded filenames
