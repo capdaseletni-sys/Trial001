@@ -2,84 +2,90 @@ import asyncio
 import aiohttp
 import time
 import re
-from collections import defaultdict
+from curl_cffi import requests as curl_requests
 
 # --- CONFIGURATION ---
-# Mimicking VLC is the "secret sauce" to stop getting empty results
-USER_AGENT = "VLC/3.0.18 LibVLC/3.0.18"
-SOURCE_URL = "http://s.rocketdns.info:8080/get.php?username=XtremeTV&password=5ALMBnQVzb&type=m3u_plus"
-OUTPUT_FILE = "supersonic.m3u8"
-MAX_CONCURRENCY = 30  # Keep this low so the server doesn't ban your IP
-TIMEOUT_SECONDS = 5   # If a stream takes >5s to start, it's not "fast"
+USER = "Z3nXfkOnf0"
+PASS = "Madt8rUvmN"
+ROCKET_BASE = "http://s.rocketdns.info:8080"
+FINAL_NAME = "supersonic.m3u8"
 
-async def check_stream(session, sem, entry):
-    """Verifies if the stream is fast and working."""
+# Performance Settings
+MAX_CONCURRENCY = 30  
+TEST_TIMEOUT = 5      
+USER_AGENT = "IPTVSmartersPlayer"
+
+async def check_stream(session, sem, title, url):
+    """Downloads a small burst to verify the stream is fast and alive."""
     async with sem:
-        url = entry['url']
-        start_time = time.time()
         try:
-            # We request only a tiny slice of data to check speed/validity
+            start_time = time.time()
+            # Range header verifies real data flow, not just a 200 OK header
             headers = {"User-Agent": USER_AGENT, "Range": "bytes=0-102400"}
-            async with session.get(url, headers=headers, timeout=TIMEOUT_SECONDS) as r:
-                if r.status == 200 or r.status == 206:
+            async with session.get(url, headers=headers, timeout=TEST_TIMEOUT) as r:
+                if r.status < 400:
                     content = await r.read()
-                    if len(content) > 1000: # Ensure we didn't get an error page
+                    if len(content) > 1000:
                         latency = time.time() - start_time
-                        return (latency, entry)
+                        return (latency, title, url)
         except:
             pass
-        return (None, None)
+        return (None, None, None)
 
-def parse_m3u_content(content):
-    """Extracts ALL entries without any filtering."""
-    entries = []
-    lines = content.splitlines()
-    for i in range(len(lines)):
-        if lines[i].startswith("#EXTINF"):
-            extinf = lines[i].strip()
-            if i + 1 < len(lines):
-                url = lines[i + 1].strip()
-                # Clean title extraction
-                title = extinf.split(",")[-1].strip()
-                if url.startswith("http"):
-                    entries.append({"title": title, "extinf_raw": extinf, "url": url})
-    return entries
-
-async def main():
-    connector = aiohttp.TCPConnector(ssl=False)
-    # Increase the timeout for the initial massive file download
-    timeout = aiohttp.ClientTimeout(total=300) 
-    
-    async with aiohttp.ClientSession(connector=connector, headers={"User-Agent": USER_AGENT}, timeout=timeout) as session:
-        print(f"📡 Downloading Source (this may take a minute)...")
+def get_all_from_api():
+    """Extracts ALL channels from the RocketDNS API without category filters."""
+    channels = []
+    # Using curl_cffi to bypass potential TLS/Fingerprint blocks
+    with curl_requests.Session() as session:
+        session.headers = {"User-Agent": USER_AGENT}
+        print(f"📡 Connecting to {ROCKET_BASE}...")
         try:
-            async with session.get(SOURCE_URL) as res:
-                if res.status != 200:
-                    print(f"❌ Failed! Server returned: {res.status}")
-                    return
-                text = await res.text()
-                print(f"✅ Downloaded {len(text) / 1024 / 1024:.2f} MB of playlist data.")
+            api_url = f"{ROCKET_BASE}/player_api.php"
+            # Getting ALL live streams via API
+            params = {"username": USER, "password": PASS, "action": "get_live_streams"}
+            res = session.get(api_url, params=params).json()
+            
+            for s in res:
+                stream_url = f"{ROCKET_BASE}/live/{USER}/{PASS}/{s['stream_id']}.ts"
+                channels.append((s['name'], stream_url))
         except Exception as e:
-            print(f"❌ Download Error: {e}")
-            return
+            print(f"❌ API Fetch Failed: {e}")
+            
+    return channels
 
-        raw_entries = parse_m3u_content(text)
-        print(f"🔍 Found {len(raw_entries)} total streams. Starting speed test...")
-
+async def verify_and_sort(raw_channels):
+    """Tests streams concurrently and ranks them by speed."""
+    print(f"⚡ Testing {len(raw_channels)} streams for speed and availability...")
+    
+    connector = aiohttp.TCPConnector(ssl=False)
+    async with aiohttp.ClientSession(connector=connector) as session:
         sem = asyncio.Semaphore(MAX_CONCURRENCY)
-        tasks = [check_stream(session, sem, entry) for entry in raw_entries]
+        tasks = [check_stream(session, sem, t, u) for t, u in raw_channels]
         results = await asyncio.gather(*tasks)
-
-        # Filter only working ones and sort by FASTEST (lowest latency)
+        
+        # Keep only working results and sort by fastest (lowest latency)
         working = [r for r in results if r[0] is not None]
         working.sort(key=lambda x: x[0])
+        return working
 
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            f.write("#EXTM3U\n")
-            for latency, item in working:
-                f.write(f"{item['extinf_raw']}\n{item['url']}\n")
+def run():
+    # 1. Pull the data
+    raw_list = get_all_from_api()
+    if not raw_list:
+        print("❌ No data retrieved. Check credentials.")
+        return
 
-        print(f"🏁 Done! Saved {len(working)} working/fast streams to {OUTPUT_FILE}.")
+    # 2. Test the data
+    verified_list = asyncio.run(verify_and_sort(raw_list))
+
+    # 3. Save the data
+    with open(FINAL_NAME, "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        for latency, title, url in verified_list:
+            # We add the latency to the title so you can see the speed in your player
+            f.write(f'#EXTINF:-1, {title} [{latency:.2f}s]\n{url}\n')
+
+    print(f"✅ SUCCESS! Saved {len(verified_list)} fast streams to {FINAL_NAME}")
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    run()
