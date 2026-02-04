@@ -7,7 +7,7 @@ import sys
 USER = "Z3nXfkOnf0"
 PASS = "Madt8rUvmN"
 ROCKET_BASE = "http://s.rocketdns.info:8080"
-FINAL_NAME = "verified_rocket_streams.m3u8"
+FINAL_NAME = "supersonic.m3u8"
 
 MAX_CONCURRENCY = 40  # Lowered slightly to avoid triggering firewall blocks
 TEST_TIMEOUT = 8      # Increased timeout for slower initial connections
