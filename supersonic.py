@@ -9,12 +9,12 @@ PASS = "Madt8rUvmN"
 ROCKET_BASE = "http://s.rocketdns.info:8080"
 FINAL_NAME = "supersonic.m3u8"
 
-# STABILITY SETTINGS
-MIN_MBPS = 3.0          # Minimum speed required (3Mbps for stable HD)
-SAMPLE_SIZE = 1500000   # Download ~1.5MB to test sustained throughput
-MAX_CONCURRENCY = 15    # Lowered to prevent saturating YOUR local internet
-TEST_TIMEOUT = 12       # Increased to allow for the larger download
-USER_AGENT = "IPTVSmartersPlayer"
+# BALANCED SETTINGS
+MIN_MBPS = 0.8          # Lowered: 0.8Mbps is enough for SD/HD stability
+SAMPLE_SIZE = 500000    # Lowered to 500KB (faster test, less likely to be blocked)
+MAX_CONCURRENCY = 10    # Slow and steady to avoid IP bans
+TEST_TIMEOUT = 10       
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebkit/537.36"
 
 tested_count = 0
 working_results = []
@@ -23,7 +23,6 @@ async def check_stream(session, sem, title, url, total):
     global tested_count
     async with sem:
         try:
-            # 1. Filter out unwanted keywords
             clean_title = title.lower()
             if any(x in clean_title for x in ["adult", "24/7", "xxx"]):
                 tested_count += 1
@@ -31,36 +30,30 @@ async def check_stream(session, sem, title, url, total):
 
             start_time = time.time()
             async with session.get(url, timeout=TEST_TIMEOUT) as r:
-                # 2. Check if the server is actually sending video
-                ctype = r.headers.get('Content-Type', '').lower()
-                is_video = any(v in ctype for v in ['video', 'mpeg', 'octet-stream'])
-
-                if r.status == 200 and is_video:
-                    # 3. Sustained Throughput Test (The "Anti-Buffer" check)
+                if r.status == 200:
+                    # We skip the strict MIME check and just try to read data
                     content = await r.content.read(SAMPLE_SIZE)
-                    if len(content) > 0:
+                    
+                    if len(content) > 1000: # Ensure we got at least some data
                         elapsed = time.time() - start_time
-                        
-                        # Calculate Mbps: (Bytes * 8 bits) / seconds / 1,000,000
                         mbps = (len(content) * 8) / elapsed / 1000000
                         
                         if mbps >= MIN_MBPS:
-                            # Save with speed for sorting, then export clean
                             working_results.append((mbps, title, url))
         except Exception:
             pass
         
         tested_count += 1
-        percentage = (tested_count / total) * 100
-        sys.stdout.write(f"\r⚡ TESTING STABILITY: {percentage:.1f}% | Smooth: {len(working_results)} | {tested_count}/{total}")
+        sys.stdout.write(f"\r⚡ SCANNING: {tested_count}/{total} | Found Smooth: {len(working_results)}")
         sys.stdout.flush()
 
 async def run():
-    connector = aiohttp.TCPConnector(ssl=False, limit=0)
-    headers = {"User-Agent": USER_AGENT, "Accept": "*/*"}
+    # Use a standard connector; some servers dislike 'limit=0'
+    connector = aiohttp.TCPConnector(ssl=False)
+    headers = {"User-Agent": USER_AGENT}
 
     async with aiohttp.ClientSession(connector=connector, headers=headers) as session:
-        print(f"📡 Connecting to {ROCKET_BASE}...")
+        print(f"📡 Accessing RocketDNS...")
         
         try:
             api_url = f"{ROCKET_BASE}/player_api.php"
@@ -68,32 +61,27 @@ async def run():
             
             async with session.get(api_url, params=params) as response:
                 raw_data = await response.json()
-                # Prepare channel list
                 raw_channels = [(s['name'], f"{ROCKET_BASE}/live/{USER}/{PASS}/{s['stream_id']}.ts") for s in raw_data]
                 total_streams = len(raw_channels)
-                print(f"🔍 Found {total_streams} streams. Starting stability stress-test...\n")
+                print(f"🔍 Found {total_streams} channels. Testing for stability...\n")
         except Exception as e:
-            print(f"❌ API Error: {e}")
+            print(f"❌ Connection Error: {e}")
             return
 
         sem = asyncio.Semaphore(MAX_CONCURRENCY)
         tasks = [check_stream(session, sem, t, u, total_streams) for t, u in raw_channels]
         await asyncio.gather(*tasks)
 
-        # Sort by best Mbps (fastest/most stable first)
+        # Sort by speed
         working_results.sort(key=lambda x: x[0], reverse=True)
 
-        print(f"\n\n💾 Saving {len(working_results)} high-bitrate streams...")
+        print(f"\n\n💾 Exporting {len(working_results)} streams to {FINAL_NAME}")
         with open(FINAL_NAME, "w", encoding="utf-8") as f:
             f.write("#EXTM3U\n")
             for mbps, title, url in working_results:
-                # Grouped by "Verified" for easy player sorting
-                f.write(f'#EXTINF:-1 group-title="Verified Smooth (>{MIN_MBPS}Mbps)",{title}\n{url}\n')
+                f.write(f'#EXTINF:-1 group-title="Verified",{title}\n{url}\n')
 
-        print(f"✅ DONE! Clean playlist created: {FINAL_NAME}")
+        print(f"✅ DONE!")
 
 if __name__ == "__main__":
-    try:
-        asyncio.run(run())
-    except KeyboardInterrupt:
-        print("\nStopped by user.")
+    asyncio.run(run())
