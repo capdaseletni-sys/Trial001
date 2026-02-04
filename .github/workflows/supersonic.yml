@@ -27,7 +27,7 @@ jobs:
         run: pip3 install aiohttp
 
       - name: 🎯 Run scraping script
-        run: python3 your_script_name.py  # <-- Make sure this matches your filename
+        run: python3 supersonic.py
 
       - name: 💾 Commit & Safely Push if Playlist Changed
         env:
