@@ -1,59 +1,85 @@
 import asyncio
 import aiohttp
 import time
+import re
 from collections import defaultdict
 
-# Settings for "Fast Only"
-MIN_SPEED_KBPS = 500  # Minimum 500KB/s to be considered "fast"
-MAX_TEST_TIMEOUT = 5  # If it takes more than 5s to get 100KB, it's too slow
+# --- CONFIGURATION ---
+# Mimicking VLC is the "secret sauce" to stop getting empty results
+USER_AGENT = "VLC/3.0.18 LibVLC/3.0.18"
+SOURCE_URL = "http://s.rocketdns.info:8080/get.php?username=XtremeTV&password=5ALMBnQVzb&type=m3u_plus"
+OUTPUT_FILE = "supersonic.m3u8"
+MAX_CONCURRENCY = 30  # Keep this low so the server doesn't ban your IP
+TIMEOUT_SECONDS = 5   # If a stream takes >5s to start, it's not "fast"
 
 async def check_stream(session, sem, entry):
-    url = entry['url']
+    """Verifies if the stream is fast and working."""
     async with sem:
+        url = entry['url']
         start_time = time.time()
         try:
-            # Range header asks for exactly 100KB
-            headers = {"Range": "bytes=0-102400", "User-Agent": USER_AGENT}
-            async with session.get(url, headers=headers, timeout=MAX_TEST_TIMEOUT) as r:
-                if r.status < 400:
+            # We request only a tiny slice of data to check speed/validity
+            headers = {"User-Agent": USER_AGENT, "Range": "bytes=0-102400"}
+            async with session.get(url, headers=headers, timeout=TIMEOUT_SECONDS) as r:
+                if r.status == 200 or r.status == 206:
                     content = await r.read()
-                    duration = time.time() - start_time
-                    
-                    # 1. Verification: Did we get actual video data?
-                    if len(content) >= 102400: 
-                        # 2. Speed Calculation: (Bytes / 1024) / Seconds
-                        speed_kbps = (len(content) / 1024) / duration
-                        
-                        if speed_kbps >= MIN_SPEED_KBPS:
-                            return (duration, entry) # Lower duration = Faster
+                    if len(content) > 1000: # Ensure we didn't get an error page
+                        latency = time.time() - start_time
+                        return (latency, entry)
         except:
             pass
         return (None, None)
 
+def parse_m3u_content(content):
+    """Extracts ALL entries without any filtering."""
+    entries = []
+    lines = content.splitlines()
+    for i in range(len(lines)):
+        if lines[i].startswith("#EXTINF"):
+            extinf = lines[i].strip()
+            if i + 1 < len(lines):
+                url = lines[i + 1].strip()
+                # Clean title extraction
+                title = extinf.split(",")[-1].strip()
+                if url.startswith("http"):
+                    entries.append({"title": title, "extinf_raw": extinf, "url": url})
+    return entries
+
 async def main():
-    # ... (Keep your existing session and download logic) ...
-
-    # Filter and Sort
-    # results contains (latency, entry)
-    working_results = [res for res in results if res[0] is not None]
+    connector = aiohttp.TCPConnector(ssl=False)
+    # Increase the timeout for the initial massive file download
+    timeout = aiohttp.ClientTimeout(total=300) 
     
-    # SORTING: This puts the lowest latency (fastest) at the top
-    working_results.sort(key=lambda x: x[0]) 
+    async with aiohttp.ClientSession(connector=connector, headers={"User-Agent": USER_AGENT}, timeout=timeout) as session:
+        print(f"📡 Downloading Source (this may take a minute)...")
+        try:
+            async with session.get(SOURCE_URL) as res:
+                if res.status != 200:
+                    print(f"❌ Failed! Server returned: {res.status}")
+                    return
+                text = await res.text()
+                print(f"✅ Downloaded {len(text) / 1024 / 1024:.2f} MB of playlist data.")
+        except Exception as e:
+            print(f"❌ Download Error: {e}")
+            return
 
-    final_list = []
-    seen_urls = set()
+        raw_entries = parse_m3u_content(text)
+        print(f"🔍 Found {len(raw_entries)} total streams. Starting speed test...")
 
-    # Limit to top results if the list is too long
-    for latency, item in working_results:
-        if item['url'] not in seen_urls:
-            # We keep only the best version of each stream
-            final_list.append(item)
-            seen_urls.add(item['url'])
+        sem = asyncio.Semaphore(MAX_CONCURRENCY)
+        tasks = [check_stream(session, sem, entry) for entry in raw_entries]
+        results = await asyncio.gather(*tasks)
 
-    # Write to File
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-        for item in final_list:
-            f.write(f"{item['extinf_raw']}\n{item['url']}\n")
+        # Filter only working ones and sort by FASTEST (lowest latency)
+        working = [r for r in results if r[0] is not None]
+        working.sort(key=lambda x: x[0])
 
-    print(f"✅ Filtered {len(raw_entries)} down to {len(final_list)} high-speed streams.")
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            for latency, item in working:
+                f.write(f"{item['extinf_raw']}\n{item['url']}\n")
+
+        print(f"🏁 Done! Saved {len(working)} working/fast streams to {OUTPUT_FILE}.")
+
+if __name__ == "__main__":
+    asyncio.run(main())
