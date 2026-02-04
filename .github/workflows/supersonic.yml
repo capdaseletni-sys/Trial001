@@ -26,6 +26,8 @@ jobs:
       - name: 📦 Install Python dependencies
         run: pip3 install aiohttp
 
+             pip install curl_cffi aiohttp
+
       - name: 🎯 Run scraping script
         run: python3 supersonic.py
 
