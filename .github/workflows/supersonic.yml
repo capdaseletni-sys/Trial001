@@ -31,25 +31,12 @@ jobs:
       - name: 🎯 Run scraping script
         run: python3 supersonic.py
 
-      - name: 💾 Commit & Safely Push if Playlist Changed
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and Push
         run: |
-          set -e
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions@users.noreply.github.com"
-
-          # Stage only the playlist file
-          git add supersonic.m3u8
-
-          # Exit if no changes
-          if git diff --cached --quiet; then
-            echo "✅ No changes to commit"
-            exit 0
-          fi
-
-          git commit -m "🔁 Update playlist $(date -u +'%a %b %d %T UTC %Y')"
-
-          # Rebase is safer in automated environments
-          git pull origin main --rebase
-          git push origin main
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add supersonic.m3u8
+            git commit -m "🔁 Update playlist $(date)" || exit 0
+            # Use --force or a pull strategy that favors "ours" (the new file)
+            git pull --rebase --strategy-option=theirs
+            git push
