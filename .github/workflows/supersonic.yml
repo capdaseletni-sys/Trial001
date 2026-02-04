@@ -31,12 +31,11 @@ jobs:
       - name: 🎯 Run scraping script
         run: python3 supersonic.py
 
-      - name: Commit and Push
+      - name: Push results
         run: |
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git add supersonic.m3u8
             git commit -m "🔁 Update playlist $(date)" || exit 0
-            # Use --force or a pull strategy that favors "ours" (the new file)
-            git pull --rebase --strategy-option=theirs
-            git push
+            # This tells Git to ignore local history and just force the update
+            git push origin main --force
