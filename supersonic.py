@@ -7,7 +7,7 @@ from collections import defaultdict
 # ================= CONFIG =================
 OUTPUT_FILE = "supersonic.m3u8"
 SOURCES = [
-    "http://tvmate.icu:8080/get.php?username=n8T4rE&password=204739&type=m3u_plus",
+    "http://s.rocketdns.info:8080/get.php?username=XtremeTV&password=5ALMBnQVzb&type=m3u_plus",
 ]
 
 MAX_TIMEOUT = 4          
