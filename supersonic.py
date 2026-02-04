@@ -1,147 +1,141 @@
 import re
 import asyncio
 import aiohttp
-import time
 from collections import defaultdict
 
-INPUT_FILE = "supersonic.m3u8"
-OUTPUT_FILE = "supersonic.m3u8"
-
 # ================= CONFIG =================
-MAX_TIMEOUT = 5          # seconds (fast streams only)
-MAX_CONCURRENCY = 25     # safe for GitHub Actions
-EXCLUDED_EXTENSIONS = (".mp4", ".mkv")
-IGNORED_PREFIXES = ("hd", "fhd", "uhd", "4k", "8k")
+OUTPUT_FILE = "supersonic.m3u8"
+SOURCES = [
+    "http://server.iptvxxx.net/get.php?username=77569319&password=43886568&type=m3u_plus"
+]
+
+MAX_TIMEOUT = 5          
+MAX_CONCURRENCY = 25     
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+# EXCLUSION RULES
+BLOCKED_URL_PARTS = [
+    "https://xc.adultiptv.net/movie", 
+    "/movie/", 
+    "/series/", 
+    "S01", "E01", "Season"
+]
+
+VALID_STREAM_EXTENSIONS = (".m3u8", ".ts", ".mpegts")
 # ==========================================
 
-NAME_GROUPS = {
-    "Documentary": ["discovery", "nat geo", "history", "animal"],
-    "Entertainment": ["entertainment", "series", "show"],
-    "Kids": ["kids", "cartoon", "nick", "disney"],
-    "Movies": ["movie", "cinema", "film", "hbo", "starz"],
-    "Music": ["music", "mtv", "vh1"],
-    "News": ["cnn", "bbc", "fox news", "al jazeera", "sky news", "cnbc"],
-    "Religious": ["islam", "quran", "christian", "church"],
-    "Sports": ["sport", "espn", "beins", "sky sports", "fox sports"],
-}
+def is_readable_and_allowed(url: str, title: str) -> bool:
+    url_lower = url.lower()
+    
+    # Block specific movie domains and VOD keywords
+    if any(part in url_lower for part in BLOCKED_URL_PARTS):
+        return False
+    
+    # Block standard movie file extensions
+    if any(url_lower.endswith(ext) for ext in [".mp4", ".mkv", ".avi", ".mov"]):
+        return False
+        
+    # Allow live stream patterns
+    if any(url_lower.endswith(ext) for ext in VALID_STREAM_EXTENSIONS):
+        return True
+    if "/live/" in url_lower or "get.php" in url_lower:
+        return True
+        
+    return False
 
-KEYWORD_GROUPS = {
-    "News": ["news", "report", "live"],
-    "Sports": ["match", "league", "cup", "football", "soccer"],
-    "Movies": ["movie", "film", "cinema"],
-    "Kids": ["kids", "cartoon", "baby"],
-    "Music": ["music", "radio", "hits"],
-}
+def extract_and_clean_group(extinf: str, title: str) -> str:
+    """Extracts group and forces 'Live Cam' if title matches."""
+    if "cam" in title.lower():
+        return "Live Cam"
+        
+    match = re.search(r'group-title="([^"]*)"', extinf)
+    return match.group(1) if match else "Uncategorized"
 
-# ---------- Helpers ----------
-def normalize_title(title: str) -> str:
-    t = title.lower().strip()
-    t = re.sub(r"^[\[\(\{]?(hd|fhd|uhd|4k|8k)[\]\)\}]?\s*-?\s*", "", t)
-    return re.sub(r"\s+", " ", t)
-
-def detect_group(title: str) -> str:
-    t = title.lower()
-    for g, words in NAME_GROUPS.items():
-        if any(w in t for w in words):
-            return g
-    for g, words in KEYWORD_GROUPS.items():
-        if any(w in t for w in words):
-            return g
-    return "Mix"
-
-def rebuild_extinf(extinf, group):
+def rebuild_extinf(extinf: str, new_group: str) -> str:
+    """Updates the group-title in the EXTINF string."""
     if 'group-title="' in extinf:
-        return re.sub(r'group-title="[^"]*"', f'group-title="{group}"', extinf)
-    return extinf.replace("#EXTINF:-1", f'#EXTINF:-1 group-title="{group}"')
+        return re.sub(r'group-title="[^"]*"', f'group-title="{new_group}"', extinf)
+    return extinf.replace(",", f' group-title="{new_group}",', 1)
 
-def parse_playlist(lines):
+def parse_m3u_content(content):
     entries = []
-    i = 0
-    while i < len(lines):
+    lines = content.splitlines()
+    for i in range(len(lines)):
         if lines[i].startswith("#EXTINF"):
             extinf = lines[i].strip()
-            url = lines[i + 1].strip()
-
-            if url.lower().endswith(EXCLUDED_EXTENSIONS):
-                i += 2
-                continue
-
-            title = extinf.split(",")[-1].strip()
-            entries.append((title, extinf, url))
-            i += 2
-        else:
-            i += 1
+            if i + 1 < len(lines):
+                url = lines[i + 1].strip()
+                title = extinf.split(",")[-1].strip()
+                
+                if url.startswith("http") and is_readable_and_allowed(url, title):
+                    # Determine Group
+                    group = extract_and_clean_group(extinf, title)
+                    # Update EXTINF line with the new group
+                    clean_extinf = rebuild_extinf(extinf, group)
+                    
+                    entries.append({
+                        "title": title, 
+                        "extinf": clean_extinf, 
+                        "url": url, 
+                        "group": group
+                    })
     return entries
 
-# ---------- Stream validation ----------
-async def check_stream(session, sem, url):
+async def check_stream(session, sem, entry):
+    url = entry['url']
     async with sem:
-        start = time.monotonic()
         try:
             async with session.head(url, timeout=MAX_TIMEOUT, allow_redirects=True) as r:
-                if r.status < 400:
-                    return True, time.monotonic() - start
-        except:
-            pass
-
-        # Fallback GET (range request)
+                if r.status < 400: return True
+        except: pass
         try:
             headers = {"Range": "bytes=0-1024"}
             async with session.get(url, headers=headers, timeout=MAX_TIMEOUT) as r:
-                if r.status < 400:
-                    return True, time.monotonic() - start
-        except:
-            pass
+                if r.status < 400: return True
+        except: pass
+        return False
 
-        return False, None
-
-async def filter_fast_streams(entries):
-    sem = asyncio.Semaphore(MAX_CONCURRENCY)
-    timeout = aiohttp.ClientTimeout(total=MAX_TIMEOUT)
+async def main():
     connector = aiohttp.TCPConnector(ssl=False)
+    headers = {"User-Agent": USER_AGENT}
+    
+    async with aiohttp.ClientSession(connector=connector, headers=headers) as session:
+        print(f"📡 Downloading Source...")
+        tasks = [session.get(url, timeout=30) for url in SOURCES]
+        responses = await asyncio.gather(*tasks, return_exceptions=True)
+        
+        raw_entries = []
+        for res in responses:
+            if isinstance(res, aiohttp.ClientResponse) and res.status == 200:
+                text = await res.text()
+                raw_entries.extend(parse_m3u_content(text))
+        
+        if not raw_entries:
+            print("❌ No readable streams found.")
+            return
 
-    async with aiohttp.ClientSession(timeout=timeout, connector=connector) as session:
-        tasks = [
-            check_stream(session, sem, url)
-            for _, _, url in entries
-        ]
-        results = await asyncio.gather(*tasks)
+        print(f"⚡ Validating {len(raw_entries)} streams...")
+        sem = asyncio.Semaphore(MAX_CONCURRENCY)
+        check_tasks = [check_stream(session, sem, entry) for entry in raw_entries]
+        check_results = await asyncio.gather(*check_tasks)
+        
+        working_entries = [raw_entries[i] for i, ok in enumerate(check_results) if ok]
+        
+        final_list = defaultdict(list)
+        seen_urls = set()
+        
+        for item in working_entries:
+            if item['url'] not in seen_urls:
+                final_list[item['group']].append(item)
+                seen_urls.add(item['url'])
 
-    return [
-        entries[i]
-        for i, (ok, _) in enumerate(results)
-        if ok
-    ]
-
-# ---------- Main ----------
-def main():
-    with open(INPUT_FILE, "r", encoding="utf-8", errors="ignore") as f:
-        lines = f.readlines()
-
-    header = [l for l in lines if l.startswith("#EXTM3U")]
-    entries = parse_playlist(lines)
-
-    print(f"🔍 Checking {len(entries)} streams...")
-    entries = asyncio.run(filter_fast_streams(entries))
-    print(f"✅ {len(entries)} fast & working streams kept")
-
-    grouped = defaultdict(dict)
-
-    for title, extinf, url in entries:
-        normalized = normalize_title(title)
-        group = detect_group(title)
-        extinf = rebuild_extinf(extinf, group)
-
-        if normalized not in grouped[group]:
-            grouped[group][normalized] = (normalized, extinf, url)
-
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.writelines(header)
-
-        for group in sorted(grouped.keys()):
-            for _, extinf, url in sorted(grouped[group].values(), key=lambda x: x[0]):
-                f.write(extinf + "\n")
-                f.write(url + "\n")
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            for group in sorted(final_list.keys()):
+                for item in sorted(final_list[group], key=lambda x: x['title']):
+                    f.write(f"{item['extinf']}\n{item['url']}\n")
+        
+        print(f"🏁 Done! {len(seen_urls)} streams saved. 'Live Cam' group created.")
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
