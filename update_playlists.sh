@@ -2,7 +2,7 @@
 
 # Define the output files and their corresponding URLs
 urls=(
-    "http://localiptv.site:85/get.php?username=lacigalfov&password=lacigalfov&type=m3u_plus"
+    "http://server.iptvxxx.net/get.php?username=77569319&password=43886568&type=m3u_plus"
 )
 
 # Array to keep track of downloaded filenames
