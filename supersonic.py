@@ -7,7 +7,8 @@ from collections import defaultdict
 # ================= CONFIG =================
 OUTPUT_FILE = "supersonic.m3u8"
 SOURCES = [
-    "http://tvmate.icu:8080/get.php?username=n8T4rE&password=204739&type=m3u_plus"
+    "http://tvmate.icu:8080/get.php?username=n8T4rE&password=204739&type=m3u_plus",
+    "http://cord-cutter.net:8080/get.php?username=bob2023&password=cob2023&type=m3u_plus"
 ]
 
 MAX_TIMEOUT = 4          
@@ -16,7 +17,9 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 
 BLOCKED_PATHS = [
     "http://tvmate.icu:8080/movie",
-    "http://tvmate.icu:8080/series"
+    "http://tvmate.icu:8080/series",
+    "http://cord-cutter.net:8080/movie",
+    "http://cord-cutter.net:8080/series"
 ]
 # ==========================================
 
