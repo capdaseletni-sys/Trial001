@@ -1,29 +1,38 @@
 import json
 import asyncio
 from playwright.async_api import async_playwright
-from playwright_stealth import stealth_async
+from playwright_stealth import stealth
 
 async def run():
+    # Store User-Agent in one place for consistency
+    USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+    
     async with async_playwright() as p:
+        # Launch browser
         browser = await p.chromium.launch(headless=True)
-        context = await browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
-        )
+        context = await browser.new_context(user_agent=USER_AGENT)
         
         page = await context.new_page()
-        await stealth_async(page)
+        
+        # Fixed: 'stealth' is used for both sync and async in current versions
+        await stealth(page)
         
         url = "https://pixelsport.tv/backend/livetv/events"
         
         try:
             print("Warming up...")
-            await page.goto("https://pixelsport.tv/", wait_until="networkidle")
+            # Using domcontentloaded is often more reliable in CI environments than networkidle
+            await page.goto("https://pixelsport.tv/", wait_until="domcontentloaded")
             await asyncio.sleep(3) 
 
             print(f"Fetching data from API...")
             response = await page.goto(url)
-            data = await response.json()
             
+            if response.status != 200:
+                print(f"Failed to fetch data. Status: {response.status}")
+                return
+
+            data = await response.json()
             events = data.get("events", data) if isinstance(data, dict) else data
 
             m3u_content = "#EXTM3U\n"
@@ -33,7 +42,7 @@ async def run():
                 name = event.get('match_name', 'Unknown Match')
                 channel = event.get('channel', {})
                 
-                # Define potential server keys
+                # Extract potential server URLs
                 servers = [
                     {"label": "S1", "url": channel.get('server1URL') or event.get('server1URL')},
                     {"label": "S2", "url": channel.get('server2URL') or event.get('server2URL')}
@@ -43,19 +52,20 @@ async def run():
                     srv_url = server["url"]
                     srv_label = server["label"]
                     
-                    if srv_url and srv_url != "null" and srv_url.strip() != "":
+                    if srv_url and srv_url != "null" and str(srv_url).strip() != "":
                         
                         # --- DOMAIN REPLACEMENT LOGIC ---
                         if "hd.bestlive.top:443" in srv_url:
                             srv_url = srv_url.replace("hd.bestlive.top:443", "hd.pixelhd.online:443")
                         
-                        # Add entry to M3U (includes [S1] or [S2] in the name)
+                        # Build M3U entry
                         m3u_content += f'#EXTINF:-1 group-title="pixelsports",{name} [{srv_label}]\n'
                         m3u_content += f'#EXTVLCOPT:http-referrer=https://pixelsport.tv/\n'
-                        m3u_content += f'#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36\n'
+                        m3u_content += f'#EXTVLCOPT:http-user-agent={USER_AGENT}\n'
                         m3u_content += f'{srv_url}\n'
                         count += 1
 
+            # Save the file
             with open("pixelsports.m3u8", "w", encoding="utf-8") as f:
                 f.write(m3u_content)
             
