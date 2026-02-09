@@ -1,36 +1,37 @@
-name: Pixel Scraper
+name: PixelSport Scraper
 
 on:
-  workflow_dispatch: # Keep this so you can still run it manually
   schedule:
-    - cron: '30 * * * *' # Runs at minute 30 of every hour
+    - cron: '0 */6 * * *' # Runs every 6 hours
+  workflow_dispatch: # Allows you to run it manually
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # Important: allows the runner to push files back
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.9'
 
       - name: Install dependencies
         run: |
-            pip install playwright playwright-stealth
-            playwright install chromium
+          python -m pip install --upgrade pip
+          pip install playwright playwright-stealth
+          # Install the browser and its system-level dependencies
+          python -m playwright install chromium --with-deps
 
-      - name: Run script
+      - name: Run Scraper
         run: python pxl.py
 
       - name: Commit and Push M3U8
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add pixelsports.m3u8
-          git commit -m "Update playlist" || echo "No changes to commit"
+          git commit -m "Update streams: $(date)" || echo "No changes to commit"
           git push
