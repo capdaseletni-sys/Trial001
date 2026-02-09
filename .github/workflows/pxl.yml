@@ -1,43 +1,38 @@
-name: Pixel Scraper
+name: PixelSport M3U Scraper
 
 on:
-  workflow_dispatch:
+  schedule:
+    # This runs every 6 hours. Adjust the timing as needed (UTC time).
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allows you to run it manually from the Actions tab
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # Important: allows the runner to push files back
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.10'
 
       - name: Install dependencies
         run: |
-          pip install playwright playwright-stealth requests
-          playwright install --with-deps chromium
+          pip install playwright playwright-stealth
+          playwright install chromium --with-deps
 
-      - name: Upload Screenshot on Failure
-        if: always()
+      - name: Run Scraper
+        env:
+          # This pulls the key from your GitHub Settings -> Secrets
+          SCRAPERAPI_KEY: ${{ secrets.SCRAPERAPI_KEY }}
+        run: python pxl.py
+
+      - name: Upload M3U Result
         uses: actions/upload-artifact@v4
         with:
-          name: debug-screenshot
-          path: blocked.png
-
-      - name: Run Scraper with Virtual Display
-        run: |
-          # xvfb-run provides the 'fake' screen for the browser
-          xvfb-run --auto-servernum python pxl.py
-
-      - name: Commit and Push M3U8
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add pixelsports.m3u8
-          git commit -m "Update playlist" || echo "No changes to commit"
-          git push
+          name: pixelsport-m3u
+          path: "*.m3u8"
+          retention-days: 7
