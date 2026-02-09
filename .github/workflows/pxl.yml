@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install playwright playwright-stealth
+          pip install playwright playwright-stealth requests
           playwright install --with-deps chromium
 
       - name: Upload Screenshot on Failure
