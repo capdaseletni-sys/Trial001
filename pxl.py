@@ -1,59 +1,68 @@
 import json
 import asyncio
 import logging
+import os
 from datetime import datetime
 from playwright.async_api import async_playwright
-from playwright_stealth import Stealth
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 async def run():
     async with async_playwright() as p:
-        # Launching with args to further reduce bot detection
-        browser = await p.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
+        # Use a persistent data folder to save cookies/session
+        user_data_dir = "./browser_session"
         
-        context = await browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-            viewport={'width': 1280, 'height': 720}
+        # Launch with 'headless=False' to bypass the toughest checks
+        # If running on a server without a screen, use 'xvfb-run'
+        browser_context = await p.chromium.launch_persistent_context(
+            user_data_dir,
+            headless=False, # Change to True ONLY after you verify it works once
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--no-sandbox"
+            ],
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
         )
         
-        page = await context.new_page()
-        await Stealth().apply_stealth_async(page)
-
+        page = await browser_context.new_page()
         base_url = "https://pixelsport.tv/"
         api_pattern = "/backend/livetv/events"
 
         try:
-            logging.info("Warming up and intercepting API data...")
+            logging.info("Opening site... please wait for Cloudflare to clear.")
+            
+            # Setup a container for our data
+            api_results = {"data": None}
 
-            # Define a future to hold the JSON data
-            api_data_future = asyncio.Future()
-
-            # Listener to catch the specific API response
-            async def handle_response(response):
+            async def catch_json(response):
                 if api_pattern in response.url and response.status == 200:
                     try:
-                        data = await response.json()
-                        if not api_data_future.done():
-                            api_data_future.set_result(data)
-                    except Exception:
+                        api_results["data"] = await response.json()
+                        logging.info("🎯 API Data captured!")
+                    except:
                         pass
 
-            page.on("response", handle_response)
+            page.on("response", catch_json)
 
-            # Navigate to the main page only
-            await page.goto(base_url, wait_until="networkidle", timeout=60000)
+            # Go to home and wait a bit for scripts to run
+            await page.goto(base_url, wait_until="load")
             
-            # Wait for the listener to catch the data (up to 15 seconds)
-            try:
-                events_data = await asyncio.wait_for(api_data_future, timeout=15)
-                logging.info("Successfully intercepted API data.")
-            except asyncio.TimeoutError:
-                raise Exception("Timed out waiting for API response. The site might be blocking or the URL pattern changed.")
+            # Sleep to allow 'Turnstile' or 'Challenge' to complete
+            # If a checkbox appears, you might need to click it manually once
+            for i in range(15):
+                if api_results["data"]:
+                    break
+                await asyncio.sleep(1)
+                if i % 5 == 0:
+                    logging.info("Still waiting for data...")
 
+            if not api_results["data"]:
+                raise Exception("Failed to capture API. Is there a 'Verify you are human' box on screen?")
+
+            # Processing Data
+            events_data = api_results["data"]
             events = events_data.get("events", events_data) if isinstance(events_data, dict) else events_data
 
-            # --- M3U Generation ---
             filename = f"pixelsports_{datetime.now().strftime('%Y%m%d_%H%M%S')}.m3u8"
             m3u_content = "#EXTM3U\n"
             count = 0
@@ -79,13 +88,12 @@ async def run():
             with open(filename, "w", encoding="utf-8") as f:
                 f.write(m3u_content)
 
-            logging.info(f"✅ Success! {count} matches saved to {filename}")
+            logging.info(f"✅ Success! Saved {count} items to {filename}")
 
         except Exception as e:
-            logging.error(f"❌ Scrape failed: {e}")
-
+            logging.error(f"❌ Error: {e}")
         finally:
-            await browser.close()
+            await browser_context.close()
 
 if __name__ == "__main__":
     asyncio.run(run())
