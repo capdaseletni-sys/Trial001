@@ -47,6 +47,11 @@ async def run():
                     
                     category = channel.get('TVCategory', {}).get('name', 'Live Sports')
                     m3u_content += f'#EXTINF:-1 group-title="{category}",{name}\n'
+                    # --- ADDING VLC OPTIONS ---
+                    m3u_content += f'#EXTVLCOPT:http-referrer=https://pixelsport.tv\n'
+                    m3u_content += f'#EXTVLCOPT:http-origin=https://pixelsport.tv\n'
+                    m3u_content += f'#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0\n'
+                    # --------------------------
                     m3u_content += f'{url_s1}\n'
                     count += 1
 
