@@ -19,11 +19,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install playwright playwright-stealth --upgrade
+          pip install playwright playwright-stealth
           playwright install --with-deps chromium
 
-      - name: Run script
-        run: python pxl.py
+      - name: Run Scraper with Virtual Display
+        run: |
+          # xvfb-run provides the 'fake' screen for the browser
+          xvfb-run --auto-servernum python pxl.py
 
       - name: Commit and Push M3U8
         run: |
