@@ -1,48 +1,54 @@
 import json
 import asyncio
+import re
 from playwright.async_api import async_playwright
 
 async def run():
     async with async_playwright() as p:
-        print("Launching browser...")
-        browser = await p.chromium.launch(headless=True)
+        print("Launching browser with enhanced stealth...")
+        # Use arguments to help bypass detection in headless mode
+        browser = await p.chromium.launch(
+            headless=True,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--no-sandbox",
+                "--disable-setuid-sandbox"
+            ]
+        )
         
         ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-        context = await browser.new_context(user_agent=ua)
-        page = await context.new_page()
+        context = await browser.new_context(
+            user_agent=ua,
+            viewport={'width': 1920, 'height': 1080}
+        )
         
-        # Optional: apply stealth if the package exists
-        try:
-            from playwright_stealth import stealth_async
-            await stealth_async(page)
-        except:
-            pass
+        page = await context.new_page()
 
         try:
-            print("Warming up on homepage to get cookies...")
+            # 1. Go to the home page first
+            print("Warming up on homepage...")
             await page.goto("https://pixelsport.tv/", wait_until="networkidle", timeout=60000)
-            await asyncio.sleep(5) # Give it a moment to settle
+            await asyncio.sleep(5) 
 
-            print("Fetching API data directly...")
-            # We use page.evaluate to fetch the data from INSIDE the browser 
-            # This uses the browser's existing cookies and session automatically.
-            api_url = "https://pixelsport.tv/backend/livetv/events"
+            # 2. Go directly to the API URL
+            print("Navigating to API URL...")
+            response = await page.goto("https://pixelsport.tv/backend/livetv/events", wait_until="networkidle")
             
-            raw_json = await page.evaluate(f"""
-                fetch("{api_url}")
-                .then(res => res.text())
-                .catch(err => "ERROR")
-            """)
-
-            if not raw_json or raw_json == "ERROR" or raw_json.strip() == "":
-                print("Internal fetch failed, trying direct navigation...")
-                await page.goto(api_url, wait_until="networkidle")
-                raw_json = await page.locator("body").inner_text()
-
-            # Clean up the string in case there's HTML wrapper stuff
-            raw_json = raw_json.strip()
+            # Get the raw text
+            content = await page.content()
             
-            data = json.loads(raw_json)
+            # Use Regex to find the JSON in case it's wrapped in <pre> or <html> tags
+            # This looks for anything starting with {"events" or [{"
+            match = re.search(r'(\{.*\}|\[.*\])', await page.inner_text("body"))
+            
+            if match:
+                raw_json = match.group(0)
+                data = json.loads(raw_json)
+            else:
+                # Fallback to direct content if regex fails
+                raw_json = await page.inner_text("body")
+                data = json.loads(raw_json)
+
             events = data.get("events", data) if isinstance(data, dict) else data
 
             m3u_content = "#EXTM3U\n"
@@ -67,10 +73,16 @@ async def run():
             with open("pixelsports.m3u8", "w", encoding="utf-8") as f:
                 f.write(m3u_content)
             
-            print(f"Success! Saved {count} matches to pixelsports.m3u8.")
+            print(f"Success! Saved {count} matches.")
 
         except Exception as e:
+            # If it fails, let's see a bit of what it actually saw
             print(f"Scrape failed: {e}")
+            try:
+                body_peek = await page.inner_text("body")
+                print(f"Page content (first 100 chars): {body_peek[:100]}")
+            except:
+                pass
         finally:
             await browser.close()
 
