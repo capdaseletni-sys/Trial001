@@ -21,13 +21,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install playwright playwright-stealth
-          playwright install chromium --with-deps
+          pip install requests
 
       - name: Run Scraper
-        env:
-          # This pulls the key from your GitHub Settings -> Secrets
-          SCRAPERAPI_KEY: ${{ secrets.SCRAPERAPI_KEY }}
         run: python pxl.py
 
       - name: Upload M3U Result
