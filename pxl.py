@@ -7,7 +7,7 @@ from playwright.async_api import async_playwright
 
 # --- CONFIGURATION ---
 # It's better to pull this from GitHub Secrets/Environment variables
-SCRAPERAPI_KEY = os.getenv("SCRAPERAPI_KEY", "YOUR_API_KEY_HERE") 
+SCRAPERAPI_KEY = os.getenv("SCRAPERAPI_KEY", "dfbecf5ba79c271d0aad841372ad12d3") 
 TARGET_URL = "https://pixelsport.tv/"
 API_PATTERN = "/backend/livetv/events"
 
