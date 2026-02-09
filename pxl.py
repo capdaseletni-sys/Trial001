@@ -1,8 +1,8 @@
 import json
 import asyncio
 from playwright.async_api import async_playwright
-# Using this specific import to avoid the 'module' object error
-from playwright_stealth import stealth_async
+# This import style avoids the 'module is not callable' and 'name not found' errors
+import playwright_stealth
 
 async def run():
     USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
@@ -12,8 +12,10 @@ async def run():
         context = await browser.new_context(user_agent=USER_AGENT)
         page = await context.new_page()
         
-        # This is the correct way to call it for the async Playwright API
-        await stealth_async(page)
+        # We call it directly from the module. 
+        # In newer versions it's playwright_stealth.stealth
+        # We use await because it's the async Playwright API
+        await playwright_stealth.stealth(page)
         
         url = "https://pixelsport.tv/backend/livetv/events"
         
