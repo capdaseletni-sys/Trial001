@@ -1,92 +1,98 @@
 import json
 import asyncio
 import logging
-import requests
 from datetime import datetime
 from playwright.async_api import async_playwright
-from playwright_stealth import Stealth
+
+# --- CONFIGURATION ---
+SCRAPERAPI_KEY = "dfbecf5ba79c271d0aad841372ad12d3" # Put your key here
+TARGET_URL = "https://pixelsport.tv/"
+API_PATTERN = "/backend/livetv/events"
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-def get_free_proxies():
-    """Fetches a list of free HTTP proxies."""
-    logging.info("Fetching fresh proxy list...")
-    try:
-        # Fetching from a public API (HTTP, SSL, 10s timeout)
-        response = requests.get("https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all")
-        if response.status_code == 200:
-            proxies = response.text.strip().split("\r\n")
-            logging.info(f"Retrieved {len(proxies)} proxies.")
-            return proxies
-    except Exception as e:
-        logging.error(f"Failed to fetch proxies: {e}")
-    return []
-
 async def run():
-    proxy_list = get_free_proxies()
-    
-    # We will try up to 5 different proxies
-    for i in range(min(5, len(proxy_list))):
-        proxy_addr = proxy_list[i]
-        logging.info(f"Attempting with Proxy: {proxy_addr}")
+    async with async_playwright() as p:
+        # Instead of a normal proxy, we use ScraperAPI's proxy endpoint
+        # This routes all browser traffic through their 'human' residential IPs
+        proxy_url = f"http://scraperapi:render=true&antibot=true@{proxy_server()}"
         
-        async with async_playwright() as p:
-            try:
-                # Format: http://ip:port
-                proxy_config = {"server": f"http://{proxy_addr}"}
-                
-                browser = await p.chromium.launch(
-                    headless=False, # Use xvfb-run in GitHub Actions
-                    proxy=proxy_config,
-                    args=["--no-sandbox", "--disable-blink-features=AutomationControlled"]
-                )
-                
-                context = await browser.new_context(
-                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
-                )
-                
-                page = await context.new_page()
-                await Stealth().apply_stealth_async(page)
-                
-                api_results = {"data": None}
-                page.on("response", lambda res: handle_response(res, api_results))
+        logging.info("🚀 Launching browser via ScraperAPI...")
+        
+        browser = await p.chromium.launch(
+            headless=True,
+            proxy={
+                "server": "http://proxy-server.scraperapi.com:8001",
+                "username": f"scraperapi.render=true.antibot=true",
+                "password": SCRAPERAPI_KEY
+            }
+        )
+        
+        context = await browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        )
+        
+        page = await context.new_page()
+        api_results = {"data": None}
 
-                # Attempt to load the page
-                # Lowering timeout for individual proxies so we don't wait forever on dead ones
-                await page.goto("https://pixelsport.tv/", wait_until="domcontentloaded", timeout=30000)
-                
-                # Wait to see if data is captured
-                for _ in range(15):
-                    if api_results["data"]:
-                        break
-                    await asyncio.sleep(1)
+        # Catch the data as the page loads
+        async def catch_json(response):
+            if API_PATTERN in response.url and response.status == 200:
+                try:
+                    api_results["data"] = await response.json()
+                    logging.info("🎯 Found the API data!")
+                except:
+                    pass
 
-                if api_results["data"]:
-                    await process_data(api_results["data"])
-                    await browser.close()
-                    return # Exit the entire script on success
+        page.on("response", catch_json)
 
-                logging.warning(f"Proxy {proxy_addr} failed to load data. Trying next...")
-                await browser.close()
-
-            except Exception as e:
-                logging.warning(f"Proxy {proxy_addr} error: {e}")
-                continue
-
-    logging.error("❌ All proxy attempts failed.")
-
-async def handle_response(response, storage):
-    if "/backend/livetv/events" in response.url and response.status == 200:
         try:
-            storage["data"] = await response.json()
-        except:
-            pass
+            logging.info(f"Navigating to {TARGET_URL}...")
+            # Increased timeout because ScraperAPI can take a few seconds to find a clean IP
+            await page.goto(TARGET_URL, wait_until="networkidle", timeout=90000)
 
-async def process_data(data):
-    events = data.get("events", data) if isinstance(data, dict) else data
-    filename = f"pixelsports_{datetime.now().strftime('%Y%m%d_%H%M%S')}.m3u8"
-    # ... (Your existing M3U generation logic here)
-    logging.info(f"✅ Success! Data saved to {filename}")
+            # Wait up to 20 seconds for the backend call to complete
+            for _ in range(20):
+                if api_results["data"]:
+                    break
+                await asyncio.sleep(1)
+
+            if not api_results["data"]:
+                raise Exception("Failed to capture data. Cloudflare might have still blocked the IP.")
+
+            # --- PROCESS M3U ---
+            events = api_results["data"]
+            if isinstance(events, dict) and "events" in events:
+                events = events["events"]
+
+            filename = f"pixelsports_{datetime.now().strftime('%Y%m%d_%H%M%S')}.m3u8"
+            m3u_content = "#EXTM3U\n"
+            count = 0
+
+            for event in events:
+                name = event.get('match_name', 'Unknown')
+                channel = event.get('channel', {})
+                url = channel.get('server1URL') or event.get('server1URL')
+
+                if url and str(url).lower() != "null":
+                    if "hd.bestlive.top:443" in url:
+                        url = url.replace("hd.bestlive.top:443", "hd.pixelhd.online:443")
+                    
+                    category = channel.get('TVCategory', {}).get('name', 'Sports')
+                    m3u_content += f'#EXTINF:-1 group-title="{category}",{name}\n{url}\n'
+                    count += 1
+
+            with open(filename, "w", encoding="utf-8") as f:
+                f.write(m3u_content)
+            logging.info(f"✅ Success! Saved {count} items.")
+
+        except Exception as e:
+            logging.error(f"❌ Scrape failed: {e}")
+        finally:
+            await browser.close()
+
+def proxy_server():
+    return "proxy-server.scraperapi.com:8001"
 
 if __name__ == "__main__":
     asyncio.run(run())
