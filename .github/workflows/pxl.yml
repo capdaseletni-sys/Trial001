@@ -3,7 +3,7 @@ name: PixelSport M3U Scraper
 on:
   schedule:
     # This runs every 6 hours. Adjust the timing as needed (UTC time).
-    - cron: '0 */6 * * *'
+    - cron: '0 */1 * * *'
   workflow_dispatch: # Allows you to run it manually from the Actions tab
 
 jobs:
