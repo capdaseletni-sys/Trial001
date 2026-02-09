@@ -20,7 +20,7 @@ async def run():
             await page.goto("https://pixelsport.tv/", wait_until="networkidle")
             await asyncio.sleep(5) 
 
-            print(f"Fetching data...")
+            print(f"Fetching data from API...")
             await page.goto(url, wait_until="domcontentloaded")
 
             try:
@@ -31,29 +31,29 @@ async def run():
             data = json.loads(raw_json)
             events = data.get("events", data) if isinstance(data, dict) else data
 
-            # Start building the M3U8 content
             m3u_content = "#EXTM3U\n"
-            
             count = 0
+            
             for event in events:
                 name = event.get('match_name', 'Unknown Match')
                 channel = event.get('channel', {})
                 url_s1 = channel.get('server1URL') or event.get('server1URL')
                 
-                # Get category for group-title
-                category = channel.get('TVCategory', {}).get('name', 'Live Sports')
-
                 if url_s1 and url_s1 != "null":
-                    # Add to M3U format
+                    # --- DOMAIN REPLACEMENT LOGIC ---
+                    if "hd.bestlive.top:443" in url_s1:
+                        url_s1 = url_s1.replace("hd.bestlive.top:443", "hd.pixelhd.online:443")
+                    # --------------------------------
+                    
+                    category = channel.get('TVCategory', {}).get('name', 'Live Sports')
                     m3u_content += f'#EXTINF:-1 group-title="{category}",{name}\n'
                     m3u_content += f'{url_s1}\n'
                     count += 1
 
-            # Save to file
             with open("pixelsports.m3u8", "w", encoding="utf-8") as f:
                 f.write(m3u_content)
             
-            print(f"Success! Saved {count} matches to pixelsports.m3u8")
+            print(f"Success! {count} matches saved to pixelsports.m3u8 with domain updates.")
 
         except Exception as e:
             print(f"Scrape failed: {e}")
