@@ -41,7 +41,7 @@ def process_m3u():
                     cursor += 1
 
         # Save the result
-        with open("pixel_playlist.m3u", "w", encoding="utf-8") as f:
+        with open("pixelsports.m3u8", "w", encoding="utf-8") as f:
             f.write("\n".join(output))
             
         # Count based on EXTINF lines added (minus header)
