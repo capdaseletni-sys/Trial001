@@ -6,8 +6,7 @@ from datetime import datetime
 from playwright.async_api import async_playwright
 
 # --- CONFIGURATION ---
-# It's better to pull this from GitHub Secrets/Environment variables
-SCRAPERAPI_KEY = os.getenv("SCRAPERAPI_KEY", "dfbecf5ba79c271d0aad841372ad12d3") 
+SCRAPERAPI_KEY = os.getenv("SCRAPERAPI_KEY", "YOUR_API_KEY") 
 TARGET_URL = "https://pixelsport.tv/"
 API_PATTERN = "/backend/livetv/events"
 
@@ -15,18 +14,17 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 
 async def run():
     async with async_playwright() as p:
-        logging.info("🚀 Launching via ScraperAPI (Bypassing SSL checks)...")
+        logging.info("🚀 Starting Active Bypass via ScraperAPI...")
         
-        # We launch the browser normally
         browser = await p.chromium.launch(headless=True)
         
-        # The magic happens here: ignore_https_errors=True fixes the 0209 error
+        # We add 'antibot=true' specifically to the username as ScraperAPI requires
         context = await browser.new_context(
+            ignore_https_errors=True,
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-            ignore_https_errors=True, 
             proxy={
                 "server": "http://proxy-server.scraperapi.com:8001",
-                "username": f"scraperapi.render=true.antibot=true",
+                "username": "scraperapi.render=true.antibot=true",
                 "password": SCRAPERAPI_KEY
             }
         )
@@ -34,62 +32,70 @@ async def run():
         page = await context.new_page()
         api_results = {"data": None}
 
-        async def catch_json(response):
+        # Global listener for the API response
+        async def handle_response(response):
             if API_PATTERN in response.url and response.status == 200:
                 try:
                     api_results["data"] = await response.json()
-                    logging.info("🎯 API Data captured!")
+                    logging.info("🎯 TARGET REACHED: API data captured!")
                 except:
                     pass
 
-        page.on("response", catch_json)
+        page.on("response", handle_response)
 
         try:
             logging.info(f"Navigating to {TARGET_URL}...")
-            # Using wait_until="load" is often faster/more reliable with ScraperAPI
-            await page.goto(TARGET_URL, wait_until="load", timeout=120000)
+            # We use 'domcontentloaded' to start our "human" actions as soon as possible
+            await page.goto(TARGET_URL, wait_until="domcontentloaded", timeout=120000)
 
-            # Wait for the API call to trigger and be captured
-            for i in range(30):
+            # --- HUMAN SIMULATION LOOP ---
+            # We scroll and wait for up to 45 seconds
+            for i in range(45):
                 if api_results["data"]:
                     break
+                
+                # Perform a "human" scroll every 2 seconds
+                if i % 2 == 0:
+                    await page.mouse.wheel(0, 400)
+                    await asyncio.sleep(0.5)
+                    await page.mouse.wheel(0, -200) # Slight scroll back up
+                
                 await asyncio.sleep(1)
                 if i % 10 == 0:
-                    logging.info("Still waiting for backend response...")
+                    logging.info(f"Searching for data... (Trial {i}s)")
 
             if not api_results["data"]:
-                raise Exception("Data capture timed out. ScraperAPI couldn't find the event list.")
+                # Save a screenshot to see what's blocking us
+                await page.screenshot(path="debug_timeout.png")
+                raise Exception("Capture Timed Out. Site might be in a verification loop.")
 
-            # --- PROCESS DATA ---
-            data = api_results["data"]
-            events = data.get("events", data) if isinstance(data, dict) else data
+            # --- M3U DATA GENERATION ---
+            events = api_results["data"]
+            if isinstance(events, dict) and "events" in events:
+                events = events["events"]
 
-            filename = f"pixelsports_{datetime.now().strftime('%Y%m%d_%H%M%S')}.m3u8"
+            filename = f"pixelsport_live.m3u8"
             m3u_content = "#EXTM3U\n"
             count = 0
 
             for event in events:
-                name = event.get('match_name', 'Unknown Match')
+                name = event.get('match_name', 'Match')
                 channel = event.get('channel', {})
                 url = channel.get('server1URL') or event.get('server1URL')
 
                 if url and str(url).lower() != "null":
+                    # Fix common server URL issues
                     if "hd.bestlive.top:443" in url:
                         url = url.replace("hd.bestlive.top:443", "hd.pixelhd.online:443")
                     
-                    category = channel.get('TVCategory', {}).get('name', 'Live Sports')
-                    m3u_content += (
-                        f'#EXTINF:-1 group-title="{category}",{name}\n'
-                        f'#EXTVLCOPT:http-referrer=https://pixelsport.tv/\n'
-                        f'#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\n'
-                        f'{url}\n'
-                    )
+                    category = channel.get('TVCategory', {}).get('name', 'Sports')
+                    m3u_content += f'#EXTINF:-1 group-title="{category}",{name}\n{url}\n'
                     count += 1
 
             with open(filename, "w", encoding="utf-8") as f:
                 f.write(m3u_content)
                 
-            logging.info(f"✅ Success! Saved {count} matches to {filename}")
+            logging.info(f"✅ Success! Generated {filename} with {count} streams.")
 
         except Exception as e:
             logging.error(f"❌ Scrape failed: {e}")
