@@ -27,7 +27,7 @@ jobs:
         pip install requests
 
     - name: Run processing script
-      run: python pixel.py  # Replace with your actual filename
+      run: python pixelsports.py  # Replace with your actual filename
 
     - name: Commit and push changes
       run: |
