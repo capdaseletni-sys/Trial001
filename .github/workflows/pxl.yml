@@ -1,50 +1,63 @@
-name: PixelSport M3U Scraper
+name: PixelSport Playlist Generator
 
 on:
   schedule:
-    # This runs every 6 hours. Adjust the timing as needed (UTC time).
-    - cron: '0 */1 * * *'
-  workflow_dispatch: # Allows you to run it manually from the Actions tab
+    # Runs every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
-  scrape:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install system dependencies (Playwright)
         run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libnss3 \
+            libxss1 \
+            libatk-bridge2.0-0 \
+            libgtk-3-0 \
+            libdrm2 \
+            libgbm1 \
+            libasound2t64 \
+            libxshmfence1
+
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
           pip install requests
+          pip install playwright
+          playwright install firefox
 
-      - name: Run Scraper
-        run: python pxl.py
-
-      - name: 💾 Commit & Safely Push
+      - name: Run PixelSport scraper
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PIXELSPORTS_API_URL: ${{ secrets.PIXELSPORTS_API_URL }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions@users.noreply.github.com"
+          echo "🚀 Running PixelSport scraper..."
+          python pixelsports.py
 
-          # IMPORTANT: Match the filename used in your Python script
-          git add pixelsports.m3u8
+      - name: Commit and push playlists
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          git add pixelsports.m3u8 pixeltivi.m3u8 || true
 
           if git diff --cached --quiet; then
-            echo "✅ No changes to commit"
-            exit 0
+            echo "No changes to commit"
+          else
+            git commit -m "🔄 Update PixelSport playlists"
+            git push
           fi
-
-          git commit -m "🔁 Update playlist $(date -u +'%a %b %d %T UTC %Y')"
-
-          # Safe push logic
-          git pull origin main --rebase
-          git push origin main
