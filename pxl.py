@@ -1,145 +1,86 @@
-import asyncio
-import json
-import os
-import sys
-import urllib.request
-from datetime import datetime, timedelta
-from urllib.parse import quote
-from urllib.error import URLError, HTTPError
 import requests
+import re
 
-# ---------------- CONFIG ---------------- #
+TEAM_MAP = {
+    "Atlanta Hawks": "ATL", "Boston Celtics": "BOS", "Brooklyn Nets": "BKN",
+    "Charlotte Hornets": "CHA", "Chicago Bulls": "CHI", "Cleveland Cavaliers": "CLE",
+    "Dallas Mavericks": "DAL", "Denver Nuggets": "DEN", "Detroit Pistons": "DET",
+    "Golden State Warriors": "GSW", "Houston Rockets": "HOU", "Indiana Pacers": "IND",
+    "LA Clippers": "LAC", "Los Angeles Lakers": "LAL", "Memphis Grizzlies": "MEM",
+    "Miami Heat": "MIA", "Milwaukee Bucks": "MIL", "Minnesota Timberwolves": "MIN",
+    "New Orleans Pelicans": "NOP", "New York Knicks": "NYK", "Oklahoma City Thunder": "OKC",
+    "Orlando Magic": "ORL", "Philadelphia 76ers": "PHI", "Phoenix Suns": "PHX",
+    "Portland Trail Blazers": "POR", "Sacramento Kings": "SAC", "San Antonio Spurs": "SAS",
+    "Toronto Raptors": "TOR", "Utah Jazz": "UTA", "Washington Wizards": "WAS"
+}
 
-BASE = "https://pixelsport.tv"
+def clean_title(line):
+    # 1. Force group-title to "pixelsports"
+    line = re.sub(r'group-title="[^"]*"', 'group-title="pixelsports"', line)
+    
+    # 2. Split the line to isolate the display name (everything after the last comma)
+    if "," in line:
+        params, title = line.rsplit(",", 1)
+        
+        # Remove [NBA] and (PIXEL) - case insensitive
+        title = re.sub(r'\[NBA\]', '', title, flags=re.IGNORECASE)
+        title = re.sub(r'\(PIXEL\)', '', title, flags=re.IGNORECASE)
+        
+        # Replace full team names with abbreviations from TEAM_MAP
+        for full_name, short_name in TEAM_MAP.items():
+            if full_name in title:
+                title = title.replace(full_name, short_name)
+        
+        # Clean up extra whitespace left behind
+        title = ' '.join(title.split())
+        line = f"{params},{title}"
+        
+    return line
 
-# 🔐 API URL MUST come from env (GitHub Secrets / Variables)
-API_EVENTS = os.getenv("PIXELSPORTS_API_URL")
-
-OUT_VLC = "pixelsports.m3u8"
-OUT_TIVI = "pixeltivi.m3u8"
-
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
-UA_ENC = quote(UA, safe="")
-
-# ---------------- SAFETY ---------------- #
-
-def log(*a):
-    print(*a)
-    sys.stdout.flush()
-
-if not API_EVENTS:
-    log("❌ Missing API URL. Set PIXELSPORTS_API_URL env variable.")
-    sys.exit(1)
-
-# ---------------- TIME HELPERS ---------------- #
-
-def utc_to_et(utc_str: str) -> str:
+def process_m3u():
+    url = "https://raw.githubusercontent.com/doms9/iptv/refs/heads/default/M3U8/events.m3u8"
+    old_domain = "https://hd.bestlive.top:443"
+    new_domain = "https://hd.pixelhd.online:443"
+    
     try:
-        dt = datetime.fromisoformat(utc_str.replace("Z", "+00:00"))
-        # US Eastern DST approx
-        offset = -4 if 3 <= dt.month <= 11 else -5
-        et = dt + timedelta(hours=offset)
-        return et.strftime("%I:%M %p ET %m/%d/%Y").replace(" 0", " ")
-    except Exception:
-        return ""
+        print(f"Fetching and processing NBA/PIXEL events...")
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        lines = response.text.splitlines()
 
-# ---------------- API FETCH ---------------- #
+        output = ["#EXTM3U"]
+        
+        for i in range(len(lines)):
+            # Filter for PIXEL entries
+            if lines[i].startswith("#EXTINF") and "PIXEL" in lines[i].upper():
+                # Process the title and group
+                modified_extinf = clean_title(lines[i])
+                output.append(modified_extinf)
+                
+                cursor = i + 1
+                while cursor < len(lines):
+                    current_line = lines[cursor].strip()
+                    if not current_line:
+                        cursor += 1
+                        continue
+                    
+                    if current_line.startswith("#EXTVLCOPT"):
+                        output.append(current_line)
+                    elif current_line.startswith("http"):
+                        output.append(current_line.replace(old_domain, new_domain))
+                        break
+                    elif current_line.startswith("#EXTINF"):
+                        break
+                    cursor += 1
 
-def fetch_events() -> list:
-    log("[*] Fetching PixelSports events API…")
+        with open("pixelsports.m3u8", "w", encoding="utf-8") as f:
+            f.write("\n".join(output))
+            
+        count = sum(1 for line in output if line.startswith("#EXTINF"))
+        print(f"Success! {count} channels processed and shortened.")
 
-    try:
-        r = requests.get(
-            API_EVENTS,
-            headers={
-                "User-Agent": UA,
-                "Accept": "application/json",
-                "Referer": BASE + "/"
-            },
-            timeout=15
-        )
-        r.raise_for_status()
     except Exception as e:
-        log("❌ API request failed:", e)
-        return []
-
-    raw = r.text.strip()
-
-    if not raw.startswith("{") and not raw.startswith("["):
-        log("❌ API did not return JSON")
-        log(raw[:200])
-        return []
-
-    try:
-        data = json.loads(raw)
-    except Exception as e:
-        log("❌ JSON parse failed:", e)
-        log(raw[:200])
-        return []
-
-    events = data.get("events", [])
-    if not isinstance(events, list):
-        log("❌ Invalid API format")
-        return []
-
-    return events
-
-# ---------------- PLAYLIST BUILD ---------------- #
-
-def build_playlist(events: list, tivimate: bool = False) -> str:
-    out = ["#EXTM3U"]
-
-    for ev in events:
-        title = ev.get("match_name", "Live Event")
-        logo = ev.get("logo", "")
-        time_et = utc_to_et(ev.get("date", ""))
-
-        if time_et:
-            title = f"{title} - {time_et}"
-
-        channels = ev.get("channel", {})
-
-        for idx, label in [(1, "Home"), (2, "Away"), (3, "Alt")]:
-            url = channels.get(f"server{idx}URL")
-            if not url or url == "null":
-                continue
-
-            extinf = f'#EXTINF:-1 group-title="PixelSport"'
-            if logo:
-                extinf += f' tvg-logo="{logo}"'
-            extinf += f",{title} ({label})"
-
-            out.append(extinf)
-
-            if tivimate:
-                out.append(
-                    f"{url}|user-agent={UA_ENC}|referer={BASE}/|origin={BASE}|icy-metadata=1"
-                )
-            else:
-                out.append(f"#EXTVLCOPT:http-user-agent={UA}")
-                out.append(f"#EXTVLCOPT:http-referrer={BASE}/")
-                out.append(url)
-
-    return "\n".join(out)
-
-# ---------------- MAIN ---------------- #
-
-async def main():
-    events = fetch_events()
-
-    if not events:
-        log("❌ No events found")
-        return
-
-    with open(OUT_VLC, "w", encoding="utf-8") as f:
-        f.write(build_playlist(events, tivimate=False))
-
-    with open(OUT_TIVI, "w", encoding="utf-8") as f:
-        f.write(build_playlist(events, tivimate=True))
-
-    log(f"✔ Generated {len(events)} events")
-    log(f"✔ {OUT_VLC}")
-    log(f"✔ {OUT_TIVI}")
+        print(f"Error: {e}")
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    process_m3u()
