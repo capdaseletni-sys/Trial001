@@ -30,10 +30,7 @@ jobs:
 
     - name: Run processing script
       run: |
-        # Install xvfb if not present
-        sudo apt-get install -y xvfb
-        # Run your script through the virtual screen
-        xvfb-run --auto-servernum python ppv.py
+          python ppv.py
 
     - name: Commit and push changes
       run: |
