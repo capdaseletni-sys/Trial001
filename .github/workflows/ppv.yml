@@ -35,7 +35,7 @@ jobs:
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add ppv.m3u8
+        git add movies_library.m3u
         # The '|| exit 0' ensures the workflow doesn't fail if there are no changes to commit
         git commit -m "Auto-update playlist: $(date)" || exit 0
         git push
