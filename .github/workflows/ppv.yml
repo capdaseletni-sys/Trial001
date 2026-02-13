@@ -29,7 +29,7 @@ jobs:
           pip install playwright-stealth
 
     - name: Run processing script
-      run: python ppv.py  # Replace with your actual filename
+      run: xvfb-run python ppv.py
 
     - name: Commit and push changes
       run: |
