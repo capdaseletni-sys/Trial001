@@ -26,6 +26,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install playwright httpx
           playwright install chromium
+          pip install playwright-stealth
 
     - name: Run processing script
       run: python ppv.py  # Replace with your actual filename
