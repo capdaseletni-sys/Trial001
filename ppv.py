@@ -3,95 +3,95 @@ import os
 from playwright.async_api import async_playwright
 
 # --- CONFIGURATION ---
-IMDB_ID = "tt16500624" 
-TARGET_URL = f"https://vidsrc.me/embed/movie?imdb={IMDB_ID}"
+# The specific movie link you provided
+TARGET_URL = "https://www.cineby.gd/movie/1426964"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
 
-async def scrape_vidsrc_optimized(url):
+async def scrape_cineby(url):
     async with async_playwright() as p:
-        # Launching with headless=False is crucial for 'headed' simulation via Xvfb
+        # headless=False is needed if running via a virtual display (Xvfb)
         browser = await p.chromium.launch(headless=False) 
+        context = await browser.new_context(user_agent=USER_AGENT, viewport={'width': 1920, 'height': 1080})
         
-        context = await browser.new_context(
-            user_agent=USER_AGENT,
-            viewport={'width': 1920, 'height': 1080},
-        )
-        
-        # Inject stealth script to bypass basic detection
+        # Stealth injection
         await context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
         
         page = await context.new_page()
         captured_link = None
 
-        # --- BROADENED REQUEST SNIFFER ---
+        # --- ADVANCED SNIFFER ---
         async def handle_request(request):
             nonlocal captured_link
             u = request.url
             
-            # Look for common patterns: .m3u8 extension or known CDN keywords
-            # Added check for 'techparadise' and 'frostcomet' patterns
-            is_manifest = ".m3u8" in u.lower() or "aW5kZXgubTN1OA==" in u
-            is_not_segment = not u.endswith(".ts")
+            # Keywords based on your successful example and Cineby's providers
+            patterns = [".m3u8", "aW5kZXgubTN1OA==", "techparadise", "frostcomet", "one.tech"]
             
-            if is_manifest and is_not_segment and not captured_link:
-                # Exclude obvious ad/tracker noise
-                if "google" not in u and "doubleclick" not in u:
+            if any(p in u for p in patterns) and not u.endswith(".ts"):
+                if not captured_link:
                     captured_link = u
-                    print(f"\n🎯 FOUND TARGET: {u[:80]}...")
+                    print(f"\n🎯 MANIFEST DETECTED: {u[:85]}...")
 
         page.on("request", handle_request)
 
         try:
-            print(f"🚀 Navigating to: {url}")
-            # Networkidle is risky on ad-heavy sites, but good for catching initial loads
-            await page.goto(url, wait_until="domcontentloaded")
+            print(f"🚀 Opening Cineby: {url}")
+            await page.goto(url, wait_until="domcontentloaded", timeout=60000)
             
-            # 1. Wait for the player/iframe to load
-            print("⏳ Waiting for player initialization (10s)...")
-            await asyncio.sleep(10)
+            # 1. Wait for page elements to settle
+            await asyncio.sleep(5)
 
-            # 2. Aggressive Overlay Removal (Clearing the path for clicks)
-            print("🧹 Deleting invisible blocker overlays...")
+            # 2. Look for the Play Button or Server Button
+            # Cineby often has a "Play Now" overlay or a list of servers
+            print("🔘 Attempting to trigger the player...")
+            play_selectors = [
+                "button:has-text('Play')", 
+                ".play-button", 
+                "#player-iframe",
+                "div[class*='PlayButton']"
+            ]
+            
+            for selector in play_selectors:
+                try:
+                    if await page.is_visible(selector):
+                        await page.click(selector)
+                        print(f"   Clicked: {selector}")
+                        await asyncio.sleep(2)
+                except:
+                    continue
+
+            # 3. Clean up UI (Overlays/Ads)
+            print("🧹 Removing blockers...")
             await page.evaluate("""() => {
-                const blockers = document.querySelectorAll('div, section, ins');
-                blockers.forEach(el => {
-                    const style = window.getComputedStyle(el);
-                    const z = parseInt(style.zIndex);
-                    // Remove high z-index layers and fixed/absolute position ads
-                    if (z > 100 || style.position === 'fixed') {
-                        el.remove();
-                    }
-                });
+                const elements = document.querySelectorAll('div, section, ins');
+                for (const el of elements) {
+                    const z = parseInt(window.getComputedStyle(el).zIndex);
+                    if (z > 100) el.remove();
+                }
             }""")
 
-            # 3. Simulation: The Handshake Clicks
-            # We click the center of the screen multiple times to trigger the player logic
-            print("🖱️ Performing interaction handshake...")
-            for i in range(4):
-                print(f"   Clicking player... ({i+1}/4)")
-                await page.mouse.click(960, 540) 
-                await asyncio.sleep(2) # Wait for potential popups to trigger/be blocked
-
-            # 4. Final Sniffing Window
-            print("🕵️ Sniffing background traffic for manifest...")
-            for i in range(30):
+            # 4. The Interaction Loop
+            # We click center screen and look for the manifest
+            print("🖱️ Simulating player interaction...")
+            for i in range(5):
+                # Click center of the player area
+                await page.mouse.click(960, 540)
+                await asyncio.sleep(3)
                 if captured_link: break
-                await asyncio.sleep(1)
-                if i % 10 == 0: print(f"   Searching... {i}s")
+                print(f"   Polling... {i+1}/5")
 
             if captured_link:
-                print("\n" + "="*70)
-                print("✅ CAPTURE SUCCESSFUL")
-                print(f"URL: {captured_link}")
-                print("="*70)
+                print("\n" + "═"*70)
+                print("✅ CAPTURE SUCCESS")
+                print(f"LINK: {captured_link}")
+                print("═"*70)
                 
-                # Create the local M3U file with necessary headers
+                # Save with Referer (Cineby or Vidsrc depending on source)
                 with open("stream.m3u", "w") as f:
-                    # Referer is essential for bypass on techparadise/vidsrc
-                    f.write(f"#EXTM3U\n#EXTVLCOPT:http-referrer=https://vidsrc.me/\n#EXTINF:-1, Scraped Movie\n{captured_link}")
-                print("\n💾 Saved to 'stream.m3u'. Use VLC to play.")
+                    f.write(f"#EXTM3U\n#EXTVLCOPT:http-referrer={url}\n#EXTINF:-1, Cineby Movie\n{captured_link}")
+                print("\n💾 Saved to 'stream.m3u'.")
             else:
-                print("\n❌ FAILED: No .m3u8 detected. The site might require a manual Captcha solve.")
+                print("\n❌ FAILED: Manifest not found. Check if the video actually loads in a normal browser.")
 
         except Exception as e:
             print(f"⚠️ Error: {e}")
@@ -99,4 +99,4 @@ async def scrape_vidsrc_optimized(url):
             await browser.close()
 
 if __name__ == "__main__":
-    asyncio.run(scrape_vidsrc_optimized(TARGET_URL))
+    asyncio.run(scrape_cineby(TARGET_URL))
