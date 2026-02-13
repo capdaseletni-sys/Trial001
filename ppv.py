@@ -4,60 +4,68 @@ from playwright.async_api import async_playwright
 TEST_MOVIE_URL = "https://tv13.lk21official.life/disco-dancer-1982/" 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
 
-async def capture_m3u8_advanced(url):
+async def capture_p2p_stream(url):
     async with async_playwright() as p:
+        # headless=False is recommended for the first run to see if it clicks the right button
         browser = await p.chromium.launch(headless=True)
         context = await browser.new_context(user_agent=USER_AGENT)
         page = await context.new_page()
         
         found_url = None
 
-        # Using 'on response' is often more reliable for catching redirects
+        # Listen for the manifest file
         async def handle_response(response):
             nonlocal found_url
             u = response.url
             if ".m3u8" in u and not found_url:
-                if not u.endswith(".ts"): # Skip segments
+                if "master" in u or "index" in u or "playlist" in u:
                     found_url = u
 
         page.on("response", handle_response)
 
         try:
-            print(f"Loading page: {url}")
-            await page.goto(url, wait_until="networkidle", timeout=60000)
+            print(f"🚀 Loading page: {url}")
+            await page.goto(url, wait_until="domcontentloaded")
             
-            # 1. Wait for any 'I am not a bot' or overlay to vanish
-            await asyncio.sleep(5)
-
-            # 2. Strategy: Click every iframe on the page
-            # Movie sites often nest the real player 2-3 levels deep
-            frames = page.frames
-            print(f"Found {len(frames)} nested frames. Attempting to trigger player...")
+            # --- STEP 1: Select the P2P Server ---
+            print("Searching for P2P server button...")
+            await asyncio.sleep(5) # Wait for the UI to load server tabs
             
-            for frame in frames:
-                try:
-                    # Look for play buttons or common player IDs
-                    await frame.click("video", timeout=1000, force=True)
-                except:
-                    try:
-                        # Fallback: Click the center of every frame
-                        await frame.click("body", timeout=1000, force=True)
-                    except:
-                        continue
+            # We look for a link or button that contains the text "P2P"
+            p2p_button = page.get_by_text("P2P", exact=True)
+            
+            if await p2p_button.is_visible():
+                print("Found P2P button. Clicking...")
+                await p2p_button.click()
+                # Clicking a server usually reloads the player iframe
+                await asyncio.sleep(5) 
+            else:
+                print("⚠️ P2P button not found via direct text. Checking all links...")
+                # Fallback: find any link with P2P in the text or title
+                links = await page.query_selector_all("a")
+                for link in links:
+                    text = await link.inner_text()
+                    if "P2P" in text.upper():
+                        print(f"Found match: {text}. Clicking...")
+                        await link.click()
+                        await asyncio.sleep(5)
+                        break
 
-            # 3. Final brute-force click on the main page center
-            await page.mouse.click(640, 360)
+            # --- STEP 2: Trigger the Video ---
+            print("Attempting to trigger play on the P2P player...")
+            # Often, clicking the center of the player area is required after switching servers
+            await page.mouse.click(640, 360) 
 
-            # 4. Extended polling
-            for i in range(30):
+            # --- STEP 3: Capture ---
+            for i in range(25):
                 if found_url: break
                 await asyncio.sleep(1)
-                if i % 5 == 0: print(f"Polling network traffic... ({i}s)")
+                if i % 5 == 0: print(f"Sniffing network... ({i}s)")
 
             if found_url:
-                print(f"\n✅ SUCCESS! STREAM CAUGHT:\n{found_url}\n")
+                print(f"\n✅ P2P STREAM CAPTURED:\n{found_url}")
             else:
-                print("\n❌ Failed. The site might require a 'Server' selection click first.")
+                print("\n❌ Failed to capture. P2P server might be down or require manual captcha.")
 
         except Exception as e:
             print(f"Error: {e}")
@@ -65,4 +73,4 @@ async def capture_m3u8_advanced(url):
             await browser.close()
 
 if __name__ == "__main__":
-    asyncio.run(capture_m3u8_advanced(TEST_MOVIE_URL))
+    asyncio.run(capture_p2p_stream(TEST_MOVIE_URL))
