@@ -1,48 +1,60 @@
 import asyncio
 from playwright.async_api import async_playwright
 
-# Paddington in Peru IMDb ID: tt16500624
-IMDB_ID = "tt16500624"
-# Direct API endpoint
-VIDSRC_URL = f"https://vidsrc.me/embed/movie?imdb={IMDB_ID}"
-
-async def scrape_vidsrc_api(api_url):
+async def vidsrc_deep_sniff(imdb_id):
     async with async_playwright() as p:
+        # headless=False is your best friend when 'networkidle' fails
         browser = await p.chromium.launch(headless=True)
-        context = await browser.new_context()
+        context = await browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        )
         page = await context.new_page()
 
-        found_m3u8 = None
+        captured_url = None
 
-        async def handle_response(response):
-            nonlocal found_m3u8
-            if ".m3u8" in response.url and not found_m3u8:
-                found_m3u8 = response.url
+        # Listen to REQUESTS (catches the link before it's even loaded)
+        async def handle_request(request):
+            nonlocal captured_url
+            u = request.url
+            # Catching the three most common manifest patterns
+            if any(x in u for x in [".m3u8", "master", "playlist"]) and not captured_url:
+                if not u.endswith(".ts"): # Ignore segment chunks
+                    captured_url = u
 
-        page.on("response", handle_response)
+        page.on("request", handle_request)
 
         try:
-            print(f"🚀 Querying API: {api_url}")
-            await page.goto(api_url, wait_until="networkidle")
+            url = f"https://vidsrc.me/embed/movie?imdb={imdb_id}"
+            print(f"🚀 Targeting API: {url}")
             
-            # VidSrc usually has a big 'Play' button in an iframe
-            print("Interacting with VidSrc player...")
-            await asyncio.sleep(5)
+            await page.goto(url, wait_until="domcontentloaded")
+            await asyncio.sleep(4)
+
+            # --- STEP 1: The 'Wake-Up' Click ---
+            # VidSrc requires a physical interaction to start the crypto-handshake
+            print("Triggering player handshake...")
+            await page.mouse.move(640, 360) # Simulate a hover
+            await asyncio.sleep(1)
+            await page.mouse.click(640, 360) # Click the center
             
-            # Brute force click to start the stream protocol
-            await page.mouse.click(640, 360) 
-            
-            for i in range(20):
-                if found_m3u8: break
+            # --- STEP 2: The Polling Loop ---
+            for i in range(30):
+                if captured_url: break
                 await asyncio.sleep(1)
-            
-            if found_m3u8:
-                print(f"✅ FOUND DIRECT STREAM:\n{found_m3u8}")
+                if i % 10 == 0: print(f"Sniffing background fetches... {i}s")
+
+            if captured_url:
+                print("\n" + "="*50)
+                print("✅ CAPTURED MANIFEST:")
+                print(captured_url)
+                print("="*50)
+                print("⚠️  Note: This link usually requires Referer: https://vidsrc.me/")
             else:
-                print("❌ API did not release a public M3U8. It may be using encrypted chunks.")
+                print("\n❌ Handshake failed. The site may be using WebSockets or DRM.")
 
         finally:
             await browser.close()
 
 if __name__ == "__main__":
-    asyncio.run(scrape_vidsrc_api(VIDSRC_URL))
+    # Trying with your Paddington ID
+    asyncio.run(vidsrc_deep_sniff("tt16500624"))
