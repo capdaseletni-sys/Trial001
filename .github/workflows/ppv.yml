@@ -21,9 +21,7 @@ jobs:
           sudo apt-get install -y xvfb
 
       - name: Run Scraper in Virtual Display
-        run: |
-          # xvfb-run simulates the monitor for headed mode
-          xvfb-run python ppv.py
+        run: xvfb-run -s "-screen 0 1920x1080x24" python ppv.py
     
       - name: Upload Debug Artifacts
         if: always()  # This ensures it runs even if the scraper fails
