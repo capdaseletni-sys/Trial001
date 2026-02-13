@@ -23,10 +23,9 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install requests
-        pip install playwright
-        playwright install chromium
+          python -m pip install --upgrade pip
+          pip install playwright httpx
+          playwright install chromium
 
     - name: Run processing script
       run: python ppv.py  # Replace with your actual filename
