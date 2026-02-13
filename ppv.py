@@ -1,6 +1,7 @@
 import asyncio
 import httpx
 import logging
+import random
 from datetime import datetime, timedelta, timezone
 from playwright.async_api import async_playwright, Browser
 
@@ -9,7 +10,7 @@ log = logging.getLogger("PPV_Scraper")
 
 TAG = "PPV"
 PLAYLIST_NAME = "ppv.m3u8"
-CONCURRENT_TASKS = 2  # Reduced to 2 to give more CPU to each browser instance
+CONCURRENT_TASKS = 2 
 MIRRORS = [
     "https://old.ppv.to/api/streams",
     "https://api.ppvs.su/api/streams",
@@ -23,7 +24,7 @@ def clean_timestamp(ts):
 async def get_api_events():
     now = datetime.now(timezone.utc)
     start_window = now - timedelta(hours=2)
-    end_window = now + timedelta(hours=6)
+    end_window = now + timedelta(hours=8)
     
     async with httpx.AsyncClient(follow_redirects=True) as client:
         for mirror in MIRRORS:
@@ -48,10 +49,20 @@ async def get_api_events():
 async def intercept_m3u8(browser: Browser, ev: dict, semaphore: asyncio.Semaphore, extracted_urls: dict):
     async with semaphore:
         key = f"[{ev['sport']}] {ev['event']} ({TAG})"
+        
+        # Enhanced context to bypass bot detection
         context = await browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-            viewport={'width': 1280, 'height': 720}
+            viewport={'width': 1920, 'height': 1080},
+            device_scale_factor=1,
+            is_mobile=False,
+            has_touch=False,
+            java_script_enabled=True
         )
+        
+        # Add a common "Human" property to the browser
+        await context.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+        
         page = await context.new_page()
         found_url = None
 
@@ -66,29 +77,27 @@ async def intercept_m3u8(browser: Browser, ev: dict, semaphore: asyncio.Semaphor
         
         try:
             log.info(f"Processing: {ev['event']}")
-            # Navigate with a longer timeout for Cloudflare-heavy sites
-            await page.goto(ev["link"], wait_until="load", timeout=45000)
             
-            # Wait for any overlays to appear
-            await asyncio.sleep(5)
+            # Use a more natural wait
+            await page.goto(ev["link"], wait_until="networkidle", timeout=60000)
+            
+            # Human-like delay
+            await asyncio.sleep(random.uniform(4, 7))
 
-            # --- Aggressive Interaction ---
-            # 1. Click the center
-            await page.mouse.click(640, 360)
-            await asyncio.sleep(1)
-            # 2. Click slightly offset (incase of invisible 'X' buttons or play icons)
-            await page.mouse.click(645, 365)
+            # Click with slight randomization
+            x = 960 + random.randint(-50, 50)
+            y = 540 + random.randint(-50, 50)
+            await page.mouse.click(x, y)
             
-            # 3. Check for nested iframes and click inside them
+            # Check frames
             for frame in page.frames:
                 try:
-                    # Look for play buttons or just click the frame center
-                    await frame.click("body", timeout=500, force=True)
+                    await frame.click("body", timeout=1000, force=True)
                 except:
                     pass
 
-            # Final poll
-            for _ in range(20): 
+            # Polling for result
+            for _ in range(25): 
                 if found_url: break
                 await asyncio.sleep(1)
                 
@@ -112,7 +121,15 @@ async def main():
     semaphore = asyncio.Semaphore(CONCURRENT_TASKS)
 
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
+        # Launch with specific anti-detection arguments
+        browser = await p.chromium.launch(
+            headless=True,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--no-sandbox",
+                "--disable-setuid-sandbox"
+            ]
+        )
         tasks = [intercept_m3u8(browser, ev, semaphore, extracted_data) for ev in events]
         await asyncio.gather(*tasks)
         await browser.close()
@@ -125,7 +142,7 @@ async def main():
             f.write("\n".join(lines))
         log.info(f"Saved {len(extracted_data)} streams.")
     else:
-        log.error("Zero streams captured. The mirrors might be implementing a new anti-bot.")
+        log.error("Still 0 streams. This indicates the site is blocking headless browsers entirely.")
 
 if __name__ == "__main__":
     asyncio.run(main())
