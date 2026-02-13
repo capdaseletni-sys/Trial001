@@ -30,7 +30,7 @@ jobs:
 
     - name: Run processing script
       run: |
-          python ppv.py
+          xvfb-run python ppv.py
 
     - name: Commit and push changes
       run: |
