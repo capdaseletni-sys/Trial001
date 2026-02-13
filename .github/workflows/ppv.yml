@@ -24,3 +24,12 @@ jobs:
         run: |
           # xvfb-run simulates the monitor for headed mode
           xvfb-run python ppv.py
+    
+      - name: Upload Debug Artifacts
+        if: always()  # This ensures it runs even if the scraper fails
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-debug-files
+          path: |
+            debug.png
+          retention-days: 5
