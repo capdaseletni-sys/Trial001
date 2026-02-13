@@ -1,80 +1,48 @@
 import asyncio
 from playwright.async_api import async_playwright
 
-# --- CONFIGURATION ---
-TARGET_URL = "https://pinoymovieshub.org/movies/paddington-in-peru-2024/"
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+# Paddington in Peru IMDb ID: tt16500624
+IMDB_ID = "tt16500624"
+# Direct API endpoint
+VIDSRC_URL = f"https://vidsrc.me/embed/movie?imdb={IMDB_ID}"
 
-async def capture_pmh_clean(url):
+async def scrape_vidsrc_api(api_url):
     async with async_playwright() as p:
-        # Running headless=True; if it still fails, the site might require human interaction
         browser = await p.chromium.launch(headless=True)
-        context = await browser.new_context(user_agent=USER_AGENT)
+        context = await browser.new_context()
         page = await context.new_page()
 
-        found_url = None
+        found_m3u8 = None
 
         async def handle_response(response):
-            nonlocal found_url
-            u = response.url
-            if ".m3u8" in u and not found_url:
-                if not u.endswith(".ts"):
-                    found_url = u
+            nonlocal found_m3u8
+            if ".m3u8" in response.url and not found_m3u8:
+                found_m3u8 = response.url
 
         page.on("response", handle_response)
 
         try:
-            print(f"🚀 Loading PMH: {url}")
-            await page.goto(url, wait_until="networkidle")
+            print(f"🚀 Querying API: {api_url}")
+            await page.goto(api_url, wait_until="networkidle")
             
-            # --- STEP 1: Kill the invisible overlays ---
-            print("Removing invisible ad-blockers...")
-            await page.evaluate("""() => {
-                const selectors = ['div[id*="dontfoid"]', 'div[class*="overlay"]', 'div[style*="z-index: 99999"]'];
-                selectors.forEach(sel => {
-                    document.querySelectorAll(sel).forEach(el => el.remove());
-                });
-            }""")
-            await asyncio.sleep(2)
-
-            # --- STEP 2: Force-Click the Main Server ---
-            # Based on your log, the text 'Main' is inside a span. 
-            # We use 'force=True' to bypass any remaining pointer interception.
-            print("Attempting forced click on 'Main' server...")
-            try:
-                # Target the specific list item for the Main server
-                main_server = page.locator("li:has-text('Main')").first
-                await main_server.click(force=True, timeout=10000)
-                print("Click successful.")
-            except Exception as e:
-                print(f"Standard click failed, trying JavaScript click: {e}")
-                await page.evaluate("() => { [...document.querySelectorAll('li')].find(el => el.innerText.includes('Main')).click(); }")
-
-            # --- STEP 3: Handle the Player Iframe ---
-            print("Waking up the player...")
-            await asyncio.sleep(8) 
+            # VidSrc usually has a big 'Play' button in an iframe
+            print("Interacting with VidSrc player...")
+            await asyncio.sleep(5)
             
-            # Click the player in all frames
-            for frame in page.frames:
-                try:
-                    await frame.click("video, .play-button, #play-btn", force=True, timeout=2000)
-                except: pass
-
-            # --- STEP 4: Sniff ---
-            for i in range(25):
-                if found_url: break
+            # Brute force click to start the stream protocol
+            await page.mouse.click(640, 360) 
+            
+            for i in range(20):
+                if found_m3u8: break
                 await asyncio.sleep(1)
-                if i % 5 == 0: print(f"Sniffing traffic... {i}s")
-
-            if found_url:
-                print(f"\n✅ CAUGHT M3U8: {found_url}")
-                with open("pmh_final.m3u", "w") as f:
-                    f.write(f"#EXTM3U\n#EXTINF:-1, Paddington in Peru\n{found_url}")
+            
+            if found_m3u8:
+                print(f"✅ FOUND DIRECT STREAM:\n{found_m3u8}")
             else:
-                print("\n❌ Failed to catch link. The site might be using an encrypted player.")
+                print("❌ API did not release a public M3U8. It may be using encrypted chunks.")
 
         finally:
             await browser.close()
 
 if __name__ == "__main__":
-    asyncio.run(capture_pmh_clean(TARGET_URL))
+    asyncio.run(scrape_vidsrc_api(VIDSRC_URL))
