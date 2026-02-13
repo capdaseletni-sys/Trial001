@@ -4,13 +4,16 @@ from playwright.async_api import async_playwright
 TARGET_URL = "https://www.cineby.gd/movie/1426964"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
 
-async def scrape_cineby_with_play_click(url):
+async def scrape_cineby_fixed(url):
     async with async_playwright() as p:
-        # Running in headed mode via xvfb-run
-        browser = await p.chromium.launch(headless=False) 
+        # Added --disable-gpu to fix the white screen issue in CI/Xvfb
+        browser = await p.chromium.launch(
+            headless=False, 
+            args=["--disable-gpu", "--disable-software-rasterizer"]
+        ) 
+        
         context = await browser.new_context(user_agent=USER_AGENT, viewport={'width': 1920, 'height': 1080})
         page = await context.new_page()
-        
         captured_link = None
 
         async def handle_request(request):
@@ -19,59 +22,44 @@ async def scrape_cineby_with_play_click(url):
             if (".m3u8" in u or "aW5kZXgubTN1OA==" in u) and not u.endswith(".ts"):
                 if not captured_link:
                     captured_link = u
-                    print(f"🎯 MANIFEST CAPTURED: {u}")
+                    print(f"🎯 LINK FOUND: {u[:80]}")
 
         page.on("request", handle_request)
 
         try:
-            print(f"🚀 Navigating to Cineby...")
-            await page.goto(url, wait_until="networkidle")
+            print("🚀 Navigating... waiting for full load...")
+            # Use 'networkidle' to ensure all elements/ads are loaded
+            await page.goto(url, wait_until="networkidle", timeout=90000)
             
-            # 1. Target the 'Play' button from your screenshot
-            print("🔘 Clicking the 'Play' button...")
-            # We use a robust selector that looks for the 'Play' text inside a button
-            play_btn = page.get_by_role("button", name="Play")
+            # Wait extra time for the UI to actually render on the virtual screen
+            await asyncio.sleep(5)
             
-            if await play_btn.is_visible():
-                await play_btn.click()
-                print("✅ Clicked main Play button.")
-            else:
-                # Fallback: Click the exact coordinates if the selector fails
-                print("⚠️ Play button not found by text, trying coordinate click...")
-                await page.mouse.click(80, 735) # Based on standard layout for that button position
+            # Take a "pre-click" screenshot to see if it's still white
+            await page.screenshot(path="pre_click.png")
 
-            # 2. Wait for the player to swap in
-            print("⏳ Waiting for player to load and handshake...")
-            await asyncio.sleep(10)
+            # Click the Play button by text for better accuracy
+            print("🔘 Clicking Play...")
+            try:
+                # wait_for_selector ensures the button is present before clicking
+                await page.wait_for_selector("button:has-text('Play')", timeout=10000)
+                await page.get_by_role("button", name="Play").click()
+            except:
+                print("⚠️ Play button selector failed, using coordinate click...")
+                await page.mouse.click(80, 735)
 
-            # 3. Handle secondary 'Play' inside the player iframe
-            # Often, after clicking the site 'Play', the actual player iframe has its own button
-            frames = page.frames
-            for frame in frames:
-                try:
-                    # Click center of all frames to bypass 'click-to-play' overlays
-                    await frame.click("body", position={"x": 500, "y": 300}, timeout=2000, force=True)
-                except:
-                    continue
-
-            # 4. Final Polling
-            for i in range(20):
-                if captured_link: break
-                await asyncio.sleep(1)
-
-            # 5. Debug Screenshot
+            # Wait for sniffing
+            await asyncio.sleep(15)
+            
+            # Final debug screenshot
             await page.screenshot(path="debug.png")
-            print("📸 Debug screenshot saved as 'debug.png'")
 
             if captured_link:
                 with open("stream.m3u", "w") as f:
                     f.write(f"#EXTM3U\n#EXTVLCOPT:http-referrer={url}\n{captured_link}")
-                print("💾 SUCCESS: stream.m3u created.")
-            else:
-                print("❌ FAILED: No m3u8 detected. Check debug.png to see what happened.")
-
+                print("✅ stream.m3u created.")
+        
         finally:
             await browser.close()
 
 if __name__ == "__main__":
-    asyncio.run(scrape_cineby_with_play_click(TARGET_URL))
+    asyncio.run(scrape_cineby_fixed(TARGET_URL))
