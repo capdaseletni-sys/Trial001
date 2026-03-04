@@ -1,4 +1,5 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2500000
+#EXTVLCOPT:http-reconnect=true
 http://s.rocketdns.info:8080/live/Z3nXfkOnf0/Madt8rUvmN/3146.m3u8?output=m3u8
