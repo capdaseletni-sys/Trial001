@@ -105,7 +105,7 @@ def generate_playlist():
         stream_url = f"{BASE_DOMAIN}/play/live.php?mac={MAC_ADDRESS}&stream={ch['id']}&extension=m3u8"
         
         # 1. Create individual filename (URL encoded for GitHub links)
-        safe_filename = re.sub(r'[\\/*?:"<>|]', "", ch['name']) + ".m3u"
+        safe_filename = re.sub(r'[\\/*?:"<>|]', "", ch['name']) + ".m3u8"
         github_safe_name = safe_filename.replace(" ", "%20")
         
         # 2. Save individual M3U
