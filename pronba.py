@@ -10,7 +10,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 BASE_DOMAIN = "http://pro.reott8k.xyz:80"
 PORTAL_URL = f"{BASE_DOMAIN}/portal.php"
 MAC_ADDRESS = "00:1A:79:7B:BB:36" 
-SAVE_PATH = "vet5.m3u8"
+SAVE_PATH = "pronba.m3u8"
 MAX_WORKERS = 10 
 
 # Portal Category to search for
