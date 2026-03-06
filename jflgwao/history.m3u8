@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2500000
+http://pro.reott8k.xyz:80/play/live.php?mac=00:1A:79:EE:CD:F0&stream=414091&extension=m3u8
