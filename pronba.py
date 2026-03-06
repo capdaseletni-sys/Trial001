@@ -10,16 +10,16 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 BASE_DOMAIN = "http://pro.reott8k.xyz:80"
 PORTAL_URL = f"{BASE_DOMAIN}/portal.php"
 MAC_ADDRESS = "00:1A:79:7B:BB:36" 
-SAVE_PATH = "pronba.m3u8"
+SAVE_FOLDER = "nba_playlists"
+MASTER_FILENAME = "pronba.m3u8"
+
+# UPDATE THIS: Replace with your GitHub details
+# Format: https://raw.githubusercontent.com/USERNAME/REPO_NAME/BRANCH_NAME/FOLDER_NAME/
+GITHUB_RAW_BASE = "https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/"
+
 MAX_WORKERS = 10 
-
-# Portal Category to search for
 TARGET_CATEGORY = "US| NBA PASS PPV ⁸ᴷ"
-
-# Label used in the M3U file
 OUTPUT_GROUP_NAME = "NBA LEAGUE PASS"
-
-# Adjust this if the portal time is Europe/Berlin (UTC+1) to reach GMT+8
 HOURS_OFFSET = 8 
 
 HEADERS = {
@@ -31,7 +31,6 @@ HEADERS = {
 }
 
 def adjust_time_string(time_str):
-    """Parses 'Fri 06 Mar 00:00', adds offset, returns updated string."""
     current_year = datetime.now().year
     try:
         dt = datetime.strptime(f"{time_str} {current_year}", "%a %d %b %H:%M %Y")
@@ -41,20 +40,13 @@ def adjust_time_string(time_str):
         return time_str
 
 def clean_channel_name(name):
-    """Swaps format, removes dashes, and drops trailing junk."""
     parts = name.split('|')
-    
     if len(parts) >= 2:
         teams_raw = parts[0].strip()
         time_raw = parts[1].strip()
-        
         new_time = adjust_time_string(time_raw)
-        
-        # Remove dashes and fix double spaces
         teams_clean = teams_raw.replace("-", "").replace("  ", " ").strip()
-        
         return f"{new_time} | {teams_clean}"
-    
     return name.strip()
 
 def get_stalker_data(session, action, extra_params=None):
@@ -64,86 +56,74 @@ def get_stalker_data(session, action, extra_params=None):
         res = session.get(PORTAL_URL, params=params, headers=session.headers, impersonate="chrome110", timeout=120)
         data = res.json()
         return data.get("js") if isinstance(data, dict) else data
-    except Exception: 
-        return None
+    except Exception: return None
 
 def fetch_category(session, cat):
     cat_id = cat.get('id')
     cat_name = cat.get('title', 'General').strip()
-    
-    if cat_name != TARGET_CATEGORY:
-        return []
-
+    if cat_name != TARGET_CATEGORY: return []
     chunk_data = get_stalker_data(session, "get_ordered_list", {"genre": cat_id, "max": 500})
     channels = []
-    
-    if isinstance(chunk_data, dict):
-        ch_list = chunk_data.get('data', [])
-    elif isinstance(chunk_data, list):
-        ch_list = chunk_data
-    else:
-        ch_list = []
-
+    ch_list = chunk_data.get('data', []) if isinstance(chunk_data, dict) else []
     for ch in ch_list:
         raw_name = ch.get("name", "")
-        
-        # --- FILTERS ---
-        # 1. Skip if no stream available
-        if "- NO EVENT STREAMING -" in raw_name:
-            continue
-        
-        # 2. Skip the decorative header titles
-        if "##### NBA PASS PPV ⁸ᴷ #####" in raw_name:
-            continue
-            
+        if "- NO EVENT STREAMING -" in raw_name or "##### NBA PASS PPV ⁸ᴷ #####" in raw_name: continue
         final_name = clean_channel_name(raw_name)
-        channels.append({
-            "name": final_name,
-            "id": ch.get("id"),
-            "cat_name": OUTPUT_GROUP_NAME
-        })
+        channels.append({"name": final_name, "id": ch.get("id")})
     return channels
 
 def generate_playlist():
-    session = requests.Session()
-    session.headers.update(HEADERS)
-    print(f"[*] Connecting to {BASE_DOMAIN}...")
+    if not os.path.exists(SAVE_FOLDER):
+        os.makedirs(SAVE_FOLDER)
+    else:
+        for file in os.listdir(SAVE_FOLDER):
+            os.remove(os.path.join(SAVE_FOLDER, file))
 
+    session = requests.Session(); session.headers.update(HEADERS)
+    print(f"[*] Connecting to {BASE_DOMAIN}...")
     handshake = get_stalker_data(session, "handshake")
     if isinstance(handshake, dict) and handshake.get("token"):
         session.headers.update({"Authorization": f"Bearer {handshake.get('token')}"})
-
     get_stalker_data(session, "get_profile")
     categories = get_stalker_data(session, "get_genres")
     
-    if not categories:
-        print("❌ Failed to get categories.")
-        return
+    if not categories: return print("❌ Failed to get categories.")
 
     all_channels = []
-    print(f"[*] Filtering category: {TARGET_CATEGORY}...")
-    
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = [executor.submit(fetch_category, session, cat) for cat in categories]
         for future in as_completed(futures):
             all_channels.extend(future.result())
 
-    if not all_channels:
-        print(f"⚠️ No channels found.")
-        return
-
-    # Sort chronologically by the new name (Time first)
+    if not all_channels: return print("⚠️ No channels found.")
     all_channels.sort(key=lambda x: x['name'])
 
-    with open(SAVE_PATH, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-        for ch in all_channels:
-            stream_url = f"{BASE_DOMAIN}/play/live.php?mac={MAC_ADDRESS}&stream={ch['id']}&extension=m3u8"
-            f.write(f'#EXTINF:-1 group-title="{ch["cat_name"]}",{ch["name"]}\n{stream_url}\n')
+    # Write individual files AND build the Master Playlist content
+    master_lines = ["#EXTM3U\n"]
+    
+    for ch in all_channels:
+        stream_url = f"{BASE_DOMAIN}/play/live.php?mac={MAC_ADDRESS}&stream={ch['id']}&extension=m3u8"
+        
+        # 1. Create individual filename (URL encoded for GitHub links)
+        safe_filename = re.sub(r'[\\/*?:"<>|]', "", ch['name']) + ".m3u"
+        github_safe_name = safe_filename.replace(" ", "%20")
+        
+        # 2. Save individual M3U
+        file_path = os.path.join(SAVE_FOLDER, safe_filename)
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2500000\n{stream_url}\n")
 
-    print(f"\n✅ SUCCESS! {len(all_channels)} NBA Channels Processed.")
-    print(f"🚫 Filtered out: Header titles and 'No Event' streams.")
-    print(f"🕒 Format: Time | Teams")
+        # 3. Add entry to Master Playlist pointing to GitHub
+        github_url = f"{GITHUB_RAW_BASE}{github_safe_name}"
+        master_lines.append(f'#EXTINF:-1 group-title="{OUTPUT_GROUP_NAME}",{ch["name"]}\n{github_url}\n')
+
+    # 4. Save Master M3U8
+    with open(MASTER_FILENAME, "w", encoding="utf-8") as f:
+        f.writelines(master_lines)
+
+    print(f"\n✅ SUCCESS!")
+    print(f"📂 Individual files in: '{SAVE_FOLDER}'")
+    print(f"🔗 Master file created: '{MASTER_FILENAME}' pointing to GitHub Raw.")
 
 if __name__ == "__main__":
     generate_playlist()
