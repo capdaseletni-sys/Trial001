@@ -10,17 +10,17 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 BASE_DOMAIN = "http://pro.reott8k.xyz:80"
 PORTAL_URL = f"{BASE_DOMAIN}/portal.php"
 MAC_ADDRESS = "00:1A:79:7B:BB:36" 
-SAVE_PATH = "pronba.m3u8"
+SAVE_PATH = "vet5.m3u8"
 MAX_WORKERS = 10 
 
-# This is what the script looks for in the portal
+# Portal Category to search for
 TARGET_CATEGORY = "US| NBA PASS PPV ⁸ᴷ"
 
-# This is what will be written in the #EXTINF group-title
+# Label used in the M3U file
 OUTPUT_GROUP_NAME = "NBA LEAGUE PASS"
 
-# Offset to reach GMT+8 (from Europe/Berlin UTC+1)
-HOURS_OFFSET = 7 
+# Adjust this if the portal time is Europe/Berlin (UTC+1) to reach GMT+8
+HOURS_OFFSET = 8 
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3",
@@ -31,9 +31,7 @@ HEADERS = {
 }
 
 def adjust_time_string(time_str):
-    """
-    Parses 'Fri 06 Mar 00:00', adds offset, returns updated string.
-    """
+    """Parses 'Fri 06 Mar 00:00', adds offset, returns updated string."""
     current_year = datetime.now().year
     try:
         dt = datetime.strptime(f"{time_str} {current_year}", "%a %d %b %H:%M %Y")
@@ -43,12 +41,7 @@ def adjust_time_string(time_str):
         return time_str
 
 def clean_channel_name(name):
-    """
-    1. Splits 'Teams | Time | Junk'
-    2. Adjusts Time
-    3. Removes dashes (-)
-    4. Swaps to 'Time | Teams'
-    """
+    """Swaps format, removes dashes, and drops trailing junk."""
     parts = name.split('|')
     
     if len(parts) >= 2:
@@ -78,7 +71,6 @@ def fetch_category(session, cat):
     cat_id = cat.get('id')
     cat_name = cat.get('title', 'General').strip()
     
-    # Still search for the original portal category name
     if cat_name != TARGET_CATEGORY:
         return []
 
@@ -94,14 +86,21 @@ def fetch_category(session, cat):
 
     for ch in ch_list:
         raw_name = ch.get("name", "")
+        
+        # --- FILTERS ---
+        # 1. Skip if no stream available
         if "- NO EVENT STREAMING -" in raw_name:
+            continue
+        
+        # 2. Skip the decorative header titles
+        if "##### NBA PASS PPV ⁸ᴷ #####" in raw_name:
             continue
             
         final_name = clean_channel_name(raw_name)
         channels.append({
             "name": final_name,
             "id": ch.get("id"),
-            "cat_name": OUTPUT_GROUP_NAME # Use the new group name here
+            "cat_name": OUTPUT_GROUP_NAME
         })
     return channels
 
@@ -122,7 +121,7 @@ def generate_playlist():
         return
 
     all_channels = []
-    print(f"[*] Searching for: {TARGET_CATEGORY}...")
+    print(f"[*] Filtering category: {TARGET_CATEGORY}...")
     
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = [executor.submit(fetch_category, session, cat) for cat in categories]
@@ -133,19 +132,18 @@ def generate_playlist():
         print(f"⚠️ No channels found.")
         return
 
-    # Sort chronologically by the name (which starts with time)
+    # Sort chronologically by the new name (Time first)
     all_channels.sort(key=lambda x: x['name'])
 
     with open(SAVE_PATH, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for ch in all_channels:
             stream_url = f"{BASE_DOMAIN}/play/live.php?mac={MAC_ADDRESS}&stream={ch['id']}&extension=m3u8"
-            # Updated to use the static 'NBA LEAGUE PASS' group title
             f.write(f'#EXTINF:-1 group-title="{ch["cat_name"]}",{ch["name"]}\n{stream_url}\n')
 
-    print(f"\n✅ SUCCESS! {len(all_channels)} NBA Channels Saved.")
-    print(f"📂 Saved to: {SAVE_PATH}")
-    print(f"🏷️ Group Title: {OUTPUT_GROUP_NAME}")
+    print(f"\n✅ SUCCESS! {len(all_channels)} NBA Channels Processed.")
+    print(f"🚫 Filtered out: Header titles and 'No Event' streams.")
+    print(f"🕒 Format: Time | Teams")
 
 if __name__ == "__main__":
     generate_playlist()
