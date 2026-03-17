@@ -9,3 +9,10 @@ https://ucdn.mediaquest.com.ph/bpk-tv/cg_a2z/default/index.mpd
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://static.wikia.nocookie.net/russel/images/8/85/A2Z_Channel_11_without_Channel_11_3D_Logo_2020.png/revision/latest?cb=20231101144828" group-title="Cable TV [Mix]", 1
 http://nor1live.win/livehttpplay?channel_id=23120
+
+#EXTINF:-1 tvg-id=""group-title="Cable TV [Mix]", NBA TV
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=0c39778fe8fb4f9f8574016b3d4ae2ed": "232b1f450f2e37f47fdd5b678a8a546d
+https://bks400-tol-110.quieroxview.com.mx/bpk-tv/nba_tv_hd/default/index.mpd
