@@ -5,6 +5,11 @@
 #EXTVLCOPT:http-referrer=com.android.msandroid
 http://cxmgctgvon.9743ddgnc.com/live/cyx-848FCA984BF8bdf324636E429E4F.m3u8|User-Agent=Ranger/4.9.4-17294ac0&App=com.android.msandroid
 
+#EXTINF:-1,My Private Channel II
+#EXTVLCOPT:http-user-agent=Ranger/4.9.4-17294ac0
+#EXTVLCOPT:http-referrer=https://com.android.msandroid/
+http://ielad.htxsfdpvm.com/live/cyx-848FCA984BF8bdf324636E429E4F.m3u8
+
 #EXTINF:-1 tvg-id="formula10330fancodefhd" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c2/Serie_A.png" group-title="F1",Formula 1 03:30 (FANCODE FHD)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=7e9239c1982d984a002df3ed049d0756:1b8a17598129a3618535c8fb05f103fe
