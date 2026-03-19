@@ -22,6 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install curl_cffi
+          pip3 install m3u8 requests
 
       - name: Run scraping script
         run: python rk.py  # Replace with your actual filename
