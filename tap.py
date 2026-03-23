@@ -57,7 +57,7 @@ async def scrape_to_m3u():
             await asyncio.sleep(random.uniform(1, 2.5))
 
         # Step 3: Write to file
-        with open("tvapp.m3u8", "w", encoding="utf-8") as f:
+        with open("tap.m3u8", "w", encoding="utf-8") as f:
             f.write("\n".join(m3u_lines))
 
         print(f"\n--- COMPLETED ---")
