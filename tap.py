@@ -6,7 +6,15 @@ async def get_tv_tokens():
     channels = {
         "ESPN": "ESPN",
         "ESPN2": "ESPN2",
-        "CBS Sports Network": "CBSSportsNetworkUSA"
+        "CBS Sports Network": "CBSSportsNetworkUSA",
+        "NFL Network": "NFLNetwork",
+        "NFL Redzone": "NFLRedZone",
+        "NHL Network": "NHLNetwork",
+        "Big Ten Network": "BTN",
+        "ACC Network": "ACCNetwork",
+        "MLB Network": "MLBNetwork"
+        
+        
     }
 
     async with async_playwright() as p:
@@ -34,7 +42,7 @@ async def get_tv_tokens():
 
                 if "url" in response:
                     final_url = response["url"]
-                    m3u_lines.append(f'#EXTINF:-1 group-title="Cable TV [Mix]",{display_name}')
+                    m3u_lines.append(f'#EXTINF:-1 group-title="Cable TV [Sports]",{display_name}')
                     m3u_lines.append(final_url)
                     print(f"Successfully added {display_name}")
                 else:
