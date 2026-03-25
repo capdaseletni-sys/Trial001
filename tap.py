@@ -12,9 +12,7 @@ async def get_tv_tokens():
         "NHL Network": "NHLNetwork",
         "Big Ten Network": "BTN",
         "ACC Network": "ACCNetwork",
-        "MLB Network": "MLBNetwork"
-        
-        
+        "MLB Network": "MLBNetwork"  
     }
 
     async with async_playwright() as p:
