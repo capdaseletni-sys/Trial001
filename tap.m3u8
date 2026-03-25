@@ -1,5 +1,7 @@
 #EXTM3U
 #EXTINF:-1 group-title="Cable TV [Mix]",ESPN
-https://e4.thetvapp.to/hls/ESPN/tracks-v1a1/mono.m3u8?token=VG-j8KQ4ZMmBL9w8Hs4X-g&expires=1774417641&user_id=YlBObUM1dm5mNk9kSUpBUEIzMlR3UElUU083amlMQW9HMEpaWlZSUw==
+https://v4.thetvapp.to/hls/ESPN/tracks-v1a1/mono.m3u8?token=GHNl5uY9Ozwtd4-BAlYa-Q&expires=1774418531&user_id=SllUSm5BR2hQTjFBb3ZmdHVvRFBrREJQUVRoTFdwa2JWalNWdkdzVg==
 #EXTINF:-1 group-title="Cable TV [Mix]",ESPN2
-https://v15.thetvapp.to/hls/ESPN2/tracks-v1a1/mono.m3u8?token=5hrdrnzozrq_p1nPY1NQag&expires=1774417645&user_id=YlBObUM1dm5mNk9kSUpBUEIzMlR3UElUU083amlMQW9HMEpaWlZSUw==
+https://v4.thetvapp.to/hls/ESPN2/tracks-v1a1/mono.m3u8?token=O5AKZDKWIUPFoWPtx7T8IA&expires=1774418534&user_id=SllUSm5BR2hQTjFBb3ZmdHVvRFBrREJQUVRoTFdwa2JWalNWdkdzVg==
+#EXTINF:-1 group-title="Cable TV [Mix]",CBS Sports Network
+https://v4.thetvapp.to/hls/CBSSportsNetworkUSA/tracks-v1a1/mono.m3u8?token=d1fbA3vdVoAW_atAAXtF3Q&expires=1774418535&user_id=SllUSm5BR2hQTjFBb3ZmdHVvRFBrREJQUVRoTFdwa2JWalNWdkdzVg==
