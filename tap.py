@@ -5,7 +5,8 @@ async def get_tv_tokens():
     # Define the channels you want: { "Display Name": "Token Slug" }
     channels = {
         "ESPN": "ESPN",
-        "ESPN2": "ESPN2"
+        "ESPN2": "ESPN2",
+        "CBS Sports Network": "CBSSportsNetworkUSA"
     }
 
     async with async_playwright() as p:
