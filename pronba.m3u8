@@ -1,13 +1,13 @@
 #EXTM3U
-#EXTINF:-1 group-title="NBA LEAGUE PASS",Sun 29 Mar 03:00 | MILWAUKEE BUCKS VS SAN ANTONIO SPURS
-https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/Sun%2029%20Mar%200300%20%20MILWAUKEE%20BUCKS%20VS%20SAN%20ANTONIO%20SPURS.m3u8
-#EXTINF:-1 group-title="NBA LEAGUE PASS",Sun 29 Mar 05:30 | MINNESOTA TIMBERWOLVES VS DETROIT PISTONS
-https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/Sun%2029%20Mar%200530%20%20MINNESOTA%20TIMBERWOLVES%20VS%20DETROIT%20PISTONS.m3u8
-#EXTINF:-1 group-title="NBA LEAGUE PASS",Sun 29 Mar 06:00 | CHARLOTTE HORNETS VS PHILADELPHIA 76ERS
-https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/Sun%2029%20Mar%200600%20%20CHARLOTTE%20HORNETS%20VS%20PHILADELPHIA%2076ERS.m3u8
-#EXTINF:-1 group-title="NBA LEAGUE PASS",Sun 29 Mar 07:30 | ATLANTA HAWKS VS SACRAMENTO KINGS
-https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/Sun%2029%20Mar%200730%20%20ATLANTA%20HAWKS%20VS%20SACRAMENTO%20KINGS.m3u8
-#EXTINF:-1 group-title="NBA LEAGUE PASS",Sun 29 Mar 08:00 | MEMPHIS GRIZZLIES VS CHICAGO BULLS
-https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/Sun%2029%20Mar%200800%20%20MEMPHIS%20GRIZZLIES%20VS%20CHICAGO%20BULLS.m3u8
-#EXTINF:-1 group-title="NBA LEAGUE PASS",Sun 29 Mar 11:00 | PHOENIX SUNS VS UTAH JAZZ
-https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/Sun%2029%20Mar%201100%20%20PHOENIX%20SUNS%20VS%20UTAH%20JAZZ.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",ATLANTA - HAWKS VS SACRAMENTO - KINGS | NEXT
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/ATLANTA%20-%20HAWKS%20VS%20SACRAMENTO%20-%20KINGS%20%20NEXT.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",CHARLOTTE - HORNETS VS PHILADELPHIA - 76ERS | NEXT
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/CHARLOTTE%20-%20HORNETS%20VS%20PHILADELPHIA%20-%2076ERS%20%20NEXT.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",MEMPHIS - GRIZZLIES VS CHICAGO - BULLS | NEXT
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/MEMPHIS%20-%20GRIZZLIES%20VS%20CHICAGO%20-%20BULLS%20%20NEXT.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",MILWAUKEE - BUCKS VS SAN ANTONIO - SPURS | LIVE
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/MILWAUKEE%20-%20BUCKS%20VS%20SAN%20ANTONIO%20-%20SPURS%20%20LIVE.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",MINNESOTA - TIMBERWOLVES VS DETROIT - PISTONS | NEXT
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/MINNESOTA%20-%20TIMBERWOLVES%20VS%20DETROIT%20-%20PISTONS%20%20NEXT.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",PHOENIX - SUNS VS UTAH - JAZZ | NEXT
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/PHOENIX%20-%20SUNS%20VS%20UTAH%20-%20JAZZ%20%20NEXT.m3u8
