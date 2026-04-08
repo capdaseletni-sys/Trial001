@@ -8,6 +8,7 @@ async def get_tv_tokens():
         "ESPN 2": "ESPN2",
         "CBS Sports Network": "CBSSportsNetworkUSA",
         "CBS KCBS Los Angeles CA": "cbs-kcbs-los-angeles-ca",
+        "CBS WCBS New York": "WCBSDT1",
         "NFL Network": "NFLNetwork",
         "NFL Redzone": "NFLRedZone",
         "NHL Network": "NHLNetwork",
