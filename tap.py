@@ -7,12 +7,14 @@ async def get_tv_tokens():
         "ESPN": "ESPN",
         "ESPN 2": "ESPN2",
         "CBS Sports Network": "CBSSportsNetworkUSA",
+        "CBS KCBS Los Angeles CA": "cbs-kcbs-los-angeles-ca",
         "NFL Network": "NFLNetwork",
         "NFL Redzone": "NFLRedZone",
         "NHL Network": "NHLNetwork",
         "Big Ten Network": "BTN",
         "ACC Network": "ACCNetwork",
         "NBA TV [SD]": "NBATV",
+        "Chicago Sports Network": "chicago-sports-network",
         "MLB Network": "MLBNetwork"  
     }
 
