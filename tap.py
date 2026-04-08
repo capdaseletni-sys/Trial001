@@ -18,6 +18,12 @@ async def get_tv_tokens():
         "Chicago Sports Network": "chicago-sports-network",
         "Fox Sports 1": "FoxSports1",
         "Fox Sports 2": "FoxSports2",
+        "NBC Los Angeles": "nbc-knbc-los-angeles-ca",
+        "NBC New York": "WNBCDT1",
+        "NBC Sports Bay Area": "nbc-sports-bay-area",
+        "NBC Sports Boston": "nbc-sports-boston",
+        "NBC Sports California": "nbc-sports-california",
+        "NBC Sports Philadelphia": "nbc-sports-philadelphia",
         "MLB Network": "MLBNetwork"  
     }
 
