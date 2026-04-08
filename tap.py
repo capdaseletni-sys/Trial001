@@ -16,6 +16,8 @@ async def get_tv_tokens():
         "ACC Network": "ACCNetwork",
         "NBA TV [SD]": "NBATV",
         "Chicago Sports Network": "chicago-sports-network",
+        "Fox Sports 1": "FoxSports1",
+        "Fox Sports 2": "FoxSports2",
         "MLB Network": "MLBNetwork"  
     }
 
