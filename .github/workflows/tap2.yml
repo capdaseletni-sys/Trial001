@@ -2,10 +2,20 @@ name: Update RK
 
 on:
   schedule:
-    # Runs every 45 minutes
-    - cron: '0,45 0-23/3 * * *'
-    - cron: '30 1-23/3 * * *'
-    - cron: '15 2-23/3 * * *'
+    # Runs at :00, :42
+    - cron: '0,42 0-23/7 * * *'
+    # Runs at :24
+    - cron: '24 1-23/7 * * *'
+    # Runs at :06, :48
+    - cron: '6,48 2-23/7 * * *'
+    # Runs at :30
+    - cron: '30 3-23/7 * * *'
+    # Runs at :12, :54
+    - cron: '12,54 4-23/7 * * *'
+    # Runs at :36
+    - cron: '36 5-23/7 * * *'
+    # Runs at :18
+    - cron: '18 6-23/7 * * *'
   workflow_dispatch: # Allows you to run it manually from the Actions tab
 
 jobs:
