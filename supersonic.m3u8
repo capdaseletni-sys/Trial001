@@ -1,1 +1,26 @@
 #EXTM3U
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="TEST", GiaTV_211217
+https://live20.bozztv.com/giatvplayout7/giatv-211217/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="TEST", GiaTV_211503
+https://live20.bozztv.com/giatvplayout7/giatv-211503/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="TEST", GiaTV_211505
+https://canaiss.fazoeli.co.za/fontes/smart/playboy.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="TEST", GiaTV_211556
+https://canaiss.fazoeli.co.za/fontes/smart/sexyhot.m3u8
+
+#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/I/61tkzm5-XdL.png" group-title="Cable TV [Sports]", ESPN 1 Brazil
+https://canaiss.fazoeli.co.za/fontes/smart/espn.m3u8
+#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/I/61tkzm5-XdL.png" group-title="Cable TV [Sports]", ESPN 2 Brazil
+https://canaiss.fazoeli.co.za/fontes/smart/espn2.m3u8
+#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/I/61tkzm5-XdL.png" group-title="Cable TV [Sports]", ESPN 3 Brazil
+https://canaiss.fazoeli.co.za/fontes/smart/espn3.m3u8
+#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/I/61tkzm5-XdL.png" group-title="Cable TV [Sports]", ESPN 4 Brazil
+https://canaiss.fazoeli.co.za/fontes/smart/espn4.m3u8
+#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/I/61tkzm5-XdL.png" group-title="Cable TV [Sports]", ESPN 5 Brazil
+https://canaiss.fazoeli.co.za/fontes/smart/espn5.m3u8
+#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/I/61tkzm5-XdL.png" group-title="Cable TV [Sports]", ESPN 6 Brazil
+https://canaiss.fazoeli.co.za/fontes/smart/espn6.m3u8
