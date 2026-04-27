@@ -13,6 +13,7 @@ async def get_tv_tokens():
         "CMT": "CMTEast",
         "Discovery Family": "DiscoveryFamily",
         "Discovery Life": "DiscoveryLife",
+        "Disney Channel": "DisneyChannelEast",
         "Animal Planet East": "AnimalPlanetEast"
     }
 
