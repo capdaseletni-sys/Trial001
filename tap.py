@@ -4,8 +4,8 @@ from playwright.async_api import async_playwright
 async def get_tv_tokens():
     # Define the channels you want: { "Display Name": "Token Slug" }
     channels = {
-        "ESPN": "ESPN",
-        "ESPN 2": "ESPN2",
+        "ESPN [SD]": "ESPN",
+        "ESPN 2 [SD]": "ESPN2",
         "CBS Sports Network": "CBSSportsNetworkUSA",
         "CBS KCBS Los Angeles CA": "cbs-kcbs-los-angeles-ca",
         "CBS WCBS New York": "WCBSDT1",
