@@ -156,12 +156,6 @@ https://andro.2385437.xyz/checklist/androstreamlivesm2.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivesptstv.m3u8
 
-#EXTINF:-1 tvg-name="Tabi Spor" group-title="JUSTIN TV LIVE SPORTS",Tabi Spor
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivetb.m3u8
-
 #EXTINF:-1 tvg-name="Tabi Spor 1" group-title="JUSTIN TV LIVE SPORTS",Tabi Spor 1
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -246,6 +240,12 @@ https://andro.2385437.xyz/checklist/androstreamlivetrtsy.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivets3.m3u8
 
+#EXTINF:-1 tvg-name="[01:00] Eskişehirspor - Balikesirspor" group-title="JUSTIN TV LIVE SPORTS",[01:00] Eskişehirspor - Balikesirspor
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivets.m3u8
+
 #EXTINF:-1 tvg-name="[01:00] Karşiyaka - Ayvalikgücü Bld." group-title="JUSTIN TV LIVE SPORTS",[01:00] Karşiyaka - Ayvalikgücü Bld.
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -263,6 +263,18 @@ https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8
+
+#EXTINF:-1 tvg-name="[02:00] Al Hilal - Damac" group-title="JUSTIN TV LIVE SPORTS",[02:00] Al Hilal - Damac
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivetb.m3u8
+
+#EXTINF:-1 tvg-name="[02:00] Olympiakos - Monaco" group-title="JUSTIN TV LIVE SPORTS",[02:00] Olympiakos - Monaco
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
 
 #EXTINF:-1 tvg-name="[02:45] Southampton - Ipswich Town" group-title="JUSTIN TV LIVE SPORTS",[02:45] Southampton - Ipswich Town
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
@@ -288,29 +300,17 @@ https://andro.2385437.xyz/checklist/androstreamlivetrt1.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivets1.m3u8
 
-#EXTINF:-1 tvg-name="[19:00] L.Fernandez - M.Andreeva" group-title="JUSTIN TV LIVE SPORTS",[19:00] L.Fernandez - M.Andreeva
+#EXTINF:-1 tvg-name="[19:00] K.Pliskova - A.Potapova" group-title="JUSTIN TV LIVE SPORTS",[19:00] K.Pliskova - A.Potapova
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivebsm1.m3u8
-
-#EXTINF:-1 tvg-name="[20:00] Kdz Ereğli Bld. - Bozokspor" group-title="JUSTIN TV LIVE SPORTS",[20:00] Kdz Ereğli Bld. - Bozokspor
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivets.m3u8
 
 #EXTINF:-1 tvg-name="[22:00] Bandirma Bordo - TED Kolejliler" group-title="JUSTIN TV LIVE SPORTS",[22:00] Bandirma Bordo - TED Kolejliler
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamliveht.m3u8
-
-#EXTINF:-1 tvg-name="[22:00] V.Kopriva - R.Jodar" group-title="JUSTIN TV LIVE SPORTS",[22:00] V.Kopriva - R.Jodar
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
 
 #EXTINF:-1 tvg-name="iDMAN Tv" group-title="JUSTIN TV LIVE SPORTS",iDMAN Tv
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
