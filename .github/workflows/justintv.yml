@@ -1,17 +1,15 @@
-name: Update RK
+name: Update JustinTV Playlist
 
 on:
   schedule:
-    # Runs every 59 minutes
     - cron: '*/59 * * * *'
-  workflow_dispatch: # Allows you to run it manually from the Actions tab
+  workflow_dispatch: # Allows you to run it manually for testing
 
 jobs:
-  build:
+  scrape:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -22,19 +20,17 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install playwright
-          
-      - name: Ensure browsers are installed
-        run: |
+          pip install requests playwright
+          # This command installs the actual Chromium browser
           playwright install chromium --with-deps
 
-      - name: Run scraping script
+      - name: Run Scraper
         run: python justintv.py
 
-      - name: Commit and Push changes
+      - name: Commit and Push M3U8
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add justintv.m3u8
-          # Only commit if there are actual changes to avoid errors
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update NBA Playlists $(date)" && git push)
+          git commit -m "Update playlist: $(date)" || echo "No changes to commit"
+          git push
