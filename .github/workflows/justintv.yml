@@ -29,8 +29,8 @@ jobs:
 
       - name: Commit and Push M3U8
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add justintv.m3u8
-          git commit -m "Update playlist: $(date)" || echo "No changes to commit"
-          git push
+          # Only commit if there are actual changes to avoid errors
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update NBA Playlists $(date)" && git push)
