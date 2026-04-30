@@ -174,6 +174,12 @@ https://andro.2385437.xyz/checklist/androstreamlivetb7.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetb8.m3u8
 
+#EXTINF:-1 tvg-name="Tivibu Spor 4" group-title="JUSTIN TV LIVE SPORTS",Tivibu Spor 4
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivets4.m3u8
+
 #EXTINF:-1 tvg-name="Tjk Tv" group-title="JUSTIN TV LIVE SPORTS",Tjk Tv
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -216,11 +222,23 @@ https://andro.2385437.xyz/checklist/androstreamlivebs5.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
 
+#EXTINF:-1 tvg-name="[01:00] Şanliurfaspor - Muğlaspor" group-title="JUSTIN TV LIVE SPORTS",[01:00] Şanliurfaspor - Muğlaspor
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivets.m3u8
+
 #EXTINF:-1 tvg-name="[01:45] Fenerbahçe Beko - Zalgiris Kaunas" group-title="JUSTIN TV LIVE SPORTS",[01:45] Fenerbahçe Beko - Zalgiris Kaunas
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8
+
+#EXTINF:-1 tvg-name="[02:00] Olympiakos - Monaco" group-title="JUSTIN TV LIVE SPORTS",[02:00] Olympiakos - Monaco
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
 
 #EXTINF:-1 tvg-name="[02:45] Pisa - Lecce" group-title="JUSTIN TV LIVE SPORTS",[02:45] Pisa - Lecce
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
@@ -264,29 +282,11 @@ https://andro.2385437.xyz/checklist/androstreamlivetb2.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetrt1.m3u8
 
-#EXTINF:-1 tvg-name="[19:00] C.Ruud - A.Blockx" group-title="JUSTIN TV LIVE SPORTS",[19:00] C.Ruud - A.Blockx
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
-
 #EXTINF:-1 tvg-name="[19:30] Hatayspor - Vanspor" group-title="JUSTIN TV LIVE SPORTS",[19:30] Hatayspor - Vanspor
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetb6.m3u8
-
-#EXTINF:-1 tvg-name="[21:00] Adana 01 FK - Elaziğspor" group-title="JUSTIN TV LIVE SPORTS",[21:00] Adana 01 FK - Elaziğspor
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivets4.m3u8
-
-#EXTINF:-1 tvg-name="[21:00] Kahramanmaraş İstiklal - Mardin 1969" group-title="JUSTIN TV LIVE SPORTS",[21:00] Kahramanmaraş İstiklal - Mardin 1969
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivets.m3u8
 
 #EXTINF:-1 tvg-name="[22:00] Aliağa FK - Muşspor" group-title="JUSTIN TV LIVE SPORTS",[22:00] Aliağa FK - Muşspor
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
