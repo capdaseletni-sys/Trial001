@@ -25,7 +25,7 @@ jobs:
           playwright install chromium --with-deps
 
       - name: Run Scraper
-        run: python plutottv.py
+        run: python plutotv.py
 
       - name: Commit and Push M3U8
         run: |
