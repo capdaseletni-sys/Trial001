@@ -2,7 +2,8 @@ name: Update JustinTV Playlist
 
 on:
   schedule:
-    - cron: '0 */4 * * *'
+    # 16:00 UTC is 00:00 (Midnight) GMT+8
+    - cron: '0 16 * * *'
   workflow_dispatch: # Allows you to run it manually for testing
 
 jobs:
