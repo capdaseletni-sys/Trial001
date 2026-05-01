@@ -216,6 +216,12 @@ https://andro.2385437.xyz/checklist/androstreamlivebs5.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivets1.m3u8
 
+#EXTINF:-1 tvg-name="[02:45] Real Madrid - Hapoel Tel Aviv" group-title="JUSTIN TV LIVE SPORTS",[02:45] Real Madrid - Hapoel Tel Aviv
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8
+
 #EXTINF:-1 tvg-name="[03:00] Girona - Mallorca" group-title="JUSTIN TV LIVE SPORTS",[03:00] Girona - Mallorca
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -227,12 +233,6 @@ https://andro.2385437.xyz/checklist/androstreamlivets2.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivebs3.m3u8
-
-#EXTINF:-1 tvg-name="[09:30] Minnesota TW - Denver Nuggets" group-title="JUSTIN TV LIVE SPORTS",[09:30] Minnesota TW - Denver Nuggets
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8
 
 #EXTINF:-1 tvg-name="[19:00] Arminia Bielefeld - Bochum" group-title="JUSTIN TV LIVE SPORTS",[19:00] Arminia Bielefeld - Bochum
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
