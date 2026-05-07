@@ -1,5 +1,9 @@
 #EXTM3U
-#EXTINF:-1 group-title="NBA LEAGUE PASS",DET - PISTONS VS CLE - CAVALIERS | NEXT
-https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/DET%20-%20PISTONS%20VS%20CLE%20-%20CAVALIERS%20%20NEXT.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",DET - PISTONS VS CLE - CAVALIERS | LIVE
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/DET%20-%20PISTONS%20VS%20CLE%20-%20CAVALIERS%20%20LIVE.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",MIN - TIMBERWOLVES VS SAS - SPURS | NEXT
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/MIN%20-%20TIMBERWOLVES%20VS%20SAS%20-%20SPURS%20%20NEXT.m3u8
 #EXTINF:-1 group-title="NBA LEAGUE PASS",OKC - THUNDER VS LAL - LAKERS | NEXT
 https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/OKC%20-%20THUNDER%20VS%20LAL%20-%20LAKERS%20%20NEXT.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",PHI - 76ERS VS NYK - KNICKS | NEXT
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/PHI%20-%2076ERS%20VS%20NYK%20-%20KNICKS%20%20NEXT.m3u8
