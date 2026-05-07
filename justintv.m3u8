@@ -228,6 +228,12 @@ https://andro.2385437.xyz/checklist/androstreamlivets3.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivets4.m3u8
 
+#EXTINF:-1 tvg-name="[01:00] L.Sonego - I.Buse" group-title="JUSTIN TV LIVE SPORTS",[01:00] L.Sonego - I.Buse
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
+
 #EXTINF:-1 tvg-name="[01:00] Çorum FK - Keçiörengücü" group-title="JUSTIN TV LIVE SPORTS",[01:00] Çorum FK - Keçiörengücü
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -276,19 +282,13 @@ https://andro.2385437.xyz/checklist/androstreamlivetb2.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivets1.m3u8
 
-#EXTINF:-1 tvg-name="[17:00] A.Popyrin - M.Berrettini" group-title="JUSTIN TV LIVE SPORTS",[17:00] A.Popyrin - M.Berrettini
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
-
-#EXTINF:-1 tvg-name="[17:00] A.Ruzic - M.Andreeva" group-title="JUSTIN TV LIVE SPORTS",[17:00] A.Ruzic - M.Andreeva
+#EXTINF:-1 tvg-name="[19:00] J.Paolini - L.Jeanjean" group-title="JUSTIN TV LIVE SPORTS",[19:00] J.Paolini - L.Jeanjean
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivebsm1.m3u8
 
-#EXTINF:-1 tvg-name="[17:30] Yalikavak - Üsküdar Bld." group-title="JUSTIN TV LIVE SPORTS",[17:30] Yalikavak - Üsküdar Bld.
+#EXTINF:-1 tvg-name="[19:45] Beşiktaş - Spor Toto SK" group-title="JUSTIN TV LIVE SPORTS",[19:45] Beşiktaş - Spor Toto SK
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
