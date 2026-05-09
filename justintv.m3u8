@@ -246,6 +246,12 @@ https://andro.2385437.xyz/checklist/androstreamliveexn6.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivebs1.m3u8
 
+#EXTINF:-1 tvg-name="[01:00] Gençlerbirliği - Kasimpaşa" group-title="JUSTIN TV LIVE SPORTS",[01:00] Gençlerbirliği - Kasimpaşa
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivebsm1.m3u8
+
 #EXTINF:-1 tvg-name="[01:00] Göztepe - Gaziantep FK" group-title="JUSTIN TV LIVE SPORTS",[01:00] Göztepe - Gaziantep FK
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -269,6 +275,12 @@ https://andro.2385437.xyz/checklist/androstreamlivebs3.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivebs5.m3u8
+
+#EXTINF:-1 tvg-name="[02:00] AEK Athens - Lietuvos Rytas" group-title="JUSTIN TV LIVE SPORTS",[02:00] AEK Athens - Lietuvos Rytas
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivetrtsy.m3u8
 
 #EXTINF:-1 tvg-name="[02:30] Nürnberg - Schalke 04" group-title="JUSTIN TV LIVE SPORTS",[02:30] Nürnberg - Schalke 04
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
@@ -300,19 +312,7 @@ https://andro.2385437.xyz/checklist/androstreamlivets4.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
 
-#EXTINF:-1 tvg-name="[23:00] Unicaja Malaga - Iberostar Tenerife" group-title="JUSTIN TV LIVE SPORTS",[23:00] Unicaja Malaga - Iberostar Tenerife
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivetrtsy.m3u8
-
-#EXTINF:-1 tvg-name="[23:15] Yariş 2" group-title="JUSTIN TV LIVE SPORTS",[23:15] Yariş 2
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivebsm1.m3u8
-
-#EXTINF:-1 tvg-name="[23:30] Sumqayit - Araz" group-title="JUSTIN TV LIVE SPORTS",[23:30] Sumqayit - Araz
+#EXTINF:-1 tvg-name="[21:00] Turan - Karvan" group-title="JUSTIN TV LIVE SPORTS",[21:00] Turan - Karvan
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
