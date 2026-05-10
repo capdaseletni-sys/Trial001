@@ -210,11 +210,23 @@ https://andro.2385437.xyz/checklist/androstreamlivets1.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivess2.m3u8
 
+#EXTINF:-1 tvg-name="[00:30] Real Oviedo - Getafe" group-title="JUSTIN TV LIVE SPORTS",[00:30] Real Oviedo - Getafe
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8
+
 #EXTINF:-1 tvg-name="[01:00] Bodrumspor - Çorum FK" group-title="JUSTIN TV LIVE SPORTS",[01:00] Bodrumspor - Çorum FK
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
+
+#EXTINF:-1 tvg-name="[01:00] Chesterfield - Notts County" group-title="JUSTIN TV LIVE SPORTS",[01:00] Chesterfield - Notts County
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamliveexn.m3u8
 
 #EXTINF:-1 tvg-name="[03:00] Angers - Strasbourg" group-title="JUSTIN TV LIVE SPORTS",[03:00] Angers - Strasbourg
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
@@ -257,18 +269,6 @@ https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
-
-#EXTINF:-1 tvg-name="[22:00] Grimsby - Salford City" group-title="JUSTIN TV LIVE SPORTS",[22:00] Grimsby - Salford City
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamliveexn.m3u8
-
-#EXTINF:-1 tvg-name="[22:15] Athletic Bilbao - Valencia" group-title="JUSTIN TV LIVE SPORTS",[22:15] Athletic Bilbao - Valencia
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8
 
 #EXTINF:-1 tvg-name="[22:45] Ajax - Utrecht" group-title="JUSTIN TV LIVE SPORTS",[22:45] Ajax - Utrecht
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
