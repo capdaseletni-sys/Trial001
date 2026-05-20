@@ -345,8 +345,8 @@ https://jmp2.uk/plu-6536725167bd1a00084481bc.m3u8
 https://jmp2.uk/plu-66a8f01914a2bb00084dd86c.m3u8
 #EXTINF:-1 channel-id="6536721dbfbaec00088687c0" tvg-id="6536721dbfbaec00088687c0" tvg-chno="1055" tvg-name="CBC News Toronto" tvg-logo="https://images.pluto.tv/channels/6536721dbfbaec00088687c0/colorLogoPNG.png" group-title="Pluto TV",CBC News Toronto
 https://jmp2.uk/plu-6536721dbfbaec00088687c0.m3u8
-#EXTINF:-1 channel-id="6231eb3865be650007f59595" tvg-id="6231eb3865be650007f59595" tvg-chno="850" tvg-name="CBS News 24/7" tvg-logo="https://images.pluto.tv/channels/6231eb3865be650007f59595/colorLogoPNG.png" group-title="Pluto TV",CBS News 24/7
-https://jmp2.uk/plu-6231eb3865be650007f59595.m3u8
+#EXTINF:-1 channel-id="5a6b92f6e22a617379789618" tvg-id="5a6b92f6e22a617379789618" tvg-chno="2530" tvg-name="CBS News 24/7" tvg-logo="https://images.pluto.tv/channels/5a6b92f6e22a617379789618/colorLogoPNG.png" group-title="Pluto TV",CBS News 24/7
+https://jmp2.uk/plu-5a6b92f6e22a617379789618.m3u8
 #EXTINF:-1 channel-id="60f75919718aed0007250d7a" tvg-id="60f75919718aed0007250d7a" tvg-chno="5070" tvg-name="CBS News Baltimore" tvg-logo="https://images.pluto.tv/channels/60f75919718aed0007250d7a/colorLogoPNG-1643042747442.png" group-title="Pluto TV",CBS News Baltimore
 https://jmp2.uk/plu-60f75919718aed0007250d7a.m3u8
 #EXTINF:-1 channel-id="5eb1afb21486df0007abc57c" tvg-id="5eb1afb21486df0007abc57c" tvg-chno="5080" tvg-name="CBS News Bay Area" tvg-logo="https://images.pluto.tv/channels/5eb1afb21486df0007abc57c/colorLogoPNG.png" group-title="Pluto TV",CBS News Bay Area
@@ -475,6 +475,8 @@ https://jmp2.uk/plu-5f5136317aedfb0007016f93.m3u8
 https://jmp2.uk/plu-64b9671cdac71b0008f371df.m3u8
 #EXTINF:-1 channel-id="686c1c873ffa5e0c91a85938" tvg-id="686c1c873ffa5e0c91a85938" tvg-chno="4135" tvg-name="Cine Crimen" tvg-logo="https://images.pluto.tv/channels/686c1c873ffa5e0c91a85938/colorLogoPNG_1751915821493.png" group-title="Pluto TV",Cine Crimen
 https://jmp2.uk/plu-686c1c873ffa5e0c91a85938.m3u8
+#EXTINF:-1 channel-id="5cf968040ab7d8f181e6a68b" tvg-id="5cf968040ab7d8f181e6a68b" tvg-chno="4090" tvg-name="Cine Premiere" tvg-logo="https://images.pluto.tv/channels/5cf968040ab7d8f181e6a68b/colorLogoPNG.png" group-title="Pluto TV",Cine Premiere
+https://jmp2.uk/plu-5cf968040ab7d8f181e6a68b.m3u8
 #EXTINF:-1 channel-id="5d8d164d92e97a5e107638d2" tvg-id="5d8d164d92e97a5e107638d2" tvg-chno="4130" tvg-name="Cine adrenalina" tvg-logo="https://images.pluto.tv/channels/5d8d164d92e97a5e107638d2/colorLogoPNG.png" group-title="Pluto TV",Cine adrenalina
 https://jmp2.uk/plu-5d8d164d92e97a5e107638d2.m3u8
 #EXTINF:-1 channel-id="60fb2f47c133270007327375" tvg-id="60fb2f47c133270007327375" tvg-chno="4120" tvg-name="Cine aventura" tvg-logo="https://images.pluto.tv/channels/60fb2f47c133270007327375/colorLogoPNG_1757954279063.png" group-title="Pluto TV",Cine aventura
@@ -513,10 +515,6 @@ https://jmp2.uk/plu-5f8ed0f17564a300082b676a.m3u8
 https://jmp2.uk/plu-62f3e2d000418d00070f7dbc.m3u8
 #EXTINF:-1 channel-id="622f42b831233300078658cc" tvg-id="622f42b831233300078658cc" tvg-chno="455" tvg-name="Ciudadanos por el mundo" tvg-logo="https://images.pluto.tv/channels/622f42b831233300078658cc/colorLogoPNG.png" group-title="Pluto TV",Ciudadanos por el mundo
 https://jmp2.uk/plu-622f42b831233300078658cc.m3u8
-#EXTINF:-1 channel-id="6320d80a66666000086712d7" tvg-id="6320d80a66666000086712d7" tvg-chno="835" tvg-name="Claro Sports" tvg-logo="https://images.pluto.tv/channels/6320d80a66666000086712d7/colorLogoPNG_1770390122405.png" group-title="Pluto TV",Claro Sports
-https://jmp2.uk/plu-6320d80a66666000086712d7.m3u8
-#EXTINF:-1 channel-id="6320d2755e54db000783fd87" tvg-id="6320d2755e54db000783fd87" tvg-chno="830" tvg-name="Claro Sports Mexico" tvg-logo="https://images.pluto.tv/channels/6320d2755e54db000783fd87/colorLogoPNG_1770389965710.png" group-title="Pluto TV",Claro Sports Mexico
-https://jmp2.uk/plu-6320d2755e54db000783fd87.m3u8
 #EXTINF:-1 channel-id="61f33318210549000806a530" tvg-id="61f33318210549000806a530" tvg-chno="835" tvg-name="Classic Movie Westerns" tvg-logo="https://images.pluto.tv/channels/61f33318210549000806a530/colorLogoPNG.png" group-title="Pluto TV",Classic Movie Westerns
 https://jmp2.uk/plu-61f33318210549000806a530.m3u8
 #EXTINF:-1 channel-id="561c5b0dada51f8004c4d855" tvg-id="561c5b0dada51f8004c4d855" tvg-chno="220" tvg-name="Classic Movies Channel" tvg-logo="https://images.pluto.tv/channels/561c5b0dada51f8004c4d855/colorLogoPNG_1759790242932.png" group-title="Pluto TV",Classic Movies Channel
@@ -597,14 +595,8 @@ https://jmp2.uk/plu-5f1acd36779de70007a680d1.m3u8
 https://jmp2.uk/plu-68b5a7b69ac85c428f54c441.m3u8
 #EXTINF:-1 channel-id="64df7ab4dfa32400083c517b" tvg-id="64df7ab4dfa32400083c517b" tvg-chno="860" tvg-name="DAZN Combat" tvg-logo="https://images.pluto.tv/channels/64df7ab4dfa32400083c517b/colorLogoPNG.png" group-title="Pluto TV",DAZN Combat
 https://jmp2.uk/plu-64df7ab4dfa32400083c517b.m3u8
-#EXTINF:-1 channel-id="64b67f0424ade50008a3be17" tvg-id="64b67f0424ade50008a3be17" tvg-chno="90" tvg-name="DAZN Darts x Pluto TV" tvg-logo="https://images.pluto.tv/channels/64b67f0424ade50008a3be17/colorLogoPNG.png" group-title="Pluto TV",DAZN Darts x Pluto TV
-https://jmp2.uk/plu-64b67f0424ade50008a3be17.m3u8
-#EXTINF:-1 channel-id="6683f7fe36a2f9000804940c" tvg-id="6683f7fe36a2f9000804940c" tvg-chno="93" tvg-name="DAZN Handball x Pluto TV" tvg-logo="https://images.pluto.tv/channels/6683f7fe36a2f9000804940c/colorLogoPNG.png" group-title="Pluto TV",DAZN Handball x Pluto TV
-https://jmp2.uk/plu-6683f7fe36a2f9000804940c.m3u8
-#EXTINF:-1 channel-id="64afe50c5dc16600087f3227" tvg-id="64afe50c5dc16600087f3227" tvg-chno="97" tvg-name="DAZN Heldinnen x Pluto TV" tvg-logo="https://images.pluto.tv/channels/64afe50c5dc16600087f3227/colorLogoPNG.png" group-title="Pluto TV",DAZN Heldinnen x Pluto TV
-https://jmp2.uk/plu-64afe50c5dc16600087f3227.m3u8
-#EXTINF:-1 channel-id="649b6898f2ec0000081a9460" tvg-id="649b6898f2ec0000081a9460" tvg-chno="2864" tvg-name="DAZN Ringside" tvg-logo="https://images.pluto.tv/channels/649b6898f2ec0000081a9460/colorLogoPNG.png" group-title="Pluto TV",DAZN Ringside
-https://jmp2.uk/plu-649b6898f2ec0000081a9460.m3u8
+#EXTINF:-1 channel-id="65b14aae0cb1a100087a216e" tvg-id="65b14aae0cb1a100087a216e" tvg-chno="59" tvg-name="DAZN Ringside" tvg-logo="https://images.pluto.tv/channels/65b14aae0cb1a100087a216e/colorLogoPNG.png" group-title="Pluto TV",DAZN Ringside
+https://jmp2.uk/plu-65b14aae0cb1a100087a216e.m3u8
 #EXTINF:-1 channel-id="647f07e74cfc2c0008a2e557" tvg-id="647f07e74cfc2c0008a2e557" tvg-chno="1335" tvg-name="DAZN TV" tvg-logo="https://images.pluto.tv/channels/647f07e74cfc2c0008a2e557/colorLogoPNG.png" group-title="Pluto TV",DAZN TV
 https://jmp2.uk/plu-647f07e74cfc2c0008a2e557.m3u8
 #EXTINF:-1 channel-id="5d40855b3fb0855028c99b6f" tvg-id="5d40855b3fb0855028c99b6f" tvg-chno="1880" tvg-name="DCC: Making the Team" tvg-logo="https://images.pluto.tv/channels/5d40855b3fb0855028c99b6f/colorLogoPNG.png" group-title="Pluto TV",DCC: Making the Team
@@ -1001,6 +993,8 @@ https://jmp2.uk/plu-68bb16916523408b14bac7f8.m3u8
 https://jmp2.uk/plu-5dc1cb279c91420009db261d.m3u8
 #EXTINF:-1 channel-id="66df8aa7abec540008ca8cb6" tvg-id="66df8aa7abec540008ca8cb6" tvg-chno="3330" tvg-name="Homeful" tvg-logo="https://images.pluto.tv/channels/66df8aa7abec540008ca8cb6/colorLogoPNG.png" group-title="Pluto TV",Homeful
 https://jmp2.uk/plu-66df8aa7abec540008ca8cb6.m3u8
+#EXTINF:-1 channel-id="5c5c2e9d8002db3c3e0b1c72" tvg-id="5c5c2e9d8002db3c3e0b1c72" tvg-chno="834" tvg-name="Homes Under Hammer" tvg-logo="https://images.pluto.tv/channels/5c5c2e9d8002db3c3e0b1c72/colorLogoPNG.png" group-title="Pluto TV",Homes Under Hammer
+https://jmp2.uk/plu-5c5c2e9d8002db3c3e0b1c72.m3u8
 #EXTINF:-1 channel-id="63921a3d00c96100082a3cb4" tvg-id="63921a3d00c96100082a3cb4" tvg-chno="440" tvg-name="Homicide" tvg-logo="https://images.pluto.tv/channels/63921a3d00c96100082a3cb4/colorLogoPNG.png" group-title="Pluto TV",Homicide
 https://jmp2.uk/plu-63921a3d00c96100082a3cb4.m3u8
 #EXTINF:-1 channel-id="60e452730e76f20007598de8" tvg-id="60e452730e76f20007598de8" tvg-chno="353" tvg-name="Homicide Hunter" tvg-logo="https://images.pluto.tv/channels/60e452730e76f20007598de8/colorLogoPNG.png" group-title="Pluto TV",Homicide Hunter
@@ -1627,8 +1621,6 @@ https://jmp2.uk/plu-6380c73f76e43f000721f73b.m3u8
 https://jmp2.uk/plu-61c1db901346480007b7c345.m3u8
 #EXTINF:-1 channel-id="662b71658dd8160008fc3abf" tvg-id="662b71658dd8160008fc3abf" tvg-chno="105" tvg-name="Paradise Hotel: Under lagnerne" tvg-logo="https://images.pluto.tv/channels/662b71658dd8160008fc3abf/colorLogoPNG.png" group-title="Pluto TV",Paradise Hotel: Under lagnerne
 https://jmp2.uk/plu-662b71658dd8160008fc3abf.m3u8
-#EXTINF:-1 channel-id="5cb0cae7a461406ffe3f5213" tvg-id="5cb0cae7a461406ffe3f5213" tvg-chno="200" tvg-name="Paramount Movie Channel" tvg-logo="https://images.pluto.tv/channels/5cb0cae7a461406ffe3f5213/colorLogoPNG.png" group-title="Pluto TV",Paramount Movie Channel
-https://jmp2.uk/plu-5cb0cae7a461406ffe3f5213.m3u8
 #EXTINF:-1 channel-id="68d566603d3a9580eb461251" tvg-id="68d566603d3a9580eb461251" tvg-chno="200" tvg-name="Paramount Network de Pluto TV" tvg-logo="https://images.pluto.tv/channels/68d566603d3a9580eb461251/colorLogoPNG_1762199133146.png" group-title="Pluto TV",Paramount Network de Pluto TV
 https://jmp2.uk/plu-68d566603d3a9580eb461251.m3u8
 #EXTINF:-1 channel-id="5ff8c708653d080007361b14" tvg-id="5ff8c708653d080007361b14" tvg-chno="2020" tvg-name="Paramount+ Picks" tvg-logo="https://images.pluto.tv/channels/5ff8c708653d080007361b14/colorLogoPNG.png" group-title="Pluto TV",Paramount+ Picks
@@ -2425,6 +2417,8 @@ https://jmp2.uk/plu-68e38b005c876cf730fcbf0f.m3u8
 https://jmp2.uk/plu-67882c1c7b11714b795c2008.m3u8
 #EXTINF:-1 channel-id="643810f2e8a4aa0008ccf575" tvg-id="643810f2e8a4aa0008ccf575" tvg-chno="426" tvg-name="Skjønnhetsfellen Danmark" tvg-logo="https://images.pluto.tv/channels/643810f2e8a4aa0008ccf575/colorLogoPNG.png" group-title="Pluto TV",Skjønnhetsfellen Danmark
 https://jmp2.uk/plu-643810f2e8a4aa0008ccf575.m3u8
+#EXTINF:-1 channel-id="55b285cd2665de274553d66f" tvg-id="55b285cd2665de274553d66f" tvg-chno="2630" tvg-name="Sky News" tvg-logo="https://images.pluto.tv/channels/55b285cd2665de274553d66f/colorLogoPNG.png" group-title="Pluto TV",Sky News
+https://jmp2.uk/plu-55b285cd2665de274553d66f.m3u8
 #EXTINF:-1 channel-id="64188b8483f58900083bc954" tvg-id="64188b8483f58900083bc954" tvg-chno="1016" tvg-name="Skål" tvg-logo="https://images.pluto.tv/channels/64188b8483f58900083bc954/colorLogoPNG.png" group-title="Pluto TV",Skål
 https://jmp2.uk/plu-64188b8483f58900083bc954.m3u8
 #EXTINF:-1 channel-id="643808dce0789d00084797f6" tvg-id="643808dce0789d00084797f6" tvg-chno="356" tvg-name="Skönhetsfällan Danmark" tvg-logo="https://images.pluto.tv/channels/643808dce0789d00084797f6/colorLogoPNG.png" group-title="Pluto TV",Skönhetsfällan Danmark
