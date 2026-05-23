@@ -126,6 +126,12 @@ https://andro.2385437.xyz/checklist/androstreamlivegs.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamliveht.m3u8
 
+#EXTINF:-1 tvg-name="Nba Tv" group-title="JUSTIN TV LIVE SPORTS",Nba Tv
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivenba.m3u8
+
 #EXTINF:-1 tvg-name="S Sport" group-title="JUSTIN TV LIVE SPORTS",S Sport
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -275,12 +281,6 @@ https://andro.2385437.xyz/checklist/androstreamlivets1.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivesifir.m3u8
-
-#EXTINF:-1 tvg-name="[09:00] San Antonio - Oklahoma" group-title="JUSTIN TV LIVE SPORTS",[09:00] San Antonio - Oklahoma
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivenba.m3u8
 
 #EXTINF:-1 tvg-name="[17:40] Yariş 1" group-title="JUSTIN TV LIVE SPORTS",[17:40] Yariş 1
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
