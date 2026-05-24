@@ -132,6 +132,12 @@ https://andro.2385437.xyz/checklist/androstreamlivetv85.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
 
+#EXTINF:-1 tvg-name="[00:00] Gaziantep Basket - Bandirma Bordo" group-title="JUSTIN TV LIVE SPORTS",[00:00] Gaziantep Basket - Bandirma Bordo
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamliveht.m3u8
+
 #EXTINF:-1 tvg-name="[00:00] Joventut Badalona - SP Burgos" group-title="JUSTIN TV LIVE SPORTS",[00:00] Joventut Badalona - SP Burgos
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -192,18 +198,6 @@ https://andro.2385437.xyz/checklist/androstreamlivesm2.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetb2.m3u8
 
-#EXTINF:-1 tvg-name="[20:00] Bolton Wanderers - Stockport" group-title="JUSTIN TV LIVE SPORTS",[20:00] Bolton Wanderers - Stockport
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamliveexn.m3u8
-
-#EXTINF:-1 tvg-name="[20:00] Türkiye Drift Şampiyonası" group-title="JUSTIN TV LIVE SPORTS",[20:00] Türkiye Drift Şampiyonası
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamliveht.m3u8
-
 #EXTINF:-1 tvg-name="[21:00] M.Yahya - M.Saadi" group-title="JUSTIN TV LIVE SPORTS",[21:00] M.Yahya - M.Saadi
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -221,6 +215,12 @@ https://andro.2385437.xyz/checklist/androstreamlivets1.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivess2.m3u8
+
+#EXTINF:-1 tvg-name="[22:00] Notts County - Salford" group-title="JUSTIN TV LIVE SPORTS",[22:00] Notts County - Salford
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamliveexn.m3u8
 
 #EXTINF:-1 tvg-name="[22:45] Yariş F1" group-title="JUSTIN TV LIVE SPORTS",[22:45] Yariş F1
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
