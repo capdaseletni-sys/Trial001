@@ -1,39 +1,39 @@
 #EXTM3U
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Indiana
-https://v18.thetvapp.to/hls/fanduel-sports-indiana/tracks-v1a1/mono.m3u8?token=g_n4D-ObwnUTgj-_5XqtOw&expires=1780205968&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v2.thetvapp.to/hls/fanduel-sports-indiana/tracks-v1a1/mono.m3u8?token=U_5BAsATNgF8lk-OaPCKBg&expires=1780212799&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Network Detriot
-https://v18.thetvapp.to/hls/fanduel-sports-network-detroit-hd/tracks-v1a1/mono.m3u8?token=v5Ls-tfHdrxreuVPElTY-A&expires=1780205969&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v2.thetvapp.to/hls/fanduel-sports-network-detroit-hd/tracks-v1a1/mono.m3u8?token=yeTLifggUrcz-ZSod2VvQQ&expires=1780212800&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Network Florida
-https://v18.thetvapp.to/hls/fanduel-sports-network-florida/tracks-v1a1/mono.m3u8?token=HFiY60F9I35YQIgopa8apw&expires=1780205970&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v15.thetvapp.to/hls/fanduel-sports-network-florida/tracks-v1a1/mono.m3u8?token=GjDlwXi3R3qXcahCLrE9Kg&expires=1780212801&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Network Great Lakes
-https://v18.thetvapp.to/hls/fanduel-sports-network-great-lakes/tracks-v1a1/mono.m3u8?token=9_Aw_F7MJcRKVJnOvkWxAg&expires=1780205971&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v15.thetvapp.to/hls/fanduel-sports-network-great-lakes/tracks-v1a1/mono.m3u8?token=8H817QQEraxUDDPLzWC-iA&expires=1780212802&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Network North
-https://e1.thetvapp.to/hls/fanduel-sports-network-north/tracks-v1a1/mono.m3u8?token=OJW1h3z2VT8jLVh_OvIbXQ&expires=1780205972&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=RccqkW-n2QVXCAPMmqVqTQ&expires=1780212803&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Network Ohio Cleveland
-https://e1.thetvapp.to/hls/fanduel-sports-network-ohio-cleveland/tracks-v1a1/mono.m3u8?token=PEBZ5Tv6K1Qvk4vPp7jyvA&expires=1780205973&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v18.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=3fCl8S1G_GzGPLBAdF6yog&expires=1780212805&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Network Oklahoma
-https://e1.thetvapp.to/hls/fanduel-sports-network-oklahoma/tracks-v1a1/mono.m3u8?token=-S3Fq7Wa24DTtBorls81qQ&expires=1780205974&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=xN4IWCRUwb3tgyizvkOdJg&expires=1780212806&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Network San Diego
-https://e1.thetvapp.to/hls/fanduel-sports-network-san-diego/tracks-v1a1/mono.m3u8?token=tGRzDkaMOYKRVDgej5z64A&expires=1780205975&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v4.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=o59SMTvvY-mEVo8wswCerg&expires=1780212807&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Network Socal
-https://e1.thetvapp.to/hls/fanduel-sports-network-socal/tracks-v1a1/mono.m3u8?token=VjqXL-GHJRsBXn-UsKsIBg&expires=1780205976&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v4.thetvapp.to/hls/fanduel-sports-network-socal/tracks-v1a1/mono.m3u8?token=GWtYin4ZTCNWxHdl8PBXiA&expires=1780212808&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Network South Carolinas
-https://e1.thetvapp.to/hls/fanduel-sports-network-south-carolinas/tracks-v1a1/mono.m3u8?token=KA70O2SD8c6GtrCM3bG0Xg&expires=1780205977&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v4.thetvapp.to/hls/fanduel-sports-network-south-carolinas/tracks-v1a1/mono.m3u8?token=pb1pgk_jxbeKHgYtwjPY3w&expires=1780212809&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Network South Tennessee
-https://v5.thetvapp.to/hls/fanduel-sports-network-south-tennessee-usa/tracks-v1a1/mono.m3u8?token=BMNZRVIeFcWX_H7-_q7Aaw&expires=1780205978&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v4.thetvapp.to/hls/fanduel-sports-network-south-tennessee-usa/tracks-v1a1/mono.m3u8?token=5-zq_R5WXg7NK8J7aLH_KA&expires=1780212810&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Network West
-https://v5.thetvapp.to/hls/fanduel-sports-network-west/tracks-v1a1/mono.m3u8?token=vYn7tXkNs5W4YBuooJkz5w&expires=1780205980&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v4.thetvapp.to/hls/fanduel-sports-network-west/tracks-v1a1/mono.m3u8?token=LmP4_FHF6OtzaVUHrrH1IA&expires=1780212811&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Network Wisconsin
-https://v5.thetvapp.to/hls/fanduel-sports-network-wisconsin/tracks-v1a1/mono.m3u8?token=mZ42JPCxOua5zNFvEaWdDQ&expires=1780205981&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v4.thetvapp.to/hls/fanduel-sports-network-wisconsin/tracks-v1a1/mono.m3u8?token=s6gY1qQa5HMQwZ0WlZkxQQ&expires=1780212813&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Southeast Georgia
-https://v5.thetvapp.to/hls/fanduel-sports-southeast-georgia/tracks-v1a1/mono.m3u8?token=rg9FQ6PLCIGwdhE3FCqB1w&expires=1780205982&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v4.thetvapp.to/hls/fanduel-sports-southeast-georgia/tracks-v1a1/mono.m3u8?token=7J0aFng7Z_ufgEkdTZGKOg&expires=1780212814&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Southeast North Carolina
-https://v5.thetvapp.to/hls/fanduel-sports-southeast-north-carolina/tracks-v1a1/mono.m3u8?token=jg00d6aPZCSP1SK0rsEXwA&expires=1780205983&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v4.thetvapp.to/hls/fanduel-sports-southeast-north-carolina/tracks-v1a1/mono.m3u8?token=tbkxFSoYgUQlvVr7-FxiJA&expires=1780212815&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Southeast South Carolina
-https://v5.thetvapp.to/hls/fanduel-sports-southeast-south-carolina/tracks-v1a1/mono.m3u8?token=_4yJ4YNdyiQXfZifqOWqnQ&expires=1780205984&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v17.thetvapp.to/hls/fanduel-sports-southeast-south-carolina/tracks-v1a1/mono.m3u8?token=r6oHtW56jmaQMwXv3lWIlw&expires=1780212816&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Southeast Tennessee Nashville
-https://v5.thetvapp.to/hls/fanduel-sports-southeast-tennessee-nashville/tracks-v1a1/mono.m3u8?token=_prb7e1RVTLWD_8-QBZ4Yw&expires=1780205985&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v17.thetvapp.to/hls/fanduel-sports-southeast-tennessee-nashville/tracks-v1a1/mono.m3u8?token=88pu5Rj0I3N5MCWOVJsY7Q&expires=1780212817&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Sun
-https://v5.thetvapp.to/hls/fanduel-sports-sun/tracks-v1a1/mono.m3u8?token=78ngD89gbidcO3pTwIUoIg&expires=1780205986&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v5.thetvapp.to/hls/fanduel-sports-sun/tracks-v1a1/mono.m3u8?token=FPBX8iLGs-DetXOuAVrQog&expires=1780212818&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fanduel Sports Tennessee East
-https://e2.thetvapp.to/hls/fanduel-sports-tennessee-east/tracks-v1a1/mono.m3u8?token=R-lC7OK463fuKDeOiQEugw&expires=1780205987&user_id=TFl0SHdaTlA3ZFQwSmNOcndhb1NqOU5wUzB0bUVVOVh3NWVnUkpKaw==
+https://v5.thetvapp.to/hls/fanduel-sports-tennessee-east/tracks-v1a1/mono.m3u8?token=8PoaPYxADLCFMWQxYmHvVA&expires=1780212820&user_id=Y2RWM2lOREFrUGdwdzZDeGdLTHZKMjQxUXJmZElmY0dteTZPbzZ4dg==
