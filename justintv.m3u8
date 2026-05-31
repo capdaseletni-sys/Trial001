@@ -270,19 +270,13 @@ https://andro.2385437.xyz/checklist/androstreamliveatv.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivesm1.m3u8
 
-#EXTINF:-1 tvg-name="[18:15] İtalya GP" group-title="JUSTIN TV LIVE SPORTS",[18:15] İtalya GP
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8
-
-#EXTINF:-1 tvg-name="[18:25] Japonya - İzlanda" group-title="JUSTIN TV LIVE SPORTS",[18:25] Japonya - İzlanda
+#EXTINF:-1 tvg-name="[03:00] ABD - SENEGAL" group-title="JUSTIN TV LIVE SPORTS",[03:00] ABD - SENEGAL
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamliveexn3.m3u8
 
-#EXTINF:-1 tvg-name="[19:00] Kadinlar 3 üncülük Maçi" group-title="JUSTIN TV LIVE SPORTS",[19:00] Kadinlar 3 üncülük Maçi
+#EXTINF:-1 tvg-name="[21:00] Erkekler 3 üncülük Maçi" group-title="JUSTIN TV LIVE SPORTS",[21:00] Erkekler 3 üncülük Maçi
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
@@ -293,6 +287,12 @@ https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamliveexn4.m3u8
+
+#EXTINF:-1 tvg-name="[22:00] Erkekler Final" group-title="JUSTIN TV LIVE SPORTS",[22:00] Erkekler Final
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8
 
 #EXTINF:-1 tvg-name="[22:00] Çekya - Kosova" group-title="JUSTIN TV LIVE SPORTS",[22:00] Çekya - Kosova
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
