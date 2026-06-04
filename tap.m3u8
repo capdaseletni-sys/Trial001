@@ -1,43 +1,43 @@
 #EXTM3U
 #EXTINF:-1 group-title="Cable TV [Sports]",ESPN [SD]
-https://v12.thetvapp.to/hls/ESPN/tracks-v1a1/mono.m3u8?token=nLZWzxQ04iI7lRrKf-02zQ&expires=1780553728&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v8.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=_HFKzUgCZIruXa5iTBhhAg&expires=1780559343&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",ESPN 2 [SD]
-https://v12.thetvapp.to/hls/ESPN2/tracks-v1a1/mono.m3u8?token=viMwtlg14_5al4h1bymy2w&expires=1780553733&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=l1V4sm28rmZsy91tmBMLcQ&expires=1780559349&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",CBS Sports Network
-https://v12.thetvapp.to/hls/CBSSportsNetworkUSA/tracks-v1a1/mono.m3u8?token=XDwqUqwO_ZHM2I4T4VNm3A&expires=1780553735&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=c8AJArl8Zg_v8UPhVZG29A&expires=1780559351&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",CBS KCBS Los Angeles CA
-https://v12.thetvapp.to/hls/cbs-kcbs-los-angeles-ca/tracks-v1a1/mono.m3u8?token=JEdDUCtcajpkQpfDTXpi3g&expires=1780553736&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=D5UX-tk8f1KFXh7MRRcbFg&expires=1780559352&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",CBS WCBS New York
-https://v12.thetvapp.to/hls/WCBSDT1/tracks-v1a1/mono.m3u8?token=EN8kQ1sHbBMjO2tVNhsf7Q&expires=1780553737&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=VFPGmy_NXPP56kboMkDEGQ&expires=1780559353&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",NFL Network
-https://v12.thetvapp.to/hls/NFLNetwork/tracks-v1a1/mono.m3u8?token=wuwPs00aHFZpfF2ccLMZFg&expires=1780553738&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v1.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=vaY6UgHAgBqU4T5ZD6msjg&expires=1780559354&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",NFL Redzone
-https://v4.thetvapp.to/hls/NFLRedZone/tracks-v1a1/mono.m3u8?token=-rNrn90suS2AcCNiUOwZKA&expires=1780553739&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=UyHI2L-0YP6ZzpcgyNEDcA&expires=1780559355&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",NHL Network
-https://v3.thetvapp.to/hls/NHLNetwork/tracks-v1a1/mono.m3u8?token=8tr_3w-uAYbvYcrkQw3ZAg&expires=1780553740&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=v0iKsZ3wjfbTCSJ5ooEJww&expires=1780559356&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",Big Ten Network
-https://v3.thetvapp.to/hls/BTN/tracks-v1a1/mono.m3u8?token=bFIcP6uqul1iF8k9H2LtLA&expires=1780553742&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=9dXkC_HhSBlDD31VLAvU6A&expires=1780559357&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",ACC Network
-https://v3.thetvapp.to/hls/ACCNetwork/tracks-v1a1/mono.m3u8?token=_Qho7PzDOwhQjiijIC5_Ag&expires=1780553743&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=vAVzHk87__e6RCrSfqxjbA&expires=1780559358&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",NBA TV [SD]
-https://v17.thetvapp.to/hls/NBATV/tracks-v1a1/mono.m3u8?token=qF7WU272dQGsPsmrP5saxQ&expires=1780553744&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=OE85gw9MHVXtS4y6XytR_w&expires=1780559359&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",Chicago Sports Network
-https://v17.thetvapp.to/hls/chicago-sports-network/tracks-v1a1/mono.m3u8?token=oiFO_F3I-NNAHUumQORHxg&expires=1780553745&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=AVti99tiI522BJL1lUjY4w&expires=1780559360&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fox Sports 1
-https://v17.thetvapp.to/hls/FoxSports1/tracks-v1a1/mono.m3u8?token=F0Iwa3ixV58Z8mqjgIZX-g&expires=1780553746&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=xkrj4PVrkUBfQaTQVH31mQ&expires=1780559361&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",Fox Sports 2
-https://v17.thetvapp.to/hls/FoxSports2/tracks-v1a1/mono.m3u8?token=pfx_TuujDnBvMfJZu8Erdw&expires=1780553747&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Ya65J2qfC6MTcjjZplAOUg&expires=1780559363&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",NBC Los Angeles
-https://v17.thetvapp.to/hls/nbc-knbc-los-angeles-ca/tracks-v1a1/mono.m3u8?token=v3_96SZcjbq1sNtG_1QdeQ&expires=1780553749&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=-6fyNC4luz_nOdbg6DMKOg&expires=1780559364&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",NBC New York
-https://k1.thetvapp.to/hls/WNBCDT1/tracks-v1a1/mono.m3u8?token=dlLQdpu4nS-Q2fCHjLU52w&expires=1780553750&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://k2.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=IGo5jPzO_6HoPfatE5Z2vg&expires=1780559365&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",NBC Sports Bay Area
-https://v17.thetvapp.to/hls/nbc-sports-bay-area/tracks-v1a1/mono.m3u8?token=tXe8ZmRVULR6iHHmTqYQAQ&expires=1780553751&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v8.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=OceMrZ2MfrnpnB2fe7gThA&expires=1780559366&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",NBC Sports Boston
-https://v17.thetvapp.to/hls/nbc-sports-boston/tracks-v1a1/mono.m3u8?token=uXINf9qLFKt7iivpEqfI5g&expires=1780553752&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v8.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=VcyXxbDDQHrUsseDBvDrCQ&expires=1780559367&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",NBC Sports California
-https://v17.thetvapp.to/hls/nbc-sports-california/tracks-v1a1/mono.m3u8?token=DElJ3rAvxIBF7-HIt3bR6A&expires=1780553753&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v8.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=nasLcSUE2clEDHD_06dy7A&expires=1780559368&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",NBC Sports Philadelphia
-https://v2.thetvapp.to/hls/nbc-sports-philadelphia/tracks-v1a1/mono.m3u8?token=z5EvZKHbXSDf30r-vaU27Q&expires=1780553755&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v8.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Y-TsUCJvyvAmIs0whRa_Og&expires=1780559369&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
 #EXTINF:-1 group-title="Cable TV [Sports]",MLB Network
-https://v8.thetvapp.to/hls/MLBNetwork/tracks-v1a1/mono.m3u8?token=OiVfWaoqKH4zoLeCgdqq6Q&expires=1780553756&user_id=SXFPd3ZVYUJhTkhLRHljQzdOOEszZTRlN1ZTVXhXT0U2OHlBVVF6SA==
+https://v8.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Dzrqj98StGdfhexepbR3vA&expires=1780559370&user_id=YzlPNGRkOE01UlZVOFJMR0NuOHBLRGV5QzRRbm1Jd0I4bkFDRkQyRw==
