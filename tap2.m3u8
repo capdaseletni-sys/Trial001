@@ -1,23 +1,23 @@
 #EXTM3U
 #EXTINF:-1 group-title="Cable TV [Mix]",American Heroes Channel
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=sRsJ_P6Go0Z-9VBHlwOW_w&expires=1780732300&user_id=T2xxbXl4RGdxQ3d3Q1hZaEJUeGlYU25YNXlra2RmOXF4bXRrWHVUaw==
+https://v12.thetvapp.to/hls/AmericanHeroesChannel/tracks-v1a1/mono.m3u8?token=r2oemAbo_0XjjUV6nfaolA&expires=1780744079&user_id=TkJheDRpcG1BU1dhNm9OQTNGUHRqOFBzRUNNd2VQU1hlbDBuNEhrRw==
 #EXTINF:-1 group-title="Cable TV [Mix]",BET HER
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=xcE2W0011ZAySyMexSISlw&expires=1780732301&user_id=T2xxbXl4RGdxQ3d3Q1hZaEJUeGlYU25YNXlra2RmOXF4bXRrWHVUaw==
+https://v12.thetvapp.to/hls/BETHerEast/tracks-v1a1/mono.m3u8?token=EaQz0v97n8AUF_o1-uXl9g&expires=1780744081&user_id=TkJheDRpcG1BU1dhNm9OQTNGUHRqOFBzRUNNd2VQU1hlbDBuNEhrRw==
 #EXTINF:-1 group-title="Cable TV [Mix]",Boomerang
-https://v12.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=iemSTslzKkKCUzqpJJTw7w&expires=1780732311&user_id=T2xxbXl4RGdxQ3d3Q1hZaEJUeGlYU25YNXlra2RmOXF4bXRrWHVUaw==
+https://v12.thetvapp.to/hls/Boomerang/tracks-v1a1/mono.m3u8?token=qBFK9vO9Pk--Slx1lFxGWA&expires=1780744085&user_id=TkJheDRpcG1BU1dhNm9OQTNGUHRqOFBzRUNNd2VQU1hlbDBuNEhrRw==
 #EXTINF:-1 group-title="Cable TV [Mix]",Bravo
-https://v13.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=hO6cTIElq0nsnaW22-LheA&expires=1780732312&user_id=T2xxbXl4RGdxQ3d3Q1hZaEJUeGlYU25YNXlra2RmOXF4bXRrWHVUaw==
+https://v12.thetvapp.to/hls/BravoEast/tracks-v1a1/mono.m3u8?token=PkGCvH5SGvHuNkHZU_ItnQ&expires=1780744086&user_id=TkJheDRpcG1BU1dhNm9OQTNGUHRqOFBzRUNNd2VQU1hlbDBuNEhrRw==
 #EXTINF:-1 group-title="Cable TV [Mix]",C-SPAN
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=ARU6RRjCucwmwnftytlkUg&expires=1780732328&user_id=T2xxbXl4RGdxQ3d3Q1hZaEJUeGlYU25YNXlra2RmOXF4bXRrWHVUaw==
+https://v18.thetvapp.to/hls/CSPAN/tracks-v1a1/mono.m3u8?token=qKYuqEH3YpBVsIpWKhJRIA&expires=1780744089&user_id=TkJheDRpcG1BU1dhNm9OQTNGUHRqOFBzRUNNd2VQU1hlbDBuNEhrRw==
 #EXTINF:-1 group-title="Cable TV [Mix]",C-SPAN 2
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=-i5Ipanf0RmQqcE-7z_F8w&expires=1780732329&user_id=T2xxbXl4RGdxQ3d3Q1hZaEJUeGlYU25YNXlra2RmOXF4bXRrWHVUaw==
+https://v18.thetvapp.to/hls/CSPAN2/tracks-v1a1/mono.m3u8?token=4GaaSa8ASNETnbyqpn-SlA&expires=1780744090&user_id=TkJheDRpcG1BU1dhNm9OQTNGUHRqOFBzRUNNd2VQU1hlbDBuNEhrRw==
 #EXTINF:-1 group-title="Cable TV [Mix]",CMT
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=NPKimAUu-zV41vGBvYjhkg&expires=1780732330&user_id=T2xxbXl4RGdxQ3d3Q1hZaEJUeGlYU25YNXlra2RmOXF4bXRrWHVUaw==
+https://v18.thetvapp.to/hls/CMTEast/tracks-v1a1/mono.m3u8?token=tNFckTZCgEkHNUz1QJuNNw&expires=1780744091&user_id=TkJheDRpcG1BU1dhNm9OQTNGUHRqOFBzRUNNd2VQU1hlbDBuNEhrRw==
 #EXTINF:-1 group-title="Cable TV [Mix]",Discovery Family
-https://v5.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=DIMO2pVK0G3EgEp7Rk08NQ&expires=1780732331&user_id=T2xxbXl4RGdxQ3d3Q1hZaEJUeGlYU25YNXlra2RmOXF4bXRrWHVUaw==
+https://v18.thetvapp.to/hls/DiscoveryFamily/tracks-v1a1/mono.m3u8?token=pdIP0z3r4KRXh3hvywZfZw&expires=1780744092&user_id=TkJheDRpcG1BU1dhNm9OQTNGUHRqOFBzRUNNd2VQU1hlbDBuNEhrRw==
 #EXTINF:-1 group-title="Cable TV [Mix]",Discovery Life
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=nN9B84gIznbkOYBtVgET1w&expires=1780732332&user_id=T2xxbXl4RGdxQ3d3Q1hZaEJUeGlYU25YNXlra2RmOXF4bXRrWHVUaw==
+https://v1.thetvapp.to/hls/DiscoveryLife/tracks-v1a1/mono.m3u8?token=rRXrBO4dOKqWCSUyzgAIsQ&expires=1780744094&user_id=TkJheDRpcG1BU1dhNm9OQTNGUHRqOFBzRUNNd2VQU1hlbDBuNEhrRw==
 #EXTINF:-1 group-title="Cable TV [Mix]",Disney Channel
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=Ihf47SbfSmGqnGuP-DDa1A&expires=1780732333&user_id=T2xxbXl4RGdxQ3d3Q1hZaEJUeGlYU25YNXlra2RmOXF4bXRrWHVUaw==
+https://v1.thetvapp.to/hls/DisneyChannelEast/tracks-v1a1/mono.m3u8?token=iQBtGKcPFv7jogFBfJSzHA&expires=1780744095&user_id=TkJheDRpcG1BU1dhNm9OQTNGUHRqOFBzRUNNd2VQU1hlbDBuNEhrRw==
 #EXTINF:-1 group-title="Cable TV [Mix]",Animal Planet East
-https://v17.thetvapp.to/hls/fallback/tracks-v1/mono.m3u8?token=YivX8ydkOP151MIpugIIJw&expires=1780732334&user_id=T2xxbXl4RGdxQ3d3Q1hZaEJUeGlYU25YNXlra2RmOXF4bXRrWHVUaw==
+https://v1.thetvapp.to/hls/AnimalPlanetEast/tracks-v1a1/mono.m3u8?token=TgijQQ82xg4HjHDHqcEfTw&expires=1780744096&user_id=TkJheDRpcG1BU1dhNm9OQTNGUHRqOFBzRUNNd2VQU1hlbDBuNEhrRw==
