@@ -288,12 +288,6 @@ https://andro.2385437.xyz/checklist/androstreamlivebs5.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
 
-#EXTINF:-1 tvg-name="[10:00] J.Leavitt - J.Brito" group-title="JUSTIN TV LIVE SPORTS",[10:00] J.Leavitt - J.Brito
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivess2.m3u8
-
 #EXTINF:-1 tvg-name="[13:55] Monako GP" group-title="JUSTIN TV LIVE SPORTS",[13:55] Monako GP
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -305,6 +299,12 @@ https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8
+
+#EXTINF:-1 tvg-name="[19:00] Çin - Polonya" group-title="JUSTIN TV LIVE SPORTS",[19:00] Çin - Polonya
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivess2.m3u8
 
 #EXTINF:-1 tvg-name="[21:00] F.Cobolli - A.Zverev" group-title="JUSTIN TV LIVE SPORTS",[21:00] F.Cobolli - A.Zverev
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
