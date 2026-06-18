@@ -252,6 +252,12 @@ https://andro.2385437.xyz/checklist/androstreamlivetv85.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamliveexn6.m3u8
 
+#EXTINF:-1 tvg-name="[00:30] Türkiye - Fransa" group-title="JUSTIN TV LIVE SPORTS",[00:30] Türkiye - Fransa
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
+
 #EXTINF:-1 tvg-name="[01:00] Beşiktaş GAİN - Fenerbahçe Beko" group-title="JUSTIN TV LIVE SPORTS",[01:00] Beşiktaş GAİN - Fenerbahçe Beko
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -270,19 +276,13 @@ https://andro.2385437.xyz/checklist/androstreamlivesm1.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetb7.m3u8
 
-#EXTINF:-1 tvg-name="[07:00] Gana - Panama" group-title="JUSTIN TV LIVE SPORTS",[07:00] Gana - Panama
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
-
-#EXTINF:-1 tvg-name="[07:00] Ghana - Panama (Deustch)" group-title="JUSTIN TV LIVE SPORTS",[07:00] Ghana - Panama (Deustch)
+#EXTINF:-1 tvg-name="[10:00] Usbekistan - Kolumbien (Deustch)" group-title="JUSTIN TV LIVE SPORTS",[10:00] Usbekistan - Kolumbien (Deustch)
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetb3.m3u8
 
-#EXTINF:-1 tvg-name="[07:00] Ghana - Panama (English)" group-title="JUSTIN TV LIVE SPORTS",[07:00] Ghana - Panama (English)
+#EXTINF:-1 tvg-name="[10:00] Uzbekistan - Colombia (English)" group-title="JUSTIN TV LIVE SPORTS",[10:00] Uzbekistan - Colombia (English)
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
