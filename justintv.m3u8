@@ -132,6 +132,12 @@ https://andro.2385437.xyz/checklist/androstreamliveht.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivenba.m3u8
 
+#EXTINF:-1 tvg-name="S Sport" group-title="JUSTIN TV LIVE SPORTS",S Sport
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8
+
 #EXTINF:-1 tvg-name="Smart Spor 1" group-title="JUSTIN TV LIVE SPORTS",Smart Spor 1
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -155,18 +161,6 @@ https://andro.2385437.xyz/checklist/androstreamlivesptstv.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetb.m3u8
-
-#EXTINF:-1 tvg-name="Tabi Spor 4" group-title="JUSTIN TV LIVE SPORTS",Tabi Spor 4
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivetb4.m3u8
-
-#EXTINF:-1 tvg-name="Tabi Spor 5" group-title="JUSTIN TV LIVE SPORTS",Tabi Spor 5
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivetb5.m3u8
 
 #EXTINF:-1 tvg-name="Tabi Spor 6" group-title="JUSTIN TV LIVE SPORTS",Tabi Spor 6
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
@@ -252,6 +246,12 @@ https://andro.2385437.xyz/checklist/androstreamlivecbcs.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetb1.m3u8
 
+#EXTINF:-1 tvg-name="[02:00] Sheriff Tiraspol - NK Aluminij Kidričevo" group-title="JUSTIN TV LIVE SPORTS",[02:00] Sheriff Tiraspol - NK Aluminij Kidričevo
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivetb4.m3u8
+
 #EXTINF:-1 tvg-name="[03:00] CSKA Sofia - Derry City" group-title="JUSTIN TV LIVE SPORTS",[03:00] CSKA Sofia - Derry City
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -263,6 +263,12 @@ https://andro.2385437.xyz/checklist/androstreamlivetb2.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetb3.m3u8
+
+#EXTINF:-1 tvg-name="[03:00] HNK Hajduk Split - MŠK Žilina" group-title="JUSTIN TV LIVE SPORTS",[03:00] HNK Hajduk Split - MŠK Žilina
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivetb5.m3u8
 
 #EXTINF:-1 tvg-name="[04:00] France - Morocco (English)" group-title="JUSTIN TV LIVE SPORTS",[04:00] France - Morocco (English)
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
@@ -293,12 +299,6 @@ https://andro.2385437.xyz/checklist/androstreamliveexn4.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
-
-#EXTINF:-1 tvg-name="[17:00] Belçika - Kanada" group-title="JUSTIN TV LIVE SPORTS",[17:00] Belçika - Kanada
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8
 
 #EXTINF:-1 tvg-name="[18:20] Japonya - Tayland" group-title="JUSTIN TV LIVE SPORTS",[18:20] Japonya - Tayland
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
