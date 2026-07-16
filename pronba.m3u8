@@ -1,17 +1,27 @@
 #EXTM3U
-#EXTINF:-1 group-title="NBA LEAGUE PASS",CHA - HORNETS VS MIL - BUCKS | NEXT
-https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/CHA%20-%20HORNETS%20VS%20MIL%20-%20BUCKS%20%20NEXT.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",ATL - HAWKS VS MEM - GRIZZLIES | NEXT
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/ATL%20-%20HAWKS%20VS%20MEM%20-%20GRIZZLIES%20%20NEXT.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",CHA - HORNETS VS MIL - BUCKS | LIVE
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/CHA%20-%20HORNETS%20VS%20MIL%20-%20BUCKS%20%20LIVE.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",CHI - BULLS VS LAL - LAKERS | NEXT
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/CHI%20-%20BULLS%20VS%20LAL%20-%20LAKERS%20%20NEXT.m3u8
 #EXTINF:-1 group-title="NBA LEAGUE PASS",CLE - CAVALIERS VS NOP - PELICANS | LIVE
 https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/CLE%20-%20CAVALIERS%20VS%20NOP%20-%20PELICANS%20%20LIVE.m3u8
 #EXTINF:-1 group-title="NBA LEAGUE PASS",DET - PISTONS VS PHX - SUNS | LIVE
 https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/DET%20-%20PISTONS%20VS%20PHX%20-%20SUNS%20%20LIVE.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",HOU - ROCKETS VS BKN - NETS | NEXT
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/HOU%20-%20ROCKETS%20VS%20BKN%20-%20NETS%20%20NEXT.m3u8
 #EXTINF:-1 group-title="NBA LEAGUE PASS",LAC - CLIPPERS VS WAS - WIZARDS | NEXT
 https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/LAC%20-%20CLIPPERS%20VS%20WAS%20-%20WIZARDS%20%20NEXT.m3u8
 #EXTINF:-1 group-title="NBA LEAGUE PASS",MIN - TIMBERWOLVES VS IND - PACERS | LIVE
 https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/MIN%20-%20TIMBERWOLVES%20VS%20IND%20-%20PACERS%20%20LIVE.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",NYK - KNICKS VS GSW - WARRIORS | NEXT
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/NYK%20-%20KNICKS%20VS%20GSW%20-%20WARRIORS%20%20NEXT.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",OKC - THUNDER VS DAL - MAVERICKS | NEXT
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/OKC%20-%20THUNDER%20VS%20DAL%20-%20MAVERICKS%20%20NEXT.m3u8
 #EXTINF:-1 group-title="NBA LEAGUE PASS",PHI - 76ERS VS ORL - MAGIC | LIVE
 https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/PHI%20-%2076ERS%20VS%20ORL%20-%20MAGIC%20%20LIVE.m3u8
-#EXTINF:-1 group-title="NBA LEAGUE PASS",SAC - KINGS VS BOS - CELTICS | NEXT
-https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/SAC%20-%20KINGS%20VS%20BOS%20-%20CELTICS%20%20NEXT.m3u8
+#EXTINF:-1 group-title="NBA LEAGUE PASS",SAC - KINGS VS BOS - CELTICS | LIVE
+https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/SAC%20-%20KINGS%20VS%20BOS%20-%20CELTICS%20%20LIVE.m3u8
 #EXTINF:-1 group-title="NBA LEAGUE PASS",SAS - SPURS VS UTA - JAZZ | NEXT
 https://raw.githubusercontent.com/capdaseletni-sys/Trial001/main/nba_playlists/SAS%20-%20SPURS%20VS%20UTA%20-%20JAZZ%20%20NEXT.m3u8
