@@ -282,29 +282,29 @@ https://andro.2385437.xyz/checklist/androstreamlivetv8.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetv85.m3u8
 
-#EXTINF:-1 tvg-name="[00:30] Antrenman Seansi" group-title="JUSTIN TV LIVE SPORTS",[00:30] Antrenman Seansi
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
-
-#EXTINF:-1 tvg-name="[00:30] R.Burruchaga - D.Merida" group-title="JUSTIN TV LIVE SPORTS",[00:30] R.Burruchaga - D.Merida
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
-
 #EXTINF:-1 tvg-name="[02:00] Sirbistan - Almanya" group-title="JUSTIN TV LIVE SPORTS",[02:00] Sirbistan - Almanya
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivess2.m3u8
 
+#EXTINF:-1 tvg-name="[02:00] Ümraniyespor - Galatasaray" group-title="JUSTIN TV LIVE SPORTS",[02:00] Ümraniyespor - Galatasaray
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
+
 #EXTINF:-1 tvg-name="[02:00] İran - Slovenya" group-title="JUSTIN TV LIVE SPORTS",[02:00] İran - Slovenya
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8
+
+#EXTINF:-1 tvg-name="[16:00] Sprint Yarişi" group-title="JUSTIN TV LIVE SPORTS",[16:00] Sprint Yarişi
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
 
 #EXTINF:-1 tvg-name="[22:30] Türkiye - Slovenya" group-title="JUSTIN TV LIVE SPORTS",[22:30] Türkiye - Slovenya
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
