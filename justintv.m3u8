@@ -282,18 +282,6 @@ https://andro.2385437.xyz/checklist/androstreamlivetrt1.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8
 
-#EXTINF:-1 tvg-name="[17:30] S.Tsitsipas - R.Collignon" group-title="JUSTIN TV LIVE SPORTS",[17:30] S.Tsitsipas - R.Collignon
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
-
-#EXTINF:-1 tvg-name="[17:45] Belçika GP" group-title="JUSTIN TV LIVE SPORTS",[17:45] Belçika GP
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
-
 #EXTINF:-1 tvg-name="[18:20] Japonya - Arjantin" group-title="JUSTIN TV LIVE SPORTS",[18:20] Japonya - Arjantin
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -305,6 +293,18 @@ https://andro.2385437.xyz/checklist/androstreamlivess2.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
+
+#EXTINF:-1 tvg-name="[19:30] Start Line" group-title="JUSTIN TV LIVE SPORTS",[19:30] Start Line
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
+
+#EXTINF:-1 tvg-name="[20:00] A.Rublev - L.Darderi" group-title="JUSTIN TV LIVE SPORTS",[20:00] A.Rublev - L.Darderi
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
 
 #EXTINF:-1 tvg-name="[22:00] H.Vandewinkel - L.Tararudee" group-title="JUSTIN TV LIVE SPORTS",[22:00] H.Vandewinkel - L.Tararudee
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
