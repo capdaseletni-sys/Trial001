@@ -270,23 +270,23 @@ https://andro.2385437.xyz/checklist/androstreamlivetv8.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetv85.m3u8
 
-#EXTINF:-1 tvg-name="[01:30] I.Dulatov - W.Turman" group-title="JUSTIN TV LIVE SPORTS",[01:30] I.Dulatov - W.Turman
+#EXTINF:-1 tvg-name="[00:30] Final" group-title="JUSTIN TV LIVE SPORTS",[00:30] Final
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
-
-#EXTINF:-1 tvg-name="[02:00] Standard Liege - Juventus" group-title="JUSTIN TV LIVE SPORTS",[02:00] Standard Liege - Juventus
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
 
 #EXTINF:-1 tvg-name="[05:30] Santos - Chapecoense" group-title="JUSTIN TV LIVE SPORTS",[05:30] Santos - Chapecoense
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivesm2.m3u8
+
+#EXTINF:-1 tvg-name="[06:00] Liverpool - Sunderland" group-title="JUSTIN TV LIVE SPORTS",[06:00] Liverpool - Sunderland
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
 
 #EXTINF:-1 tvg-name="[06:15] River Plate - Barracas Central" group-title="JUSTIN TV LIVE SPORTS",[06:15] River Plate - Barracas Central
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
