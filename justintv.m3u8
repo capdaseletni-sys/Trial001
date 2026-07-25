@@ -282,17 +282,11 @@ https://andro.2385437.xyz/checklist/androstreamlivesm2.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivesm1.m3u8
 
-#EXTINF:-1 tvg-name="[19:30] Türkiye - Çin" group-title="JUSTIN TV LIVE SPORTS",[19:30] Türkiye - Çin
+#EXTINF:-1 tvg-name="[15:30] 3 üncülük" group-title="JUSTIN TV LIVE SPORTS",[15:30] 3 üncülük
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivess1.m3u8
-
-#EXTINF:-1 tvg-name="[20:15] Sprint Yarişi" group-title="JUSTIN TV LIVE SPORTS",[20:15] Sprint Yarişi
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
 
 #EXTINF:-1 tvg-name="[21:30] Trabzonspor - E.Frankfurt" group-title="JUSTIN TV LIVE SPORTS",[21:30] Trabzonspor - E.Frankfurt
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
@@ -305,6 +299,12 @@ https://andro.2385437.xyz/checklist/androstreamliveht.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
+
+#EXTINF:-1 tvg-name="[22:00] Siralama Turlari" group-title="JUSTIN TV LIVE SPORTS",[22:00] Siralama Turlari
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
 
 #EXTINF:-1 tvg-name="[23:30] Konyaspor - Hullcity" group-title="JUSTIN TV LIVE SPORTS",[23:30] Konyaspor - Hullcity
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
