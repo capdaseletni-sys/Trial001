@@ -150,12 +150,6 @@ https://andro.2385437.xyz/checklist/androstreamlivenba.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivess2.m3u8
 
-#EXTINF:-1 tvg-name="Smart Spor 2" group-title="JUSTIN TV LIVE SPORTS",Smart Spor 2
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivesm2.m3u8
-
 #EXTINF:-1 tvg-name="Sports Tv" group-title="JUSTIN TV LIVE SPORTS",Sports Tv
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -276,19 +270,25 @@ https://andro.2385437.xyz/checklist/androstreamlivetv8.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetv85.m3u8
 
-#EXTINF:-1 tvg-name="[00:30] Final" group-title="JUSTIN TV LIVE SPORTS",[00:30] Final
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
-
-#EXTINF:-1 tvg-name="[06:00] Liverpool - Sunderland" group-title="JUSTIN TV LIVE SPORTS",[06:00] Liverpool - Sunderland
+#EXTINF:-1 tvg-name="[00:00] Bursaspor - Shakhtar Donetsk" group-title="JUSTIN TV LIVE SPORTS",[00:00] Bursaspor - Shakhtar Donetsk
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
 
-#EXTINF:-1 tvg-name="[06:15] River Plate - Barracas Central" group-title="JUSTIN TV LIVE SPORTS",[06:15] River Plate - Barracas Central
+#EXTINF:-1 tvg-name="[00:30] L.Van Assche - A.Blockx" group-title="JUSTIN TV LIVE SPORTS",[00:30] L.Van Assche - A.Blockx
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
+
+#EXTINF:-1 tvg-name="[03:00] Bahia - Corinthians" group-title="JUSTIN TV LIVE SPORTS",[03:00] Bahia - Corinthians
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivesm2.m3u8
+
+#EXTINF:-1 tvg-name="[03:00] Cruzeiro - Botafogo RJ" group-title="JUSTIN TV LIVE SPORTS",[03:00] Cruzeiro - Botafogo RJ
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
