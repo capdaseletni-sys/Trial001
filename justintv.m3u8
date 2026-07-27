@@ -300,17 +300,17 @@ https://andro.2385437.xyz/checklist/androstreamlivetv8.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetv85.m3u8
 
+#EXTINF:-1 tvg-name="[00:30] M.Arnaldi - L.Musetti" group-title="JUSTIN TV LIVE SPORTS",[00:30] M.Arnaldi - L.Musetti
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
+
 #EXTINF:-1 tvg-name="[02:45] Stoke - Everton" group-title="JUSTIN TV LIVE SPORTS",[02:45] Stoke - Everton
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
-
-#EXTINF:-1 tvg-name="[23:00] A.Tabilo - T.Griekspoor" group-title="JUSTIN TV LIVE SPORTS",[23:00] A.Tabilo - T.Griekspoor
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
 
 #EXTINF:-1 tvg-name="iDMAN Tv" group-title="JUSTIN TV LIVE SPORTS",iDMAN Tv
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
