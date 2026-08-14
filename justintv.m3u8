@@ -240,6 +240,12 @@ https://andro.2385437.xyz/checklist/androstreamlivetv8.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetv85.m3u8
 
+#EXTINF:-1 tvg-name="[00:00] Karagümrük - Ümraniyespor" group-title="JUSTIN TV LIVE SPORTS",[00:00] Karagümrük - Ümraniyespor
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivebsm1.m3u8
+
 #EXTINF:-1 tvg-name="[00:00] Konyaspor - Ç.Rizespor" group-title="JUSTIN TV LIVE SPORTS",[00:00] Konyaspor - Ç.Rizespor
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -294,13 +300,7 @@ https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivebs3.m3u8
 
-#EXTINF:-1 tvg-name="[06:00] I.Swiatek - E.Rybakina" group-title="JUSTIN TV LIVE SPORTS",[06:00] I.Swiatek - E.Rybakina
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivebsm1.m3u8
-
-#EXTINF:-1 tvg-name="[07:00] R.Hijikata - G.Monfils" group-title="JUSTIN TV LIVE SPORTS",[07:00] R.Hijikata - G.Monfils
+#EXTINF:-1 tvg-name="[08:00] B.Shelton - B.Nakashima" group-title="JUSTIN TV LIVE SPORTS",[08:00] B.Shelton - B.Nakashima
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
