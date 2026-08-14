@@ -294,17 +294,17 @@ https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivebs3.m3u8
 
-#EXTINF:-1 tvg-name="[19:30] C.Lee - K.Yamada" group-title="JUSTIN TV LIVE SPORTS",[19:30] C.Lee - K.Yamada
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
-
 #EXTINF:-1 tvg-name="[20:00] Alpine Rams - Vikings Vienna" group-title="JUSTIN TV LIVE SPORTS",[20:00] Alpine Rams - Vikings Vienna
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamliveredb.m3u8
+
+#EXTINF:-1 tvg-name="[21:00] A.Klopp - G.Pereira" group-title="JUSTIN TV LIVE SPORTS",[21:00] A.Klopp - G.Pereira
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
 
 #EXTINF:-1 tvg-name="[22:30] Araz - Imisli" group-title="JUSTIN TV LIVE SPORTS",[22:30] Araz - Imisli
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
