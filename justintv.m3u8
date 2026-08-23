@@ -204,6 +204,12 @@ https://andro.2385437.xyz/checklist/androstreamlivetv8.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetv85.m3u8
 
+#EXTINF:-1 tvg-name="[00:00] Boluspor - Mardin 1969" group-title="JUSTIN TV LIVE SPORTS",[00:00] Boluspor - Mardin 1969
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
+
 #EXTINF:-1 tvg-name="[00:00] Boluspor - Mardin 1969 (Yedek)" group-title="JUSTIN TV LIVE SPORTS",[00:00] Boluspor - Mardin 1969 (Yedek)
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -252,6 +258,12 @@ https://andro.2385437.xyz/checklist/androstreamlivess2.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivesifir.m3u8
 
+#EXTINF:-1 tvg-name="[02:30] Vanspor - İstanbulspor" group-title="JUSTIN TV LIVE SPORTS",[02:30] Vanspor - İstanbulspor
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivebsm2.m3u8
+
 #EXTINF:-1 tvg-name="[02:30] Vanspor - İstanbulspor (Yedek)" group-title="JUSTIN TV LIVE SPORTS",[02:30] Vanspor - İstanbulspor (Yedek)
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -264,29 +276,17 @@ https://andro.2385437.xyz/checklist/androstreamlivetb6.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivesm1.m3u8
 
+#EXTINF:-1 tvg-name="[03:30] Porto - Arouca" group-title="JUSTIN TV LIVE SPORTS",[03:30] Porto - Arouca
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
+
 #EXTINF:-1 tvg-name="[05:30] Santos - Mirassol" group-title="JUSTIN TV LIVE SPORTS",[05:30] Santos - Mirassol
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivesm2.m3u8
-
-#EXTINF:-1 tvg-name="[22:00] Bandirmaspor - Keçiörengücü" group-title="JUSTIN TV LIVE SPORTS",[22:00] Bandirmaspor - Keçiörengücü
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivetrts.m3u8
-
-#EXTINF:-1 tvg-name="[22:00] Bandirmaspor - Keçiörengücü (Yedek)" group-title="JUSTIN TV LIVE SPORTS",[22:00] Bandirmaspor - Keçiörengücü (Yedek)
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivebsm2.m3u8
-
-#EXTINF:-1 tvg-name="[22:00] Finish Line" group-title="JUSTIN TV LIVE SPORTS",[22:00] Finish Line
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
 
 #EXTINF:-1 tvg-name="[22:30] Turan - Shamakhi" group-title="JUSTIN TV LIVE SPORTS",[22:30] Turan - Shamakhi
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
