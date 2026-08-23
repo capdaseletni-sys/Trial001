@@ -150,12 +150,6 @@ https://andro.2385437.xyz/checklist/androstreamlivetb3.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivetb4.m3u8
 
-#EXTINF:-1 tvg-name="Tabi Spor 5" group-title="JUSTIN TV LIVE SPORTS",Tabi Spor 5
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivetb5.m3u8
-
 #EXTINF:-1 tvg-name="Tabi Spor 6" group-title="JUSTIN TV LIVE SPORTS",Tabi Spor 6
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -264,17 +258,17 @@ https://andro.2385437.xyz/checklist/androstreamlivesifir.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivebsm2.m3u8
 
-#EXTINF:-1 tvg-name="[05:30] C.Cyborg - K.Vieria" group-title="JUSTIN TV LIVE SPORTS",[05:30] C.Cyborg - K.Vieria
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
-
-#EXTINF:-1 tvg-name="[05:30] CA Independiente - Independiente Rivadavia" group-title="JUSTIN TV LIVE SPORTS",[05:30] CA Independiente - Independiente Rivadavia
+#EXTINF:-1 tvg-name="[07:30] Cruzeiro - Flamengo" group-title="JUSTIN TV LIVE SPORTS",[07:30] Cruzeiro - Flamengo
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivesm1.m3u8
+
+#EXTINF:-1 tvg-name="[08:00] C.Judice - J.Chaves" group-title="JUSTIN TV LIVE SPORTS",[08:00] C.Judice - J.Chaves
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivessplus1.m3u8
 
 #EXTINF:-1 tvg-name="[08:00] Newell s Old Boys - Banfield" group-title="JUSTIN TV LIVE SPORTS",[08:00] Newell s Old Boys - Banfield
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
@@ -293,6 +287,12 @@ https://andro.2385437.xyz/checklist/androstreamlivebs4.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.2385437.xyz/checklist/androstreamlivebs5.m3u8
+
+#EXTINF:-1 tvg-name="[21:00] Fransa - Hirvatistan" group-title="JUSTIN TV LIVE SPORTS",[21:00] Fransa - Hirvatistan
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.2385437.xyz/checklist/androstreamlivetb5.m3u8
 
 #EXTINF:-1 tvg-name="[21:00] Manchester City - Bournemouth" group-title="JUSTIN TV LIVE SPORTS",[21:00] Manchester City - Bournemouth
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
