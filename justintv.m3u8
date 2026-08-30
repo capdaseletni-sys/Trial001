@@ -264,29 +264,17 @@ https://andro.evrenesoglu99.click/checklist/androstreamlivebsm1.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu99.click/checklist/androstreamlivebs2.m3u8
 
-#EXTINF:-1 tvg-name="[17:00] Aragon GP" group-title="JUSTIN TV LIVE SPORTS",[17:00] Aragon GP
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu99.click/checklist/androstreamlivess1.m3u8
-
-#EXTINF:-1 tvg-name="[17:00] Yunanistan - Sirbistan" group-title="JUSTIN TV LIVE SPORTS",[17:00] Yunanistan - Sirbistan
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu99.click/checklist/androstreamlivetb.m3u8
-
-#EXTINF:-1 tvg-name="[18:15] Utrecht - PSV" group-title="JUSTIN TV LIVE SPORTS",[18:15] Utrecht - PSV
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu99.click/checklist/androstreamlivessplus1.m3u8
-
 #EXTINF:-1 tvg-name="[19:30] Saarbrucken FC - Hansa Rostock" group-title="JUSTIN TV LIVE SPORTS",[19:30] Saarbrucken FC - Hansa Rostock
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu99.click/checklist/androstreamlivesifir.m3u8
+
+#EXTINF:-1 tvg-name="[20:00] Aragon GP" group-title="JUSTIN TV LIVE SPORTS",[20:00] Aragon GP
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu99.click/checklist/androstreamlivess1.m3u8
 
 #EXTINF:-1 tvg-name="[20:45] Polonya - Almanya" group-title="JUSTIN TV LIVE SPORTS",[20:45] Polonya - Almanya
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
@@ -323,4 +311,16 @@ https://andro.evrenesoglu99.click/checklist/androstreamlivebs4.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu99.click/checklist/androstreamlivesm2.m3u8
+
+#EXTINF:-1 tvg-name="[22:35] Cezayir - Türkiye" group-title="JUSTIN TV LIVE SPORTS",[22:35] Cezayir - Türkiye
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu99.click/checklist/androstreamlivetb.m3u8
+
+#EXTINF:-1 tvg-name="[22:45] SC Telstar - Ajax" group-title="JUSTIN TV LIVE SPORTS",[22:45] SC Telstar - Ajax
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu99.click/checklist/androstreamlivessplus1.m3u8
 
