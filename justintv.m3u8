@@ -270,12 +270,6 @@ https://andro.evrenesoglu99.click/checklist/androstreamlivetb1.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu99.click/checklist/androstreamlivetrts.m3u8
 
-#EXTINF:-1 tvg-name="[02:00] Al Nassr - Abha" group-title="JUSTIN TV LIVE SPORTS",[02:00] Al Nassr - Abha
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu99.click/checklist/androstreamlivessplus1.m3u8
-
 #EXTINF:-1 tvg-name="[03:00] Napoli - Arsenal" group-title="JUSTIN TV LIVE SPORTS",[03:00] Napoli - Arsenal
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -294,13 +288,19 @@ https://andro.evrenesoglu99.click/checklist/androstreamlivetb3.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu99.click/checklist/androstreamlivecbcs.m3u8
 
+#EXTINF:-1 tvg-name="[03:00] St.Johnstone - Celtic" group-title="JUSTIN TV LIVE SPORTS",[03:00] St.Johnstone - Celtic
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu99.click/checklist/androstreamlivessplus1.m3u8
+
 #EXTINF:-1 tvg-name="[18:00] Coello/Tapia - Alfonso/Libaak" group-title="JUSTIN TV LIVE SPORTS",[18:00] Coello/Tapia - Alfonso/Libaak
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu99.click/checklist/androstreamlivebsm1.m3u8
 
-#EXTINF:-1 tvg-name="[19:45] Tofaş - Cluj Napoca" group-title="JUSTIN TV LIVE SPORTS",[19:45] Tofaş - Cluj Napoca
+#EXTINF:-1 tvg-name="[22:00] Anadolu Efes - Lokomotiv Kuban" group-title="JUSTIN TV LIVE SPORTS",[22:00] Anadolu Efes - Lokomotiv Kuban
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
