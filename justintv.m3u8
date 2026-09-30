@@ -282,6 +282,12 @@ https://andro.evrenesoglu121.click/checklist/androstreamlivetrtsy.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu121.click/checklist/androstreamliveas.m3u8
 
+#EXTINF:-1 tvg-name="[01:00] Konyaspor - Filistin" group-title="JUSTIN TV LIVE SPORTS",[01:00] Konyaspor - Filistin
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu121.click/checklist/androstreamlivetrts.m3u8
+
 #EXTINF:-1 tvg-name="[02:05] Maccabi Fox - Beşiktaş" group-title="JUSTIN TV LIVE SPORTS",[02:05] Maccabi Fox - Beşiktaş
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -294,17 +300,11 @@ https://andro.evrenesoglu121.click/checklist/androstreamlivess1.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu121.click/checklist/androstreamlivess2.m3u8
 
-#EXTINF:-1 tvg-name="[02:45] Paris - Zalgiris Kaunas" group-title="JUSTIN TV LIVE SPORTS",[02:45] Paris - Zalgiris Kaunas
+#EXTINF:-1 tvg-name="[10:00] V.Vacherot - A.Blockx" group-title="JUSTIN TV LIVE SPORTS",[10:00] V.Vacherot - A.Blockx
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu121.click/checklist/androstreamlivessplus1.m3u8
-
-#EXTINF:-1 tvg-name="[03:00] Manchester City - Real Madrid" group-title="JUSTIN TV LIVE SPORTS",[03:00] Manchester City - Real Madrid
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu121.click/checklist/androstreamlivetrts.m3u8
 
 #EXTINF:-1 tvg-name="[14:00] M.Inglis - Zeynep Sönmez" group-title="JUSTIN TV LIVE SPORTS",[14:00] M.Inglis - Zeynep Sönmez
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
