@@ -294,17 +294,17 @@ https://andro.evrenesoglu121.click/checklist/androstreamliveatv.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu121.click/checklist/androstreamlivetrts.m3u8
 
-#EXTINF:-1 tvg-name="[08:00] Arjantin - Bolivya" group-title="JUSTIN TV LIVE SPORTS",[08:00] Arjantin - Bolivya
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu121.click/checklist/androstreamlivessplus1.m3u8
-
 #EXTINF:-1 tvg-name="[12:30] Antrenman Turlari-1" group-title="JUSTIN TV LIVE SPORTS",[12:30] Antrenman Turlari-1
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu121.click/checklist/androstreamlivebs4.m3u8
+
+#EXTINF:-1 tvg-name="[15:00] C.Alcaraz - A.Michelsen" group-title="JUSTIN TV LIVE SPORTS",[15:00] C.Alcaraz - A.Michelsen
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu121.click/checklist/androstreamlivessplus1.m3u8
 
 #EXTINF:-1 tvg-name="[18:00] Collombon/Sharifova - Martin/Fernandez" group-title="JUSTIN TV LIVE SPORTS",[18:00] Collombon/Sharifova - Martin/Fernandez
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
