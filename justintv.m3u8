@@ -246,19 +246,13 @@ https://andro.evrenesoglu121.click/checklist/androstreamliveatv.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu121.click/checklist/androstreamliveas.m3u8
 
-#EXTINF:-1 tvg-name="[09:45] Serbest Antrenman 1" group-title="JUSTIN TV LIVE SPORTS",[09:45] Serbest Antrenman 1
+#EXTINF:-1 tvg-name="[14:00] Antrenman" group-title="JUSTIN TV LIVE SPORTS",[14:00] Antrenman
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu121.click/checklist/androstreamlivess1.m3u8
 
-#EXTINF:-1 tvg-name="[10:00] J.Munar - J.Faria" group-title="JUSTIN TV LIVE SPORTS",[10:00] J.Munar - J.Faria
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu121.click/checklist/androstreamlivessplus1.m3u8
-
-#EXTINF:-1 tvg-name="[12:30] Antrenman Turlari-1" group-title="JUSTIN TV LIVE SPORTS",[12:30] Antrenman Turlari-1
+#EXTINF:-1 tvg-name="[16:00] Antrenman Turlari-2" group-title="JUSTIN TV LIVE SPORTS",[16:00] Antrenman Turlari-2
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
@@ -293,6 +287,12 @@ https://andro.evrenesoglu121.click/checklist/androstreamlivets.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu121.click/checklist/androstreamlivets2.m3u8
+
+#EXTINF:-1 tvg-name="[20:30] B.Yunchaokete - N.Djokovic" group-title="JUSTIN TV LIVE SPORTS",[20:30] B.Yunchaokete - N.Djokovic
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu121.click/checklist/androstreamlivessplus1.m3u8
 
 #EXTINF:-1 tvg-name="[20:30] Kirklarelispor - Sakaryaspor" group-title="JUSTIN TV LIVE SPORTS",[20:30] Kirklarelispor - Sakaryaspor
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
