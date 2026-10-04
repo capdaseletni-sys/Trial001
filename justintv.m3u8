@@ -48,6 +48,18 @@ https://andro.evrenesoglu121.click/checklist/androstreamlivees1.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu121.click/checklist/androstreamlivees2.m3u8
 
+#EXTINF:-1 tvg-name="Exxen Sports 1" group-title="JUSTIN TV LIVE SPORTS",Exxen Sports 1
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu121.click/checklist/androstreamliveexn1.m3u8
+
+#EXTINF:-1 tvg-name="Exxen Sports 2" group-title="JUSTIN TV LIVE SPORTS",Exxen Sports 2
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu121.click/checklist/androstreamliveexn2.m3u8
+
 #EXTINF:-1 tvg-name="Exxen Sports 3" group-title="JUSTIN TV LIVE SPORTS",Exxen Sports 3
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -240,29 +252,17 @@ https://andro.evrenesoglu121.click/checklist/androstreamlivets1.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu121.click/checklist/androstreamliveatv.m3u8
 
-#EXTINF:-1 tvg-name="[08:00] A.Gautier - R.Kopylov" group-title="JUSTIN TV LIVE SPORTS",[08:00] A.Gautier - R.Kopylov
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu121.click/checklist/androstreamlivessplus1.m3u8
-
-#EXTINF:-1 tvg-name="[08:00] Arjantin - Burkina Faso" group-title="JUSTIN TV LIVE SPORTS",[08:00] Arjantin - Burkina Faso
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu121.click/checklist/androstreamliveexn1.m3u8
-
-#EXTINF:-1 tvg-name="[10:00] ABD - Meksika" group-title="JUSTIN TV LIVE SPORTS",[10:00] ABD - Meksika
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu121.click/checklist/androstreamliveexn2.m3u8
-
-#EXTINF:-1 tvg-name="[10:00] Japonya GP" group-title="JUSTIN TV LIVE SPORTS",[10:00] Japonya GP
+#EXTINF:-1 tvg-name="[11:15] Japonya GP" group-title="JUSTIN TV LIVE SPORTS",[11:15] Japonya GP
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu121.click/checklist/androstreamlivess1.m3u8
+
+#EXTINF:-1 tvg-name="[12:00] C.Alcaraz - D.Shapovalov" group-title="JUSTIN TV LIVE SPORTS",[12:00] C.Alcaraz - D.Shapovalov
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu121.click/checklist/androstreamlivessplus1.m3u8
 
 #EXTINF:-1 tvg-name="[15:00] Bahreyn GP" group-title="JUSTIN TV LIVE SPORTS",[15:00] Bahreyn GP
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
