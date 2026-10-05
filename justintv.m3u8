@@ -234,6 +234,12 @@ https://andro.evrenesoglu121.click/checklist/androstreamlivetv8.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu121.click/checklist/androstreamlivetv85.m3u8
 
+#EXTINF:-1 tvg-name="[00:00] BC Cibona - Galatasaray MCT Technic" group-title="JUSTIN TV LIVE SPORTS",[00:00] BC Cibona - Galatasaray MCT Technic
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu121.click/checklist/androstreamlivetrtsy.m3u8
+
 #EXTINF:-1 tvg-name="[00:00] Beşiktaş - Trabzonspor" group-title="JUSTIN TV LIVE SPORTS",[00:00] Beşiktaş - Trabzonspor
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -300,17 +306,11 @@ https://andro.evrenesoglu121.click/checklist/androstreamliveexn1.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu121.click/checklist/androstreamlivecbcs.m3u8
 
-#EXTINF:-1 tvg-name="[15:00] Yari Final Maç 1" group-title="JUSTIN TV LIVE SPORTS",[15:00] Yari Final Maç 1
+#EXTINF:-1 tvg-name="[08:15] NO Saints - Atlanta Falcons" group-title="JUSTIN TV LIVE SPORTS",[08:15] NO Saints - Atlanta Falcons
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu121.click/checklist/androstreamlivessplus1.m3u8
-
-#EXTINF:-1 tvg-name="[22:00] Nilüfer Bld. - İstanbul Gençlik" group-title="JUSTIN TV LIVE SPORTS",[22:00] Nilüfer Bld. - İstanbul Gençlik
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu121.click/checklist/androstreamlivetrtsy.m3u8
 
 #EXTINF:-1 tvg-name="iDMAN Tv" group-title="JUSTIN TV LIVE SPORTS",iDMAN Tv
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
