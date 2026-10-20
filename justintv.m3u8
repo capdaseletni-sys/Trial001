@@ -252,6 +252,12 @@ https://andro.evrenesoglu157.click/checklist/androstreamlivetb.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu157.click/checklist/androstreamlivetrtsy.m3u8
 
+#EXTINF:-1 tvg-name="[02:00] Al Nassr - Neom" group-title="JUSTIN TV LIVE SPORTS",[02:00] Al Nassr - Neom
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu157.click/checklist/androstreamlivessplus1.m3u8
+
 #EXTINF:-1 tvg-name="[03:00] Club Brugge - Lens" group-title="JUSTIN TV LIVE SPORTS",[03:00] Club Brugge - Lens
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -293,12 +299,6 @@ https://andro.evrenesoglu157.click/checklist/androstreamlivetb4.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu157.click/checklist/androstreamlivetb3.m3u8
-
-#EXTINF:-1 tvg-name="[08:15] SF 49ers - Washington Commanders" group-title="JUSTIN TV LIVE SPORTS",[08:15] SF 49ers - Washington Commanders
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu157.click/checklist/androstreamlivessplus1.m3u8
 
 #EXTINF:-1 tvg-name="[12:30] M.Joint - Zeynep Sönmez" group-title="JUSTIN TV LIVE SPORTS",[12:30] M.Joint - Zeynep Sönmez
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
