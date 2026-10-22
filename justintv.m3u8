@@ -264,6 +264,12 @@ https://andro.evrenesoglu157.click/checklist/androstreamlivetrts.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu157.click/checklist/androstreamlivebs4.m3u8
 
+#EXTINF:-1 tvg-name="[01:30] Anadolu Efes - Beşiktaş" group-title="JUSTIN TV LIVE SPORTS",[01:30] Anadolu Efes - Beşiktaş
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu157.click/checklist/androstreamlivess1.m3u8
+
 #EXTINF:-1 tvg-name="[02:00] Al Ahli - Al Khaleej" group-title="JUSTIN TV LIVE SPORTS",[02:00] Al Ahli - Al Khaleej
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -294,23 +300,17 @@ https://andro.evrenesoglu157.click/checklist/androstreamlivecbcs.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu157.click/checklist/androstreamlivebs3.m3u8
 
-#EXTINF:-1 tvg-name="[07:30] Miami Heat - Minnesota TW" group-title="JUSTIN TV LIVE SPORTS",[07:30] Miami Heat - Minnesota TW
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu157.click/checklist/androstreamlivess1.m3u8
-
-#EXTINF:-1 tvg-name="[10:30] A.Li - Zeynep Sönmez" group-title="JUSTIN TV LIVE SPORTS",[10:30] A.Li - Zeynep Sönmez
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu157.click/checklist/androstreamlivebsm1.m3u8
-
 #EXTINF:-1 tvg-name="[13:00] I.Jovic - J.Paolini" group-title="JUSTIN TV LIVE SPORTS",[13:00] I.Jovic - J.Paolini
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu157.click/checklist/androstreamlivebsm2.m3u8
+
+#EXTINF:-1 tvg-name="[14:30] M.Linette - K.Siniakova" group-title="JUSTIN TV LIVE SPORTS",[14:30] M.Linette - K.Siniakova
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu157.click/checklist/androstreamlivebsm1.m3u8
 
 #EXTINF:-1 tvg-name="iDMAN Tv" group-title="JUSTIN TV LIVE SPORTS",iDMAN Tv
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
