@@ -234,11 +234,23 @@ https://andro.evrenesoglu157.click/checklist/androstreamlivetrts.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu157.click/checklist/androstreamlivesifir.m3u8
 
+#EXTINF:-1 tvg-name="[01:00] Zalgiris Kaunas - Asvel Villeurbanne" group-title="JUSTIN TV LIVE SPORTS",[01:00] Zalgiris Kaunas - Asvel Villeurbanne
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu157.click/checklist/androstreamlivess2.m3u8
+
 #EXTINF:-1 tvg-name="[01:30] Antrenman Turlari-1" group-title="JUSTIN TV LIVE SPORTS",[01:30] Antrenman Turlari-1
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu157.click/checklist/androstreamlivebs4.m3u8
+
+#EXTINF:-1 tvg-name="[02:15] Olympiakos - Fenerbahçe Tarfin" group-title="JUSTIN TV LIVE SPORTS",[02:15] Olympiakos - Fenerbahçe Tarfin
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu157.click/checklist/androstreamlivess1.m3u8
 
 #EXTINF:-1 tvg-name="[02:45] St. Etienne - Nantes" group-title="JUSTIN TV LIVE SPORTS",[02:45] St. Etienne - Nantes
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
@@ -263,18 +275,6 @@ https://andro.evrenesoglu157.click/checklist/androstreamlivebs3.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu157.click/checklist/androstreamlivebs2.m3u8
-
-#EXTINF:-1 tvg-name="[07:45] Serbest Antrenman 1" group-title="JUSTIN TV LIVE SPORTS",[07:45] Serbest Antrenman 1
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu157.click/checklist/androstreamlivess2.m3u8
-
-#EXTINF:-1 tvg-name="[09:30] OKC Thunder - Denver Nuggets" group-title="JUSTIN TV LIVE SPORTS",[09:30] OKC Thunder - Denver Nuggets
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu157.click/checklist/androstreamlivess1.m3u8
 
 #EXTINF:-1 tvg-name="[14:30] N.Basilashvili - A.Mannarino" group-title="JUSTIN TV LIVE SPORTS",[14:30] N.Basilashvili - A.Mannarino
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
