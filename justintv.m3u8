@@ -192,17 +192,11 @@ https://andro.evrenesoglu213.click/checklist/androstreamlivetv85.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu213.click/checklist/androstreamlivebs2.m3u8
 
-#EXTINF:-1 tvg-name="[05:00] Siralama Turlari" group-title="JUSTIN TV LIVE SPORTS",[05:00] Siralama Turlari
+#EXTINF:-1 tvg-name="[07:00] Ters Grid Yarişi" group-title="JUSTIN TV LIVE SPORTS",[07:00] Ters Grid Yarişi
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu213.click/checklist/androstreamlivebs4.m3u8
-
-#EXTINF:-1 tvg-name="[05:30] Palmeiras - Bragantino" group-title="JUSTIN TV LIVE SPORTS",[05:30] Palmeiras - Bragantino
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu213.click/checklist/androstreamlivesm1.m3u8
 
 #EXTINF:-1 tvg-name="[07:30] Texas Longhorns - Ole Miss" group-title="JUSTIN TV LIVE SPORTS",[07:30] Texas Longhorns - Ole Miss
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
@@ -221,6 +215,12 @@ https://andro.evrenesoglu213.click/checklist/androstreamlivesm2.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu213.click/checklist/androstreamlivess1.m3u8
+
+#EXTINF:-1 tvg-name="[08:30] Rosario Central - CA Huracan" group-title="JUSTIN TV LIVE SPORTS",[08:30] Rosario Central - CA Huracan
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu213.click/checklist/androstreamlivesm1.m3u8
 
 #EXTINF:-1 tvg-name="[09:15] Avustralya GP" group-title="JUSTIN TV LIVE SPORTS",[09:15] Avustralya GP
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
