@@ -216,6 +216,12 @@ https://andro.evrenesoglu219.click/checklist/androstreamlivetv8.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu219.click/checklist/androstreamlivetv85.m3u8
 
+#EXTINF:-1 tvg-name="[00:00] Dubai Basket - Hapoel Tel Aviv" group-title="JUSTIN TV LIVE SPORTS",[00:00] Dubai Basket - Hapoel Tel Aviv
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu219.click/checklist/androstreamlivess2.m3u8
+
 #EXTINF:-1 tvg-name="[01:00] Esenler Erokspor - Keçiörengücü" group-title="JUSTIN TV LIVE SPORTS",[01:00] Esenler Erokspor - Keçiörengücü
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -246,23 +252,17 @@ https://andro.evrenesoglu219.click/checklist/androstreamlivebs5.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu219.click/checklist/androstreamlivebs4.m3u8
 
-#EXTINF:-1 tvg-name="[09:30] K.Rakhimova - M.Joint" group-title="JUSTIN TV LIVE SPORTS",[09:30] K.Rakhimova - M.Joint
+#EXTINF:-1 tvg-name="[03:00] Fenix Toulouse - Limoges" group-title="JUSTIN TV LIVE SPORTS",[03:00] Fenix Toulouse - Limoges
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu219.click/checklist/androstreamlivebsm1.m3u8
 
-#EXTINF:-1 tvg-name="[10:00] Portland TB - Memphis Grizzlies" group-title="JUSTIN TV LIVE SPORTS",[10:00] Portland TB - Memphis Grizzlies
+#EXTINF:-1 tvg-name="[15:00] Antrenman" group-title="JUSTIN TV LIVE SPORTS",[15:00] Antrenman
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu219.click/checklist/androstreamlivess1.m3u8
-
-#EXTINF:-1 tvg-name="[10:45] Serbest Antrenman 1" group-title="JUSTIN TV LIVE SPORTS",[10:45] Serbest Antrenman 1
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu219.click/checklist/androstreamlivess2.m3u8
 
 #EXTINF:-1 tvg-name="[18:00] Adanaspor - Kirikkalespor" group-title="JUSTIN TV LIVE SPORTS",[18:00] Adanaspor - Kirikkalespor
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
