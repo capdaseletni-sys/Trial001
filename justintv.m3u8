@@ -30,6 +30,18 @@ https://andro.evrenesoglu219.click/checklist/androstreamlivees1.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu219.click/checklist/androstreamlivees2.m3u8
 
+#EXTINF:-1 tvg-name="Exxen Sports 1" group-title="JUSTIN TV LIVE SPORTS",Exxen Sports 1
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu219.click/checklist/androstreamliveexn1.m3u8
+
+#EXTINF:-1 tvg-name="Exxen Sports 2" group-title="JUSTIN TV LIVE SPORTS",Exxen Sports 2
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu219.click/checklist/androstreamliveexn2.m3u8
+
 #EXTINF:-1 tvg-name="Exxen Sports 8" group-title="JUSTIN TV LIVE SPORTS",Exxen Sports 8
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -114,6 +126,12 @@ https://andro.evrenesoglu219.click/checklist/androstreamlivetb5.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu219.click/checklist/androstreamlivetb6.m3u8
 
+#EXTINF:-1 tvg-name="Tabi Spor 7" group-title="JUSTIN TV LIVE SPORTS",Tabi Spor 7
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu219.click/checklist/androstreamlivetb7.m3u8
+
 #EXTINF:-1 tvg-name="Tabi Spor 8" group-title="JUSTIN TV LIVE SPORTS",Tabi Spor 8
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -162,72 +180,6 @@ https://andro.evrenesoglu219.click/checklist/androstreamlivetv8.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu219.click/checklist/androstreamlivetv85.m3u8
 
-#EXTINF:-1 tvg-name="[00:00] Dubai Basket - Hapoel Tel Aviv" group-title="JUSTIN TV LIVE SPORTS",[00:00] Dubai Basket - Hapoel Tel Aviv
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu219.click/checklist/androstreamlivess2.m3u8
-
-#EXTINF:-1 tvg-name="[00:00] Shakhtar Donetsk - Obolon Brovar" group-title="JUSTIN TV LIVE SPORTS",[00:00] Shakhtar Donetsk - Obolon Brovar
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu219.click/checklist/androstreamlivets1.m3u8
-
-#EXTINF:-1 tvg-name="[00:30] A.Zverev - A.Fery" group-title="JUSTIN TV LIVE SPORTS",[00:30] A.Zverev - A.Fery
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu219.click/checklist/androstreamlivetrtsy.m3u8
-
-#EXTINF:-1 tvg-name="[01:00] Esenler Erokspor - Keçiörengücü" group-title="JUSTIN TV LIVE SPORTS",[01:00] Esenler Erokspor - Keçiörengücü
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu219.click/checklist/androstreamlivetrts.m3u8
-
-#EXTINF:-1 tvg-name="[01:00] Esenler Erokspor - Keçiörengücü (Yedek)" group-title="JUSTIN TV LIVE SPORTS",[01:00] Esenler Erokspor - Keçiörengücü (Yedek)
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu219.click/checklist/androstreamlivebs2.m3u8
-
-#EXTINF:-1 tvg-name="[01:00] Konyaspor - Galatasaray" group-title="JUSTIN TV LIVE SPORTS",[01:00] Konyaspor - Galatasaray
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu219.click/checklist/androstreamlivebs1.m3u8
-
-#EXTINF:-1 tvg-name="[01:00] Konyaspor - Galatasaray (Yedek)" group-title="JUSTIN TV LIVE SPORTS",[01:00] Konyaspor - Galatasaray (Yedek)
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu219.click/checklist/androstreamliveexn1.m3u8
-
-#EXTINF:-1 tvg-name="[01:30] Anadolu Efes - Panathinaikos" group-title="JUSTIN TV LIVE SPORTS",[01:30] Anadolu Efes - Panathinaikos
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu219.click/checklist/androstreamlivess1.m3u8
-
-#EXTINF:-1 tvg-name="[02:00] Le Havre - PSG" group-title="JUSTIN TV LIVE SPORTS",[02:00] Le Havre - PSG
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu219.click/checklist/androstreamlivebs3.m3u8
-
-#EXTINF:-1 tvg-name="[02:00] Nice - Rennes" group-title="JUSTIN TV LIVE SPORTS",[02:00] Nice - Rennes
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu219.click/checklist/androstreamlivebs5.m3u8
-
-#EXTINF:-1 tvg-name="[02:00] Zalgiris Kaunas - Partizan" group-title="JUSTIN TV LIVE SPORTS",[02:00] Zalgiris Kaunas - Partizan
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu219.click/checklist/androstreamliveexn2.m3u8
-
 #EXTINF:-1 tvg-name="[02:30] Antrenman Turlari-1" group-title="JUSTIN TV LIVE SPORTS",[02:30] Antrenman Turlari-1
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -246,17 +198,41 @@ https://andro.evrenesoglu219.click/checklist/androstreamliveexn3.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu219.click/checklist/androstreamlivebsm1.m3u8
 
+#EXTINF:-1 tvg-name="[03:00] J.Kym - J.Lehecka" group-title="JUSTIN TV LIVE SPORTS",[03:00] J.Kym - J.Lehecka
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu219.click/checklist/androstreamlivessplus1.m3u8
+
+#EXTINF:-1 tvg-name="[03:00] M.Berrettini - A.De Minaur" group-title="JUSTIN TV LIVE SPORTS",[03:00] M.Berrettini - A.De Minaur
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu219.click/checklist/androstreamlivetrtsy.m3u8
+
 #EXTINF:-1 tvg-name="[03:15] Olympiakos - Olimpia Milano" group-title="JUSTIN TV LIVE SPORTS",[03:15] Olympiakos - Olimpia Milano
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu219.click/checklist/androstreamliveexn4.m3u8
 
+#EXTINF:-1 tvg-name="[03:30] Barcelona - Valencia Basket" group-title="JUSTIN TV LIVE SPORTS",[03:30] Barcelona - Valencia Basket
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu219.click/checklist/androstreamlivess1.m3u8
+
 #EXTINF:-1 tvg-name="[03:30] Elversberg - Mainz" group-title="JUSTIN TV LIVE SPORTS",[03:30] Elversberg - Mainz
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu219.click/checklist/androstreamliveexn5.m3u8
+
+#EXTINF:-1 tvg-name="[03:30] Virtus Bologna - Beşiktaş" group-title="JUSTIN TV LIVE SPORTS",[03:30] Virtus Bologna - Beşiktaş
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu219.click/checklist/androstreamlivess2.m3u8
 
 #EXTINF:-1 tvg-name="[04:00] Sheffield Utd - Wrexham" group-title="JUSTIN TV LIVE SPORTS",[04:00] Sheffield Utd - Wrexham
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
@@ -276,6 +252,18 @@ https://andro.evrenesoglu219.click/checklist/androstreamliveidm.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu219.click/checklist/androstreamliveexn6.m3u8
 
+#EXTINF:-1 tvg-name="[04:05] Lille - Lens" group-title="JUSTIN TV LIVE SPORTS",[04:05] Lille - Lens
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu219.click/checklist/androstreamlivebs3.m3u8
+
+#EXTINF:-1 tvg-name="[04:15] Casa Pia - Sporting Lisbon" group-title="JUSTIN TV LIVE SPORTS",[04:15] Casa Pia - Sporting Lisbon
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu219.click/checklist/androstreamlivebs5.m3u8
+
 #EXTINF:-1 tvg-name="[08:15] Racing Club - Aldosivi" group-title="JUSTIN TV LIVE SPORTS",[08:15] Racing Club - Aldosivi
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -288,33 +276,45 @@ https://andro.evrenesoglu219.click/checklist/androstreamlivesm1.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu219.click/checklist/androstreamlivets.m3u8
 
+#EXTINF:-1 tvg-name="[18:30] Erzurumspor - Çorum FK" group-title="JUSTIN TV LIVE SPORTS",[18:30] Erzurumspor - Çorum FK
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu219.click/checklist/androstreamlivebs1.m3u8
+
+#EXTINF:-1 tvg-name="[18:30] Vanspor - Sariyer" group-title="JUSTIN TV LIVE SPORTS",[18:30] Vanspor - Sariyer
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu219.click/checklist/androstreamlivetrts.m3u8
+
+#EXTINF:-1 tvg-name="[19:00] Araz - Zira" group-title="JUSTIN TV LIVE SPORTS",[19:00] Araz - Zira
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu219.click/checklist/androstreamlivecbcs.m3u8
+
 #EXTINF:-1 tvg-name="[19:00] Nesibe Aydin - İstanbul Gençlik" group-title="JUSTIN TV LIVE SPORTS",[19:00] Nesibe Aydin - İstanbul Gençlik
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu219.click/checklist/androstreamliveht.m3u8
 
-#EXTINF:-1 tvg-name="[22:00] T.Paul - C.Alcaraz" group-title="JUSTIN TV LIVE SPORTS",[22:00] T.Paul - C.Alcaraz
+#EXTINF:-1 tvg-name="[20:30] Altay - Akşehirspor" group-title="JUSTIN TV LIVE SPORTS",[20:30] Altay - Akşehirspor
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu219.click/checklist/androstreamlivetb7.m3u8
+https://andro.evrenesoglu219.click/checklist/androstreamlivets1.m3u8
 
-#EXTINF:-1 tvg-name="[22:30] Turan - Sabah Bakü" group-title="JUSTIN TV LIVE SPORTS",[22:30] Turan - Sabah Bakü
+#EXTINF:-1 tvg-name="[21:00] Karagümrük - Pendikspor" group-title="JUSTIN TV LIVE SPORTS",[21:00] Karagümrük - Pendikspor
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu219.click/checklist/androstreamlivecbcs.m3u8
+https://andro.evrenesoglu219.click/checklist/androstreamlivebs2.m3u8
 
 #EXTINF:-1 tvg-name="[23:00] Bournemouth - Leeds United" group-title="JUSTIN TV LIVE SPORTS",[23:00] Bournemouth - Leeds United
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu219.click/checklist/androstreamlivebsm2.m3u8
-
-#EXTINF:-1 tvg-name="[23:00] T.Fritz - A.Fils" group-title="JUSTIN TV LIVE SPORTS",[23:00] T.Fritz - A.Fils
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu219.click/checklist/androstreamlivessplus1.m3u8
 
