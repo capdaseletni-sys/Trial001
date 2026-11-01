@@ -192,13 +192,7 @@ https://andro.evrenesoglu225.click/checklist/androstreamlivebs3.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu225.click/checklist/androstreamlivesm1.m3u8
 
-#EXTINF:-1 tvg-name="[08:00] J.Lebosnoyani - F.Hasanov" group-title="JUSTIN TV LIVE SPORTS",[08:00] J.Lebosnoyani - F.Hasanov
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu225.click/checklist/androstreamlivessplus1.m3u8
-
-#EXTINF:-1 tvg-name="[08:30] Houston Rockets - OKC Thunder" group-title="JUSTIN TV LIVE SPORTS",[08:30] Houston Rockets - OKC Thunder
+#EXTINF:-1 tvg-name="[15:00] Malezya GP" group-title="JUSTIN TV LIVE SPORTS",[15:00] Malezya GP
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
@@ -281,6 +275,12 @@ https://andro.evrenesoglu225.click/checklist/androstreamlivess2.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu225.click/checklist/androstreamlivesm2.m3u8
+
+#EXTINF:-1 tvg-name="[20:30] St.Pauli - Nürnberg" group-title="JUSTIN TV LIVE SPORTS",[20:30] St.Pauli - Nürnberg
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu225.click/checklist/androstreamlivessplus1.m3u8
 
 #EXTINF:-1 tvg-name="[21:00] A.De Minaur - C.Alcaraz" group-title="JUSTIN TV LIVE SPORTS",[21:00] A.De Minaur - C.Alcaraz
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
