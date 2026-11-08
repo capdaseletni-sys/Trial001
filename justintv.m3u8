@@ -180,12 +180,6 @@ https://andro.evrenesoglu235.click/checklist/androstreamlivesm1.m3u8
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu235.click/checklist/androstreamlivesifir.m3u8
 
-#EXTINF:-1 tvg-name="[10:30] D.Grant - E.Smith" group-title="JUSTIN TV LIVE SPORTS",[10:30] D.Grant - E.Smith
-#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
-#EXT-X-REFERER:https://tvjustin.com/
-#EXT-X-ORIGIN:https://tvjustin.com
-https://andro.evrenesoglu235.click/checklist/androstreamlivessplus1.m3u8
-
 #EXTINF:-1 tvg-name="[18:00] 12 Bingölspor - Beyoğlu Yeni Çarşi" group-title="JUSTIN TV LIVE SPORTS",[18:00] 12 Bingölspor - Beyoğlu Yeni Çarşi
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
 #EXT-X-REFERER:https://tvjustin.com/
@@ -275,6 +269,12 @@ https://andro.evrenesoglu235.click/checklist/androstreamlivebsm1.m3u8
 #EXT-X-REFERER:https://tvjustin.com/
 #EXT-X-ORIGIN:https://tvjustin.com
 https://andro.evrenesoglu235.click/checklist/androstreamlivess1.m3u8
+
+#EXTINF:-1 tvg-name="[21:00] Katar GP" group-title="JUSTIN TV LIVE SPORTS",[21:00] Katar GP
+#EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+#EXT-X-REFERER:https://tvjustin.com/
+#EXT-X-ORIGIN:https://tvjustin.com
+https://andro.evrenesoglu235.click/checklist/androstreamlivessplus1.m3u8
 
 #EXTINF:-1 tvg-name="[21:00] Çorum FK - Fenerbahçe" group-title="JUSTIN TV LIVE SPORTS",[21:00] Çorum FK - Fenerbahçe
 #EXT-X-USER-AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
