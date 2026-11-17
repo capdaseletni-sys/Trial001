@@ -411,8 +411,8 @@ https://jmp2.uk/plu-5a6b92f6e22a617379789618.m3u8
 https://jmp2.uk/plu-60f75919718aed0007250d7a.m3u8
 #EXTINF:-1 channel-id="5eb1afb21486df0007abc57c" tvg-id="5eb1afb21486df0007abc57c" tvg-chno="5080" tvg-name="CBS News Bay Area" tvg-logo="https://images.pluto.tv/channels/5eb1afb21486df0007abc57c/colorLogoPNG.png" group-title="Pluto TV",CBS News Bay Area
 https://jmp2.uk/plu-5eb1afb21486df0007abc57c.m3u8
-#EXTINF:-1 channel-id="62cdc7c2a3e6270007f3f2f3" tvg-id="62cdc7c2a3e6270007f3f2f3" tvg-chno="2570" tvg-name="CBS News Boston" tvg-logo="https://images.pluto.tv/channels/62cdc7c2a3e6270007f3f2f3/colorLogoPNG.png" group-title="Pluto TV",CBS News Boston
-https://jmp2.uk/plu-62cdc7c2a3e6270007f3f2f3.m3u8
+#EXTINF:-1 channel-id="5eb1af2ad345340008fccd1e" tvg-id="5eb1af2ad345340008fccd1e" tvg-chno="5090" tvg-name="CBS News Boston" tvg-logo="https://images.pluto.tv/channels/5eb1af2ad345340008fccd1e/colorLogoPNG.png" group-title="Pluto TV",CBS News Boston
+https://jmp2.uk/plu-5eb1af2ad345340008fccd1e.m3u8
 #EXTINF:-1 channel-id="5eb1aeb2fd4b8a00076c2047" tvg-id="5eb1aeb2fd4b8a00076c2047" tvg-chno="5120" tvg-name="CBS News Chicago" tvg-logo="https://images.pluto.tv/channels/5eb1aeb2fd4b8a00076c2047/colorLogoPNG.png" group-title="Pluto TV",CBS News Chicago
 https://jmp2.uk/plu-5eb1aeb2fd4b8a00076c2047.m3u8
 #EXTINF:-1 channel-id="5eb1b12146cba40007aa7e5d" tvg-id="5eb1b12146cba40007aa7e5d" tvg-chno="5130" tvg-name="CBS News Colorado" tvg-logo="https://images.pluto.tv/channels/5eb1b12146cba40007aa7e5d/colorLogoPNG-1643041708234.png" group-title="Pluto TV",CBS News Colorado
@@ -559,8 +559,6 @@ https://jmp2.uk/plu-6823648580b2665220d9e69a.m3u8
 https://jmp2.uk/plu-5f8ed1ff5c39700007e2204a.m3u8
 #EXTINF:-1 channel-id="65a69ef53af63d000825e0ee" tvg-id="65a69ef53af63d000825e0ee" tvg-chno="265" tvg-name="Ciné Catastrophe by Pluto TV" tvg-logo="https://images.pluto.tv/channels/65a69ef53af63d000825e0ee/colorLogoPNG_1751272916058.png" group-title="Pluto TV",Ciné Catastrophe by Pluto TV
 https://jmp2.uk/plu-65a69ef53af63d000825e0ee.m3u8
-#EXTINF:-1 channel-id="68236417b85ccee1c1a025ad" tvg-id="68236417b85ccee1c1a025ad" tvg-chno="261" tvg-name="Ciné Gore & Slasher by Pluto TV" tvg-logo="https://images.pluto.tv/channels/68236417b85ccee1c1a025ad/colorLogoPNG_1751376882405.png" group-title="Pluto TV",Ciné Gore & Slasher by Pluto TV
-https://jmp2.uk/plu-68236417b85ccee1c1a025ad.m3u8
 #EXTINF:-1 channel-id="66e1978babec540008ce41ac" tvg-id="66e1978babec540008ce41ac" tvg-chno="255" tvg-name="Ciné Horreur by Pluto TV" tvg-logo="https://images.pluto.tv/channels/66e1978babec540008ce41ac/colorLogoPNG_1751272165674.png" group-title="Pluto TV",Ciné Horreur by Pluto TV
 https://jmp2.uk/plu-66e1978babec540008ce41ac.m3u8
 #EXTINF:-1 channel-id="60812fc8539963000707d1e1" tvg-id="60812fc8539963000707d1e1" tvg-chno="280" tvg-name="Ciné Romance by Pluto TV" tvg-logo="https://images.pluto.tv/channels/60812fc8539963000707d1e1/colorLogoPNG_1775048649580.png" group-title="Pluto TV",Ciné Romance by Pluto TV
@@ -3073,6 +3071,8 @@ https://jmp2.uk/plu-642abea1283aa4000805bb5b.m3u8
 https://jmp2.uk/plu-65ea8b928145cb0008509426.m3u8
 #EXTINF:-1 channel-id="677d9adfa9a51b0008497fa0" tvg-id="677d9adfa9a51b0008497fa0" tvg-chno="2779" tvg-name="UFC" tvg-logo="https://images.pluto.tv/channels/677d9adfa9a51b0008497fa0/colorLogoPNG.png" group-title="Pluto TV",UFC
 https://jmp2.uk/plu-677d9adfa9a51b0008497fa0.m3u8
+#EXTINF:-1 channel-id="6a8dd1d49547fd4fecc14d86" tvg-id="6a8dd1d49547fd4fecc14d86" tvg-chno="293" tvg-name="UPN Sitcoms Pluto TV" tvg-logo="https://images.pluto.tv/channels/6a8dd1d49547fd4fecc14d86/colorLogoPNG_1792077640221.png" group-title="Pluto TV",UPN Sitcoms Pluto TV
+https://jmp2.uk/plu-6a8dd1d49547fd4fecc14d86.m3u8
 #EXTINF:-1 channel-id="656542ae4261ca00082154a8" tvg-id="656542ae4261ca00082154a8" tvg-chno="3360" tvg-name="Ultimate Builds" tvg-logo="https://images.pluto.tv/channels/656542ae4261ca00082154a8/colorLogoPNG.png" group-title="Pluto TV",Ultimate Builds
 https://jmp2.uk/plu-656542ae4261ca00082154a8.m3u8
 #EXTINF:-1 channel-id="6a8eaea2fad3326545c281f1" tvg-id="6a8eaea2fad3326545c281f1" tvg-chno="1" tvg-name="Ultimate Hype" tvg-logo="https://images.pluto.tv/channels/6a8eaea2fad3326545c281f1/colorLogoPNG_1789638704317.png" group-title="Pluto TV",Ultimate Hype
